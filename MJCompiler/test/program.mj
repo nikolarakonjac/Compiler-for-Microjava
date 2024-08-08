@@ -1,0 +1,8 @@
+program TestProgram {
+	// greska proba$
+    void main() {
+       int x, y;
+       x = 5;
+       y = 17;
+    }
+}

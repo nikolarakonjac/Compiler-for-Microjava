@@ -1,0 +1,24 @@
+INFO  12:54:58,064 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  12:54:58,071 - #1 program
+INFO  12:54:58,071 - #17 TestProgram
+INFO  12:54:58,071 - #45 {
+INFO  12:54:58,071 - #11 void
+INFO  12:54:58,071 - #17 main
+INFO  12:54:58,071 - #41 (
+INFO  12:54:58,071 - #42 )
+INFO  12:54:58,071 - #45 {
+INFO  12:54:58,071 - #17 int
+INFO  12:54:58,072 - #17 x
+INFO  12:54:58,072 - #39 ,
+INFO  12:54:58,072 - #17 y
+INFO  12:54:58,072 - #37 ;
+INFO  12:54:58,072 - #17 x
+INFO  12:54:58,072 - #34 =
+INFO  12:54:58,072 - #18 5
+INFO  12:54:58,072 - #37 ;
+INFO  12:54:58,072 - #17 y
+INFO  12:54:58,072 - #34 =
+INFO  12:54:58,073 - #18 17
+INFO  12:54:58,073 - #37 ;
+INFO  12:54:58,073 - #46 }
+INFO  12:54:58,073 - #46 }

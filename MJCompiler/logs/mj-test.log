@@ -1,0 +1,25 @@
+INFO  12:57:23,762 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  12:57:23,769 - #1 program
+INFO  12:57:23,770 - #17 TestProgram
+INFO  12:57:23,770 - #45 {
+INFO  12:57:23,770 - #17 greska
+INFO  12:57:23,770 - #17 proba
+INFO  12:57:23,770 - #11 void
+INFO  12:57:23,770 - #17 main
+INFO  12:57:23,770 - #41 (
+INFO  12:57:23,770 - #42 )
+INFO  12:57:23,770 - #45 {
+INFO  12:57:23,770 - #49 range
+INFO  12:57:23,770 - #41 (
+INFO  12:57:23,770 - #42 )
+INFO  12:57:23,770 - #37 ;
+INFO  12:57:23,771 - #17 int
+INFO  12:57:23,771 - #39 ,
+INFO  12:57:23,771 - #37 ;
+INFO  12:57:23,771 - #34 =
+INFO  12:57:23,771 - #37 ;
+INFO  12:57:23,771 - #34 =
+INFO  12:57:23,771 - #18 17
+INFO  12:57:23,772 - #37 ;
+INFO  12:57:23,772 - #46 }
+INFO  12:57:23,772 - #46 }
