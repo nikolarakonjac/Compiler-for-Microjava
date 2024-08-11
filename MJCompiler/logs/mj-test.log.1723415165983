@@ -1,0 +1,8 @@
+INFO  00:20:20,071 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  00:20:20,092 - #2 program
+INFO  00:20:20,093 - #3 TestProgram
+INFO  00:20:20,093 - #6 const
+INFO  00:20:20,095 - #3 int
+ERROR 00:20:20,096 - 
+Sintaksna greska na liniji 3
+ERROR 00:20:20,096 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 3

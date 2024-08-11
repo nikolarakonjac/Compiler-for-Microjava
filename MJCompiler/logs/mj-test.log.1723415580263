@@ -1,0 +1,44 @@
+INFO  00:32:54,274 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  00:32:54,290 - #2 program
+INFO  00:32:54,290 - #3 TestProgram
+INFO  00:32:54,290 - #6 const
+INFO  00:32:54,291 - #3 int
+INFO  00:32:54,291 - #3 nula
+INFO  00:32:54,293 - #14 =
+INFO  00:32:54,293 - #8 5
+INFO  00:32:54,293 - #11 ,
+INFO  00:32:54,296 - #3 jedan
+INFO  00:32:54,296 - #14 =
+INFO  00:32:54,296 - #8 15
+INFO  00:32:54,296 - #7 ;
+INFO  00:32:54,297 - #6 const
+INFO  00:32:54,297 - #3 int
+INFO  00:32:54,297 - #3 jedan
+INFO  00:32:54,297 - #14 =
+INFO  00:32:54,297 - #8 1
+INFO  00:32:54,297 - #7 ;
+INFO  00:32:54,297 - #6 const
+INFO  00:32:54,305 - #3 int
+INFO  00:32:54,305 - #3 pet
+INFO  00:32:54,305 - #14 =
+INFO  00:32:54,305 - #8 5
+INFO  00:32:54,305 - #7 ;
+INFO  00:32:54,305 - #3 int
+INFO  00:32:54,306 - #3 niz
+INFO  00:32:54,306 - #12 [
+INFO  00:32:54,306 - #13 ]
+INFO  00:32:54,306 - #11 ,
+INFO  00:32:54,309 - #3 niz2
+INFO  00:32:54,309 - #12 [
+INFO  00:32:54,309 - #13 ]
+INFO  00:32:54,309 - #7 ;
+INFO  00:32:54,310 - #3 char
+INFO  00:32:54,310 - #3 nizch
+INFO  00:32:54,310 - #12 [
+INFO  00:32:54,310 - #13 ]
+INFO  00:32:54,310 - #7 ;
+INFO  00:32:54,310 - #4 {
+INFO  00:32:54,310 - #5 }
+ERROR 00:32:54,310 - 
+Sintaksna greska na liniji 12
+ERROR 00:32:54,310 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 12

@@ -1,8 +1,7 @@
-program TestProgram {
-	// greska proba$
-    void main() {
-       int x, y;
-       x = 5;
-       y = 17;
-    }
+program TestProgram
+
+	const bool x=1, y = 2, z = 3;
+	
+{
+	
 }

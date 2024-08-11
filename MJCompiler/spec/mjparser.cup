@@ -1,0 +1,112 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	boolean errorDetected;
+	Logger log = Logger.getLogger(getClass());
+   
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	errorDetected = true;
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+init with {:
+	errorDetected = false;
+:}
+
+
+
+/* ------------------------ TERMINALS ----------------------------- */
+
+terminal PROGRAM, IDENT, LBRACE, RBRACE, CONST, SEMICOLON, NUMBER, CHAR, BOOL, COMMA, LBRACKET, RBRACKET, ASSIGN;
+
+
+/* terminals needed because of Yylex.java*/
+
+terminal COLON, PLUS, FOR, RPAREN, STATIC, EXTENDS, NEW, ELSE, IF, DOT, DIV, MINUS, NOT_EQUAL, ARROW, VOID, AND, LPAREN, EQUAL, LESS;
+terminal MOD, MUL, RANGE, BREAK, READ, INC, GREATER, GREATER_EQUAL, LESS_EQUAL, PRINT, NAMESPACE, CLASS, RETURN, CONTINUE, OR, DEC;
+
+/* ------------------------ NONTERMINALS ----------------------------- */
+
+nonterminal Program, DeclarationList, MethodDeclList, ConstDecl, VarDecl, ConstAssign, ConstAssignList, Type;
+nonterminal VarDeclaration, VarDeclarations, StaticInitializer;
+
+/* ------------------------ GRAMMAR ----------------------------- */
+
+Program ::= (Program) PROGRAM IDENT:programName DeclarationList LBRACE MethodDeclList RBRACE;
+
+DeclarationList ::= DeclarationList ConstDecl
+                |
+                DeclarationList VarDecl
+                |
+                /* epsilon */
+                ;
+                
+ConstDecl ::= CONST Type IDENT ASSIGN ConstAssign ConstAssignList SEMICOLON;
+
+ConstAssign ::= NUMBER
+			|
+			CHAR
+			|
+			BOOL
+			;
+
+ConstAssignList ::= ConstAssignList COMMA IDENT ASSIGN ConstAssign
+				|
+				/* epsilon */
+				;
+
+VarDecl ::= Type VarDeclarations SEMICOLON;
+
+VarDeclaration ::= IDENT
+				| 
+				IDENT LBRACKET RBRACKET
+				;
+
+VarDeclarations ::= VarDeclarations COMMA VarDeclaration
+				|
+				VarDeclaration
+				;
+				
+Type ::= IDENT COLON COLON IDENT
+       |
+       IDENT
+       ;		
+				
+				
+				
+				

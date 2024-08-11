@@ -1,0 +1,121 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	boolean errorDetected;
+	Logger log = Logger.getLogger(getClass());
+   
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	errorDetected = true;
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+init with {:
+	errorDetected = false;
+:}
+
+
+
+/* ------------------------ TERMINALS ----------------------------- */
+
+terminal PROGRAM, IDENT, LBRACE, RBRACE, CONST, SEMICOLON, NUMBER, CHAR, BOOL, COMMA, LBRACKET, RBRACKET, ASSIGN;
+
+
+/* terminals needed because of Yylex.java*/
+
+terminal COLON, PLUS, FOR, RPAREN, STATIC, EXTENDS, NEW, ELSE, IF, DOT, DIV, MINUS, NOT_EQUAL, ARROW, VOID, AND, LPAREN, EQUAL, LESS;
+terminal MOD, MUL, RANGE, BREAK, READ, INC, GREATER, GREATER_EQUAL, LESS_EQUAL, PRINT, NAMESPACE, CLASS, RETURN, CONTINUE, OR, DEC;
+
+/* ------------------------ NONTERMINALS ----------------------------- */
+
+nonterminal Program Program;
+nonterminal DeclarationList DeclarationList;
+nonterminal MethodDeclList MethodDeclList;
+nonterminal ConstDecl ConstDecl;
+nonterminal VarDecl VarDecl;
+nonterminal ConstAssign ConstAssign;
+nonterminal ConstAssignList ConstAssignList;
+nonterminal Type Type;
+nonterminal VarDeclaration VarDeclaration;
+nonterminal VarDeclarations VarDeclarations;
+nonterminal StaticInitializer StaticInitializer;
+
+/* ------------------------ GRAMMAR ----------------------------- */
+
+Program ::= (Program) PROGRAM IDENT:programName DeclarationList:D1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(D1, M2); RESULT.setLine(D1left); :};
+
+DeclarationList ::= DeclarationList:D1 ConstDecl:C2 {: RESULT=new DeclarationListDerived1(D1, C2); RESULT.setLine(D1left); :}
+                |
+                DeclarationList:D1 VarDecl:V2 {: RESULT=new DeclarationListDerived2(D1, V2); RESULT.setLine(D1left); :}
+                | {: RESULT=new DeclarationListDerived3(); :}
+                /* epsilon */
+                ;
+                
+ConstDecl ::= CONST Type:T1 IDENT ASSIGN ConstAssign:C2 ConstAssignList:C3 SEMICOLON {: RESULT=new ConstDeclDerived1(T1, C2, C3); RESULT.setLine(T1left); :};
+
+ConstAssign ::= NUMBER {: RESULT=new ConstAssignDerived1(); :}
+			|
+			CHAR {: RESULT=new ConstAssignDerived2(); :}
+			|
+			BOOL {: RESULT=new ConstAssignDerived3(); :}
+			;
+
+ConstAssignList ::= ConstAssignList:C1 COMMA IDENT ASSIGN ConstAssign:C2 {: RESULT=new ConstAssignListDerived1(C1, C2); RESULT.setLine(C1left); :}
+				| {: RESULT=new ConstAssignListDerived2(); :}
+				/* epsilon */
+				;
+
+VarDecl ::= Type:T1 VarDeclarations:V2 SEMICOLON {: RESULT=new VarDeclDerived1(T1, V2); RESULT.setLine(T1left); :};
+
+VarDeclaration ::= IDENT {: RESULT=new VarDeclarationDerived1(); :}
+				| 
+				IDENT LBRACKET RBRACKET {: RESULT=new VarDeclarationDerived2(); :}
+				;
+
+VarDeclarations ::= VarDeclarations:V1 COMMA VarDeclaration:V2 {: RESULT=new VarDeclarationsDerived1(V1, V2); RESULT.setLine(V1left); :}
+				|
+				VarDeclaration:V1 {: RESULT=new VarDeclarationsDerived2(V1); RESULT.setLine(V1left); :}
+				;
+				
+Type ::= IDENT COLON COLON IDENT {: RESULT=new TypeDerived1(); :}
+       |
+       IDENT {: RESULT=new TypeDerived2(); :}
+       ;		
+				
+				
+				
+				

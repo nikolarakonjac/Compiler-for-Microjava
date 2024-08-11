@@ -1,0 +1,40 @@
+INFO  00:32:07,368 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  00:32:07,390 - #2 program
+INFO  00:32:07,390 - #3 TestProgram
+INFO  00:32:07,390 - #6 const
+INFO  00:32:07,391 - #3 int
+INFO  00:32:07,392 - #3 nula
+INFO  00:32:07,394 - #14 =
+INFO  00:32:07,394 - #8 0
+INFO  00:32:07,394 - #7 ;
+INFO  00:32:07,397 - #6 const
+INFO  00:32:07,398 - #3 int
+INFO  00:32:07,398 - #3 jedan
+INFO  00:32:07,398 - #14 =
+INFO  00:32:07,398 - #8 1
+INFO  00:32:07,398 - #7 ;
+INFO  00:32:07,398 - #6 const
+INFO  00:32:07,398 - #3 int
+INFO  00:32:07,399 - #3 pet
+INFO  00:32:07,399 - #14 =
+INFO  00:32:07,399 - #8 5
+INFO  00:32:07,399 - #7 ;
+INFO  00:32:07,399 - #3 int
+INFO  00:32:07,399 - #3 niz
+INFO  00:32:07,399 - #12 [
+INFO  00:32:07,399 - #13 ]
+INFO  00:32:07,399 - #11 ,
+INFO  00:32:07,402 - #3 niz2
+INFO  00:32:07,402 - #12 [
+INFO  00:32:07,402 - #13 ]
+INFO  00:32:07,402 - #7 ;
+INFO  00:32:07,402 - #3 char
+INFO  00:32:07,402 - #3 nizch
+INFO  00:32:07,402 - #12 [
+INFO  00:32:07,402 - #13 ]
+INFO  00:32:07,403 - #7 ;
+INFO  00:32:07,403 - #4 {
+INFO  00:32:07,403 - #5 }
+ERROR 00:32:07,403 - 
+Sintaksna greska na liniji 12
+ERROR 00:32:07,403 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 12
