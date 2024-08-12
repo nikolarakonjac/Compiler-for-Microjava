@@ -1,22 +1,147 @@
-INFO  00:36:44,989 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
-INFO  00:36:45,011 - #2 program
-INFO  00:36:45,011 - #3 TestProgram
-INFO  00:36:45,011 - #6 const
-INFO  00:36:45,013 - #3 bool
-INFO  00:36:45,014 - #3 x
-INFO  00:36:45,015 - #14 =
-INFO  00:36:45,016 - #8 1
-INFO  00:36:45,016 - #11 ,
-INFO  00:36:45,019 - #3 y
-INFO  00:36:45,019 - #14 =
-INFO  00:36:45,019 - #8 2
-INFO  00:36:45,019 - #11 ,
-INFO  00:36:45,019 - #3 z
-INFO  00:36:45,019 - #14 =
-INFO  00:36:45,019 - #8 3
-INFO  00:36:45,020 - #7 ;
-INFO  00:36:45,020 - #4 {
-INFO  00:36:45,020 - #5 }
-ERROR 00:36:45,020 - 
-Sintaksna greska na liniji 7
-ERROR 00:36:45,020 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7
+INFO  21:02:16,219 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  21:02:16,305 - #2 program
+INFO  21:02:16,305 - #3 TestProgram
+INFO  21:02:16,305 - #4 {
+INFO  21:02:16,306 - #15 void
+INFO  21:02:16,307 - #3 f
+INFO  21:02:16,307 - #33 (
+INFO  21:02:16,308 - #28 )
+INFO  21:02:16,309 - #4 {
+INFO  21:02:16,310 - #21 if
+INFO  21:02:16,311 - #33 (
+INFO  21:02:16,311 - #3 x
+INFO  21:02:16,311 - #31 !=
+INFO  21:02:16,312 - #8 5
+INFO  21:02:16,314 - #20 &&
+INFO  21:02:16,315 - #3 x
+INFO  21:02:16,315 - #39 >=
+INFO  21:02:16,315 - #8 2
+INFO  21:02:16,316 - #28 )
+INFO  21:02:16,317 - #4 {
+INFO  21:02:16,317 - #3 x
+INFO  21:02:16,323 - #17 ++
+INFO  21:02:16,323 - #7 ;
+INFO  21:02:16,323 - #3 x
+INFO  21:02:16,324 - #14 =
+INFO  21:02:16,324 - #3 y
+INFO  21:02:16,326 - #37 *
+INFO  21:02:16,327 - #8 9
+INFO  21:02:16,328 - #30 /
+INFO  21:02:16,329 - #8 3
+INFO  21:02:16,330 - #7 ;
+INFO  21:02:16,330 - #5 }
+INFO  21:02:16,331 - #5 }
+INFO  21:02:16,331 - #5 }
+INFO  21:02:16,333 - Program(
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+      MethodReturnTypeAndNameDerived1(
+      ) [MethodReturnTypeAndNameDerived1]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        StatementDerived2(
+          ConditionDerived1(
+            CondTermDerived2(
+              CondTermDerived1(
+                CondFactDerived1(
+                  ExprDerived2(
+                    TermDerived1(
+                      FactorDerived4(
+                        DesignatorFactorDerived1(
+                          DesignatorDerived2(
+                          ) [DesignatorDerived2]
+                        ) [DesignatorFactorDerived1]
+                      ) [FactorDerived4]
+                    ) [TermDerived1]
+                  ) [ExprDerived2]
+                  RelopDerived2(
+                  ) [RelopDerived2]
+                  ExprDerived2(
+                    TermDerived1(
+                      FactorDerived1(
+                      ) [FactorDerived1]
+                    ) [TermDerived1]
+                  ) [ExprDerived2]
+                ) [CondFactDerived1]
+              ) [CondTermDerived1]
+              CondFactDerived1(
+                ExprDerived2(
+                  TermDerived1(
+                    FactorDerived4(
+                      DesignatorFactorDerived1(
+                        DesignatorDerived2(
+                        ) [DesignatorDerived2]
+                      ) [DesignatorFactorDerived1]
+                    ) [FactorDerived4]
+                  ) [TermDerived1]
+                ) [ExprDerived2]
+                RelopDerived4(
+                ) [RelopDerived4]
+                ExprDerived2(
+                  TermDerived1(
+                    FactorDerived1(
+                    ) [FactorDerived1]
+                  ) [TermDerived1]
+                ) [ExprDerived2]
+              ) [CondFactDerived1]
+            ) [CondTermDerived2]
+          ) [ConditionDerived1]
+          StatementDerived11(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived2(
+                ) [StatementListDerived2]
+                StatementDerived1(
+                  DesignatorStatementDerived3(
+                    DesignatorDerived2(
+                    ) [DesignatorDerived2]
+                  ) [DesignatorStatementDerived3]
+                ) [StatementDerived1]
+              ) [StatementListDerived1]
+              StatementDerived1(
+                DesignatorStatementDerived1(
+                  DesignatorDerived2(
+                  ) [DesignatorDerived2]
+                  AssignopDerived1(
+                  ) [AssignopDerived1]
+                  ExprDerived2(
+                    TermDerived2(
+                      TermDerived2(
+                        TermDerived1(
+                          FactorDerived4(
+                            DesignatorFactorDerived1(
+                              DesignatorDerived2(
+                              ) [DesignatorDerived2]
+                            ) [DesignatorFactorDerived1]
+                          ) [FactorDerived4]
+                        ) [TermDerived1]
+                        MulopDerived1(
+                        ) [MulopDerived1]
+                        FactorDerived1(
+                        ) [FactorDerived1]
+                      ) [TermDerived2]
+                      MulopDerived2(
+                      ) [MulopDerived2]
+                      FactorDerived1(
+                      ) [FactorDerived1]
+                    ) [TermDerived2]
+                  ) [ExprDerived2]
+                ) [DesignatorStatementDerived1]
+              ) [StatementDerived1]
+            ) [StatementListDerived1]
+          ) [StatementDerived11]
+        ) [StatementDerived2]
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  21:02:16,334 - ===================================

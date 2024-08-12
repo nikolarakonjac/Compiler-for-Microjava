@@ -1,0 +1,51 @@
+INFO  14:05:26,868 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:05:26,888 - #2 program
+INFO  14:05:26,888 - #3 TestProgram
+INFO  14:05:26,888 - #4 {
+INFO  14:05:26,889 - #3 int
+INFO  14:05:26,890 - #3 main
+INFO  14:05:26,891 - #31 (
+INFO  14:05:26,891 - #3 int
+INFO  14:05:26,891 - #3 x
+INFO  14:05:26,891 - #12 [
+INFO  14:05:26,892 - #13 ]
+INFO  14:05:26,892 - #11 ,
+INFO  14:05:26,892 - #3 char
+INFO  14:05:26,892 - #3 y
+INFO  14:05:26,892 - #19 )
+INFO  14:05:26,892 - #4 {
+INFO  14:05:26,893 - #5 }
+INFO  14:05:26,893 - #5 }
+INFO  14:05:26,895 - Program(
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+      MethodReturnTypeAndNameDerived2(
+        TypeName(
+        ) [TypeName]
+      ) [MethodReturnTypeAndNameDerived2]
+      FormParsExist(
+        FormalParamsList(
+          SingleFormalParam(
+            ArrayFormalParam(
+              TypeName(
+              ) [TypeName]
+            ) [ArrayFormalParam]
+          ) [SingleFormalParam]
+          VariableFormalParam(
+            TypeName(
+            ) [TypeName]
+          ) [VariableFormalParam]
+        ) [FormalParamsList]
+      ) [FormParsExist]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  14:05:26,895 - ===================================

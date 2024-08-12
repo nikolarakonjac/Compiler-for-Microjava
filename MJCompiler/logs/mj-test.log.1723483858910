@@ -1,0 +1,72 @@
+INFO  19:30:32,043 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  19:30:32,115 - #2 program
+INFO  19:30:32,115 - #3 TestProgram
+INFO  19:30:32,115 - #4 {
+INFO  19:30:32,116 - #15 void
+INFO  19:30:32,117 - #3 main
+INFO  19:30:32,118 - #33 (
+INFO  19:30:32,119 - #22 )
+INFO  19:30:32,120 - #4 {
+INFO  19:30:32,122 - #3 x
+INFO  19:30:32,123 - #17 ++
+INFO  19:30:32,124 - #7 ;
+INFO  19:30:32,124 - #3 y
+INFO  19:30:32,124 - #18 --
+INFO  19:30:32,124 - #7 ;
+INFO  19:30:32,125 - #3 z
+INFO  19:30:32,125 - #14 =
+INFO  19:30:32,125 - #8 7
+INFO  19:30:32,137 - #7 ;
+INFO  19:30:32,139 - #5 }
+INFO  19:30:32,139 - #5 }
+INFO  19:30:32,142 - Program(
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+      MethodReturnTypeAndNameDerived1(
+      ) [MethodReturnTypeAndNameDerived1]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived2(
+            ) [StatementListDerived2]
+            StatementDerived1(
+              DesignatorStatementDerived3(
+                DesignatorDerived2(
+                ) [DesignatorDerived2]
+              ) [DesignatorStatementDerived3]
+            ) [StatementDerived1]
+          ) [StatementListDerived1]
+          StatementDerived1(
+            DesignatorStatementDerived4(
+              DesignatorDerived2(
+              ) [DesignatorDerived2]
+            ) [DesignatorStatementDerived4]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        StatementDerived1(
+          DesignatorStatementDerived1(
+            DesignatorDerived2(
+            ) [DesignatorDerived2]
+            AssignopDerived1(
+            ) [AssignopDerived1]
+            ExprDerived2(
+              TermDerived1(
+                FactorDerived1(
+                ) [FactorDerived1]
+              ) [TermDerived1]
+            ) [ExprDerived2]
+          ) [DesignatorStatementDerived1]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  19:30:32,142 - ===================================

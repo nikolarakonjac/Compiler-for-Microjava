@@ -1,0 +1,52 @@
+INFO  19:29:50,081 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  19:29:50,163 - #2 program
+INFO  19:29:50,163 - #3 TestProgram
+INFO  19:29:50,163 - #4 {
+INFO  19:29:50,165 - #15 void
+INFO  19:29:50,166 - #3 main
+INFO  19:29:50,166 - #33 (
+INFO  19:29:50,167 - #22 )
+INFO  19:29:50,168 - #4 {
+INFO  19:29:50,170 - #3 x
+INFO  19:29:50,171 - #17 ++
+INFO  19:29:50,172 - #7 ;
+INFO  19:29:50,172 - #3 y
+INFO  19:29:50,172 - #18 --
+INFO  19:29:50,173 - #7 ;
+INFO  19:29:50,173 - #5 }
+INFO  19:29:50,173 - #5 }
+INFO  19:29:50,175 - Program(
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+      MethodReturnTypeAndNameDerived1(
+      ) [MethodReturnTypeAndNameDerived1]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived2(
+          ) [StatementListDerived2]
+          StatementDerived1(
+            DesignatorStatementDerived3(
+              DesignatorDerived2(
+              ) [DesignatorDerived2]
+            ) [DesignatorStatementDerived3]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        StatementDerived1(
+          DesignatorStatementDerived4(
+            DesignatorDerived2(
+            ) [DesignatorDerived2]
+          ) [DesignatorStatementDerived4]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  19:29:50,181 - ===================================

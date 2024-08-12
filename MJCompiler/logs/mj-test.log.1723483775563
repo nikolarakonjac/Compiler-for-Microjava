@@ -1,0 +1,30 @@
+INFO  19:29:29,238 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  19:29:29,314 - #2 program
+INFO  19:29:29,314 - #3 TestProgram
+INFO  19:29:29,314 - #4 {
+INFO  19:29:29,315 - #15 void
+INFO  19:29:29,317 - #3 main
+INFO  19:29:29,317 - #33 (
+INFO  19:29:29,327 - #22 )
+INFO  19:29:29,329 - #4 {
+INFO  19:29:29,331 - #5 }
+INFO  19:29:29,333 - #5 }
+INFO  19:29:29,334 - Program(
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+      MethodReturnTypeAndNameDerived1(
+      ) [MethodReturnTypeAndNameDerived1]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  19:29:29,335 - ===================================

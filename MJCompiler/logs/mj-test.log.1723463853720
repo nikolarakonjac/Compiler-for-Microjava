@@ -1,0 +1,23 @@
+INFO  13:56:57,260 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  13:56:57,282 - #2 program
+INFO  13:56:57,282 - #3 TestProgram
+INFO  13:56:57,282 - #6 const
+INFO  13:56:57,283 - #3 bool
+INFO  13:56:57,283 - #3 x
+INFO  13:56:57,284 - #14 =
+INFO  13:56:57,284 - #8 1
+INFO  13:56:57,285 - #11 ,
+INFO  13:56:57,287 - #3 y
+INFO  13:56:57,287 - #14 =
+INFO  13:56:57,287 - #8 2
+INFO  13:56:57,287 - #11 ,
+INFO  13:56:57,287 - #3 z
+INFO  13:56:57,287 - #14 =
+INFO  13:56:57,287 - #8 3
+INFO  13:56:57,287 - #7 ;
+INFO  13:56:57,287 - #3 int
+INFO  13:56:57,288 - #3 main
+INFO  13:56:57,288 - #31 (
+ERROR 13:56:57,288 - 
+Sintaksna greska na liniji 6
+ERROR 13:56:57,288 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6

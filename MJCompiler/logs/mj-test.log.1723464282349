@@ -1,0 +1,118 @@
+INFO  14:04:33,895 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:04:33,917 - #2 program
+INFO  14:04:33,917 - #3 TestProgram
+INFO  14:04:33,917 - #6 const
+INFO  14:04:33,918 - #3 int
+INFO  14:04:33,918 - #3 nula
+INFO  14:04:33,920 - #14 =
+INFO  14:04:33,920 - #8 0
+INFO  14:04:33,920 - #7 ;
+INFO  14:04:33,924 - #6 const
+INFO  14:04:33,924 - #3 int
+INFO  14:04:33,924 - #3 jedan
+INFO  14:04:33,924 - #14 =
+INFO  14:04:33,924 - #8 1
+INFO  14:04:33,924 - #7 ;
+INFO  14:04:33,924 - #6 const
+INFO  14:04:33,924 - #3 int
+INFO  14:04:33,924 - #3 pet
+INFO  14:04:33,924 - #14 =
+INFO  14:04:33,924 - #8 5
+INFO  14:04:33,932 - #7 ;
+INFO  14:04:33,932 - #3 int
+INFO  14:04:33,932 - #3 niz
+INFO  14:04:33,932 - #12 [
+INFO  14:04:33,932 - #13 ]
+INFO  14:04:33,932 - #11 ,
+INFO  14:04:33,934 - #3 niz2
+INFO  14:04:33,934 - #12 [
+INFO  14:04:33,934 - #13 ]
+INFO  14:04:33,934 - #7 ;
+INFO  14:04:33,934 - #3 char
+INFO  14:04:33,935 - #3 nizch
+INFO  14:04:33,935 - #12 [
+INFO  14:04:33,935 - #13 ]
+INFO  14:04:33,935 - #7 ;
+INFO  14:04:33,935 - #4 {
+INFO  14:04:33,935 - #3 int
+INFO  14:04:33,936 - #3 main
+INFO  14:04:33,936 - #31 (
+INFO  14:04:33,936 - #19 )
+INFO  14:04:33,937 - #4 {
+INFO  14:04:33,938 - #5 }
+INFO  14:04:33,939 - #5 }
+INFO  14:04:33,940 - Program(
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListConst(
+        DeclarationListConst(
+          DeclarationListConst(
+            NoDeclarationList(
+            ) [NoDeclarationList]
+            ConstDeclaration(
+              TypeName(
+              ) [TypeName]
+              NumberConstValue(
+              ) [NumberConstValue]
+              NoConstAssignmentList(
+              ) [NoConstAssignmentList]
+            ) [ConstDeclaration]
+          ) [DeclarationListConst]
+          ConstDeclaration(
+            TypeName(
+            ) [TypeName]
+            NumberConstValue(
+            ) [NumberConstValue]
+            NoConstAssignmentList(
+            ) [NoConstAssignmentList]
+          ) [ConstDeclaration]
+        ) [DeclarationListConst]
+        ConstDeclaration(
+          TypeName(
+          ) [TypeName]
+          NumberConstValue(
+          ) [NumberConstValue]
+          NoConstAssignmentList(
+          ) [NoConstAssignmentList]
+        ) [ConstDeclaration]
+      ) [DeclarationListConst]
+      VarDecl(
+        TypeName(
+        ) [TypeName]
+        VarDeclarationList(
+          SingleVarDeclaration(
+            ArrayVarDeclaration(
+            ) [ArrayVarDeclaration]
+          ) [SingleVarDeclaration]
+          ArrayVarDeclaration(
+          ) [ArrayVarDeclaration]
+        ) [VarDeclarationList]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      TypeName(
+      ) [TypeName]
+      SingleVarDeclaration(
+        ArrayVarDeclaration(
+        ) [ArrayVarDeclaration]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+      MethodReturnTypeAndNameDerived2(
+        TypeName(
+        ) [TypeName]
+      ) [MethodReturnTypeAndNameDerived2]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  14:04:33,941 - ===================================

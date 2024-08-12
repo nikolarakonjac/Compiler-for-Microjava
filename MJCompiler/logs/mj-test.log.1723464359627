@@ -1,0 +1,62 @@
+INFO  14:05:38,705 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:05:38,726 - #2 program
+INFO  14:05:38,726 - #3 TestProgram
+INFO  14:05:38,726 - #4 {
+INFO  14:05:38,727 - #3 int
+INFO  14:05:38,728 - #3 main
+INFO  14:05:38,729 - #31 (
+INFO  14:05:38,730 - #3 int
+INFO  14:05:38,730 - #3 x
+INFO  14:05:38,730 - #12 [
+INFO  14:05:38,730 - #13 ]
+INFO  14:05:38,730 - #11 ,
+INFO  14:05:38,730 - #3 char
+INFO  14:05:38,730 - #3 y
+INFO  14:05:38,730 - #12 [
+INFO  14:05:38,730 - #13 ]
+INFO  14:05:38,730 - #11 ,
+INFO  14:05:38,730 - #3 bool
+INFO  14:05:38,730 - #3 nikola
+INFO  14:05:38,730 - #19 )
+INFO  14:05:38,731 - #4 {
+INFO  14:05:38,732 - #5 }
+INFO  14:05:38,733 - #5 }
+INFO  14:05:38,734 - Program(
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+      MethodReturnTypeAndNameDerived2(
+        TypeName(
+        ) [TypeName]
+      ) [MethodReturnTypeAndNameDerived2]
+      FormParsExist(
+        FormalParamsList(
+          FormalParamsList(
+            SingleFormalParam(
+              ArrayFormalParam(
+                TypeName(
+                ) [TypeName]
+              ) [ArrayFormalParam]
+            ) [SingleFormalParam]
+            ArrayFormalParam(
+              TypeName(
+              ) [TypeName]
+            ) [ArrayFormalParam]
+          ) [FormalParamsList]
+          VariableFormalParam(
+            TypeName(
+            ) [TypeName]
+          ) [VariableFormalParam]
+        ) [FormalParamsList]
+      ) [FormParsExist]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  14:05:38,734 - ===================================

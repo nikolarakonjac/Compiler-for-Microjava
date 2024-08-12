@@ -52,60 +52,263 @@ init with {:
 
 /* ------------------------ TERMINALS ----------------------------- */
 
-terminal PROGRAM, IDENT, LBRACE, RBRACE, CONST, SEMICOLON, NUMBER, CHAR, BOOL, COMMA, LBRACKET, RBRACKET, ASSIGN;
-
+terminal PROGRAM, IDENT, LBRACE, RBRACE, CONST, SEMICOLON, NUMBER, CHAR, BOOL, COMMA, LBRACKET, RBRACKET, ASSIGN, VOID, MINUS, INC, DEC, OR, AND;
+terminal IF, ELSE, NEW, BREAK, CONTINUE, RETURN, PLUS, RPAREN, STATIC, DIV, NOT_EQUAL, ARROW, LPAREN, EQUAL, LESS, MOD, MUL, GREATER, GREATER_EQUAL, LESS_EQUAL;
+terminal READ, PRINT, COLON;
 
 /* terminals needed because of Yylex.java*/
 
-terminal COLON, PLUS, FOR, RPAREN, STATIC, EXTENDS, NEW, ELSE, IF, DOT, DIV, MINUS, NOT_EQUAL, ARROW, VOID, AND, LPAREN, EQUAL, LESS;
-terminal MOD, MUL, RANGE, BREAK, READ, INC, GREATER, GREATER_EQUAL, LESS_EQUAL, PRINT, NAMESPACE, CLASS, RETURN, CONTINUE, OR, DEC;
+terminal FOR, EXTENDS, DOT;
+terminal RANGE, NAMESPACE, CLASS;
 
 /* ------------------------ NONTERMINALS ----------------------------- */
 
 nonterminal Program, DeclarationList, MethodDeclList, ConstDecl, VarDecl, ConstAssign, ConstAssignList, Type;
-nonterminal VarDeclaration, VarDeclarations, StaticInitializer;
+nonterminal VarDeclaration, VarDeclarations, MethodDecl, VarDeclList, StatementList, FormPars, FormalParam, FormalParams;
+nonterminal MethodReturnTypeAndName, Statement, DesignatorStatement, Designator,  Expr, Label, Term, Factor, DesignatorFactor, NewFactor, ExprFactor;
+nonterminal ActParsOptional, ActPars, StaticInitializer, CondFact, Condition, CondTerm;
+nonterminal Relop, Assignop, Addop, Mulop; 
+
+
+/* can be used only for this case*/
+precedence left ELSE;
 
 /* ------------------------ GRAMMAR ----------------------------- */
 
 Program ::= (Program) PROGRAM IDENT:programName DeclarationList LBRACE MethodDeclList RBRACE;
 
-DeclarationList ::= DeclarationList ConstDecl
+DeclarationList ::= (DeclarationListConst) DeclarationList ConstDecl
                 |
-                DeclarationList VarDecl
+                (DeclarationListVar) DeclarationList VarDecl
                 |
-                /* epsilon */
+                (NoDeclarationList) /* epsilon */
                 ;
                 
-ConstDecl ::= CONST Type IDENT ASSIGN ConstAssign ConstAssignList SEMICOLON;
+ConstDecl ::= (ConstDeclaration) CONST Type:constType IDENT:constIdent ASSIGN ConstAssign ConstAssignList SEMICOLON;
 
-ConstAssign ::= NUMBER
+ConstAssign ::= (NumberConstValue) NUMBER
 			|
-			CHAR
+			(CharConstValue) CHAR
 			|
-			BOOL
+			(BoolConstValue) BOOL
 			;
 
-ConstAssignList ::= ConstAssignList COMMA IDENT ASSIGN ConstAssign
+ConstAssignList ::= (ConstAssignmentList) ConstAssignList COMMA IDENT ASSIGN ConstAssign
 				|
-				/* epsilon */
+				(NoConstAssignmentList) /* epsilon */
 				;
 
-VarDecl ::= Type VarDeclarations SEMICOLON;
+VarDecl ::= (VarDecl) Type VarDeclarations SEMICOLON;
 
-VarDeclaration ::= IDENT
+VarDeclaration ::= (VarDeclaration) IDENT
 				| 
-				IDENT LBRACKET RBRACKET
+				(ArrayVarDeclaration) IDENT LBRACKET RBRACKET
 				;
 
-VarDeclarations ::= VarDeclarations COMMA VarDeclaration
+VarDeclarations ::= (VarDeclarationList) VarDeclarations COMMA VarDeclaration
 				|
-				VarDeclaration
+				(SingleVarDeclaration) VarDeclaration
 				;
 				
-Type ::= IDENT COLON COLON IDENT
+Type ::= (ScopeResolution) IDENT COLON COLON IDENT
        |
-       IDENT
+       (TypeName) IDENT
        ;		
+				
+MethodDeclList ::= MethodDeclList MethodDecl
+				|
+				/* epsilon */	
+				;
+
+VarDeclList ::= VarDeclList VarDecl
+			|
+			/* epsilon */
+			;
+				
+MethodDecl ::= MethodReturnTypeAndName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList  RBRACE;		
+				
+MethodReturnTypeAndName ::= VOID IDENT
+						|
+						Type IDENT
+						;
+								
+FormPars ::= (FormParsExist) FormalParams
+			|
+			(NoFormalParams) /* epsilon */
+			;			
+				
+FormalParams ::= (FormalParamsList) FormalParams COMMA FormalParam
+				|
+				(SingleFormalParam) FormalParam
+				;  			
+				
+FormalParam ::= (VariableFormalParam) Type IDENT
+			|
+			(ArrayFormalParam) Type IDENT LBRACKET RBRACKET
+			; 			
+
+/*	****************************************		*/
+				
+StatementList ::= StatementList Statement
+				|
+				/* epsilon */		
+				;		
+
+Statement ::= DesignatorStatement SEMICOLON
+			|
+			IF LPAREN Condition RPAREN Statement
+			|
+			IF LPAREN Condition RPAREN Statement ELSE Statement
+			|
+			BREAK SEMICOLON
+			|
+			CONTINUE SEMICOLON
+			|
+			RETURN SEMICOLON
+			|
+			RETURN Expr SEMICOLON
+			|
+			READ LPAREN Designator RPAREN SEMICOLON
+			|
+			PRINT LPAREN Expr RPAREN SEMICOLON
+			|
+			PRINT LPAREN Expr COMMA NUMBER RPAREN SEMICOLON
+			|
+			LBRACE StatementList RBRACE
+			;
+
+StaticInitializer ::= STATIC LBRACE StatementList RBRACE;
+			
+DesignatorStatement ::= Designator Assignop Expr 
+					|
+					Designator LPAREN ActParsOptional RPAREN
+					|
+					Designator INC
+					|
+					Designator DEC
+					;
+
+Designator ::= IDENT COLON COLON IDENT
+			|
+			IDENT 
+			|
+			Designator DOT IDENT
+			|
+			Designator LBRACKET Expr RBRACKET
+			;
+
+Expr ::= MINUS Term
+        |
+        Term
+        |
+        Expr Addop Term
+        ;
+        
+Term ::= Factor
+		|
+		Term Mulop Factor
+		;
+		
+Factor ::= NUMBER
+		|
+		CHAR
+		|
+		BOOL
+		|
+		DesignatorFactor
+		|
+		NewFactor
+		|
+		ExprFactor
+		;
+		
+DesignatorFactor ::= Designator
+					|
+					Designator LPAREN ActParsOptional RPAREN
+					;
+					
+NewFactor ::= NEW Type LBRACKET Expr RBRACKET
+			|
+			NEW Type LPAREN ActParsOptional RPAREN
+			;
+			
+ExprFactor ::= LPAREN Expr RPAREN;
+
+
+ActParsOptional ::= ActPars
+		|
+		/* epsilon */
+		;
+
+ActPars ::= Expr
+		|
+		ActPars COMMA Expr
+		;	
+		
+		
+/* *********************************************** */	
+
+Condition ::= CondTerm 
+			|
+			Condition OR CondTerm
+			;
+
+CondTerm ::= CondFact 
+			|
+			CondTerm AND CondFact
+			;
+
+CondFact ::= Expr Relop Expr
+			|
+			Expr
+			;
+			
+
+/* *********************************************** */
+
+Label ::= IDENT;
+
+Assignop ::= ASSIGN;
+				
+Relop ::= EQUAL
+        |
+        NOT_EQUAL
+        |
+        GREATER
+        |
+        GREATER_EQUAL
+        |
+        LESS
+        |
+        LESS_EQUAL
+        ;			
+				
+Addop ::= PLUS
+        |
+        MINUS	
+        ;			
+				
+Mulop ::= MUL
+        |
+        DIV
+        |
+        MOD
+        ;				
+				
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 				
 				
 				

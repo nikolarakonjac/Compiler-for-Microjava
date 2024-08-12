@@ -1,0 +1,314 @@
+INFO  20:32:11,068 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  20:32:11,149 - #2 program
+INFO  20:32:11,150 - #3 TestProgram
+INFO  20:32:11,150 - #4 {
+INFO  20:32:11,151 - #15 void
+INFO  20:32:11,152 - #3 main
+INFO  20:32:11,153 - #34 (
+INFO  20:32:11,154 - #27 )
+INFO  20:32:11,154 - #4 {
+INFO  20:32:11,154 - #3 x
+INFO  20:32:11,154 - #17 ++
+INFO  20:32:11,160 - #7 ;
+INFO  20:32:11,161 - #3 y
+INFO  20:32:11,161 - #18 --
+INFO  20:32:11,161 - #7 ;
+INFO  20:32:11,161 - #3 z
+INFO  20:32:11,161 - #14 =
+INFO  20:32:11,162 - #8 7
+INFO  20:32:11,165 - #38 *
+INFO  20:32:11,167 - #8 3
+INFO  20:32:11,170 - #38 *
+INFO  20:32:11,171 - #8 2
+INFO  20:32:11,171 - #31 /
+INFO  20:32:11,171 - #8 2
+INFO  20:32:11,172 - #25 +
+INFO  20:32:11,173 - #8 3
+INFO  20:32:11,175 - #16 -
+INFO  20:32:11,175 - #8 5
+INFO  20:32:11,176 - #7 ;
+INFO  20:32:11,176 - #3 x
+INFO  20:32:11,176 - #34 (
+INFO  20:32:11,176 - #27 )
+INFO  20:32:11,177 - #7 ;
+INFO  20:32:11,178 - #3 x
+INFO  20:32:11,178 - #34 (
+INFO  20:32:11,178 - #16 -
+INFO  20:32:11,178 - #8 9
+INFO  20:32:11,178 - #11 ,
+INFO  20:32:11,178 - #8 5
+INFO  20:32:11,178 - #38 *
+INFO  20:32:11,178 - #8 3
+INFO  20:32:11,179 - #25 +
+INFO  20:32:11,179 - #8 5
+INFO  20:32:11,179 - #27 )
+INFO  20:32:11,179 - #7 ;
+INFO  20:32:11,179 - #3 x
+INFO  20:32:11,179 - #30 .
+INFO  20:32:11,179 - #3 y
+INFO  20:32:11,179 - #17 ++
+INFO  20:32:11,179 - #7 ;
+INFO  20:32:11,179 - #3 x
+INFO  20:32:11,180 - #34 (
+INFO  20:32:11,180 - #8 5
+INFO  20:32:11,180 - #11 ,
+INFO  20:32:11,180 - #3 y
+INFO  20:32:11,180 - #34 (
+INFO  20:32:11,180 - #8 1
+INFO  20:32:11,180 - #11 ,
+INFO  20:32:11,180 - #8 5
+INFO  20:32:11,180 - #27 )
+INFO  20:32:11,180 - #27 )
+INFO  20:32:11,180 - #7 ;
+INFO  20:32:11,181 - #5 }
+INFO  20:32:11,181 - #15 void
+INFO  20:32:11,181 - #3 f
+INFO  20:32:11,181 - #34 (
+INFO  20:32:11,181 - #27 )
+INFO  20:32:11,181 - #4 {
+INFO  20:32:11,181 - #21 if
+INFO  20:32:11,181 - #34 (
+INFO  20:32:11,182 - #8 5
+INFO  20:32:11,182 - #42 >
+INFO  20:32:11,182 - #8 6
+INFO  20:32:11,184 - #27 )
+INFO  20:32:11,184 - #3 x
+INFO  20:32:11,185 - #17 ++
+INFO  20:32:11,185 - #7 ;
+INFO  20:32:11,185 - #5 }
+INFO  20:32:11,185 - #5 }
+INFO  20:32:11,187 - Program(
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclListDerived1(
+    MethodDeclListDerived1(
+      MethodDeclListDerived2(
+      ) [MethodDeclListDerived2]
+      MethodDeclDerived1(
+        MethodReturnTypeAndNameDerived1(
+        ) [MethodReturnTypeAndNameDerived1]
+        NoFormalParams(
+        ) [NoFormalParams]
+        VarDeclListDerived2(
+        ) [VarDeclListDerived2]
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived1(
+                    StatementListDerived1(
+                      StatementListDerived2(
+                      ) [StatementListDerived2]
+                      StatementDerived1(
+                        DesignatorStatementDerived3(
+                          DesignatorDerived2(
+                          ) [DesignatorDerived2]
+                        ) [DesignatorStatementDerived3]
+                      ) [StatementDerived1]
+                    ) [StatementListDerived1]
+                    StatementDerived1(
+                      DesignatorStatementDerived4(
+                        DesignatorDerived2(
+                        ) [DesignatorDerived2]
+                      ) [DesignatorStatementDerived4]
+                    ) [StatementDerived1]
+                  ) [StatementListDerived1]
+                  StatementDerived1(
+                    DesignatorStatementDerived1(
+                      DesignatorDerived2(
+                      ) [DesignatorDerived2]
+                      AssignopDerived1(
+                      ) [AssignopDerived1]
+                      ExprDerived3(
+                        ExprDerived3(
+                          ExprDerived2(
+                            TermDerived2(
+                              TermDerived2(
+                                TermDerived2(
+                                  TermDerived1(
+                                    FactorDerived1(
+                                    ) [FactorDerived1]
+                                  ) [TermDerived1]
+                                  MulopDerived1(
+                                  ) [MulopDerived1]
+                                  FactorDerived1(
+                                  ) [FactorDerived1]
+                                ) [TermDerived2]
+                                MulopDerived1(
+                                ) [MulopDerived1]
+                                FactorDerived1(
+                                ) [FactorDerived1]
+                              ) [TermDerived2]
+                              MulopDerived2(
+                              ) [MulopDerived2]
+                              FactorDerived1(
+                              ) [FactorDerived1]
+                            ) [TermDerived2]
+                          ) [ExprDerived2]
+                          AddopDerived1(
+                          ) [AddopDerived1]
+                          TermDerived1(
+                            FactorDerived1(
+                            ) [FactorDerived1]
+                          ) [TermDerived1]
+                        ) [ExprDerived3]
+                        AddopDerived2(
+                        ) [AddopDerived2]
+                        TermDerived1(
+                          FactorDerived1(
+                          ) [FactorDerived1]
+                        ) [TermDerived1]
+                      ) [ExprDerived3]
+                    ) [DesignatorStatementDerived1]
+                  ) [StatementDerived1]
+                ) [StatementListDerived1]
+                StatementDerived1(
+                  DesignatorStatementDerived2(
+                    DesignatorDerived2(
+                    ) [DesignatorDerived2]
+                    ActParsOptionalDerived2(
+                    ) [ActParsOptionalDerived2]
+                  ) [DesignatorStatementDerived2]
+                ) [StatementDerived1]
+              ) [StatementListDerived1]
+              StatementDerived1(
+                DesignatorStatementDerived2(
+                  DesignatorDerived2(
+                  ) [DesignatorDerived2]
+                  ActParsOptionalDerived1(
+                    ActParsDerived2(
+                      ActParsDerived1(
+                        ExprDerived1(
+                          TermDerived1(
+                            FactorDerived1(
+                            ) [FactorDerived1]
+                          ) [TermDerived1]
+                        ) [ExprDerived1]
+                      ) [ActParsDerived1]
+                      ExprDerived3(
+                        ExprDerived2(
+                          TermDerived2(
+                            TermDerived1(
+                              FactorDerived1(
+                              ) [FactorDerived1]
+                            ) [TermDerived1]
+                            MulopDerived1(
+                            ) [MulopDerived1]
+                            FactorDerived1(
+                            ) [FactorDerived1]
+                          ) [TermDerived2]
+                        ) [ExprDerived2]
+                        AddopDerived1(
+                        ) [AddopDerived1]
+                        TermDerived1(
+                          FactorDerived1(
+                          ) [FactorDerived1]
+                        ) [TermDerived1]
+                      ) [ExprDerived3]
+                    ) [ActParsDerived2]
+                  ) [ActParsOptionalDerived1]
+                ) [DesignatorStatementDerived2]
+              ) [StatementDerived1]
+            ) [StatementListDerived1]
+            StatementDerived1(
+              DesignatorStatementDerived3(
+                DesignatorDerived3(
+                  DesignatorDerived2(
+                  ) [DesignatorDerived2]
+                ) [DesignatorDerived3]
+              ) [DesignatorStatementDerived3]
+            ) [StatementDerived1]
+          ) [StatementListDerived1]
+          StatementDerived1(
+            DesignatorStatementDerived2(
+              DesignatorDerived2(
+              ) [DesignatorDerived2]
+              ActParsOptionalDerived1(
+                ActParsDerived2(
+                  ActParsDerived1(
+                    ExprDerived2(
+                      TermDerived1(
+                        FactorDerived1(
+                        ) [FactorDerived1]
+                      ) [TermDerived1]
+                    ) [ExprDerived2]
+                  ) [ActParsDerived1]
+                  ExprDerived2(
+                    TermDerived1(
+                      FactorDerived4(
+                        DesignatorFactorDerived2(
+                          DesignatorDerived2(
+                          ) [DesignatorDerived2]
+                          ActParsOptionalDerived1(
+                            ActParsDerived2(
+                              ActParsDerived1(
+                                ExprDerived2(
+                                  TermDerived1(
+                                    FactorDerived1(
+                                    ) [FactorDerived1]
+                                  ) [TermDerived1]
+                                ) [ExprDerived2]
+                              ) [ActParsDerived1]
+                              ExprDerived2(
+                                TermDerived1(
+                                  FactorDerived1(
+                                  ) [FactorDerived1]
+                                ) [TermDerived1]
+                              ) [ExprDerived2]
+                            ) [ActParsDerived2]
+                          ) [ActParsOptionalDerived1]
+                        ) [DesignatorFactorDerived2]
+                      ) [FactorDerived4]
+                    ) [TermDerived1]
+                  ) [ExprDerived2]
+                ) [ActParsDerived2]
+              ) [ActParsOptionalDerived1]
+            ) [DesignatorStatementDerived2]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+      ) [MethodDeclDerived1]
+    ) [MethodDeclListDerived1]
+    MethodDeclDerived1(
+      MethodReturnTypeAndNameDerived1(
+      ) [MethodReturnTypeAndNameDerived1]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        StatementDerived2(
+          ConditionDerived1(
+            CondTermDerived1(
+              CondFactDerived1(
+                ExprDerived2(
+                  TermDerived1(
+                    FactorDerived1(
+                    ) [FactorDerived1]
+                  ) [TermDerived1]
+                ) [ExprDerived2]
+                RelopDerived3(
+                ) [RelopDerived3]
+                ExprDerived2(
+                  TermDerived1(
+                    FactorDerived1(
+                    ) [FactorDerived1]
+                  ) [TermDerived1]
+                ) [ExprDerived2]
+              ) [CondFactDerived1]
+            ) [CondTermDerived1]
+          ) [ConditionDerived1]
+          StatementDerived1(
+            DesignatorStatementDerived3(
+              DesignatorDerived2(
+              ) [DesignatorDerived2]
+            ) [DesignatorStatementDerived3]
+          ) [StatementDerived1]
+        ) [StatementDerived2]
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  20:32:11,188 - ===================================

@@ -1,0 +1,44 @@
+INFO  13:00:44,416 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  13:00:44,429 - #2 program
+INFO  13:00:44,429 - #3 TestProgram
+INFO  13:00:44,429 - #6 const
+INFO  13:00:44,430 - #3 bool
+INFO  13:00:44,430 - #3 x
+INFO  13:00:44,431 - #14 =
+INFO  13:00:44,431 - #8 1
+INFO  13:00:44,432 - #11 ,
+INFO  13:00:44,433 - #3 y
+INFO  13:00:44,433 - #14 =
+INFO  13:00:44,433 - #8 2
+INFO  13:00:44,434 - #11 ,
+INFO  13:00:44,434 - #3 z
+INFO  13:00:44,434 - #14 =
+INFO  13:00:44,434 - #8 3
+INFO  13:00:44,434 - #7 ;
+INFO  13:00:44,434 - #4 {
+INFO  13:00:44,434 - #5 }
+INFO  13:00:44,436 - Program(
+  DeclarationListConst(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    ConstDeclaration(
+      TypeName(
+      ) [TypeName]
+      NumberConstValue(
+      ) [NumberConstValue]
+      ConstAssignmentList(
+        ConstAssignmentList(
+          NoConstAssignmentList(
+          ) [NoConstAssignmentList]
+          NumberConstValue(
+          ) [NumberConstValue]
+        ) [ConstAssignmentList]
+        NumberConstValue(
+        ) [NumberConstValue]
+      ) [ConstAssignmentList]
+    ) [ConstDeclaration]
+  ) [DeclarationListConst]
+  MethodDeclListDerived2(
+  ) [MethodDeclListDerived2]
+) [Program]
+INFO  13:00:44,436 - ===================================

@@ -1,0 +1,75 @@
+INFO  14:05:59,639 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:05:59,664 - #2 program
+INFO  14:05:59,664 - #3 TestProgram
+INFO  14:05:59,664 - #4 {
+INFO  14:05:59,665 - #3 int
+INFO  14:05:59,665 - #3 main
+INFO  14:05:59,668 - #31 (
+INFO  14:05:59,668 - #3 int
+INFO  14:05:59,668 - #3 x
+INFO  14:05:59,668 - #12 [
+INFO  14:05:59,668 - #13 ]
+INFO  14:05:59,668 - #11 ,
+INFO  14:05:59,668 - #3 char
+INFO  14:05:59,668 - #3 y
+INFO  14:05:59,668 - #12 [
+INFO  14:05:59,668 - #13 ]
+INFO  14:05:59,668 - #11 ,
+INFO  14:05:59,669 - #3 bool
+INFO  14:05:59,669 - #3 nikola
+INFO  14:05:59,669 - #19 )
+INFO  14:05:59,669 - #3 int
+INFO  14:05:59,670 - #3 z
+INFO  14:05:59,670 - #7 ;
+INFO  14:05:59,671 - #4 {
+INFO  14:05:59,672 - #5 }
+INFO  14:05:59,673 - #5 }
+INFO  14:05:59,674 - Program(
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+      MethodReturnTypeAndNameDerived2(
+        TypeName(
+        ) [TypeName]
+      ) [MethodReturnTypeAndNameDerived2]
+      FormParsExist(
+        FormalParamsList(
+          FormalParamsList(
+            SingleFormalParam(
+              ArrayFormalParam(
+                TypeName(
+                ) [TypeName]
+              ) [ArrayFormalParam]
+            ) [SingleFormalParam]
+            ArrayFormalParam(
+              TypeName(
+              ) [TypeName]
+            ) [ArrayFormalParam]
+          ) [FormalParamsList]
+          VariableFormalParam(
+            TypeName(
+            ) [TypeName]
+          ) [VariableFormalParam]
+        ) [FormalParamsList]
+      ) [FormParsExist]
+      VarDeclListDerived1(
+        VarDeclListDerived2(
+        ) [VarDeclListDerived2]
+        VarDecl(
+          TypeName(
+          ) [TypeName]
+          SingleVarDeclaration(
+            VarDeclaration(
+            ) [VarDeclaration]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclListDerived1]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  14:05:59,674 - ===================================
