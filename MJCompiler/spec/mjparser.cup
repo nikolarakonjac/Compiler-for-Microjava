@@ -100,26 +100,26 @@ ConstAssignList ::= (ConstAssignmentList) ConstAssignList COMMA IDENT ASSIGN Con
 
 VarDecl ::= (VarDecl) Type VarDeclarations;
 
-VarDeclarations ::= (VarDeclarationList) VarDeclaration VarDeclarations
+VarDeclarations ::= (MultipleVarDeclaration) VarDeclaration VarDeclarations
 				|
 				(SingleVarDeclaration) FinalVarDeclaration
 				;
 
 		
-FinalVarDeclaration ::= IDENT SEMICOLON
+FinalVarDeclaration ::= (VarDeclFinalElem) IDENT SEMICOLON
 					|
-					IDENT LBRACKET RBRACKET SEMICOLON
+					(VarDeclArrayFinal) IDENT LBRACKET RBRACKET SEMICOLON
 					|
-					error SEMICOLON:l
+					(VarDeclErrorSemi) error SEMICOLON:l
 					{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: " + lleft, null); :}
 					;
 					
 
-VarDeclaration ::= (VarDeclaration) IDENT COMMA
+VarDeclaration ::= (VarDeclNextElem) IDENT COMMA
 				| 
-				(ArrayVarDeclaration) IDENT LBRACKET RBRACKET COMMA
+				(VarDeclNextArray) IDENT LBRACKET RBRACKET COMMA
 				|
-				error COMMA:l 
+				(VarDeclErrorComma) error COMMA:l 
 				{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka , na liniji: " + lleft, null); :}
 				;
 
@@ -130,21 +130,21 @@ Type ::= (ScopeResolution) IDENT COLON COLON IDENT
        (TypeName) IDENT
        ;		
 				
-MethodDeclList ::= MethodDeclList MethodDecl
+MethodDeclList ::= (MethodDeclarationList) MethodDeclList MethodDecl
 				|
-				/* epsilon */	
+				(NoMethodDeclarationList) /* epsilon */	
 				;
 
-VarDeclList ::= VarDeclList VarDecl
+VarDeclList ::= (VarDeclarationList) VarDeclList VarDecl
 			|
-			/* epsilon */
+			(NoVarDeclarationList) /* epsilon */
 			;
 				
-MethodDecl ::= MethodReturnTypeAndName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList  RBRACE;		
+MethodDecl ::= (MethodDeclaration) MethodReturnTypeAndName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList  RBRACE;		
 				
-MethodReturnTypeAndName ::= VOID IDENT
+MethodReturnTypeAndName ::= (MethodReturnTypeVoid) VOID IDENT
 						|
-						Type IDENT
+						(MethodReturnTypeNoVoid) Type IDENT
 						;
 								
 FormPars ::= (FormParsExist) FormalParams
@@ -164,153 +164,153 @@ FormalParam ::= (VariableFormalParam) Type IDENT
 
 /*	****************************************		*/
 				
-StatementList ::= StatementList Statement
+StatementList ::= (StatementListExist) StatementList Statement
 				|
-				/* epsilon */		
+				(StatementListDoesntExist) /* epsilon */		
 				;		
 
-Statement ::= DesignatorStatement
+Statement ::= (StatementDesignatorStatement) DesignatorStatement
 			|
-			IF LPAREN Condition RPAREN Statement
+			(StatementIf) IF LPAREN Condition RPAREN Statement
 			|
-			IF LPAREN Condition RPAREN Statement ELSE Statement
+			(StatementIfElse) IF LPAREN Condition RPAREN Statement ELSE Statement
 			|
-			BREAK SEMICOLON
+			(StatementBreak) BREAK SEMICOLON
 			|
-			CONTINUE SEMICOLON
+			(StatementContinue) CONTINUE SEMICOLON
 			|
-			RETURN SEMICOLON
+			(StatementReturn) RETURN SEMICOLON
 			|
-			RETURN Expr SEMICOLON
+			(StatementReturnWithExpr) RETURN Expr SEMICOLON
 			|
-			READ LPAREN Designator RPAREN SEMICOLON
+			(StatementRead) READ LPAREN Designator RPAREN SEMICOLON
 			|
-			PRINT LPAREN Expr RPAREN SEMICOLON
+			(StatementPrintExpr) PRINT LPAREN Expr RPAREN SEMICOLON
 			|
-			PRINT LPAREN Expr COMMA NUMBER RPAREN SEMICOLON
+			(StatementPrintExprNumber) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMICOLON
 			|
-			LBRACE StatementList RBRACE
+			(StatementStatementList) LBRACE StatementList RBRACE
 			;
 
 
-DesignatorStatement ::= Designator Assignop Expr SEMICOLON
+DesignatorStatement ::= (DesignatorStatementAssign) Designator Assignop Expr SEMICOLON
 					|
-					Designator LPAREN ActParsOptional RPAREN SEMICOLON
+					(DesignatorStatementMethod) Designator LPAREN ActParsOptional RPAREN SEMICOLON
 					|
-					Designator INC SEMICOLON
+					(DesignatorStatementInc) Designator INC SEMICOLON
 					|
-					Designator DEC SEMICOLON
+					(DesignatorStatementDec) Designator DEC SEMICOLON
 					|
-					error SEMICOLON:l 
+					(DesignatorStatementErrorSemi) error SEMICOLON:l 
 					{: parser.report_error("oporavak od greske za iskaz dodele do znaka ; na liniji: " + lleft, null); :}
 					;
 
-Designator ::= IDENT COLON COLON IDENT
+Designator ::= (Designator) IDENT COLON COLON IDENT
 			|
-			IDENT 
+			(DesignatorIdent) IDENT 
 			|
-			Designator DOT IDENT
+			(DesignatorDotAccess) Designator DOT IDENT
 			|
-			Designator LBRACKET Expr RBRACKET
+			(DesignatorArray) Designator LBRACKET Expr RBRACKET
 			;
 
-Expr ::= MINUS Term
+Expr ::= (ExprMinusTerm) MINUS Term
         |
-        Term
+        (ExprTerm) Term
         |
-        Expr Addop Term
+        (ExprAdd) Expr Addop Term
         ;
         
-Term ::= Factor
+Term ::= (TermFactor) Factor
 		|
-		Term Mulop Factor
+		(TermMul) Term Mulop Factor
 		;
 		
-Factor ::= NUMBER
+Factor ::= (FactorNumber) NUMBER
 		|
-		CHAR
+		(FactorChar) CHAR
 		|
-		BOOL
+		(FactorBool) BOOL
 		|
-		DesignatorFactor
+		(FactorDesignatorFactor) DesignatorFactor
 		|
-		NewFactor
+		(FactorNewFactor) NewFactor
 		|
-		ExprFactor
+		(FactorExprFactor) ExprFactor
 		;
 		
-DesignatorFactor ::= Designator
+DesignatorFactor ::= (DesignatorFactorDesignator) Designator
 					|
-					Designator LPAREN ActParsOptional RPAREN
+					(DesignatorFactorMethod) Designator LPAREN ActParsOptional RPAREN
 					;
 					
-NewFactor ::= NEW Type LBRACKET Expr RBRACKET
+NewFactor ::= (NewFactorArray) NEW Type LBRACKET Expr RBRACKET
 			|
-			NEW Type LPAREN ActParsOptional RPAREN
+			(NewFactorMethod) NEW Type LPAREN ActParsOptional RPAREN
 			;
 			
-ExprFactor ::= LPAREN Expr RPAREN;
+ExprFactor ::= (ExprFactor) LPAREN Expr RPAREN;
 
 
-ActParsOptional ::= ActPars
+ActParsOptional ::= (ActParsExist) ActPars
 		|
-		/* epsilon */
+		(NoActPars) /* epsilon */
 		;
 
-ActPars ::= Expr
+ActPars ::= (SingleActParsExpr) Expr
 		|
-		ActPars COMMA Expr
+		(ActParsList) ActPars COMMA Expr
 		;	
 		
-StaticInitializer ::= STATIC LBRACE StatementList RBRACE;
+StaticInitializer ::= (StaticInit) STATIC LBRACE StatementList RBRACE;
 		
 /* *********************************************** */	
 
-Condition ::= CondTerm 
+Condition ::= (ConditionCondTerm) CondTerm 
 			|
-			Condition OR CondTerm
+			(ConditionOr) Condition OR CondTerm
 			;
 
-CondTerm ::= CondFact 
+CondTerm ::= (CondTermFactor) CondFact 
 			|
-			CondTerm AND CondFact
+			(CondTermAnd) CondTerm AND CondFact
 			;
 
-CondFact ::= Expr Relop Expr
+CondFact ::= (CondFactMultiple) Expr Relop Expr
 			|
-			Expr
+			(CondFactExpr) Expr
 			;
 			
 
 /* *********************************************** */
 
-Label ::= IDENT;
+Label ::= (Label) IDENT;
 
-Assignop ::= ASSIGN;
+Assignop ::= (AssignOperator) ASSIGN;
 				
-Relop ::= EQUAL
+Relop ::= (EqualOperator) EQUAL
         |
-        NOT_EQUAL
+        (NotEqualOperator) NOT_EQUAL
         |
-        GREATER
+        (GreaterOperator) GREATER
         |
-        GREATER_EQUAL
+        (GreaterEqualOperator) GREATER_EQUAL
         |
-        LESS
+        (LessOperator) LESS
         |
-        LESS_EQUAL
+        (LessEqualOperator) LESS_EQUAL
         ;			
 				
-Addop ::= PLUS
+Addop ::= (PlusOperator) PLUS
         |
-        MINUS	
+        (MinusOperator) MINUS	
         ;			
 				
-Mulop ::= MUL
+Mulop ::= (MulOperator) MUL
         |
-        DIV
+        (DivOperator) DIV
         |
-        MOD
+        (ModOperator) MOD
         ;				
 				
 				

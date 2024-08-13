@@ -1,0 +1,156 @@
+INFO  15:32:34,727 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  15:32:34,777 - #2 program
+INFO  15:32:34,777 - #3 test301
+INFO  15:32:34,777 - #6 const
+INFO  15:32:34,778 - #3 int
+INFO  15:32:34,778 - #3 nula
+INFO  15:32:34,779 - #14 =
+INFO  15:32:34,779 - #8 0
+INFO  15:32:34,779 - #7 ;
+INFO  15:32:34,781 - #6 const
+INFO  15:32:34,781 - #3 int
+INFO  15:32:34,781 - #3 jedan
+INFO  15:32:34,781 - #14 =
+INFO  15:32:34,781 - #8 1
+INFO  15:32:34,782 - #7 ;
+INFO  15:32:34,782 - #6 const
+INFO  15:32:34,782 - #3 int
+INFO  15:32:34,782 - #3 pet
+INFO  15:32:34,782 - #14 =
+INFO  15:32:34,782 - #8 5
+INFO  15:32:34,782 - #7 ;
+INFO  15:32:34,789 - #3 int
+INFO  15:32:34,789 - #3 niz
+INFO  15:32:34,789 - #12 [
+INFO  15:32:34,789 - #13 ]
+INFO  15:32:34,789 - #11 ,
+INFO  15:32:34,789 - #3 niz2
+INFO  15:32:34,791 - #12 [
+INFO  15:32:34,791 - #13 ]
+INFO  15:32:34,791 - #7 ;
+INFO  15:32:34,791 - #3 char
+INFO  15:32:34,793 - #3 nizch
+INFO  15:32:34,793 - #12 [
+INFO  15:32:34,793 - #13 ]
+INFO  15:32:34,793 - #7 ;
+INFO  15:32:34,793 - #4 {
+INFO  15:32:34,793 - #15 void
+INFO  15:32:34,794 - #3 main
+INFO  15:32:34,794 - #33 (
+INFO  15:32:34,795 - #28 )
+INFO  15:32:34,796 - #3 int
+INFO  15:32:34,797 - #3 bodovi
+INFO  15:32:34,797 - #7 ;
+INFO  15:32:34,797 - #3 bool
+INFO  15:32:34,798 - #3 bt
+INFO  15:32:34,799 - #7 ;
+INFO  15:32:34,799 - #4 {
+INFO  15:32:34,799 - #3 x
+INFO  15:32:34,799 - #14 =
+INFO  15:32:34,800 - #3 x
+INFO  15:32:34,801 - #17 ++
+ERROR 15:32:34,801 - 
+Sintaksna greska na liniji 15
+INFO  15:32:34,801 - #7 ;
+INFO  15:32:34,801 - #5 }
+INFO  15:32:34,801 - #5 }
+ERROR 15:32:34,802 - oporavak od greske za iskaz dodele do znaka ; na liniji: 15
+INFO  15:32:34,804 - Program(
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListConst(
+        DeclarationListConst(
+          DeclarationListConst(
+            NoDeclarationList(
+            ) [NoDeclarationList]
+            ConstDeclaration(
+              TypeName(
+              ) [TypeName]
+              NumberConstValue(
+              ) [NumberConstValue]
+              NoConstAssignmentList(
+              ) [NoConstAssignmentList]
+            ) [ConstDeclaration]
+          ) [DeclarationListConst]
+          ConstDeclaration(
+            TypeName(
+            ) [TypeName]
+            NumberConstValue(
+            ) [NumberConstValue]
+            NoConstAssignmentList(
+            ) [NoConstAssignmentList]
+          ) [ConstDeclaration]
+        ) [DeclarationListConst]
+        ConstDeclaration(
+          TypeName(
+          ) [TypeName]
+          NumberConstValue(
+          ) [NumberConstValue]
+          NoConstAssignmentList(
+          ) [NoConstAssignmentList]
+        ) [ConstDeclaration]
+      ) [DeclarationListConst]
+      VarDecl(
+        TypeName(
+        ) [TypeName]
+        VarDeclarationList(
+          ArrayVarDeclaration(
+          ) [ArrayVarDeclaration]
+          SingleVarDeclaration(
+            FinalVarDeclarationDerived2(
+            ) [FinalVarDeclarationDerived2]
+          ) [SingleVarDeclaration]
+        ) [VarDeclarationList]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      TypeName(
+      ) [TypeName]
+      SingleVarDeclaration(
+        FinalVarDeclarationDerived2(
+        ) [FinalVarDeclarationDerived2]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+      MethodReturnTypeAndNameDerived1(
+      ) [MethodReturnTypeAndNameDerived1]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclListDerived1(
+        VarDeclListDerived1(
+          VarDeclListDerived2(
+          ) [VarDeclListDerived2]
+          VarDecl(
+            TypeName(
+            ) [TypeName]
+            SingleVarDeclaration(
+              FinalVarDeclarationDerived1(
+              ) [FinalVarDeclarationDerived1]
+            ) [SingleVarDeclaration]
+          ) [VarDecl]
+        ) [VarDeclListDerived1]
+        VarDecl(
+          TypeName(
+          ) [TypeName]
+          SingleVarDeclaration(
+            FinalVarDeclarationDerived1(
+            ) [FinalVarDeclarationDerived1]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        StatementDerived1(
+          DesignatorStatementDerived5(
+          ) [DesignatorStatementDerived5]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  15:32:34,804 - ===================================
