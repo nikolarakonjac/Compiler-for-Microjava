@@ -1,28 +1,20 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/7/2024 21:0:49
+// 13/7/2024 15:12:37
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class VarDeclarationList extends VarDeclarations {
 
-    private VarDeclarations VarDeclarations;
     private VarDeclaration VarDeclaration;
+    private VarDeclarations VarDeclarations;
 
-    public VarDeclarationList (VarDeclarations VarDeclarations, VarDeclaration VarDeclaration) {
-        this.VarDeclarations=VarDeclarations;
-        if(VarDeclarations!=null) VarDeclarations.setParent(this);
+    public VarDeclarationList (VarDeclaration VarDeclaration, VarDeclarations VarDeclarations) {
         this.VarDeclaration=VarDeclaration;
         if(VarDeclaration!=null) VarDeclaration.setParent(this);
-    }
-
-    public VarDeclarations getVarDeclarations() {
-        return VarDeclarations;
-    }
-
-    public void setVarDeclarations(VarDeclarations VarDeclarations) {
         this.VarDeclarations=VarDeclarations;
+        if(VarDeclarations!=null) VarDeclarations.setParent(this);
     }
 
     public VarDeclaration getVarDeclaration() {
@@ -33,24 +25,32 @@ public class VarDeclarationList extends VarDeclarations {
         this.VarDeclaration=VarDeclaration;
     }
 
+    public VarDeclarations getVarDeclarations() {
+        return VarDeclarations;
+    }
+
+    public void setVarDeclarations(VarDeclarations VarDeclarations) {
+        this.VarDeclarations=VarDeclarations;
+    }
+
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(VarDeclarations!=null) VarDeclarations.accept(visitor);
         if(VarDeclaration!=null) VarDeclaration.accept(visitor);
+        if(VarDeclarations!=null) VarDeclarations.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(VarDeclarations!=null) VarDeclarations.traverseTopDown(visitor);
         if(VarDeclaration!=null) VarDeclaration.traverseTopDown(visitor);
+        if(VarDeclarations!=null) VarDeclarations.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(VarDeclarations!=null) VarDeclarations.traverseBottomUp(visitor);
         if(VarDeclaration!=null) VarDeclaration.traverseBottomUp(visitor);
+        if(VarDeclarations!=null) VarDeclarations.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -59,14 +59,14 @@ public class VarDeclarationList extends VarDeclarations {
         buffer.append(tab);
         buffer.append("VarDeclarationList(\n");
 
-        if(VarDeclarations!=null)
-            buffer.append(VarDeclarations.toString("  "+tab));
+        if(VarDeclaration!=null)
+            buffer.append(VarDeclaration.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(VarDeclaration!=null)
-            buffer.append(VarDeclaration.toString("  "+tab));
+        if(VarDeclarations!=null)
+            buffer.append(VarDeclarations.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

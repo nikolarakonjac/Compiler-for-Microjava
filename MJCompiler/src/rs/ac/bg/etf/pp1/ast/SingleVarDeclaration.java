@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/7/2024 21:0:49
+// 13/7/2024 15:12:37
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class SingleVarDeclaration extends VarDeclarations {
 
-    private VarDeclaration VarDeclaration;
+    private FinalVarDeclaration FinalVarDeclaration;
 
-    public SingleVarDeclaration (VarDeclaration VarDeclaration) {
-        this.VarDeclaration=VarDeclaration;
-        if(VarDeclaration!=null) VarDeclaration.setParent(this);
+    public SingleVarDeclaration (FinalVarDeclaration FinalVarDeclaration) {
+        this.FinalVarDeclaration=FinalVarDeclaration;
+        if(FinalVarDeclaration!=null) FinalVarDeclaration.setParent(this);
     }
 
-    public VarDeclaration getVarDeclaration() {
-        return VarDeclaration;
+    public FinalVarDeclaration getFinalVarDeclaration() {
+        return FinalVarDeclaration;
     }
 
-    public void setVarDeclaration(VarDeclaration VarDeclaration) {
-        this.VarDeclaration=VarDeclaration;
+    public void setFinalVarDeclaration(FinalVarDeclaration FinalVarDeclaration) {
+        this.FinalVarDeclaration=FinalVarDeclaration;
     }
 
     public void accept(Visitor visitor) {
@@ -27,16 +27,16 @@ public class SingleVarDeclaration extends VarDeclarations {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(VarDeclaration!=null) VarDeclaration.accept(visitor);
+        if(FinalVarDeclaration!=null) FinalVarDeclaration.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(VarDeclaration!=null) VarDeclaration.traverseTopDown(visitor);
+        if(FinalVarDeclaration!=null) FinalVarDeclaration.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(VarDeclaration!=null) VarDeclaration.traverseBottomUp(visitor);
+        if(FinalVarDeclaration!=null) FinalVarDeclaration.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -45,8 +45,8 @@ public class SingleVarDeclaration extends VarDeclarations {
         buffer.append(tab);
         buffer.append("SingleVarDeclaration(\n");
 
-        if(VarDeclaration!=null)
-            buffer.append(VarDeclaration.toString("  "+tab));
+        if(FinalVarDeclaration!=null)
+            buffer.append(FinalVarDeclaration.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

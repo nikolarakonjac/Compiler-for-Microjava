@@ -66,7 +66,7 @@ terminal RANGE, NAMESPACE, CLASS;
 nonterminal Program, DeclarationList, MethodDeclList, ConstDecl, VarDecl, ConstAssign, ConstAssignList, Type;
 nonterminal VarDeclaration, VarDeclarations, MethodDecl, VarDeclList, StatementList, FormPars, FormalParam, FormalParams;
 nonterminal MethodReturnTypeAndName, Statement, DesignatorStatement, Designator,  Expr, Label, Term, Factor, DesignatorFactor, NewFactor, ExprFactor;
-nonterminal ActParsOptional, ActPars, StaticInitializer, CondFact, Condition, CondTerm;
+nonterminal ActParsOptional, ActPars, StaticInitializer, CondFact, Condition, CondTerm, FinalVarDeclaration;
 nonterminal Relop, Assignop, Addop, Mulop; 
 
 
@@ -98,17 +98,32 @@ ConstAssignList ::= (ConstAssignmentList) ConstAssignList COMMA IDENT ASSIGN Con
 				(NoConstAssignmentList) /* epsilon */
 				;
 
-VarDecl ::= (VarDecl) Type VarDeclarations SEMICOLON;
+VarDecl ::= (VarDecl) Type VarDeclarations;
 
-VarDeclaration ::= (VarDeclaration) IDENT
-				| 
-				(ArrayVarDeclaration) IDENT LBRACKET RBRACKET
-				;
-
-VarDeclarations ::= (VarDeclarationList) VarDeclarations COMMA VarDeclaration
+VarDeclarations ::= (VarDeclarationList) VarDeclaration VarDeclarations
 				|
-				(SingleVarDeclaration) VarDeclaration
+				(SingleVarDeclaration) FinalVarDeclaration
 				;
+
+		
+FinalVarDeclaration ::= IDENT SEMICOLON
+					|
+					IDENT LBRACKET RBRACKET SEMICOLON
+					|
+					error SEMICOLON:l
+					{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: " + lleft, null); :}
+					;
+					
+
+VarDeclaration ::= (VarDeclaration) IDENT COMMA
+				| 
+				(ArrayVarDeclaration) IDENT LBRACKET RBRACKET COMMA
+				|
+				error COMMA:l 
+				{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka , na liniji: " + lleft, null); :}
+				;
+
+
 				
 Type ::= (ScopeResolution) IDENT COLON COLON IDENT
        |
@@ -154,7 +169,7 @@ StatementList ::= StatementList Statement
 				/* epsilon */		
 				;		
 
-Statement ::= DesignatorStatement SEMICOLON
+Statement ::= DesignatorStatement
 			|
 			IF LPAREN Condition RPAREN Statement
 			|
@@ -177,15 +192,17 @@ Statement ::= DesignatorStatement SEMICOLON
 			LBRACE StatementList RBRACE
 			;
 
-StaticInitializer ::= STATIC LBRACE StatementList RBRACE;
-			
-DesignatorStatement ::= Designator Assignop Expr 
+
+DesignatorStatement ::= Designator Assignop Expr SEMICOLON
 					|
-					Designator LPAREN ActParsOptional RPAREN
+					Designator LPAREN ActParsOptional RPAREN SEMICOLON
 					|
-					Designator INC
+					Designator INC SEMICOLON
 					|
-					Designator DEC
+					Designator DEC SEMICOLON
+					|
+					error SEMICOLON:l 
+					{: parser.report_error("oporavak od greske za iskaz dodele do znaka ; na liniji: " + lleft, null); :}
 					;
 
 Designator ::= IDENT COLON COLON IDENT
@@ -245,6 +262,7 @@ ActPars ::= Expr
 		ActPars COMMA Expr
 		;	
 		
+StaticInitializer ::= STATIC LBRACE StatementList RBRACE;
 		
 /* *********************************************** */	
 

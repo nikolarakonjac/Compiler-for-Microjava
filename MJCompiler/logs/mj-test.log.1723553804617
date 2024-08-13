@@ -1,0 +1,12 @@
+INFO  14:56:36,933 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:56:36,981 - #2 program
+INFO  14:56:36,981 - #3 TestProgram
+INFO  14:56:36,981 - #3 int
+INFO  14:56:36,982 - #3 y
+INFO  14:56:36,983 - #12 [
+INFO  14:56:36,983 - #13 ]
+INFO  14:56:36,983 - #4 {
+ERROR 14:56:36,983 - 
+Sintaksna greska na liniji 6
+INFO  14:56:36,983 - #5 }
+ERROR 14:56:36,984 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 13

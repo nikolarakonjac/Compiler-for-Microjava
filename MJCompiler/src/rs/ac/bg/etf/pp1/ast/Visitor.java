@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 12/7/2024 21:0:49
+// 13/7/2024 15:12:37
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -18,6 +18,7 @@ public interface Visitor {
     public void visit(Addop Addop);
     public void visit(Factor Factor);
     public void visit(CondTerm CondTerm);
+    public void visit(FinalVarDeclaration FinalVarDeclaration);
     public void visit(Designator Designator);
     public void visit(Term Term);
     public void visit(Condition Condition);
@@ -60,6 +61,7 @@ public interface Visitor {
     public void visit(CondTermDerived1 CondTermDerived1);
     public void visit(ConditionDerived2 ConditionDerived2);
     public void visit(ConditionDerived1 ConditionDerived1);
+    public void visit(StaticInitializerDerived1 StaticInitializerDerived1);
     public void visit(ActParsDerived2 ActParsDerived2);
     public void visit(ActParsDerived1 ActParsDerived1);
     public void visit(ActParsOptionalDerived2 ActParsOptionalDerived2);
@@ -84,11 +86,11 @@ public interface Visitor {
     public void visit(DesignatorDerived3 DesignatorDerived3);
     public void visit(DesignatorDerived2 DesignatorDerived2);
     public void visit(DesignatorDerived1 DesignatorDerived1);
+    public void visit(DesignatorStatementDerived5 DesignatorStatementDerived5);
     public void visit(DesignatorStatementDerived4 DesignatorStatementDerived4);
     public void visit(DesignatorStatementDerived3 DesignatorStatementDerived3);
     public void visit(DesignatorStatementDerived2 DesignatorStatementDerived2);
     public void visit(DesignatorStatementDerived1 DesignatorStatementDerived1);
-    public void visit(StaticInitializerDerived1 StaticInitializerDerived1);
     public void visit(StatementDerived11 StatementDerived11);
     public void visit(StatementDerived10 StatementDerived10);
     public void visit(StatementDerived9 StatementDerived9);
@@ -117,10 +119,14 @@ public interface Visitor {
     public void visit(MethodDeclListDerived1 MethodDeclListDerived1);
     public void visit(TypeName TypeName);
     public void visit(ScopeResolution ScopeResolution);
-    public void visit(SingleVarDeclaration SingleVarDeclaration);
-    public void visit(VarDeclarationList VarDeclarationList);
+    public void visit(VarDeclarationDerived1 VarDeclarationDerived1);
     public void visit(ArrayVarDeclaration ArrayVarDeclaration);
     public void visit(VarDeclaration VarDeclaration);
+    public void visit(FinalVarDeclarationDerived3 FinalVarDeclarationDerived3);
+    public void visit(FinalVarDeclarationDerived2 FinalVarDeclarationDerived2);
+    public void visit(FinalVarDeclarationDerived1 FinalVarDeclarationDerived1);
+    public void visit(SingleVarDeclaration SingleVarDeclaration);
+    public void visit(VarDeclarationList VarDeclarationList);
     public void visit(VarDecl VarDecl);
     public void visit(NoConstAssignmentList NoConstAssignmentList);
     public void visit(ConstAssignmentList ConstAssignmentList);

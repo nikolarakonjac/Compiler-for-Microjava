@@ -1,0 +1,21 @@
+INFO  14:55:27,672 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:55:27,723 - #2 program
+INFO  14:55:27,723 - #3 TestProgram
+INFO  14:55:27,723 - #3 int
+INFO  14:55:27,723 - #3 x
+INFO  14:55:27,725 - #3 int
+ERROR 14:55:27,725 - 
+Sintaksna greska na liniji 4
+INFO  14:55:27,725 - #3 y
+INFO  14:55:27,725 - #12 [
+INFO  14:55:27,725 - #13 ]
+INFO  14:55:27,726 - #11 ,
+INFO  14:55:27,726 - #3 z
+INFO  14:55:27,726 - #11 ,
+INFO  14:55:27,726 - #3 x
+ERROR 14:55:27,726 - Izvrsen oporavak od greske pri deklaraciji globalne varijable do , na liniji: 3
+INFO  14:55:27,727 - #4 {
+ERROR 14:55:27,727 - 
+Sintaksna greska na liniji 6
+INFO  14:55:27,727 - #5 }
+ERROR 14:55:27,728 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 13

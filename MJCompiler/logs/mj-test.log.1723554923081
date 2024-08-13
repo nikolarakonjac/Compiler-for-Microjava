@@ -1,0 +1,5 @@
+INFO  15:15:09,187 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  15:15:09,231 - #3 Test301
+ERROR 15:15:09,231 - 
+Sintaksna greska na liniji 1
+ERROR 15:15:09,231 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 1

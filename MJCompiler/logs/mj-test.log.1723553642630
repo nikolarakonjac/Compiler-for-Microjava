@@ -1,0 +1,44 @@
+INFO  14:53:45,607 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:53:45,646 - #2 program
+INFO  14:53:45,648 - #3 TestProgram
+INFO  14:53:45,648 - #3 int
+INFO  14:53:45,648 - #3 x
+INFO  14:53:45,648 - #7 ;
+INFO  14:53:45,648 - #3 int
+INFO  14:53:45,650 - #3 y
+INFO  14:53:45,650 - #12 [
+INFO  14:53:45,650 - #13 ]
+INFO  14:53:45,650 - #3 z
+ERROR 14:53:45,650 - 
+Sintaksna greska na liniji 4
+INFO  14:53:45,650 - #7 ;
+INFO  14:53:45,650 - #4 {
+INFO  14:53:45,650 - #5 }
+ERROR 14:53:45,651 - Izvrsen oporavak od greske pri deklaraciji globalne varijable do ; na liniji: 4
+INFO  14:53:45,653 - Program(
+  DeclarationListVar(
+    DeclarationListVar(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      VarDecl(
+        TypeName(
+        ) [TypeName]
+        SingleVarDeclaration(
+          FinalVarDeclarationDerived1(
+          ) [FinalVarDeclarationDerived1]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      TypeName(
+      ) [TypeName]
+      SingleVarDeclaration(
+        FinalVarDeclarationDerived3(
+        ) [FinalVarDeclarationDerived3]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclListDerived2(
+  ) [MethodDeclListDerived2]
+) [Program]
+INFO  14:53:45,663 - ===================================

@@ -96,6 +96,7 @@ nonterminal StaticInitializer StaticInitializer;
 nonterminal CondFact CondFact;
 nonterminal Condition Condition;
 nonterminal CondTerm CondTerm;
+nonterminal FinalVarDeclaration FinalVarDeclaration;
 nonterminal Relop Relop;
 nonterminal Assignop Assignop;
 nonterminal Addop Addop;
@@ -130,17 +131,30 @@ ConstAssignList ::= (ConstAssignmentList) ConstAssignList:C1 COMMA IDENT ASSIGN 
 				(NoConstAssignmentList) {: RESULT=new NoConstAssignmentList(); :} /* epsilon */
 				;
 
-VarDecl ::= (VarDecl) Type:T1 VarDeclarations:V2 SEMICOLON {: RESULT=new VarDecl(T1, V2); RESULT.setLine(T1left); :};
+VarDecl ::= (VarDecl) Type:T1 VarDeclarations:V2 {: RESULT=new VarDecl(T1, V2); RESULT.setLine(T1left); :};
 
-VarDeclaration ::= (VarDeclaration) IDENT {: RESULT=new VarDeclaration(); :}
-				| 
-				(ArrayVarDeclaration) IDENT LBRACKET RBRACKET {: RESULT=new ArrayVarDeclaration(); :}
-				;
-
-VarDeclarations ::= (VarDeclarationList) VarDeclarations:V1 COMMA VarDeclaration:V2 {: RESULT=new VarDeclarationList(V1, V2); RESULT.setLine(V1left); :}
+VarDeclarations ::= (VarDeclarationList) VarDeclaration:V1 VarDeclarations:V2 {: RESULT=new VarDeclarationList(V1, V2); RESULT.setLine(V1left); :}
 				|
-				(SingleVarDeclaration) VarDeclaration:V1 {: RESULT=new SingleVarDeclaration(V1); RESULT.setLine(V1left); :}
+				(SingleVarDeclaration) FinalVarDeclaration:F1 {: RESULT=new SingleVarDeclaration(F1); RESULT.setLine(F1left); :}
 				;
+				
+FinalVarDeclaration ::= IDENT SEMICOLON {: RESULT=new FinalVarDeclarationDerived1(); :}
+					|
+					IDENT LBRACKET RBRACKET SEMICOLON {: RESULT=new FinalVarDeclarationDerived2(); :}
+					|
+					error SEMICOLON:l
+					{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: " + lleft, null); :} {: RESULT=new FinalVarDeclarationDerived3(); :}
+					;
+
+VarDeclaration ::= (VarDeclaration) IDENT COMMA {: RESULT=new VarDeclaration(); :}
+				| 
+				(ArrayVarDeclaration) IDENT LBRACKET RBRACKET COMMA {: RESULT=new ArrayVarDeclaration(); :}
+				|
+				error COMMA:l 
+				{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka , na liniji: " + lleft, null); :} {: RESULT=new VarDeclarationDerived1(); :}
+				;
+
+
 				
 Type ::= (ScopeResolution) IDENT COLON COLON IDENT {: RESULT=new ScopeResolution(); :}
        |
@@ -186,7 +200,7 @@ StatementList ::= StatementList:S1 Statement:S2 {: RESULT=new StatementListDeriv
 				/* epsilon */		
 				;		
 
-Statement ::= DesignatorStatement:D1 SEMICOLON {: RESULT=new StatementDerived1(D1); RESULT.setLine(D1left); :}
+Statement ::= DesignatorStatement:D1 {: RESULT=new StatementDerived1(D1); RESULT.setLine(D1left); :}
 			|
 			IF LPAREN Condition:C1 RPAREN Statement:S2 {: RESULT=new StatementDerived2(C1, S2); RESULT.setLine(C1left); :}
 			|
@@ -209,15 +223,17 @@ Statement ::= DesignatorStatement:D1 SEMICOLON {: RESULT=new StatementDerived1(D
 			LBRACE StatementList:S1 RBRACE {: RESULT=new StatementDerived11(S1); RESULT.setLine(S1left); :}
 			;
 
-StaticInitializer ::= STATIC LBRACE StatementList:S1 RBRACE {: RESULT=new StaticInitializerDerived1(S1); RESULT.setLine(S1left); :};
 			
-DesignatorStatement ::= Designator:D1 Assignop:A2 Expr:E3 {: RESULT=new DesignatorStatementDerived1(D1, A2, E3); RESULT.setLine(D1left); :} 
+DesignatorStatement ::= Designator:D1 Assignop:A2 Expr:E3 SEMICOLON {: RESULT=new DesignatorStatementDerived1(D1, A2, E3); RESULT.setLine(D1left); :}
 					|
-					Designator:D1 LPAREN ActParsOptional:A2 RPAREN {: RESULT=new DesignatorStatementDerived2(D1, A2); RESULT.setLine(D1left); :}
+					Designator:D1 LPAREN ActParsOptional:A2 RPAREN SEMICOLON {: RESULT=new DesignatorStatementDerived2(D1, A2); RESULT.setLine(D1left); :}
 					|
-					Designator:D1 INC {: RESULT=new DesignatorStatementDerived3(D1); RESULT.setLine(D1left); :}
+					Designator:D1 INC SEMICOLON {: RESULT=new DesignatorStatementDerived3(D1); RESULT.setLine(D1left); :}
 					|
-					Designator:D1 DEC {: RESULT=new DesignatorStatementDerived4(D1); RESULT.setLine(D1left); :}
+					Designator:D1 DEC SEMICOLON {: RESULT=new DesignatorStatementDerived4(D1); RESULT.setLine(D1left); :}
+					|
+					error SEMICOLON:l 
+					{: parser.report_error("oporavak od greske za iskaz dodele do znaka ; na liniji: " + lleft, null); :} {: RESULT=new DesignatorStatementDerived5(); :}
 					;
 
 Designator ::= IDENT COLON COLON IDENT {: RESULT=new DesignatorDerived1(); :}
@@ -277,6 +293,7 @@ ActPars ::= Expr:E1 {: RESULT=new ActParsDerived1(E1); RESULT.setLine(E1left); :
 		ActPars:A1 COMMA Expr:E2 {: RESULT=new ActParsDerived2(A1, E2); RESULT.setLine(A1left); :}
 		;	
 		
+StaticInitializer ::= STATIC LBRACE StatementList:S1 RBRACE {: RESULT=new StaticInitializerDerived1(S1); RESULT.setLine(S1left); :};
 		
 /* *********************************************** */	
 
@@ -327,6 +344,9 @@ Mulop ::= MUL {: RESULT=new MulopDerived1(); :}
         MOD {: RESULT=new MulopDerived3(); :}
         ;				
 				
+				
+				
+
 				
 				
 				

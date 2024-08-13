@@ -1,0 +1,46 @@
+INFO  15:14:38,024 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  15:14:38,076 - #2 program
+INFO  15:14:38,076 - #3 TestProgram
+INFO  15:14:38,076 - #4 {
+INFO  15:14:38,077 - #15 void
+INFO  15:14:38,077 - #3 main
+INFO  15:14:38,077 - #33 (
+INFO  15:14:38,078 - #28 )
+INFO  15:14:38,079 - #4 {
+INFO  15:14:38,080 - #3 x
+INFO  15:14:38,080 - #14 =
+INFO  15:14:38,081 - #3 x
+INFO  15:14:38,082 - #17 ++
+ERROR 15:14:38,083 - 
+Sintaksna greska na liniji 5
+INFO  15:14:38,083 - #3 y
+INFO  15:14:38,083 - #17 ++
+INFO  15:14:38,083 - #7 ;
+INFO  15:14:38,083 - #5 }
+INFO  15:14:38,083 - #5 }
+ERROR 15:14:38,084 - oporavak od greske za iskaz dodele do znaka ; na liniji: 5
+INFO  15:14:38,086 - Program(
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDeclDerived1(
+      MethodReturnTypeAndNameDerived1(
+      ) [MethodReturnTypeAndNameDerived1]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclListDerived2(
+      ) [VarDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        StatementDerived1(
+          DesignatorStatementDerived5(
+          ) [DesignatorStatementDerived5]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  15:14:38,086 - ===================================
