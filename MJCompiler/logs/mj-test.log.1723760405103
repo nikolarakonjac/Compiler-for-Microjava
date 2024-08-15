@@ -1,0 +1,74 @@
+INFO  00:19:49,933 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  00:19:50,024 - #2 program
+INFO  00:19:50,025 - #43 test301
+INFO  00:19:50,025 - #43 int
+INFO  00:19:50,027 - #43 x
+INFO  00:19:50,028 - #6 ;
+INFO  00:19:50,029 - #43 int
+INFO  00:19:50,030 - #43 y
+INFO  00:19:50,030 - #6 ;
+INFO  00:19:50,030 - #3 {
+INFO  00:19:50,031 - #43 int
+INFO  00:19:50,032 - #43 main
+INFO  00:19:50,032 - #29 (
+INFO  00:19:50,032 - #24 )
+INFO  00:19:50,033 - #3 {
+INFO  00:19:50,034 - #4 }
+INFO  00:19:50,036 - #4 }
+INFO  00:19:50,045 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           int
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           x
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         y
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeNoVoid(
+        TypeName(
+         int
+        ) [TypeName]
+       main
+      ) [MethodReturnTypeNoVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListDoesntExist(
+      ) [StatementListDoesntExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  00:19:50,048 - ===================================
+INFO  00:19:50,052 - Promenljiva x deklarisana na liniji 3
+INFO  00:19:50,052 - Promenljiva y deklarisana na liniji 3
+INFO  00:19:50,052 - usao u MethDecl 

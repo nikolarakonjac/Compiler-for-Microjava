@@ -1,0 +1,76 @@
+INFO  23:58:27,749 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  23:58:27,838 - #2 program
+INFO  23:58:27,838 - #43 test301
+INFO  23:58:27,838 - #43 int
+INFO  23:58:27,840 - #43 x
+INFO  23:58:27,842 - #7 ,
+INFO  23:58:27,843 - #43 y
+INFO  23:58:27,843 - #7 ,
+INFO  23:58:27,843 - #43 z
+INFO  23:58:27,843 - #6 ;
+INFO  23:58:27,843 - #3 {
+INFO  23:58:27,845 - #11 void
+INFO  23:58:27,846 - #43 main
+INFO  23:58:27,846 - #29 (
+INFO  23:58:27,846 - #24 )
+INFO  23:58:27,847 - #3 {
+INFO  23:58:27,848 - #4 }
+INFO  23:58:27,849 - #4 }
+INFO  23:58:27,858 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        Type(
+         int
+        ) [Type]
+      ) [VarDeclType]
+      MultipleVarDeclaration(
+        VarDeclNextElem(
+         x
+        ) [VarDeclNextElem]
+        MultipleVarDeclaration(
+          VarDeclNextElem(
+           y
+          ) [VarDeclNextElem]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             z
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [MultipleVarDeclaration]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListDoesntExist(
+      ) [StatementListDoesntExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  23:58:27,864 - ===================================
+INFO  23:58:27,867 - Promenljiva x deklarisana na liniji 3
+INFO  23:58:27,867 - Promenljiva y deklarisana na liniji 3
+INFO  23:58:27,867 - Promenljiva z deklarisana na liniji 3
+INFO  23:58:27,867 - usao u MethodReturnTypeVoid na liniji 7
+INFO  23:58:27,867 - prosao if na liniji 7
+INFO  23:58:27,867 - dodao meth main u tabelu simbola na liniji 7
+INFO  23:58:27,867 - obradjuje se fja main na liniji 7
+INFO  23:58:27,867 - usao u MethDecl 
+INFO  23:58:27,867 - dodao u locals 
+INFO  23:58:27,867 - ===================================
+ERROR 23:58:27,868 - Parsiranje NIJE uspesno zavrseno!

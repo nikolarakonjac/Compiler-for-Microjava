@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/7/2024 13:12:50
+// 16/7/2024 0:33:54
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,12 +8,12 @@ package rs.ac.bg.etf.pp1.ast;
 public class MethodReturnTypeNoVoid extends MethodReturnTypeAndName {
 
     private Type Type;
-    private String I2;
+    private String methodName;
 
-    public MethodReturnTypeNoVoid (Type Type, String I2) {
+    public MethodReturnTypeNoVoid (Type Type, String methodName) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
-        this.I2=I2;
+        this.methodName=methodName;
     }
 
     public Type getType() {
@@ -24,12 +24,12 @@ public class MethodReturnTypeNoVoid extends MethodReturnTypeAndName {
         this.Type=Type;
     }
 
-    public String getI2() {
-        return I2;
+    public String getMethodName() {
+        return methodName;
     }
 
-    public void setI2(String I2) {
-        this.I2=I2;
+    public void setMethodName(String methodName) {
+        this.methodName=methodName;
     }
 
     public void accept(Visitor visitor) {
@@ -61,7 +61,7 @@ public class MethodReturnTypeNoVoid extends MethodReturnTypeAndName {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+I2);
+        buffer.append(" "+tab+methodName);
         buffer.append("\n");
 
         buffer.append(tab);

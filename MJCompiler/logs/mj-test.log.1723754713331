@@ -1,0 +1,19 @@
+INFO  22:41:13,374 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  22:41:13,525 - #2 program
+INFO  22:41:13,526 - #43 test301
+INFO  22:41:13,526 - #43 int
+INFO  22:41:13,529 - #43 k
+INFO  22:41:13,532 - #29 (
+ERROR 22:41:13,532 - 
+Sintaksna greska na liniji 3
+INFO  22:41:13,532 - #24 )
+INFO  22:41:13,533 - #43 int
+INFO  22:41:13,533 - #43 c
+INFO  22:41:13,535 - #6 ;
+INFO  22:41:13,536 - #3 {
+INFO  22:41:13,536 - #43 c
+INFO  22:41:13,536 - #10 =
+ERROR 22:41:13,537 - oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: 3
+ERROR 22:41:13,543 - 
+Sintaksna greska na liniji 6
+ERROR 22:41:13,543 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6

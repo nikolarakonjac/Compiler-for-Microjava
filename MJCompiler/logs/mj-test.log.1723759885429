@@ -1,0 +1,151 @@
+INFO  00:10:03,282 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  00:10:03,367 - #2 program
+INFO  00:10:03,368 - #43 test301
+INFO  00:10:03,368 - #43 int
+INFO  00:10:03,370 - #43 x
+INFO  00:10:03,372 - #7 ,
+INFO  00:10:03,372 - #43 y
+INFO  00:10:03,372 - #7 ,
+INFO  00:10:03,372 - #43 z
+INFO  00:10:03,372 - #6 ;
+INFO  00:10:03,372 - #3 {
+INFO  00:10:03,373 - #11 void
+INFO  00:10:03,374 - #43 main
+INFO  00:10:03,375 - #29 (
+INFO  00:10:03,375 - #24 )
+INFO  00:10:03,376 - #43 int
+INFO  00:10:03,377 - #43 c
+INFO  00:10:03,377 - #6 ;
+INFO  00:10:03,377 - #43 int
+INFO  00:10:03,377 - #43 k
+INFO  00:10:03,377 - #6 ;
+INFO  00:10:03,378 - #3 {
+INFO  00:10:03,378 - #43 c
+INFO  00:10:03,379 - #10 =
+INFO  00:10:03,379 - #40 5
+INFO  00:10:03,381 - #6 ;
+INFO  00:10:03,381 - #4 }
+INFO  00:10:03,381 - #11 void
+INFO  00:10:03,382 - #43 main
+INFO  00:10:03,383 - #29 (
+INFO  00:10:03,383 - #24 )
+INFO  00:10:03,383 - #3 {
+INFO  00:10:03,383 - #4 }
+INFO  00:10:03,383 - #4 }
+INFO  00:10:03,391 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        Type(
+         int
+        ) [Type]
+      ) [VarDeclType]
+      MultipleVarDeclaration(
+        VarDeclNextElem(
+         x
+        ) [VarDeclNextElem]
+        MultipleVarDeclaration(
+          VarDeclNextElem(
+           y
+          ) [VarDeclNextElem]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             z
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [MultipleVarDeclaration]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    MethodDeclarationList(
+      NoMethodDeclarationList(
+      ) [NoMethodDeclarationList]
+      MethodDecl(
+        MethodReturnTypeVoid(
+         main
+        ) [MethodReturnTypeVoid]
+        NoFormalParams(
+        ) [NoFormalParams]
+        VarDeclarationList(
+          VarDeclarationList(
+            NoVarDeclarationList(
+            ) [NoVarDeclarationList]
+            VarDecl(
+              VarDeclType(
+                Type(
+                 int
+                ) [Type]
+              ) [VarDeclType]
+              SingleVarDeclaration(
+                VarDeclFinalElem(
+                 c
+                ) [VarDeclFinalElem]
+              ) [SingleVarDeclaration]
+            ) [VarDecl]
+          ) [VarDeclarationList]
+          VarDecl(
+            VarDeclType(
+              Type(
+               int
+              ) [Type]
+            ) [VarDeclType]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               k
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [VarDecl]
+        ) [VarDeclarationList]
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorIdent(
+               c
+              ) [DesignatorIdent]
+              Assignop(
+              ) [Assignop]
+              ExprTerm(
+                TermFactor(
+                  FactorNumber(
+                   5
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignatorStatement]
+        ) [StatementListExist]
+      ) [MethodDecl]
+    ) [MethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListDoesntExist(
+      ) [StatementListDoesntExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  00:10:03,391 - ===================================
+INFO  00:10:03,394 - Promenljiva x deklarisana na liniji 3
+INFO  00:10:03,394 - Promenljiva y deklarisana na liniji 3
+INFO  00:10:03,394 - Promenljiva z deklarisana na liniji 3
+INFO  00:10:03,394 - usao u  MethodReturnTypeVoid 
+INFO  00:10:03,394 - Promenljiva c deklarisana na liniji 7
+INFO  00:10:03,394 - Promenljiva k deklarisana na liniji 7
+INFO  00:10:03,394 - usao u MethDecl 
+INFO  00:10:03,394 - dodao u locals 
+INFO  00:10:03,394 - usao u  MethodReturnTypeVoid 
+ERROR 00:10:03,394 - Funkcija sa nazivom main vec je deklarisana na liniji 9
+INFO  00:10:03,395 - usao u MethDecl 

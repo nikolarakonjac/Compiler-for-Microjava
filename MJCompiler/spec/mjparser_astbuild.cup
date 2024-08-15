@@ -69,31 +69,22 @@ terminal RANGE, NAMESPACE, CLASS;
 
 /* ------------------------ NONTERMINALS ----------------------------- */
 
-nonterminal Program Program;
 nonterminal DeclarationList DeclarationList;
 nonterminal MethodDeclList MethodDeclList;
 nonterminal ConstDecl ConstDecl;
 nonterminal VarDecl VarDecl;
 nonterminal ConstAssign ConstAssign;
 nonterminal ConstAssignList ConstAssignList;
-nonterminal Type Type;
 nonterminal VarDeclaration VarDeclaration;
 nonterminal VarDeclarations VarDeclarations;
-nonterminal MethodDecl MethodDecl;
 nonterminal VarDeclList VarDeclList;
 nonterminal StatementList StatementList;
 nonterminal FormPars FormPars;
 nonterminal FormalParam FormalParam;
 nonterminal FormalParams FormalParams;
-nonterminal MethodReturnTypeAndName MethodReturnTypeAndName;
 nonterminal Statement Statement;
 nonterminal DesignatorStatement DesignatorStatement;
-nonterminal Designator Designator;
-nonterminal  Expr Expr;
 nonterminal Label Label;
-nonterminal Term Term;
-nonterminal Factor Factor;
-nonterminal DesignatorFactor DesignatorFactor;
 nonterminal NewFactor NewFactor;
 nonterminal ExprFactor ExprFactor;
 nonterminal ActParsOptional ActParsOptional;
@@ -109,12 +100,21 @@ nonterminal Addop Addop;
 nonterminal Mulop Mulop; 
 
 
+/* nonterminals added in semantic analysis phase */
+
+nonterminal VarDeclType VarDeclType;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, MethodDecl, MethodReturnTypeAndName, Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, DesignatorFactor, Factor, Term, Expr; 
+
 /* can be used only for this case*/
 precedence left ELSE;
 
 /* ------------------------ GRAMMAR ----------------------------- */
 
-Program ::= (Program) PROGRAM IDENT:programName DeclarationList:D1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(programName, D1, M2); RESULT.setLine(programNameleft); :};
+Program ::= (Program) PROGRAM ProgramName:p DeclarationList:D1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, D1, M2); RESULT.setLine(pleft); :};
+
+ProgramName ::= (ProgramName) IDENT:programNameAtr {: RESULT=new ProgramName(programNameAtr); RESULT.setLine(programNameAtrleft); :};
 
 DeclarationList ::= (DeclarationListConst) DeclarationList:D1 ConstDecl:C2 {: RESULT=new DeclarationListConst(D1, C2); RESULT.setLine(D1left); :}
                 |
@@ -122,7 +122,8 @@ DeclarationList ::= (DeclarationListConst) DeclarationList:D1 ConstDecl:C2 {: RE
                 |
                 (NoDeclarationList) {: RESULT=new NoDeclarationList(); :} /* epsilon */
                 ;
-                
+
+/* ********************************** */         
 ConstDecl ::= (ConstDecl) CONST Type:constType IDENT:constIdent ASSIGN ConstAssign:C1 ConstAssignList:C2 SEMICOLON {: RESULT=new ConstDecl(constType, constIdent, C1, C2); RESULT.setLine(constTypeleft); :};
 
 ConstAssign ::= (NumberConstValue) NUMBER:N1 {: RESULT=new NumberConstValue(N1); RESULT.setLine(N1left); :}
@@ -136,25 +137,28 @@ ConstAssignList ::= (ConstAssignmentList) ConstAssignList:C1 COMMA IDENT:I2 ASSI
 				|
 				(NoConstAssignmentList) {: RESULT=new NoConstAssignmentList(); :} /* epsilon */
 				;
+/* ******************************************************************************************* */ 
 
-VarDecl ::= (VarDecl) Type:T1 VarDeclarations:V2 {: RESULT=new VarDecl(T1, V2); RESULT.setLine(T1left); :};
+VarDecl ::= (VarDecl) VarDeclType:varDeclType VarDeclarations:V1 {: RESULT=new VarDecl(varDeclType, V1); RESULT.setLine(varDeclTypeleft); :};
+
+VarDeclType ::= (VarDeclType) Type:T1 {: RESULT=new VarDeclType(T1); RESULT.setLine(T1left); :};
 
 VarDeclarations ::= (MultipleVarDeclaration) VarDeclaration:V1 VarDeclarations:V2 {: RESULT=new MultipleVarDeclaration(V1, V2); RESULT.setLine(V1left); :}
 				|
 				(SingleVarDeclaration) FinalVarDeclaration:F1 {: RESULT=new SingleVarDeclaration(F1); RESULT.setLine(F1left); :}
 				;
 
-		
-FinalVarDeclaration ::= (VarDeclFinalElem) IDENT:I1 SEMICOLON {: RESULT=new VarDeclFinalElem(I1); RESULT.setLine(I1left); :}
+
+FinalVarDeclaration ::= (VarDeclFinalElem) IDENT:identName SEMICOLON {: RESULT=new VarDeclFinalElem(identName); RESULT.setLine(identNameleft); :}
 					|
 					(VarDeclArrayFinal) IDENT:I1 LBRACKET RBRACKET SEMICOLON {: RESULT=new VarDeclArrayFinal(I1); RESULT.setLine(I1left); :}
 					|
 					(VarDeclErrorSemi) error SEMICOLON:l
 					{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: " + lleft, null); :} {: RESULT=new VarDeclErrorSemi(); :}
 					;
-					
 
-VarDeclaration ::= (VarDeclNextElem) IDENT:I1 COMMA {: RESULT=new VarDeclNextElem(I1); RESULT.setLine(I1left); :}
+
+VarDeclaration ::= (VarDeclNextElem) IDENT:identName COMMA {: RESULT=new VarDeclNextElem(identName); RESULT.setLine(identNameleft); :}
 				| 
 				(VarDeclNextArray) IDENT:I1 LBRACKET RBRACKET COMMA {: RESULT=new VarDeclNextArray(I1); RESULT.setLine(I1left); :}
 				|
@@ -163,27 +167,33 @@ VarDeclaration ::= (VarDeclNextElem) IDENT:I1 COMMA {: RESULT=new VarDeclNextEle
 				;
 
 
+VarDeclList ::= (VarDeclarationList) VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclarationList(V1, V2); RESULT.setLine(V1left); :}
+			|
+			(NoVarDeclarationList) {: RESULT=new NoVarDeclarationList(); :} /* epsilon */
+			;
+			
+			
 				
 Type ::= (ScopeResolution) IDENT:I1 COLON COLON IDENT:I2 {: RESULT=new ScopeResolution(I1, I2); RESULT.setLine(I1left); :}
        |
-       (TypeName) IDENT:I1 {: RESULT=new TypeName(I1); RESULT.setLine(I1left); :}
-       ;		
-				
+       (TypeName) IDENT:typeName {: RESULT=new TypeName(typeName); RESULT.setLine(typeNameleft); :}
+       ;
+       
+
+       
+/* ********************************************************************************** */ 	
+	
 MethodDeclList ::= (MethodDeclarationList) MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclarationList(M1, M2); RESULT.setLine(M1left); :}
 				|
 				(NoMethodDeclarationList) {: RESULT=new NoMethodDeclarationList(); :} /* epsilon */	
 				;
 
-VarDeclList ::= (VarDeclarationList) VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclarationList(V1, V2); RESULT.setLine(V1left); :}
-			|
-			(NoVarDeclarationList) {: RESULT=new NoVarDeclarationList(); :} /* epsilon */
-			;
-				
+
 MethodDecl ::= (MethodDecl) MethodReturnTypeAndName:M1 LPAREN FormPars:F2 RPAREN VarDeclList:V3 LBRACE StatementList:S4  RBRACE {: RESULT=new MethodDecl(M1, F2, V3, S4); RESULT.setLine(M1left); :};		
 				
-MethodReturnTypeAndName ::= (MethodReturnTypeVoid) VOID IDENT:I1 {: RESULT=new MethodReturnTypeVoid(I1); RESULT.setLine(I1left); :}
+MethodReturnTypeAndName ::= (MethodReturnTypeVoid) VOID:retType IDENT:methodName {: RESULT=new MethodReturnTypeVoid(methodName); RESULT.setLine(methodNameleft); :}
 						|
-						(MethodReturnTypeNoVoid) Type:T1 IDENT:I2 {: RESULT=new MethodReturnTypeNoVoid(T1, I2); RESULT.setLine(T1left); :}
+						(MethodReturnTypeNoVoid) Type:retType IDENT:methodName {: RESULT=new MethodReturnTypeNoVoid(retType, methodName); RESULT.setLine(retTypeleft); :}
 						;
 								
 FormPars ::= (FormParsExist) FormalParams:F1 {: RESULT=new FormParsExist(F1); RESULT.setLine(F1left); :}
@@ -246,7 +256,7 @@ DesignatorStatement ::= (DesignatorStatementAssign) Designator:D1 Assignop:A2 Ex
 
 Designator ::= (DesignatorScopeResolution) IDENT:I1 COLON COLON IDENT:I2 {: RESULT=new DesignatorScopeResolution(I1, I2); RESULT.setLine(I1left); :}
 			|
-			(DesignatorIdent) IDENT:I1 {: RESULT=new DesignatorIdent(I1); RESULT.setLine(I1left); :} 
+			(DesignatorIdent) IDENT:designatorName {: RESULT=new DesignatorIdent(designatorName); RESULT.setLine(designatorNameleft); :}
 			|
 			(DesignatorDotAccess) Designator:D1 DOT IDENT:I2 {: RESULT=new DesignatorDotAccess(D1, I2); RESULT.setLine(D1left); :}
 			|
@@ -280,7 +290,7 @@ Factor ::= (FactorNumber) NUMBER:N1 {: RESULT=new FactorNumber(N1); RESULT.setLi
 		
 DesignatorFactor ::= (DesignatorFactorDesignator) Designator:D1 {: RESULT=new DesignatorFactorDesignator(D1); RESULT.setLine(D1left); :}
 					|
-					(DesignatorFactorMethod) Designator:D1 LPAREN ActParsOptional:A2 RPAREN {: RESULT=new DesignatorFactorMethod(D1, A2); RESULT.setLine(D1left); :}
+					(DesignatorFactorMethod) Designator:func LPAREN ActParsOptional:A1 RPAREN {: RESULT=new DesignatorFactorMethod(func, A1); RESULT.setLine(funcleft); :}
 					;
 					
 NewFactor ::= (NewFactorArray) NEW Type:T1 LBRACKET Expr:E2 RBRACKET {: RESULT=new NewFactorArray(T1, E2); RESULT.setLine(T1left); :}

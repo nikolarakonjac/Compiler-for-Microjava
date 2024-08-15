@@ -1,0 +1,52 @@
+INFO  22:57:01,146 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  22:57:01,208 - #2 program
+INFO  22:57:01,209 - #43 test301
+INFO  22:57:01,209 - #43 int
+INFO  22:57:01,210 - #43 x
+INFO  22:57:01,210 - #6 ;
+INFO  22:57:01,210 - #43 int
+INFO  22:57:01,211 - #43 x
+INFO  22:57:01,211 - #6 ;
+INFO  22:57:01,211 - #3 {
+INFO  22:57:01,211 - #4 }
+INFO  22:57:01,216 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           int
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           x
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         x
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  22:57:01,216 - ===================================
+INFO  22:57:01,218 - Promenljiva x deklarisana na liniji 3
+ERROR 22:57:01,219 - Promeljiva x je vec deklarisana u ovom scope-u na liniji 4
+INFO  22:57:01,219 - ===================================

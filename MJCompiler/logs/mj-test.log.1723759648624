@@ -1,0 +1,134 @@
+INFO  23:59:16,064 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  23:59:16,156 - #2 program
+INFO  23:59:16,156 - #43 test301
+INFO  23:59:16,156 - #43 int
+INFO  23:59:16,158 - #43 x
+INFO  23:59:16,161 - #7 ,
+INFO  23:59:16,161 - #43 y
+INFO  23:59:16,161 - #7 ,
+INFO  23:59:16,161 - #43 z
+INFO  23:59:16,161 - #6 ;
+INFO  23:59:16,161 - #3 {
+INFO  23:59:16,163 - #11 void
+INFO  23:59:16,164 - #43 main
+INFO  23:59:16,164 - #29 (
+INFO  23:59:16,164 - #24 )
+INFO  23:59:16,166 - #43 int
+INFO  23:59:16,167 - #43 c
+INFO  23:59:16,167 - #6 ;
+INFO  23:59:16,167 - #43 int
+INFO  23:59:16,167 - #43 k
+INFO  23:59:16,167 - #6 ;
+INFO  23:59:16,173 - #3 {
+INFO  23:59:16,173 - #43 c
+INFO  23:59:16,174 - #10 =
+INFO  23:59:16,175 - #40 5
+INFO  23:59:16,176 - #6 ;
+INFO  23:59:16,176 - #4 }
+INFO  23:59:16,177 - #4 }
+INFO  23:59:16,185 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        Type(
+         int
+        ) [Type]
+      ) [VarDeclType]
+      MultipleVarDeclaration(
+        VarDeclNextElem(
+         x
+        ) [VarDeclNextElem]
+        MultipleVarDeclaration(
+          VarDeclNextElem(
+           y
+          ) [VarDeclNextElem]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             z
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [MultipleVarDeclaration]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        VarDeclarationList(
+          NoVarDeclarationList(
+          ) [NoVarDeclarationList]
+          VarDecl(
+            VarDeclType(
+              Type(
+               int
+              ) [Type]
+            ) [VarDeclType]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               c
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [VarDecl]
+        ) [VarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            Type(
+             int
+            ) [Type]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             k
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListDoesntExist(
+        ) [StatementListDoesntExist]
+        StatementDesignatorStatement(
+          DesignatorStatementAssign(
+            DesignatorIdent(
+             c
+            ) [DesignatorIdent]
+            Assignop(
+            ) [Assignop]
+            ExprTerm(
+              TermFactor(
+                FactorNumber(
+                 5
+                ) [FactorNumber]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [DesignatorStatementAssign]
+        ) [StatementDesignatorStatement]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  23:59:16,186 - ===================================
+INFO  23:59:16,189 - Promenljiva x deklarisana na liniji 3
+INFO  23:59:16,189 - Promenljiva y deklarisana na liniji 3
+INFO  23:59:16,189 - Promenljiva z deklarisana na liniji 3
+INFO  23:59:16,189 - usao u MethodReturnTypeVoid na liniji 7
+INFO  23:59:16,189 - prosao if na liniji 7
+INFO  23:59:16,189 - dodao meth main u tabelu simbola na liniji 7
+INFO  23:59:16,189 - obradjuje se fja main na liniji 7
+INFO  23:59:16,189 - Promenljiva c deklarisana na liniji 7
+INFO  23:59:16,189 - Promenljiva k deklarisana na liniji 7
+INFO  23:59:16,189 - usao u MethDecl 
+INFO  23:59:16,189 - dodao u locals 
+INFO  23:59:16,189 - ===================================
+ERROR 23:59:16,190 - Parsiranje NIJE uspesno zavrseno!

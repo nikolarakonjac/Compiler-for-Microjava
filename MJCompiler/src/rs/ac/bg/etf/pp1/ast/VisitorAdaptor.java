@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/7/2024 13:12:50
+// 16/7/2024 0:33:54
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -24,8 +24,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MethodReturnTypeAndName MethodReturnTypeAndName) { }
     public void visit(FormalParam FormalParam) { }
     public void visit(VarDeclList VarDeclList) { }
-    public void visit(FormalParams FormalParams) { }
     public void visit(Expr Expr) { }
+    public void visit(FormalParams FormalParams) { }
     public void visit(ActPars ActPars) { }
     public void visit(DesignatorStatement DesignatorStatement) { }
     public void visit(ConstAssignList ConstAssignList) { }
@@ -108,12 +108,12 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MethodReturnTypeNoVoid MethodReturnTypeNoVoid) { visit(); }
     public void visit(MethodReturnTypeVoid MethodReturnTypeVoid) { visit(); }
     public void visit(MethodDecl MethodDecl) { visit(); }
-    public void visit(NoVarDeclarationList NoVarDeclarationList) { visit(); }
-    public void visit(VarDeclarationList VarDeclarationList) { visit(); }
     public void visit(NoMethodDeclarationList NoMethodDeclarationList) { visit(); }
     public void visit(MethodDeclarationList MethodDeclarationList) { visit(); }
     public void visit(TypeName TypeName) { visit(); }
     public void visit(ScopeResolution ScopeResolution) { visit(); }
+    public void visit(NoVarDeclarationList NoVarDeclarationList) { visit(); }
+    public void visit(VarDeclarationList VarDeclarationList) { visit(); }
     public void visit(VarDeclErrorComma VarDeclErrorComma) { visit(); }
     public void visit(VarDeclNextArray VarDeclNextArray) { visit(); }
     public void visit(VarDeclNextElem VarDeclNextElem) { visit(); }
@@ -122,6 +122,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(VarDeclFinalElem VarDeclFinalElem) { visit(); }
     public void visit(SingleVarDeclaration SingleVarDeclaration) { visit(); }
     public void visit(MultipleVarDeclaration MultipleVarDeclaration) { visit(); }
+    public void visit(VarDeclType VarDeclType) { visit(); }
     public void visit(VarDecl VarDecl) { visit(); }
     public void visit(NoConstAssignmentList NoConstAssignmentList) { visit(); }
     public void visit(ConstAssignmentList ConstAssignmentList) { visit(); }
@@ -132,6 +133,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoDeclarationList NoDeclarationList) { visit(); }
     public void visit(DeclarationListVar DeclarationListVar) { visit(); }
     public void visit(DeclarationListConst DeclarationListConst) { visit(); }
+    public void visit(ProgramName ProgramName) { visit(); }
     public void visit(Program Program) { visit(); }
 
 

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/7/2024 13:12:50
+// 16/7/2024 0:33:54
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,22 +9,22 @@ public class VarDecl implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
-    private Type Type;
+    private VarDeclType VarDeclType;
     private VarDeclarations VarDeclarations;
 
-    public VarDecl (Type Type, VarDeclarations VarDeclarations) {
-        this.Type=Type;
-        if(Type!=null) Type.setParent(this);
+    public VarDecl (VarDeclType VarDeclType, VarDeclarations VarDeclarations) {
+        this.VarDeclType=VarDeclType;
+        if(VarDeclType!=null) VarDeclType.setParent(this);
         this.VarDeclarations=VarDeclarations;
         if(VarDeclarations!=null) VarDeclarations.setParent(this);
     }
 
-    public Type getType() {
-        return Type;
+    public VarDeclType getVarDeclType() {
+        return VarDeclType;
     }
 
-    public void setType(Type Type) {
-        this.Type=Type;
+    public void setVarDeclType(VarDeclType VarDeclType) {
+        this.VarDeclType=VarDeclType;
     }
 
     public VarDeclarations getVarDeclarations() {
@@ -56,18 +56,18 @@ public class VarDecl implements SyntaxNode {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Type!=null) Type.accept(visitor);
+        if(VarDeclType!=null) VarDeclType.accept(visitor);
         if(VarDeclarations!=null) VarDeclarations.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Type!=null) Type.traverseTopDown(visitor);
+        if(VarDeclType!=null) VarDeclType.traverseTopDown(visitor);
         if(VarDeclarations!=null) VarDeclarations.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Type!=null) Type.traverseBottomUp(visitor);
+        if(VarDeclType!=null) VarDeclType.traverseBottomUp(visitor);
         if(VarDeclarations!=null) VarDeclarations.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -77,8 +77,8 @@ public class VarDecl implements SyntaxNode {
         buffer.append(tab);
         buffer.append("VarDecl(\n");
 
-        if(Type!=null)
-            buffer.append(Type.toString("  "+tab));
+        if(VarDeclType!=null)
+            buffer.append(VarDeclType.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

@@ -69,19 +69,28 @@ terminal RANGE, NAMESPACE, CLASS;
 
 /* ------------------------ NONTERMINALS ----------------------------- */
 
-nonterminal Program, DeclarationList, MethodDeclList, ConstDecl, VarDecl, ConstAssign, ConstAssignList, Type;
-nonterminal VarDeclaration, VarDeclarations, MethodDecl, VarDeclList, StatementList, FormPars, FormalParam, FormalParams;
-nonterminal MethodReturnTypeAndName, Statement, DesignatorStatement, Designator,  Expr, Label, Term, Factor, DesignatorFactor, NewFactor, ExprFactor;
+nonterminal DeclarationList, MethodDeclList, ConstDecl, VarDecl, ConstAssign, ConstAssignList;
+nonterminal VarDeclaration, VarDeclarations, VarDeclList, StatementList, FormPars, FormalParam, FormalParams;
+nonterminal Statement, DesignatorStatement, Label, NewFactor, ExprFactor;
 nonterminal ActParsOptional, ActPars, StaticInitializer, CondFact, Condition, CondTerm, FinalVarDeclaration;
 nonterminal Relop, Assignop, Addop, Mulop; 
 
+
+/* nonterminals added in semantic analysis phase */
+
+nonterminal VarDeclType;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, MethodDecl, MethodReturnTypeAndName, Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, DesignatorFactor, Factor, Term, Expr; 
 
 /* can be used only for this case*/
 precedence left ELSE;
 
 /* ------------------------ GRAMMAR ----------------------------- */
 
-Program ::= (Program) PROGRAM IDENT:programName DeclarationList LBRACE MethodDeclList RBRACE;
+Program ::= (Program) PROGRAM ProgramName:p DeclarationList LBRACE MethodDeclList RBRACE;
+
+ProgramName ::= (ProgramName) IDENT:programNameAtr;
 
 DeclarationList ::= (DeclarationListConst) DeclarationList ConstDecl
                 |
@@ -89,7 +98,8 @@ DeclarationList ::= (DeclarationListConst) DeclarationList ConstDecl
                 |
                 (NoDeclarationList) /* epsilon */
                 ;
-                
+
+/* ********************************** */         
 ConstDecl ::= (ConstDecl) CONST Type:constType IDENT:constIdent ASSIGN ConstAssign ConstAssignList SEMICOLON;
 
 ConstAssign ::= (NumberConstValue) NUMBER
@@ -103,25 +113,28 @@ ConstAssignList ::= (ConstAssignmentList) ConstAssignList COMMA IDENT ASSIGN Con
 				|
 				(NoConstAssignmentList) /* epsilon */
 				;
+/* ******************************************************************************************* */ 
 
-VarDecl ::= (VarDecl) Type VarDeclarations;
+VarDecl ::= (VarDecl) VarDeclType:varDeclType VarDeclarations;
+
+VarDeclType ::= (VarDeclType) Type;
 
 VarDeclarations ::= (MultipleVarDeclaration) VarDeclaration VarDeclarations
 				|
 				(SingleVarDeclaration) FinalVarDeclaration
 				;
 
-		
-FinalVarDeclaration ::= (VarDeclFinalElem) IDENT SEMICOLON
+
+FinalVarDeclaration ::= (VarDeclFinalElem) IDENT:identName SEMICOLON
 					|
 					(VarDeclArrayFinal) IDENT LBRACKET RBRACKET SEMICOLON
 					|
 					(VarDeclErrorSemi) error SEMICOLON:l
 					{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: " + lleft, null); :}
 					;
-					
 
-VarDeclaration ::= (VarDeclNextElem) IDENT COMMA
+
+VarDeclaration ::= (VarDeclNextElem) IDENT:identName COMMA
 				| 
 				(VarDeclNextArray) IDENT LBRACKET RBRACKET COMMA
 				|
@@ -130,27 +143,33 @@ VarDeclaration ::= (VarDeclNextElem) IDENT COMMA
 				;
 
 
+VarDeclList ::= (VarDeclarationList) VarDeclList VarDecl
+			|
+			(NoVarDeclarationList) /* epsilon */
+			;
+			
+			
 				
 Type ::= (ScopeResolution) IDENT COLON COLON IDENT
        |
-       (TypeName) IDENT
-       ;		
-				
+       (TypeName) IDENT:typeName
+       ;
+       
+
+       
+/* ********************************************************************************** */ 	
+	
 MethodDeclList ::= (MethodDeclarationList) MethodDeclList MethodDecl
 				|
 				(NoMethodDeclarationList) /* epsilon */	
 				;
 
-VarDeclList ::= (VarDeclarationList) VarDeclList VarDecl
-			|
-			(NoVarDeclarationList) /* epsilon */
-			;
-				
+
 MethodDecl ::= (MethodDecl) MethodReturnTypeAndName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList  RBRACE;		
 				
-MethodReturnTypeAndName ::= (MethodReturnTypeVoid) VOID IDENT
+MethodReturnTypeAndName ::= (MethodReturnTypeVoid) VOID:retType IDENT:methodName
 						|
-						(MethodReturnTypeNoVoid) Type IDENT
+						(MethodReturnTypeNoVoid) Type:retType IDENT:methodName
 						;
 								
 FormPars ::= (FormParsExist) FormalParams
@@ -213,7 +232,7 @@ DesignatorStatement ::= (DesignatorStatementAssign) Designator Assignop Expr SEM
 
 Designator ::= (DesignatorScopeResolution) IDENT COLON COLON IDENT
 			|
-			(DesignatorIdent) IDENT 
+			(DesignatorIdent) IDENT:designatorName
 			|
 			(DesignatorDotAccess) Designator DOT IDENT
 			|
@@ -247,7 +266,7 @@ Factor ::= (FactorNumber) NUMBER
 		
 DesignatorFactor ::= (DesignatorFactorDesignator) Designator
 					|
-					(DesignatorFactorMethod) Designator LPAREN ActParsOptional RPAREN
+					(DesignatorFactorMethod) Designator:func LPAREN ActParsOptional RPAREN
 					;
 					
 NewFactor ::= (NewFactorArray) NEW Type LBRACKET Expr RBRACKET

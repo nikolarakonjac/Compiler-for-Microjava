@@ -1,0 +1,88 @@
+INFO  00:20:05,109 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  00:20:05,205 - #2 program
+INFO  00:20:05,205 - #43 test301
+INFO  00:20:05,205 - #43 int
+INFO  00:20:05,207 - #43 x
+INFO  00:20:05,208 - #6 ;
+INFO  00:20:05,209 - #43 int
+INFO  00:20:05,210 - #43 y
+INFO  00:20:05,211 - #6 ;
+INFO  00:20:05,211 - #3 {
+INFO  00:20:05,211 - #43 int
+INFO  00:20:05,212 - #43 main
+INFO  00:20:05,212 - #29 (
+INFO  00:20:05,212 - #24 )
+INFO  00:20:05,214 - #3 {
+INFO  00:20:05,215 - #22 return
+INFO  00:20:05,216 - #40 1
+INFO  00:20:05,216 - #6 ;
+INFO  00:20:05,216 - #4 }
+INFO  00:20:05,217 - #4 }
+INFO  00:20:05,227 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           int
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           x
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         y
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeNoVoid(
+        TypeName(
+         int
+        ) [TypeName]
+       main
+      ) [MethodReturnTypeNoVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListExist(
+        StatementListDoesntExist(
+        ) [StatementListDoesntExist]
+        StatementReturnWithExpr(
+          ExprTerm(
+            TermFactor(
+              FactorNumber(
+               1
+              ) [FactorNumber]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementReturnWithExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  00:20:05,233 - ===================================
+INFO  00:20:05,238 - Promenljiva x deklarisana na liniji 3
+INFO  00:20:05,238 - Promenljiva y deklarisana na liniji 3
+INFO  00:20:05,238 - usao u MethDecl 

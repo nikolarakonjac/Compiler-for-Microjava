@@ -1,0 +1,53 @@
+INFO  23:01:35,629 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  23:01:35,685 - #2 program
+INFO  23:01:35,685 - #43 test301
+INFO  23:01:35,685 - #43 int
+INFO  23:01:35,686 - #43 x
+INFO  23:01:35,687 - #6 ;
+INFO  23:01:35,687 - #43 int
+INFO  23:01:35,688 - #43 x
+INFO  23:01:35,689 - #6 ;
+INFO  23:01:35,689 - #3 {
+INFO  23:01:35,689 - #4 }
+INFO  23:01:35,693 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           int
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           x
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         x
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  23:01:35,701 - ===================================
+INFO  23:01:35,703 - Promenljiva x deklarisana na liniji 3
+ERROR 23:01:35,703 - Promeljiva x je vec deklarisana u ovom scope-u na liniji 4
+INFO  23:01:35,703 - ===================================
+ERROR 23:01:35,703 - Parsiranje NIJE uspesno zavrseno!

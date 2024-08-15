@@ -1,0 +1,71 @@
+INFO  23:10:24,519 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  23:10:24,568 - #2 program
+INFO  23:10:24,568 - #43 test301
+INFO  23:10:24,568 - #43 int
+INFO  23:10:24,570 - #43 x
+INFO  23:10:24,571 - #7 ,
+INFO  23:10:24,571 - #43 y
+INFO  23:10:24,571 - #7 ,
+INFO  23:10:24,572 - #43 z
+INFO  23:10:24,572 - #6 ;
+INFO  23:10:24,572 - #3 {
+INFO  23:10:24,573 - #43 int
+INFO  23:10:24,574 - #43 main
+INFO  23:10:24,574 - #29 (
+INFO  23:10:24,574 - #24 )
+INFO  23:10:24,575 - #3 {
+INFO  23:10:24,576 - #4 }
+INFO  23:10:24,576 - #4 }
+INFO  23:10:24,581 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      MultipleVarDeclaration(
+        VarDeclNextElem(
+         x
+        ) [VarDeclNextElem]
+        MultipleVarDeclaration(
+          VarDeclNextElem(
+           y
+          ) [VarDeclNextElem]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             z
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [MultipleVarDeclaration]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeNoVoid(
+        TypeName(
+         int
+        ) [TypeName]
+       main
+      ) [MethodReturnTypeNoVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListDoesntExist(
+      ) [StatementListDoesntExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  23:10:24,582 - ===================================
+INFO  23:10:24,584 - Promenljiva x deklarisana na liniji 3
+INFO  23:10:24,584 - Promenljiva y deklarisana na liniji 3
+INFO  23:10:24,584 - Promenljiva z deklarisana na liniji 3

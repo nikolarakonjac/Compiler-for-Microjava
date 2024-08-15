@@ -1,0 +1,130 @@
+INFO  00:08:53,372 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  00:08:53,450 - #2 program
+INFO  00:08:53,450 - #43 test301
+INFO  00:08:53,450 - #43 int
+INFO  00:08:53,452 - #43 x
+INFO  00:08:53,454 - #7 ,
+INFO  00:08:53,454 - #43 y
+INFO  00:08:53,454 - #7 ,
+INFO  00:08:53,454 - #43 z
+INFO  00:08:53,454 - #6 ;
+INFO  00:08:53,454 - #3 {
+INFO  00:08:53,456 - #11 void
+INFO  00:08:53,457 - #43 main
+INFO  00:08:53,457 - #29 (
+INFO  00:08:53,457 - #24 )
+INFO  00:08:53,458 - #43 int
+INFO  00:08:53,459 - #43 c
+INFO  00:08:53,459 - #6 ;
+INFO  00:08:53,459 - #43 int
+INFO  00:08:53,459 - #43 k
+INFO  00:08:53,459 - #6 ;
+INFO  00:08:53,468 - #3 {
+INFO  00:08:53,468 - #43 c
+INFO  00:08:53,469 - #10 =
+INFO  00:08:53,469 - #40 5
+INFO  00:08:53,470 - #6 ;
+INFO  00:08:53,471 - #4 }
+INFO  00:08:53,471 - #4 }
+INFO  00:08:53,480 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        Type(
+         int
+        ) [Type]
+      ) [VarDeclType]
+      MultipleVarDeclaration(
+        VarDeclNextElem(
+         x
+        ) [VarDeclNextElem]
+        MultipleVarDeclaration(
+          VarDeclNextElem(
+           y
+          ) [VarDeclNextElem]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             z
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [MultipleVarDeclaration]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        VarDeclarationList(
+          NoVarDeclarationList(
+          ) [NoVarDeclarationList]
+          VarDecl(
+            VarDeclType(
+              Type(
+               int
+              ) [Type]
+            ) [VarDeclType]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               c
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [VarDecl]
+        ) [VarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            Type(
+             int
+            ) [Type]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             k
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListDoesntExist(
+        ) [StatementListDoesntExist]
+        StatementDesignatorStatement(
+          DesignatorStatementAssign(
+            DesignatorIdent(
+             c
+            ) [DesignatorIdent]
+            Assignop(
+            ) [Assignop]
+            ExprTerm(
+              TermFactor(
+                FactorNumber(
+                 5
+                ) [FactorNumber]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [DesignatorStatementAssign]
+        ) [StatementDesignatorStatement]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  00:08:53,481 - ===================================
+INFO  00:08:53,483 - Promenljiva x deklarisana na liniji 3
+INFO  00:08:53,483 - Promenljiva y deklarisana na liniji 3
+INFO  00:08:53,483 - Promenljiva z deklarisana na liniji 3
+INFO  00:08:53,483 - Promenljiva c deklarisana na liniji 7
+INFO  00:08:53,483 - Promenljiva k deklarisana na liniji 7
+INFO  00:08:53,484 - usao u MethDecl 
+INFO  00:08:53,484 - dodao u locals 
+INFO  00:08:53,484 - ===================================
+ERROR 00:08:53,484 - Parsiranje NIJE uspesno zavrseno!

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/7/2024 13:12:50
+// 16/7/2024 0:33:54
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -24,8 +24,8 @@ public interface Visitor {
     public void visit(MethodReturnTypeAndName MethodReturnTypeAndName);
     public void visit(FormalParam FormalParam);
     public void visit(VarDeclList VarDeclList);
-    public void visit(FormalParams FormalParams);
     public void visit(Expr Expr);
+    public void visit(FormalParams FormalParams);
     public void visit(ActPars ActPars);
     public void visit(DesignatorStatement DesignatorStatement);
     public void visit(ConstAssignList ConstAssignList);
@@ -108,12 +108,12 @@ public interface Visitor {
     public void visit(MethodReturnTypeNoVoid MethodReturnTypeNoVoid);
     public void visit(MethodReturnTypeVoid MethodReturnTypeVoid);
     public void visit(MethodDecl MethodDecl);
-    public void visit(NoVarDeclarationList NoVarDeclarationList);
-    public void visit(VarDeclarationList VarDeclarationList);
     public void visit(NoMethodDeclarationList NoMethodDeclarationList);
     public void visit(MethodDeclarationList MethodDeclarationList);
     public void visit(TypeName TypeName);
     public void visit(ScopeResolution ScopeResolution);
+    public void visit(NoVarDeclarationList NoVarDeclarationList);
+    public void visit(VarDeclarationList VarDeclarationList);
     public void visit(VarDeclErrorComma VarDeclErrorComma);
     public void visit(VarDeclNextArray VarDeclNextArray);
     public void visit(VarDeclNextElem VarDeclNextElem);
@@ -122,6 +122,7 @@ public interface Visitor {
     public void visit(VarDeclFinalElem VarDeclFinalElem);
     public void visit(SingleVarDeclaration SingleVarDeclaration);
     public void visit(MultipleVarDeclaration MultipleVarDeclaration);
+    public void visit(VarDeclType VarDeclType);
     public void visit(VarDecl VarDecl);
     public void visit(NoConstAssignmentList NoConstAssignmentList);
     public void visit(ConstAssignmentList ConstAssignmentList);
@@ -132,6 +133,7 @@ public interface Visitor {
     public void visit(NoDeclarationList NoDeclarationList);
     public void visit(DeclarationListVar DeclarationListVar);
     public void visit(DeclarationListConst DeclarationListConst);
+    public void visit(ProgramName ProgramName);
     public void visit(Program Program);
 
 }

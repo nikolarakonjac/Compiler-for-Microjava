@@ -1,0 +1,35 @@
+INFO  23:07:42,584 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  23:07:42,636 - #2 program
+INFO  23:07:42,636 - #43 test301
+INFO  23:07:42,637 - #43 int
+INFO  23:07:42,638 - #43 x
+INFO  23:07:42,638 - #6 ;
+INFO  23:07:42,638 - #3 {
+INFO  23:07:42,639 - #4 }
+INFO  23:07:42,644 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         x
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  23:07:42,650 - ===================================
+INFO  23:07:42,652 - Promenljiva x deklarisana na liniji 3
+INFO  23:07:42,652 - ===================================
+ERROR 23:07:42,652 - Parsiranje NIJE uspesno zavrseno!
