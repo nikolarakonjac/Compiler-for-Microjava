@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 13/7/2024 17:38:3
+// 15/7/2024 13:12:50
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,15 +11,14 @@ public interface Visitor {
     public void visit(ActParsOptional ActParsOptional);
     public void visit(DesignatorFactor DesignatorFactor);
     public void visit(Mulop Mulop);
-    public void visit(MethodDecl MethodDecl);
     public void visit(VarDeclaration VarDeclaration);
     public void visit(Relop Relop);
-    public void visit(Assignop Assignop);
     public void visit(StatementList StatementList);
     public void visit(Addop Addop);
     public void visit(Factor Factor);
     public void visit(CondTerm CondTerm);
     public void visit(FinalVarDeclaration FinalVarDeclaration);
+    public void visit(Designator Designator);
     public void visit(Term Term);
     public void visit(Condition Condition);
     public void visit(MethodReturnTypeAndName MethodReturnTypeAndName);
@@ -34,8 +33,6 @@ public interface Visitor {
     public void visit(ConstAssign ConstAssign);
     public void visit(Statement Statement);
     public void visit(Type Type);
-    public void visit(ConstDecl ConstDecl);
-    public void visit(StaticInitializer StaticInitializer);
     public void visit(CondFact CondFact);
     public void visit(VarDeclarations VarDeclarations);
     public void visit(MethodDeclList MethodDeclList);
@@ -51,7 +48,7 @@ public interface Visitor {
     public void visit(GreaterOperator GreaterOperator);
     public void visit(NotEqualOperator NotEqualOperator);
     public void visit(EqualOperator EqualOperator);
-    public void visit(AssignOperator AssignOperator);
+    public void visit(Assignop Assignop);
     public void visit(Label Label);
     public void visit(CondFactExpr CondFactExpr);
     public void visit(CondFactMultiple CondFactMultiple);
@@ -59,7 +56,7 @@ public interface Visitor {
     public void visit(CondTermFactor CondTermFactor);
     public void visit(ConditionOr ConditionOr);
     public void visit(ConditionCondTerm ConditionCondTerm);
-    public void visit(StaticInit StaticInit);
+    public void visit(StaticInitializer StaticInitializer);
     public void visit(ActParsList ActParsList);
     public void visit(SingleActParsExpr SingleActParsExpr);
     public void visit(NoActPars NoActPars);
@@ -83,7 +80,7 @@ public interface Visitor {
     public void visit(DesignatorArray DesignatorArray);
     public void visit(DesignatorDotAccess DesignatorDotAccess);
     public void visit(DesignatorIdent DesignatorIdent);
-    public void visit(Designator Designator);
+    public void visit(DesignatorScopeResolution DesignatorScopeResolution);
     public void visit(DesignatorStatementErrorSemi DesignatorStatementErrorSemi);
     public void visit(DesignatorStatementDec DesignatorStatementDec);
     public void visit(DesignatorStatementInc DesignatorStatementInc);
@@ -110,7 +107,7 @@ public interface Visitor {
     public void visit(FormParsExist FormParsExist);
     public void visit(MethodReturnTypeNoVoid MethodReturnTypeNoVoid);
     public void visit(MethodReturnTypeVoid MethodReturnTypeVoid);
-    public void visit(MethodDeclaration MethodDeclaration);
+    public void visit(MethodDecl MethodDecl);
     public void visit(NoVarDeclarationList NoVarDeclarationList);
     public void visit(VarDeclarationList VarDeclarationList);
     public void visit(NoMethodDeclarationList NoMethodDeclarationList);
@@ -131,7 +128,7 @@ public interface Visitor {
     public void visit(BoolConstValue BoolConstValue);
     public void visit(CharConstValue CharConstValue);
     public void visit(NumberConstValue NumberConstValue);
-    public void visit(ConstDeclaration ConstDeclaration);
+    public void visit(ConstDecl ConstDecl);
     public void visit(NoDeclarationList NoDeclarationList);
     public void visit(DeclarationListVar DeclarationListVar);
     public void visit(DeclarationListConst DeclarationListConst);

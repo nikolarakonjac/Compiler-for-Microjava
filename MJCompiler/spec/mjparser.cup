@@ -52,9 +52,15 @@ init with {:
 
 /* ------------------------ TERMINALS ----------------------------- */
 
-terminal PROGRAM, IDENT, LBRACE, RBRACE, CONST, SEMICOLON, NUMBER, CHAR, BOOL, COMMA, LBRACKET, RBRACKET, ASSIGN, VOID, MINUS, INC, DEC, OR, AND;
+terminal PROGRAM, LBRACE, RBRACE, CONST, SEMICOLON, COMMA, LBRACKET, RBRACKET, ASSIGN, VOID, MINUS, INC, DEC, OR, AND;
 terminal IF, ELSE, NEW, BREAK, CONTINUE, RETURN, PLUS, RPAREN, STATIC, DIV, NOT_EQUAL, ARROW, LPAREN, EQUAL, LESS, MOD, MUL, GREATER, GREATER_EQUAL, LESS_EQUAL;
 terminal READ, PRINT, COLON;
+
+
+terminal Integer NUMBER;
+terminal Character CHAR;
+terminal Boolean BOOL;
+terminal String IDENT;
 
 /* terminals needed because of Yylex.java*/
 
@@ -84,7 +90,7 @@ DeclarationList ::= (DeclarationListConst) DeclarationList ConstDecl
                 (NoDeclarationList) /* epsilon */
                 ;
                 
-ConstDecl ::= (ConstDeclaration) CONST Type:constType IDENT:constIdent ASSIGN ConstAssign ConstAssignList SEMICOLON;
+ConstDecl ::= (ConstDecl) CONST Type:constType IDENT:constIdent ASSIGN ConstAssign ConstAssignList SEMICOLON;
 
 ConstAssign ::= (NumberConstValue) NUMBER
 			|
@@ -140,7 +146,7 @@ VarDeclList ::= (VarDeclarationList) VarDeclList VarDecl
 			(NoVarDeclarationList) /* epsilon */
 			;
 				
-MethodDecl ::= (MethodDeclaration) MethodReturnTypeAndName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList  RBRACE;		
+MethodDecl ::= (MethodDecl) MethodReturnTypeAndName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList  RBRACE;		
 				
 MethodReturnTypeAndName ::= (MethodReturnTypeVoid) VOID IDENT
 						|
@@ -205,7 +211,7 @@ DesignatorStatement ::= (DesignatorStatementAssign) Designator Assignop Expr SEM
 					{: parser.report_error("oporavak od greske za iskaz dodele do znaka ; na liniji: " + lleft, null); :}
 					;
 
-Designator ::= (Designator) IDENT COLON COLON IDENT
+Designator ::= (DesignatorScopeResolution) IDENT COLON COLON IDENT
 			|
 			(DesignatorIdent) IDENT 
 			|
@@ -262,7 +268,7 @@ ActPars ::= (SingleActParsExpr) Expr
 		(ActParsList) ActPars COMMA Expr
 		;	
 		
-StaticInitializer ::= (StaticInit) STATIC LBRACE StatementList RBRACE;
+StaticInitializer ::= (StaticInitializer) STATIC LBRACE StatementList RBRACE;
 		
 /* *********************************************** */	
 
@@ -286,7 +292,7 @@ CondFact ::= (CondFactMultiple) Expr Relop Expr
 
 Label ::= (Label) IDENT;
 
-Assignop ::= (AssignOperator) ASSIGN;
+Assignop ::= (Assignop) ASSIGN;
 				
 Relop ::= (EqualOperator) EQUAL
         |

@@ -1,60 +1,59 @@
-INFO  13:09:35,938 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
-INFO  13:09:36,048 - #2 program
-INFO  13:09:36,048 - #43 test301
-INFO  13:09:36,048 - #5 const
-INFO  13:09:36,050 - #43 int
-INFO  13:09:36,050 - #43 nula
-INFO  13:09:36,051 - #10 =
-INFO  13:09:36,051 - #40 0
-INFO  13:09:36,051 - #6 ;
-INFO  13:09:36,053 - #5 const
-INFO  13:09:36,055 - #43 int
-INFO  13:09:36,055 - #43 jedan
-INFO  13:09:36,055 - #10 =
-INFO  13:09:36,055 - #40 1
-INFO  13:09:36,056 - #6 ;
-INFO  13:09:36,056 - #5 const
-INFO  13:09:36,056 - #43 int
-INFO  13:09:36,056 - #43 pet
-INFO  13:09:36,056 - #10 =
-INFO  13:09:36,056 - #40 5
-INFO  13:09:36,063 - #6 ;
-INFO  13:09:36,063 - #43 int
-INFO  13:09:36,063 - #43 niz
-INFO  13:09:36,063 - #8 [
-INFO  13:09:36,063 - #9 ]
-INFO  13:09:36,063 - #7 ,
-INFO  13:09:36,063 - #43 niz2
-INFO  13:09:36,063 - #8 [
-INFO  13:09:36,063 - #9 ]
-INFO  13:09:36,063 - #6 ;
-INFO  13:09:36,064 - #43 char
-INFO  13:09:36,067 - #43 nizch
-INFO  13:09:36,068 - #8 [
-INFO  13:09:36,068 - #9 ]
-INFO  13:09:36,068 - #6 ;
-INFO  13:09:36,068 - #3 {
-INFO  13:09:36,068 - #11 void
-INFO  13:09:36,071 - #43 main
-INFO  13:09:36,072 - #29 (
-INFO  13:09:36,072 - #24 )
-INFO  13:09:36,074 - #43 int
-INFO  13:09:36,077 - #43 bodovi
-INFO  13:09:36,077 - #6 ;
-INFO  13:09:36,077 - #43 bool
-INFO  13:09:36,078 - #43 bt
-INFO  13:09:36,078 - #6 ;
-INFO  13:09:36,078 - #3 {
-INFO  13:09:36,078 - #43 x
-INFO  13:09:36,080 - #10 =
-INFO  13:09:36,081 - #40 5
-INFO  13:09:36,084 - #23 +
-INFO  13:09:36,084 - #40 9
-INFO  13:09:36,087 - #6 ;
-INFO  13:09:36,088 - #4 }
-INFO  13:09:36,088 - #4 }
-INFO  13:09:36,093 - Program(
- test301
+INFO  17:38:22,588 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  17:38:22,667 - #2 program
+INFO  17:38:22,667 - #3 test301
+INFO  17:38:22,667 - #6 const
+INFO  17:38:22,668 - #3 int
+INFO  17:38:22,669 - #3 nula
+INFO  17:38:22,670 - #14 =
+INFO  17:38:22,670 - #8 0
+INFO  17:38:22,670 - #7 ;
+INFO  17:38:22,672 - #6 const
+INFO  17:38:22,673 - #3 int
+INFO  17:38:22,673 - #3 jedan
+INFO  17:38:22,673 - #14 =
+INFO  17:38:22,673 - #8 1
+INFO  17:38:22,673 - #7 ;
+INFO  17:38:22,673 - #6 const
+INFO  17:38:22,673 - #3 int
+INFO  17:38:22,673 - #3 pet
+INFO  17:38:22,673 - #14 =
+INFO  17:38:22,673 - #8 5
+INFO  17:38:22,673 - #7 ;
+INFO  17:38:22,674 - #3 int
+INFO  17:38:22,674 - #3 niz
+INFO  17:38:22,674 - #12 [
+INFO  17:38:22,674 - #13 ]
+INFO  17:38:22,674 - #11 ,
+INFO  17:38:22,674 - #3 niz2
+INFO  17:38:22,677 - #12 [
+INFO  17:38:22,677 - #13 ]
+INFO  17:38:22,677 - #7 ;
+INFO  17:38:22,677 - #3 char
+INFO  17:38:22,680 - #3 nizch
+INFO  17:38:22,680 - #12 [
+INFO  17:38:22,680 - #13 ]
+INFO  17:38:22,681 - #7 ;
+INFO  17:38:22,681 - #4 {
+INFO  17:38:22,681 - #15 void
+INFO  17:38:22,682 - #3 main
+INFO  17:38:22,682 - #33 (
+INFO  17:38:22,683 - #28 )
+INFO  17:38:22,685 - #3 int
+INFO  17:38:22,686 - #3 bodovi
+INFO  17:38:22,686 - #7 ;
+INFO  17:38:22,686 - #3 bool
+INFO  17:38:22,688 - #3 bt
+INFO  17:38:22,688 - #7 ;
+INFO  17:38:22,688 - #4 {
+INFO  17:38:22,688 - #3 x
+INFO  17:38:22,690 - #14 =
+INFO  17:38:22,691 - #8 5
+INFO  17:38:22,693 - #27 +
+INFO  17:38:22,695 - #8 9
+INFO  17:38:22,697 - #7 ;
+INFO  17:38:22,698 - #5 }
+INFO  17:38:22,698 - #5 }
+INFO  17:38:22,701 - Program(
   DeclarationListVar(
     DeclarationListVar(
       DeclarationListConst(
@@ -62,53 +61,41 @@ INFO  13:09:36,093 - Program(
           DeclarationListConst(
             NoDeclarationList(
             ) [NoDeclarationList]
-            ConstDecl(
+            ConstDeclaration(
               TypeName(
-               int
               ) [TypeName]
-             nula
               NumberConstValue(
-               0
               ) [NumberConstValue]
               NoConstAssignmentList(
               ) [NoConstAssignmentList]
-            ) [ConstDecl]
+            ) [ConstDeclaration]
           ) [DeclarationListConst]
-          ConstDecl(
+          ConstDeclaration(
             TypeName(
-             int
             ) [TypeName]
-           jedan
             NumberConstValue(
-             1
             ) [NumberConstValue]
             NoConstAssignmentList(
             ) [NoConstAssignmentList]
-          ) [ConstDecl]
+          ) [ConstDeclaration]
         ) [DeclarationListConst]
-        ConstDecl(
+        ConstDeclaration(
           TypeName(
-           int
           ) [TypeName]
-         pet
           NumberConstValue(
-           5
           ) [NumberConstValue]
           NoConstAssignmentList(
           ) [NoConstAssignmentList]
-        ) [ConstDecl]
+        ) [ConstDeclaration]
       ) [DeclarationListConst]
       VarDecl(
         TypeName(
-         int
         ) [TypeName]
         MultipleVarDeclaration(
           VarDeclNextArray(
-           niz
           ) [VarDeclNextArray]
           SingleVarDeclaration(
             VarDeclArrayFinal(
-             niz2
             ) [VarDeclArrayFinal]
           ) [SingleVarDeclaration]
         ) [MultipleVarDeclaration]
@@ -116,11 +103,9 @@ INFO  13:09:36,093 - Program(
     ) [DeclarationListVar]
     VarDecl(
       TypeName(
-       char
       ) [TypeName]
       SingleVarDeclaration(
         VarDeclArrayFinal(
-         nizch
         ) [VarDeclArrayFinal]
       ) [SingleVarDeclaration]
     ) [VarDecl]
@@ -128,9 +113,8 @@ INFO  13:09:36,093 - Program(
   MethodDeclarationList(
     NoMethodDeclarationList(
     ) [NoMethodDeclarationList]
-    MethodDecl(
+    MethodDeclaration(
       MethodReturnTypeVoid(
-       main
       ) [MethodReturnTypeVoid]
       NoFormalParams(
       ) [NoFormalParams]
@@ -140,22 +124,18 @@ INFO  13:09:36,093 - Program(
           ) [NoVarDeclarationList]
           VarDecl(
             TypeName(
-             int
             ) [TypeName]
             SingleVarDeclaration(
               VarDeclFinalElem(
-               bodovi
               ) [VarDeclFinalElem]
             ) [SingleVarDeclaration]
           ) [VarDecl]
         ) [VarDeclarationList]
         VarDecl(
           TypeName(
-           bool
           ) [TypeName]
           SingleVarDeclaration(
             VarDeclFinalElem(
-             bt
             ) [VarDeclFinalElem]
           ) [SingleVarDeclaration]
         ) [VarDecl]
@@ -166,15 +146,13 @@ INFO  13:09:36,093 - Program(
         StatementDesignatorStatement(
           DesignatorStatementAssign(
             DesignatorIdent(
-             x
             ) [DesignatorIdent]
-            Assignop(
-            ) [Assignop]
+            AssignOperator(
+            ) [AssignOperator]
             ExprAdd(
               ExprTerm(
                 TermFactor(
                   FactorNumber(
-                   5
                   ) [FactorNumber]
                 ) [TermFactor]
               ) [ExprTerm]
@@ -182,14 +160,13 @@ INFO  13:09:36,093 - Program(
               ) [PlusOperator]
               TermFactor(
                 FactorNumber(
-                 9
                 ) [FactorNumber]
               ) [TermFactor]
             ) [ExprAdd]
           ) [DesignatorStatementAssign]
         ) [StatementDesignatorStatement]
       ) [StatementListExist]
-    ) [MethodDecl]
+    ) [MethodDeclaration]
   ) [MethodDeclarationList]
 ) [Program]
-INFO  13:09:36,093 - ===================================
+INFO  17:38:22,702 - ===================================
