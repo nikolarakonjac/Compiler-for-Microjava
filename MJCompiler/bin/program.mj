@@ -1,22 +1,11 @@
 program test301
 	
-	int x; int y;
 	
+	int x, y[], z[];
+	char t[];
+	bool i[];
 {
 
-	int k() int c; {
-		c = 2;
-		return c+2;
-	}
-	
-	
-
-	void main() int s; int l;{
-		x = 3 + 4;
-		
-		k();
-	}
-	
 	
 	
 	

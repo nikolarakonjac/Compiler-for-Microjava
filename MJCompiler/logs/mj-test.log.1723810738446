@@ -1,0 +1,70 @@
+INFO  14:18:18,942 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:18:19,025 - #2 program
+INFO  14:18:19,026 - #43 test301
+INFO  14:18:19,026 - #5 const
+INFO  14:18:19,027 - #43 int
+INFO  14:18:19,028 - #43 x
+INFO  14:18:19,028 - #10 =
+INFO  14:18:19,029 - #40 5
+INFO  14:18:19,030 - #6 ;
+INFO  14:18:19,031 - #5 const
+INFO  14:18:19,032 - #43 int
+INFO  14:18:19,033 - #43 x
+INFO  14:18:19,033 - #10 =
+INFO  14:18:19,033 - #40 6
+INFO  14:18:19,033 - #6 ;
+INFO  14:18:19,033 - #3 {
+INFO  14:18:19,033 - #4 }
+INFO  14:18:19,040 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    DeclarationListConst(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      ConstDecl(
+        ConstTypeAndNameDecl(
+          TypeName(
+           int
+          ) [TypeName]
+         x
+        ) [ConstTypeAndNameDecl]
+        NumberConstValue(
+         5
+        ) [NumberConstValue]
+        NoConstAssignmentList(
+        ) [NoConstAssignmentList]
+      ) [ConstDecl]
+    ) [DeclarationListConst]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         int
+        ) [TypeName]
+       x
+      ) [ConstTypeAndNameDecl]
+      NumberConstValue(
+       6
+      ) [NumberConstValue]
+      NoConstAssignmentList(
+      ) [NoConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  14:18:19,047 - ===================================
+INFO  14:18:19,051 - usao u TypeName
+INFO  14:18:19,051 - usao u ConstTypeAndNameDecl
+INFO  14:18:19,051 - usao u NumberConstValue
+INFO  14:18:19,051 - Konstanta x je dodata u tabelu simbola na liniji 3
+INFO  14:18:19,051 - usao u ConstDecl
+INFO  14:18:19,052 - usao u TypeName
+INFO  14:18:19,052 - usao u ConstTypeAndNameDecl
+INFO  14:18:19,052 - Konstanta x je vec deklarisana, ponovna deklaracija  na liniji 4
+INFO  14:18:19,052 - usao u NumberConstValue
+INFO  14:18:19,052 - Konstanta x je dodata u tabelu simbola na liniji 4
+INFO  14:18:19,052 - usao u ConstDecl
+INFO  14:18:19,052 - ===================================
+ERROR 14:18:19,053 - Parsiranje NIJE uspesno zavrseno!

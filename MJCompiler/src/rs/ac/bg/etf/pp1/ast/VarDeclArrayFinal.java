@@ -1,24 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/7/2024 0:33:54
+// 16/7/2024 21:12:22
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class VarDeclArrayFinal extends FinalVarDeclaration {
 
-    private String I1;
+    private String arrayName;
 
-    public VarDeclArrayFinal (String I1) {
-        this.I1=I1;
+    public VarDeclArrayFinal (String arrayName) {
+        this.arrayName=arrayName;
     }
 
-    public String getI1() {
-        return I1;
+    public String getArrayName() {
+        return arrayName;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setArrayName(String arrayName) {
+        this.arrayName=arrayName;
     }
 
     public void accept(Visitor visitor) {
@@ -41,7 +41,7 @@ public class VarDeclArrayFinal extends FinalVarDeclaration {
         buffer.append(tab);
         buffer.append("VarDeclArrayFinal(\n");
 
-        buffer.append(" "+tab+I1);
+        buffer.append(" "+tab+arrayName);
         buffer.append("\n");
 
         buffer.append(tab);

@@ -1,0 +1,106 @@
+INFO  14:30:03,520 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:30:03,600 - #2 program
+INFO  14:30:03,600 - #43 test301
+INFO  14:30:03,600 - #5 const
+INFO  14:30:03,602 - #43 int
+INFO  14:30:03,603 - #43 x
+INFO  14:30:03,603 - #10 =
+INFO  14:30:03,604 - #40 5
+INFO  14:30:03,604 - #6 ;
+INFO  14:30:03,605 - #43 cosnt
+INFO  14:30:03,606 - #43 int
+INFO  14:30:03,607 - #43 y
+ERROR 14:30:03,607 - 
+Sintaksna greska na liniji 4
+INFO  14:30:03,607 - #10 =
+INFO  14:30:03,607 - #40 6
+INFO  14:30:03,607 - #6 ;
+INFO  14:30:03,608 - #5 const
+INFO  14:30:03,608 - #43 int
+INFO  14:30:03,609 - #43 x
+ERROR 14:30:03,609 - oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: 4
+INFO  14:30:03,617 - #10 =
+INFO  14:30:03,617 - #40 7
+INFO  14:30:03,617 - #6 ;
+INFO  14:30:03,617 - #5 const
+INFO  14:30:03,617 - #43 int
+INFO  14:30:03,618 - #43 x
+INFO  14:30:03,618 - #10 =
+INFO  14:30:03,618 - #40 8
+INFO  14:30:03,618 - #6 ;
+INFO  14:30:03,618 - #3 {
+INFO  14:30:03,618 - #4 }
+INFO  14:30:03,628 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    DeclarationListConst(
+      DeclarationListVar(
+        DeclarationListConst(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          ConstDecl(
+            ConstTypeAndNameDecl(
+              TypeName(
+               int
+              ) [TypeName]
+             x
+            ) [ConstTypeAndNameDecl]
+            NumberConstValue(
+             5
+            ) [NumberConstValue]
+            NoConstAssignmentList(
+            ) [NoConstAssignmentList]
+          ) [ConstDecl]
+        ) [DeclarationListConst]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             cosnt
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclErrorSemi(
+            ) [VarDeclErrorSemi]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      ConstDecl(
+        ConstTypeAndNameDecl(
+          TypeName(
+           int
+          ) [TypeName]
+         x
+        ) [ConstTypeAndNameDecl]
+        NumberConstValue(
+         7
+        ) [NumberConstValue]
+        NoConstAssignmentList(
+        ) [NoConstAssignmentList]
+      ) [ConstDecl]
+    ) [DeclarationListConst]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         int
+        ) [TypeName]
+       x
+      ) [ConstTypeAndNameDecl]
+      NumberConstValue(
+       8
+      ) [NumberConstValue]
+      NoConstAssignmentList(
+      ) [NoConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  14:30:03,628 - ===================================
+INFO  14:30:03,632 - Konstanta x je dodata u tabelu simbola na liniji 3
+ERROR 14:30:03,632 - nije pronadjen tipcosntu tabeli simbola
+INFO  14:30:03,632 - Konstanta x je vec deklarisana, ponovna deklaracija  na liniji 5
+INFO  14:30:03,632 - Konstanta x je vec deklarisana, ponovna deklaracija  na liniji 6
+INFO  14:30:03,632 - ===================================
+ERROR 14:30:03,633 - Parsiranje NIJE uspesno zavrseno!

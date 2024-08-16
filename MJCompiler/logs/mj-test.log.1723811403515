@@ -1,0 +1,61 @@
+INFO  14:29:30,011 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:29:30,085 - #2 program
+INFO  14:29:30,085 - #43 test301
+INFO  14:29:30,085 - #5 const
+INFO  14:29:30,087 - #43 int
+INFO  14:29:30,088 - #43 x
+INFO  14:29:30,088 - #10 =
+INFO  14:29:30,089 - #40 5
+INFO  14:29:30,089 - #6 ;
+INFO  14:29:30,090 - #5 const
+INFO  14:29:30,091 - #43 int
+INFO  14:29:30,091 - #43 x
+INFO  14:29:30,091 - #10 =
+INFO  14:29:30,091 - #40 6
+INFO  14:29:30,091 - #6 ;
+INFO  14:29:30,091 - #3 {
+INFO  14:29:30,091 - #4 }
+INFO  14:29:30,099 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    DeclarationListConst(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      ConstDecl(
+        ConstTypeAndNameDecl(
+          TypeName(
+           int
+          ) [TypeName]
+         x
+        ) [ConstTypeAndNameDecl]
+        NumberConstValue(
+         5
+        ) [NumberConstValue]
+        NoConstAssignmentList(
+        ) [NoConstAssignmentList]
+      ) [ConstDecl]
+    ) [DeclarationListConst]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         int
+        ) [TypeName]
+       x
+      ) [ConstTypeAndNameDecl]
+      NumberConstValue(
+       6
+      ) [NumberConstValue]
+      NoConstAssignmentList(
+      ) [NoConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  14:29:30,100 - ===================================
+INFO  14:29:30,103 - Konstanta x je dodata u tabelu simbola na liniji 3
+INFO  14:29:30,103 - Konstanta x je vec deklarisana, ponovna deklaracija  na liniji 4
+INFO  14:29:30,103 - ===================================
+ERROR 14:29:30,104 - Parsiranje NIJE uspesno zavrseno!

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/7/2024 0:33:54
+// 16/7/2024 21:12:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,14 @@ package rs.ac.bg.etf.pp1.ast;
 public class ConstAssignmentList extends ConstAssignList {
 
     private ConstAssignList ConstAssignList;
-    private String I2;
+    private ConstName ConstName;
     private ConstAssign ConstAssign;
 
-    public ConstAssignmentList (ConstAssignList ConstAssignList, String I2, ConstAssign ConstAssign) {
+    public ConstAssignmentList (ConstAssignList ConstAssignList, ConstName ConstName, ConstAssign ConstAssign) {
         this.ConstAssignList=ConstAssignList;
         if(ConstAssignList!=null) ConstAssignList.setParent(this);
-        this.I2=I2;
+        this.ConstName=ConstName;
+        if(ConstName!=null) ConstName.setParent(this);
         this.ConstAssign=ConstAssign;
         if(ConstAssign!=null) ConstAssign.setParent(this);
     }
@@ -27,12 +28,12 @@ public class ConstAssignmentList extends ConstAssignList {
         this.ConstAssignList=ConstAssignList;
     }
 
-    public String getI2() {
-        return I2;
+    public ConstName getConstName() {
+        return ConstName;
     }
 
-    public void setI2(String I2) {
-        this.I2=I2;
+    public void setConstName(ConstName ConstName) {
+        this.ConstName=ConstName;
     }
 
     public ConstAssign getConstAssign() {
@@ -49,17 +50,20 @@ public class ConstAssignmentList extends ConstAssignList {
 
     public void childrenAccept(Visitor visitor) {
         if(ConstAssignList!=null) ConstAssignList.accept(visitor);
+        if(ConstName!=null) ConstName.accept(visitor);
         if(ConstAssign!=null) ConstAssign.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(ConstAssignList!=null) ConstAssignList.traverseTopDown(visitor);
+        if(ConstName!=null) ConstName.traverseTopDown(visitor);
         if(ConstAssign!=null) ConstAssign.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(ConstAssignList!=null) ConstAssignList.traverseBottomUp(visitor);
+        if(ConstName!=null) ConstName.traverseBottomUp(visitor);
         if(ConstAssign!=null) ConstAssign.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -75,7 +79,10 @@ public class ConstAssignmentList extends ConstAssignList {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+I2);
+        if(ConstName!=null)
+            buffer.append(ConstName.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         if(ConstAssign!=null)

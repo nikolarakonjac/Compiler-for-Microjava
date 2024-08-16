@@ -1,0 +1,52 @@
+INFO  17:41:23,054 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  17:41:23,128 - #2 program
+INFO  17:41:23,128 - #43 test301
+INFO  17:41:23,129 - #5 const
+INFO  17:41:23,131 - #43 int
+INFO  17:41:23,131 - #43 x
+INFO  17:41:23,131 - #10 =
+INFO  17:41:23,132 - #40 15
+INFO  17:41:23,132 - #7 ,
+INFO  17:41:23,133 - #43 y
+INFO  17:41:23,133 - #10 =
+INFO  17:41:23,134 - #42 true
+INFO  17:41:23,134 - #6 ;
+INFO  17:41:23,135 - #3 {
+INFO  17:41:23,136 - #4 }
+INFO  17:41:23,143 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         int
+        ) [TypeName]
+       x
+      ) [ConstTypeAndNameDecl]
+      NumberConstValue(
+       15
+      ) [NumberConstValue]
+      ConstAssignmentList(
+        NoConstAssignmentList(
+        ) [NoConstAssignmentList]
+        ConstName(
+         y
+        ) [ConstName]
+        BoolConstValue(
+         true
+        ) [BoolConstValue]
+      ) [ConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  17:41:23,150 - ===================================
+INFO  17:41:23,153 - Konstanta x je dodata u tabelu simbola na liniji 4
+ERROR 17:41:23,153 - Vrednost ne moze da se dodeli konstanti jer nisu istog tipa na liniji 4
+INFO  17:41:23,153 - ===================================
+ERROR 17:41:23,153 - Parsiranje NIJE uspesno zavrseno!

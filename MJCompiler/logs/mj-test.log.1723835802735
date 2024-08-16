@@ -1,0 +1,95 @@
+INFO  21:15:04,685 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  21:15:04,779 - #2 program
+INFO  21:15:04,779 - #43 test301
+INFO  21:15:04,779 - #43 int
+INFO  21:15:04,781 - #43 x
+INFO  21:15:04,782 - #7 ,
+INFO  21:15:04,782 - #43 y
+INFO  21:15:04,782 - #8 [
+INFO  21:15:04,783 - #9 ]
+INFO  21:15:04,783 - #7 ,
+INFO  21:15:04,783 - #43 z
+INFO  21:15:04,783 - #8 [
+INFO  21:15:04,783 - #9 ]
+INFO  21:15:04,783 - #6 ;
+INFO  21:15:04,783 - #43 char
+INFO  21:15:04,785 - #43 t
+INFO  21:15:04,785 - #8 [
+INFO  21:15:04,785 - #9 ]
+INFO  21:15:04,785 - #6 ;
+INFO  21:15:04,785 - #43 bool
+INFO  21:15:04,785 - #43 i
+INFO  21:15:04,792 - #8 [
+INFO  21:15:04,792 - #9 ]
+INFO  21:15:04,792 - #6 ;
+INFO  21:15:04,792 - #3 {
+INFO  21:15:04,792 - #4 }
+INFO  21:15:04,801 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          MultipleVarDeclaration(
+            VarDeclNextElem(
+             x
+            ) [VarDeclNextElem]
+            MultipleVarDeclaration(
+              VarDeclNextArray(
+               y
+              ) [VarDeclNextArray]
+              SingleVarDeclaration(
+                VarDeclArrayFinal(
+                 z
+                ) [VarDeclArrayFinal]
+              ) [SingleVarDeclaration]
+            ) [MultipleVarDeclaration]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           char
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclArrayFinal(
+           t
+          ) [VarDeclArrayFinal]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         bool
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclArrayFinal(
+         i
+        ) [VarDeclArrayFinal]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  21:15:04,802 - ===================================
+INFO  21:15:04,806 - Promenljiva x deklarisana  na liniji 4
+INFO  21:15:04,807 - Promenljiva y deklarisana  na liniji 4
+INFO  21:15:04,807 - Promenljiva z deklarisana  na liniji 4
+INFO  21:15:04,807 - Promenljiva t deklarisana  na liniji 5
+INFO  21:15:04,807 - Promenljiva i deklarisana  na liniji 6
+INFO  21:15:04,807 - ===================================
+ERROR 21:15:04,808 - Parsiranje NIJE uspesno zavrseno!

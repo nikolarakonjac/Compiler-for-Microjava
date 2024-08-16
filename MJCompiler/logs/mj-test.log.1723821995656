@@ -1,0 +1,65 @@
+INFO  17:10:55,821 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  17:10:55,904 - #2 program
+INFO  17:10:55,905 - #43 test301
+INFO  17:10:55,905 - #5 const
+INFO  17:10:55,907 - #43 bool
+INFO  17:10:55,907 - #43 x
+INFO  17:10:55,907 - #10 =
+INFO  17:10:55,908 - #42 true
+INFO  17:10:55,908 - #7 ,
+INFO  17:10:55,910 - #43 y
+INFO  17:10:55,910 - #10 =
+INFO  17:10:55,911 - #42 false
+INFO  17:10:55,911 - #7 ,
+INFO  17:10:55,911 - #43 z
+INFO  17:10:55,911 - #10 =
+INFO  17:10:55,911 - #42 true
+INFO  17:10:55,911 - #6 ;
+INFO  17:10:55,912 - #3 {
+INFO  17:10:55,913 - #4 }
+INFO  17:10:55,923 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         bool
+        ) [TypeName]
+       x
+      ) [ConstTypeAndNameDecl]
+      BoolConstValue(
+       true
+      ) [BoolConstValue]
+      ConstAssignmentList(
+        ConstAssignmentList(
+          NoConstAssignmentList(
+          ) [NoConstAssignmentList]
+          ConstName(
+           y
+          ) [ConstName]
+          BoolConstValue(
+           false
+          ) [BoolConstValue]
+        ) [ConstAssignmentList]
+        ConstName(
+         z
+        ) [ConstName]
+        BoolConstValue(
+         true
+        ) [BoolConstValue]
+      ) [ConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  17:10:55,930 - ===================================
+INFO  17:10:55,934 - Konstanta x je dodata u tabelu simbola na liniji 4
+INFO  17:10:55,934 - Konstanta y je dodata u tabelu simbola na liniji 4
+INFO  17:10:55,934 - Konstanta z je dodata u tabelu simbola na liniji 4
+INFO  17:10:55,935 - ===================================
+ERROR 17:10:55,935 - Parsiranje NIJE uspesno zavrseno!

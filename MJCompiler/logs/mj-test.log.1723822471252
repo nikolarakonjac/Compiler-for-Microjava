@@ -1,0 +1,39 @@
+INFO  17:34:21,796 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  17:34:21,870 - #2 program
+INFO  17:34:21,870 - #43 test301
+INFO  17:34:21,870 - #5 const
+INFO  17:34:21,872 - #43 int
+INFO  17:34:21,872 - #43 x
+INFO  17:34:21,872 - #10 =
+INFO  17:34:21,873 - #42 true
+INFO  17:34:21,873 - #6 ;
+INFO  17:34:21,874 - #3 {
+INFO  17:34:21,875 - #4 }
+INFO  17:34:21,883 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         int
+        ) [TypeName]
+       x
+      ) [ConstTypeAndNameDecl]
+      BoolConstValue(
+       true
+      ) [BoolConstValue]
+      NoConstAssignmentList(
+      ) [NoConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  17:34:21,883 - ===================================
+INFO  17:34:21,886 - Konstanta x je dodata u tabelu simbola na liniji 4
+INFO  17:34:21,887 - ===================================
+ERROR 17:34:21,887 - Parsiranje NIJE uspesno zavrseno!

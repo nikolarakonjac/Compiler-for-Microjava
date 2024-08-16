@@ -1,5 +1,7 @@
 package rs.ac.bg.etf.pp1;
 
+import java.io.ObjectStreamClass;
+
 import org.apache.log4j.Logger;
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.etf.pp1.symboltable.*;
@@ -11,6 +13,8 @@ public class SemanticPass extends VisitorAdaptor {
 	Struct currentDeclType = MyTab.noType;
 	Obj currentMethod = null;	//info o objektom cvoru metode cija se definicija trenutno obradjuje
 	boolean errorDetected = false;
+	String currentConstName = "";
+	boolean currentConstNameAlreadyDeclered = false;
 	
 	Logger log = Logger.getLogger(getClass());
 	
@@ -33,6 +37,8 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 
 	
+	//	------------------------------- Program ----------------------------------------------------
+	
 	public void visit(ProgramName programName) {
 		programName.obj = MyTab.insert(Obj.Prog, programName.getProgramNameAtr(), MyTab.noType);
 		MyTab.openScope();
@@ -45,7 +51,11 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	
+	
+//	------------------------------- TypeName ----------------------------------------------------
+	
 	public void visit(TypeName typeName) {
+		
 		Obj typeNode = MyTab.find(typeName.getTypeName());	//ako se ne nadje cvor sa prosledjenim parametrom vraca se Tab.noObj
 		if(typeNode == MyTab.noObj) {
 			report_error("nije pronadjen tip" + typeName.getTypeName() + "u tabeli simbola", null);
@@ -60,7 +70,7 @@ public class SemanticPass extends VisitorAdaptor {
 			}
 			else {
 				//vraceni objekat nije Type nego je nesto drugo
-				report_error("Greska: ime" + typeName.getTypeName() + " nije tip podataka", typeName);
+				report_error("Greska: ime " + typeName.getTypeName() + " nije tip podataka", typeName);
 				typeName.struct = MyTab.noType;
 			}
 		}
@@ -68,16 +78,16 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	
 	
-//	------------------------------- Var Declaration ----------------------------------------------------
+	//	------------------------------- Var Declaration ----------------------------------------------------
 	
 	public void visit(VarDeclFinalElem ident){
 		// IDENT SEMICOLON
 		if(MyTab.currentScope.findSymbol(ident.getIdentName()) != null) {
-			report_error("Promeljiva " + ident.getIdentName() + " je vec deklarisana u ovom scope-u", ident);
+			report_error("Promeljiva " + ident.getIdentName() + " je vec deklarisana u ovom scope-u, ponovna deklaracija ", ident);
 		}
 		else {
 			MyTab.insert(Obj.Var, ident.getIdentName(), this.currentDeclType);
-			report_info("Promenljiva " + ident.getIdentName() + " deklarisana", ident);
+			report_info("Promenljiva " + ident.getIdentName() + " deklarisana ", ident);
 		}
 	}
 	
@@ -85,54 +95,76 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(VarDeclNextElem ident) {
 		// IDENT COMMA 
 		if(MyTab.currentScope.findSymbol(ident.getIdentName()) != null) {
-			report_error("Promeljiva " + ident.getIdentName() + " je vec deklarisana u ovom scope-u", ident);
-			return ;
+			report_error("Promeljiva " + ident.getIdentName() + " je vec deklarisana u ovom scope-u, ponovna deklaracija ", ident);
 		}
-		
-		MyTab.insert(Obj.Var, ident.getIdentName(), this.currentDeclType);
-		report_info("Promenljiva " + ident.getIdentName() + " deklarisana", ident);
-		
+		else {
+			MyTab.insert(Obj.Var, ident.getIdentName(), this.currentDeclType);
+			report_info("Promenljiva " + ident.getIdentName() + " deklarisana ", ident);
+		}
 	}
 	
 	
-	//	------------------------------- Method Declaration ----------------------------------------------------
+	//	------------------------------- Array Declaration ----------------------------------------------------
+	
+	
+	public void visit(VarDeclArrayFinal arr) {
+		// IDENT:arrayName LBRACKET RBRACKET SEMICOLON
+		String arrayName = arr.getArrayName();
+		if(MyTab.find(arrayName) != MyTab.noObj) {
+			report_error("Promeljiva " + arrayName + " je vec deklarisana u ovom scope-u, ponovna deklaracija ", arr);
+		}
+		else {
+			MyTab.insert(Obj.Var, arrayName, new Struct(Struct.Array, this.currentDeclType));
+			report_info("Promenljiva " + arrayName + " deklarisana ", arr);
+		}
+	}
+	
+	public void visit(VarDeclNextArray arr) {
+		// IDENT:arrayName LBRACKET RBRACKET COMMA
+		String arrayName = arr.getArrayName();
+		if(MyTab.find(arrayName) != MyTab.noObj) {
+			report_error("Promeljiva " + arrayName + " je vec deklarisana u ovom scope-u, ponovna deklaracija ", arr);
+		}
+		else {
+			MyTab.insert(Obj.Var, arrayName, new Struct(Struct.Array, this.currentDeclType));
+			report_info("Promenljiva " + arrayName + " deklarisana ", arr);
+		}
+	}
+	
+	//	------------------------------- Method Declaration ---------------------------------------------------
 	
 	public void visit(MethodReturnTypeVoid voidFuncAndName) {
-		
-		
-//		if(MyTab.currentScope.findSymbol(voidFunc.getMethodName()) != MyTab.noObj) {
-		if(MyTab.currentScope.findSymbol(voidFuncAndName.getMethodName()) !=null ) {
+		// VOID IDENT	
+		if(MyTab.currentScope.findSymbol(voidFuncAndName.getMethodName()) != null ) {
 			report_error("Funkcija sa nazivom "  + voidFuncAndName.getMethodName() + " vec je deklarisana", voidFuncAndName);
-			return ;
 		}
-		
-		this.currentMethod = MyTab.insert(Obj.Meth, voidFuncAndName.getMethodName(), MyTab.noType);
-		voidFuncAndName.obj = this.currentMethod;
-		MyTab.openScope();
-		
+		else {
+			this.currentMethod = MyTab.insert(Obj.Meth, voidFuncAndName.getMethodName(), MyTab.noType);
+			voidFuncAndName.obj = this.currentMethod;
+			MyTab.openScope();
+		}
 	}
 	
 	
 	public void visit(MethodReturnTypeNoVoid retTypeAndName) {
-		
-//		if(MyTab.currentScope.findSymbol(voidFunc.getMethodName()) != MyTab.noObj) {
-		if(MyTab.currentScope.findSymbol(retTypeAndName.getMethodName()) !=null ) {
+//		Type:retType IDENT
+		if(MyTab.currentScope.findSymbol(retTypeAndName.getMethodName()) != null ) {
 			report_error("Funkcija sa nazivom "  + retTypeAndName.getMethodName() + " vec je deklarisana", retTypeAndName);
-			return ;
 		}
-		
-		this.currentMethod = MyTab.insert(Obj.Meth, retTypeAndName.getMethodName(), retTypeAndName.getType().struct);
-		retTypeAndName.obj = this.currentMethod;
-		MyTab.openScope();
+		else{
+			this.currentMethod = MyTab.insert(Obj.Meth, retTypeAndName.getMethodName(), retTypeAndName.getType().struct);
+			retTypeAndName.obj = this.currentMethod;
+			MyTab.openScope();
+		}
 	}
 	
 	public void visit(MethodDecl methDecl) {
-//		report_info("usao u MethDecl ", null);
-		MyTab.chainLocalSymbols(this.currentMethod);
-//		report_info("dodao u locals ", null);
-		MyTab.closeScope();
-		
-		this.currentMethod = null;
+		// u slucaju da je fja vec deklarisana currentMethod ce ostati null pa moze da pravi problem ako se ne proveri
+		if(this.currentMethod != null) {
+			MyTab.chainLocalSymbols(this.currentMethod);
+			MyTab.closeScope();
+			this.currentMethod = null;
+		}
 	}
 	
 	
@@ -162,6 +194,107 @@ public class SemanticPass extends VisitorAdaptor {
 	public boolean passed(){
     	return !errorDetected;
     }
+	
+	
+	//	------------------------------- Const ----------------------------------------------------
+	
+	
+	
+	
+	public void visit(ConstTypeAndNameDecl typeAndName) {
+		
+		String constName = typeAndName.getConstName();
+		// tip konstante je sacuvan u promenljivu currentDeclType u fji TypeName
+		
+		if(MyTab.find(constName) != MyTab.noObj) {
+			report_info("Konstanta " + constName + " je vec deklarisana, ponovna deklaracija ", typeAndName);
+			this.currentConstNameAlreadyDeclered = true;
+		}
+		else {
+			this.currentConstName = constName;
+			this.currentConstNameAlreadyDeclered = false;
+		}
+	}
+	
+	public void visit(ConstName constName) {
+		String name = constName.getConstName();
+		
+		if(MyTab.find(name) != MyTab.noObj) {
+		report_info("Konstanta " + name + " je vec deklarisana, ponovna deklaracija ", constName);
+		this.currentConstNameAlreadyDeclered = true;
+		}
+		else {
+			this.currentConstName = name;
+			this.currentConstNameAlreadyDeclered = false;
+		}
+	}
+	
+	public void visit(NumberConstValue numConst) {
+		
+		if(this.currentConstNameAlreadyDeclered) {
+			return ;
+		}
+		
+		// PROVERITI -> da li je vrednost kompatibilna sa tipom konstante
+		
+		if(!MyTab.intType.assignableTo(this.currentDeclType)) {
+			//tipovi ne odgovaraju
+			report_error("Vrednost ne moze da se dodeli konstanti jer nisu istog tipa", numConst);
+			return ;
+		}
+		
+		Obj newConst = MyTab.insert(Obj.Con, this.currentConstName, this.currentDeclType);
+		
+		// TREBA POSTAVITI VREDNOST KONSTANTE
+		newConst.setAdr(numConst.getNumConst());
+		
+		
+		report_info("Konstanta " + this.currentConstName + " je dodata u tabelu simbola", numConst);
+	}
+	
+	public void visit(CharConstValue charConst) {
+		if(this.currentConstNameAlreadyDeclered) {
+			return ;
+		}
+		
+		if(!MyTab.charType.assignableTo(this.currentDeclType)) {
+			//tipovi ne odgovaraju
+			report_error("Vrednost ne moze da se dodeli konstanti jer nisu istog tipa", charConst);
+			return ;
+		}
+		
+		Obj newConst = MyTab.insert(Obj.Con, this.currentConstName, this.currentDeclType);
+		newConst.setAdr(charConst.getCharConst());
+		report_info("Konstanta " + this.currentConstName + " je dodata u tabelu simbola", charConst);
+	}
+	
+	public void visit(BoolConstValue boolConst) {
+		
+		if(this.currentConstNameAlreadyDeclered) {
+			return ;
+		}
+		
+		// PROVERITI -> da li je vrednost kompatibilna sa tipom konstante
+		if(!MyTab.boolType.assignableTo(this.currentDeclType)) {
+			//tipovi ne odgovaraju
+			report_error("Vrednost ne moze da se dodeli konstanti jer nisu istog tipa", boolConst);
+			return ;
+		}
+		
+		Obj newConst = MyTab.insert(Obj.Con, this.currentConstName, this.currentDeclType);
+		
+		// TREBA POSTAVITI VREDNOST KONSTANTE
+		if(boolConst.getBoolConst()) {
+			newConst.setAdr(1);
+		}
+		else {
+			newConst.setAdr(0);
+		}
+		
+		
+		report_info("Konstanta " + this.currentConstName + " je dodata u tabelu simbola", boolConst);
+	}
+	
 	
 	
 }

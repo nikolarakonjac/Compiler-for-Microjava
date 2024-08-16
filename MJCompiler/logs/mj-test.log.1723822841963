@@ -1,0 +1,39 @@
+INFO  17:39:06,480 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  17:39:06,560 - #2 program
+INFO  17:39:06,561 - #43 test301
+INFO  17:39:06,561 - #5 const
+INFO  17:39:06,563 - #43 char
+INFO  17:39:06,564 - #43 x
+INFO  17:39:06,564 - #10 =
+INFO  17:39:06,565 - #40 5
+INFO  17:39:06,565 - #6 ;
+INFO  17:39:06,566 - #3 {
+INFO  17:39:06,567 - #4 }
+INFO  17:39:06,574 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         char
+        ) [TypeName]
+       x
+      ) [ConstTypeAndNameDecl]
+      NumberConstValue(
+       5
+      ) [NumberConstValue]
+      NoConstAssignmentList(
+      ) [NoConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  17:39:06,580 - ===================================
+ERROR 17:39:06,584 - Vrednost ne moze da se dodeli konstanti jer nisu istog tipa -> INT na liniji 4
+INFO  17:39:06,584 - ===================================
+ERROR 17:39:06,584 - Parsiranje NIJE uspesno zavrseno!

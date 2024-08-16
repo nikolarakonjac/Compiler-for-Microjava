@@ -1,0 +1,109 @@
+INFO  15:10:29,968 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  15:10:30,031 - #2 program
+INFO  15:10:30,031 - #43 test301
+INFO  15:10:30,031 - #5 const
+INFO  15:10:30,032 - #43 int
+INFO  15:10:30,032 - #43 x
+INFO  15:10:30,032 - #10 =
+INFO  15:10:30,033 - #40 5
+INFO  15:10:30,033 - #6 ;
+INFO  15:10:30,034 - #5 const
+INFO  15:10:30,035 - #43 int
+INFO  15:10:30,035 - #43 y
+INFO  15:10:30,035 - #10 =
+INFO  15:10:30,035 - #40 17
+INFO  15:10:30,035 - #6 ;
+INFO  15:10:30,035 - #5 const
+INFO  15:10:30,035 - #43 bool
+INFO  15:10:30,035 - #43 z
+INFO  15:10:30,035 - #10 =
+INFO  15:10:30,036 - #42 true
+INFO  15:10:30,043 - #6 ;
+INFO  15:10:30,043 - #5 const
+INFO  15:10:30,043 - #43 bool
+INFO  15:10:30,043 - #43 w
+INFO  15:10:30,043 - #10 =
+INFO  15:10:30,043 - #42 false
+INFO  15:10:30,043 - #6 ;
+INFO  15:10:30,043 - #3 {
+INFO  15:10:30,043 - #4 }
+INFO  15:10:30,050 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    DeclarationListConst(
+      DeclarationListConst(
+        DeclarationListConst(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          ConstDecl(
+            ConstTypeAndNameDecl(
+              TypeName(
+               int
+              ) [TypeName]
+             x
+            ) [ConstTypeAndNameDecl]
+            NumberConstValue(
+             5
+            ) [NumberConstValue]
+            NoConstAssignmentList(
+            ) [NoConstAssignmentList]
+          ) [ConstDecl]
+        ) [DeclarationListConst]
+        ConstDecl(
+          ConstTypeAndNameDecl(
+            TypeName(
+             int
+            ) [TypeName]
+           y
+          ) [ConstTypeAndNameDecl]
+          NumberConstValue(
+           17
+          ) [NumberConstValue]
+          NoConstAssignmentList(
+          ) [NoConstAssignmentList]
+        ) [ConstDecl]
+      ) [DeclarationListConst]
+      ConstDecl(
+        ConstTypeAndNameDecl(
+          TypeName(
+           bool
+          ) [TypeName]
+         z
+        ) [ConstTypeAndNameDecl]
+        BoolConstValue(
+         true
+        ) [BoolConstValue]
+        NoConstAssignmentList(
+        ) [NoConstAssignmentList]
+      ) [ConstDecl]
+    ) [DeclarationListConst]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         bool
+        ) [TypeName]
+       w
+      ) [ConstTypeAndNameDecl]
+      BoolConstValue(
+       false
+      ) [BoolConstValue]
+      NoConstAssignmentList(
+      ) [NoConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  15:10:30,050 - ===================================
+INFO  15:10:30,052 - TIP: int
+INFO  15:10:30,052 - Konstanta x je dodata u tabelu simbola na liniji 3
+INFO  15:10:30,052 - TIP: int
+INFO  15:10:30,052 - Konstanta y je dodata u tabelu simbola na liniji 4
+INFO  15:10:30,052 - TIP: bool
+INFO  15:10:30,052 - Konstanta z je dodata u tabelu simbola na liniji 5
+INFO  15:10:30,052 - TIP: bool
+INFO  15:10:30,052 - Konstanta w je dodata u tabelu simbola na liniji 6
+INFO  15:10:30,052 - ===================================
+ERROR 15:10:30,052 - Parsiranje NIJE uspesno zavrseno!

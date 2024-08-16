@@ -1,0 +1,40 @@
+INFO  17:26:35,660 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  17:26:35,740 - #2 program
+INFO  17:26:35,740 - #43 test301
+INFO  17:26:35,740 - #5 const
+INFO  17:26:35,743 - #43 int
+INFO  17:26:35,743 - #43 x
+INFO  17:26:35,743 - #10 =
+INFO  17:26:35,744 - #40 5
+INFO  17:26:35,744 - #6 ;
+INFO  17:26:35,745 - #3 {
+INFO  17:26:35,747 - #4 }
+INFO  17:26:35,756 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         int
+        ) [TypeName]
+       x
+      ) [ConstTypeAndNameDecl]
+      NumberConstValue(
+       5
+      ) [NumberConstValue]
+      NoConstAssignmentList(
+      ) [NoConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  17:26:35,757 - ===================================
+ERROR 17:26:35,760 - Vrednost tipa Int ne moze da se dodeli konstanti tipa 1 na liniji 4
+INFO  17:26:35,760 - Konstanta x je dodata u tabelu simbola na liniji 4
+INFO  17:26:35,760 - ===================================
+ERROR 17:26:35,762 - Parsiranje NIJE uspesno zavrseno!

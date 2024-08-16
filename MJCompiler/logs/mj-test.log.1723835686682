@@ -1,0 +1,53 @@
+INFO  21:14:37,521 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  21:14:37,614 - #2 program
+INFO  21:14:37,615 - #43 test301
+INFO  21:14:37,615 - #43 int
+INFO  21:14:37,616 - #43 x
+INFO  21:14:37,618 - #7 ,
+INFO  21:14:37,618 - #43 y
+INFO  21:14:37,618 - #8 [
+INFO  21:14:37,618 - #9 ]
+INFO  21:14:37,618 - #7 ,
+INFO  21:14:37,618 - #43 y
+INFO  21:14:37,619 - #6 ;
+INFO  21:14:37,619 - #3 {
+INFO  21:14:37,620 - #4 }
+INFO  21:14:37,629 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      MultipleVarDeclaration(
+        VarDeclNextElem(
+         x
+        ) [VarDeclNextElem]
+        MultipleVarDeclaration(
+          VarDeclNextArray(
+           y
+          ) [VarDeclNextArray]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             y
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [MultipleVarDeclaration]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  21:14:37,630 - ===================================
+INFO  21:14:37,633 - Promenljiva x deklarisana  na liniji 4
+INFO  21:14:37,635 - Promenljiva y deklarisana  na liniji 4
+ERROR 21:14:37,635 - Promeljiva y je vec deklarisana u ovom scope-u, ponovna deklaracija  na liniji 4
+INFO  21:14:37,635 - ===================================
+ERROR 21:14:37,638 - Parsiranje NIJE uspesno zavrseno!

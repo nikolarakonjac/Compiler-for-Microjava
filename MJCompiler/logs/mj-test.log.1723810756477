@@ -1,0 +1,64 @@
+INFO  14:18:58,450 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:18:58,526 - #2 program
+INFO  14:18:58,526 - #43 test301
+INFO  14:18:58,526 - #5 const
+INFO  14:18:58,528 - #43 int
+INFO  14:18:58,528 - #43 x
+INFO  14:18:58,528 - #10 =
+INFO  14:18:58,529 - #40 5
+INFO  14:18:58,530 - #6 ;
+INFO  14:18:58,531 - #5 const
+INFO  14:18:58,532 - #43 int
+INFO  14:18:58,532 - #43 x
+INFO  14:18:58,532 - #10 =
+INFO  14:18:58,532 - #40 6
+INFO  14:18:58,532 - #6 ;
+INFO  14:18:58,532 - #3 {
+INFO  14:18:58,532 - #4 }
+INFO  14:18:58,540 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    DeclarationListConst(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      ConstDecl(
+        ConstTypeAndNameDecl(
+          TypeName(
+           int
+          ) [TypeName]
+         x
+        ) [ConstTypeAndNameDecl]
+        NumberConstValue(
+         5
+        ) [NumberConstValue]
+        NoConstAssignmentList(
+        ) [NoConstAssignmentList]
+      ) [ConstDecl]
+    ) [DeclarationListConst]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         int
+        ) [TypeName]
+       x
+      ) [ConstTypeAndNameDecl]
+      NumberConstValue(
+       6
+      ) [NumberConstValue]
+      NoConstAssignmentList(
+      ) [NoConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  14:18:58,547 - ===================================
+INFO  14:18:58,550 - usao u TypeName
+INFO  14:18:58,550 - Konstanta x je dodata u tabelu simbola na liniji 3
+INFO  14:18:58,551 - usao u TypeName
+INFO  14:18:58,551 - Konstanta x je vec deklarisana, ponovna deklaracija  na liniji 4
+INFO  14:18:58,551 - Konstanta x je dodata u tabelu simbola na liniji 4
+INFO  14:18:58,551 - ===================================
+ERROR 14:18:58,551 - Parsiranje NIJE uspesno zavrseno!

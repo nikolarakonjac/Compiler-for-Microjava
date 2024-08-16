@@ -1,24 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/7/2024 0:33:54
+// 16/7/2024 21:12:22
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class BoolConstValue extends ConstAssign {
 
-    private Boolean B1;
+    private Boolean boolConst;
 
-    public BoolConstValue (Boolean B1) {
-        this.B1=B1;
+    public BoolConstValue (Boolean boolConst) {
+        this.boolConst=boolConst;
     }
 
-    public Boolean getB1() {
-        return B1;
+    public Boolean getBoolConst() {
+        return boolConst;
     }
 
-    public void setB1(Boolean B1) {
-        this.B1=B1;
+    public void setBoolConst(Boolean boolConst) {
+        this.boolConst=boolConst;
     }
 
     public void accept(Visitor visitor) {
@@ -41,7 +41,7 @@ public class BoolConstValue extends ConstAssign {
         buffer.append(tab);
         buffer.append("BoolConstValue(\n");
 
-        buffer.append(" "+tab+B1);
+        buffer.append(" "+tab+boolConst);
         buffer.append("\n");
 
         buffer.append(tab);

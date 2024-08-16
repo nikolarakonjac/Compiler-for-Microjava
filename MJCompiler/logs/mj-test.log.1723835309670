@@ -1,0 +1,52 @@
+INFO  17:41:59,378 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  17:41:59,483 - #2 program
+INFO  17:41:59,483 - #43 test301
+INFO  17:41:59,483 - #5 const
+INFO  17:41:59,486 - #43 int
+INFO  17:41:59,486 - #43 x
+INFO  17:41:59,486 - #10 =
+INFO  17:41:59,488 - #40 15
+INFO  17:41:59,488 - #7 ,
+INFO  17:41:59,490 - #43 y
+INFO  17:41:59,490 - #10 =
+INFO  17:41:59,491 - #40 5
+INFO  17:41:59,492 - #6 ;
+INFO  17:41:59,492 - #3 {
+INFO  17:41:59,494 - #4 }
+INFO  17:41:59,506 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         int
+        ) [TypeName]
+       x
+      ) [ConstTypeAndNameDecl]
+      NumberConstValue(
+       15
+      ) [NumberConstValue]
+      ConstAssignmentList(
+        NoConstAssignmentList(
+        ) [NoConstAssignmentList]
+        ConstName(
+         y
+        ) [ConstName]
+        NumberConstValue(
+         5
+        ) [NumberConstValue]
+      ) [ConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  17:41:59,512 - ===================================
+INFO  17:41:59,518 - Konstanta x je dodata u tabelu simbola na liniji 4
+INFO  17:41:59,518 - Konstanta y je dodata u tabelu simbola na liniji 4
+INFO  17:41:59,518 - ===================================
+ERROR 17:41:59,519 - Parsiranje NIJE uspesno zavrseno!

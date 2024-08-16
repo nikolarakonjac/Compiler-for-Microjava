@@ -1,0 +1,83 @@
+INFO  17:00:02,341 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  17:00:02,419 - #2 program
+INFO  17:00:02,419 - #43 test301
+INFO  17:00:02,420 - #5 const
+INFO  17:00:02,422 - #43 int
+INFO  17:00:02,422 - #43 x
+INFO  17:00:02,422 - #10 =
+INFO  17:00:02,423 - #40 1
+INFO  17:00:02,423 - #7 ,
+INFO  17:00:02,424 - #43 y
+INFO  17:00:02,424 - #10 =
+INFO  17:00:02,424 - #40 2
+INFO  17:00:02,424 - #7 ,
+INFO  17:00:02,424 - #43 z
+INFO  17:00:02,424 - #10 =
+INFO  17:00:02,424 - #40 3
+INFO  17:00:02,424 - #6 ;
+INFO  17:00:02,425 - #5 const
+INFO  17:00:02,427 - #43 char
+INFO  17:00:02,427 - #43 w
+INFO  17:00:02,427 - #10 =
+INFO  17:00:02,433 - #41 c
+INFO  17:00:02,433 - #6 ;
+INFO  17:00:02,433 - #3 {
+INFO  17:00:02,434 - #4 }
+INFO  17:00:02,442 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    DeclarationListConst(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      ConstDecl(
+        ConstTypeAndNameDecl(
+          TypeName(
+           int
+          ) [TypeName]
+         x
+        ) [ConstTypeAndNameDecl]
+        NumberConstValue(
+         1
+        ) [NumberConstValue]
+        ConstAssignmentList(
+         y
+          NumberConstValue(
+           2
+          ) [NumberConstValue]
+          ConstAssignmentList(
+           z
+            NumberConstValue(
+             3
+            ) [NumberConstValue]
+            NoConstAssignmentList(
+            ) [NoConstAssignmentList]
+          ) [ConstAssignmentList]
+        ) [ConstAssignmentList]
+      ) [ConstDecl]
+    ) [DeclarationListConst]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         char
+        ) [TypeName]
+       w
+      ) [ConstTypeAndNameDecl]
+      CharConstValue(
+       c
+      ) [CharConstValue]
+      NoConstAssignmentList(
+      ) [NoConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  17:00:02,442 - ===================================
+INFO  17:00:02,446 - Konstanta x je dodata u tabelu simbola na liniji 3
+INFO  17:00:02,446 - Konstanta x je dodata u tabelu simbola na liniji 3
+INFO  17:00:02,446 - Konstanta x je dodata u tabelu simbola na liniji 3
+INFO  17:00:02,446 - Konstanta w je dodata u tabelu simbola na liniji 4
+INFO  17:00:02,446 - ===================================
+ERROR 17:00:02,446 - Parsiranje NIJE uspesno zavrseno!

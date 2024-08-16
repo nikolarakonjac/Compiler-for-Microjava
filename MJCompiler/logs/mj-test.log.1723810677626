@@ -1,0 +1,42 @@
+INFO  14:00:09,828 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:00:09,930 - #2 program
+INFO  14:00:09,930 - #43 test301
+INFO  14:00:09,930 - #5 const
+INFO  14:00:09,934 - #43 int
+INFO  14:00:09,934 - #43 x
+INFO  14:00:09,934 - #10 =
+INFO  14:00:09,936 - #40 5
+INFO  14:00:09,937 - #6 ;
+INFO  14:00:09,939 - #3 {
+INFO  14:00:09,941 - #4 }
+INFO  14:00:09,962 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListConst(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    ConstDecl(
+      ConstTypeAndNameDecl(
+        TypeName(
+         int
+        ) [TypeName]
+       x
+      ) [ConstTypeAndNameDecl]
+      NumberConstValue(
+       5
+      ) [NumberConstValue]
+      NoConstAssignmentList(
+      ) [NoConstAssignmentList]
+    ) [ConstDecl]
+  ) [DeclarationListConst]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  14:00:09,962 - ===================================
+INFO  14:00:09,967 - usao u TypeName
+INFO  14:00:09,967 - usao u ConstTypeAndNameDecl
+INFO  14:00:09,967 - usao u NumberConstValue
+INFO  14:00:09,967 - usao u ConstDecl
+INFO  14:00:09,967 - ===================================
+ERROR 14:00:09,968 - Parsiranje NIJE uspesno zavrseno!

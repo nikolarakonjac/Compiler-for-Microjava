@@ -103,6 +103,8 @@ nonterminal Mulop Mulop;
 /* nonterminals added in semantic analysis phase */
 
 nonterminal VarDeclType VarDeclType;
+nonterminal ConstTypeAndNameDecl ConstTypeAndNameDecl;
+nonterminal ConstName ConstName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, MethodDecl, MethodReturnTypeAndName, Designator;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, DesignatorFactor, Factor, Term, Expr; 
@@ -123,20 +125,26 @@ DeclarationList ::= (DeclarationListConst) DeclarationList:D1 ConstDecl:C2 {: RE
                 (NoDeclarationList) {: RESULT=new NoDeclarationList(); :} /* epsilon */
                 ;
 
-/* ********************************** */         
-ConstDecl ::= (ConstDecl) CONST Type:constType IDENT:constIdent ASSIGN ConstAssign:C1 ConstAssignList:C2 SEMICOLON {: RESULT=new ConstDecl(constType, constIdent, C1, C2); RESULT.setLine(constTypeleft); :};
+/* ********************************** */       
+ 
+ConstDecl ::= (ConstDecl) CONST ConstTypeAndNameDecl:C1 ASSIGN ConstAssign:C2 ConstAssignList:C3 SEMICOLON {: RESULT=new ConstDecl(C1, C2, C3); RESULT.setLine(C1left); :};
 
-ConstAssign ::= (NumberConstValue) NUMBER:N1 {: RESULT=new NumberConstValue(N1); RESULT.setLine(N1left); :}
+ConstTypeAndNameDecl ::= (ConstTypeAndNameDecl) Type:constType IDENT:constName {: RESULT=new ConstTypeAndNameDecl(constType, constName); RESULT.setLine(constTypeleft); :};
+
+ConstAssign ::= (NumberConstValue) NUMBER:numConst {: RESULT=new NumberConstValue(numConst); RESULT.setLine(numConstleft); :}
 			|
-			(CharConstValue) CHAR:C1 {: RESULT=new CharConstValue(C1); RESULT.setLine(C1left); :}
+			(CharConstValue) CHAR:charConst {: RESULT=new CharConstValue(charConst); RESULT.setLine(charConstleft); :}
 			|
-			(BoolConstValue) BOOL:B1 {: RESULT=new BoolConstValue(B1); RESULT.setLine(B1left); :}
+			(BoolConstValue) BOOL:boolConst {: RESULT=new BoolConstValue(boolConst); RESULT.setLine(boolConstleft); :}
 			;
 
-ConstAssignList ::= (ConstAssignmentList) ConstAssignList:C1 COMMA IDENT:I2 ASSIGN ConstAssign:C3 {: RESULT=new ConstAssignmentList(C1, I2, C3); RESULT.setLine(C1left); :}
+ConstAssignList ::= (ConstAssignmentList) ConstAssignList:C1 COMMA ConstName:C2 ASSIGN ConstAssign:C3 {: RESULT=new ConstAssignmentList(C1, C2, C3); RESULT.setLine(C1left); :} 
 				|
 				(NoConstAssignmentList) {: RESULT=new NoConstAssignmentList(); :} /* epsilon */
 				;
+				
+ConstName ::= (ConstName) IDENT:constName {: RESULT=new ConstName(constName); RESULT.setLine(constNameleft); :};			
+
 /* ******************************************************************************************* */ 
 
 VarDecl ::= (VarDecl) VarDeclType:varDeclType VarDeclarations:V1 {: RESULT=new VarDecl(varDeclType, V1); RESULT.setLine(varDeclTypeleft); :};
@@ -151,7 +159,7 @@ VarDeclarations ::= (MultipleVarDeclaration) VarDeclaration:V1 VarDeclarations:V
 
 FinalVarDeclaration ::= (VarDeclFinalElem) IDENT:identName SEMICOLON {: RESULT=new VarDeclFinalElem(identName); RESULT.setLine(identNameleft); :}
 					|
-					(VarDeclArrayFinal) IDENT:I1 LBRACKET RBRACKET SEMICOLON {: RESULT=new VarDeclArrayFinal(I1); RESULT.setLine(I1left); :}
+					(VarDeclArrayFinal) IDENT:arrayName LBRACKET RBRACKET SEMICOLON {: RESULT=new VarDeclArrayFinal(arrayName); RESULT.setLine(arrayNameleft); :}
 					|
 					(VarDeclErrorSemi) error SEMICOLON:l
 					{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: " + lleft, null); :} {: RESULT=new VarDeclErrorSemi(); :}
@@ -160,7 +168,7 @@ FinalVarDeclaration ::= (VarDeclFinalElem) IDENT:identName SEMICOLON {: RESULT=n
 
 VarDeclaration ::= (VarDeclNextElem) IDENT:identName COMMA {: RESULT=new VarDeclNextElem(identName); RESULT.setLine(identNameleft); :}
 				| 
-				(VarDeclNextArray) IDENT:I1 LBRACKET RBRACKET COMMA {: RESULT=new VarDeclNextArray(I1); RESULT.setLine(I1left); :}
+				(VarDeclNextArray) IDENT:arrayName LBRACKET RBRACKET COMMA {: RESULT=new VarDeclNextArray(arrayName); RESULT.setLine(arrayNameleft); :}
 				|
 				(VarDeclErrorComma) error COMMA:l 
 				{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka , na liniji: " + lleft, null); :} {: RESULT=new VarDeclErrorComma(); :}

@@ -78,7 +78,7 @@ nonterminal Relop, Assignop, Addop, Mulop;
 
 /* nonterminals added in semantic analysis phase */
 
-nonterminal VarDeclType;
+nonterminal VarDeclType, ConstTypeAndNameDecl, ConstName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, MethodDecl, MethodReturnTypeAndName, Designator;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, DesignatorFactor, Factor, Term, Expr; 
@@ -99,20 +99,26 @@ DeclarationList ::= (DeclarationListConst) DeclarationList ConstDecl
                 (NoDeclarationList) /* epsilon */
                 ;
 
-/* ********************************** */         
-ConstDecl ::= (ConstDecl) CONST Type:constType IDENT:constIdent ASSIGN ConstAssign ConstAssignList SEMICOLON;
+/* ********************************** */       
+ 
+ConstDecl ::= (ConstDecl) CONST ConstTypeAndNameDecl ASSIGN ConstAssign ConstAssignList SEMICOLON;
 
-ConstAssign ::= (NumberConstValue) NUMBER
+ConstTypeAndNameDecl ::= (ConstTypeAndNameDecl) Type:constType IDENT:constName;
+
+ConstAssign ::= (NumberConstValue) NUMBER:numConst
 			|
-			(CharConstValue) CHAR
+			(CharConstValue) CHAR:charConst
 			|
-			(BoolConstValue) BOOL
+			(BoolConstValue) BOOL:boolConst
 			;
 
-ConstAssignList ::= (ConstAssignmentList) ConstAssignList COMMA IDENT ASSIGN ConstAssign
+ConstAssignList ::= (ConstAssignmentList) ConstAssignList COMMA ConstName ASSIGN ConstAssign 
 				|
 				(NoConstAssignmentList) /* epsilon */
 				;
+				
+ConstName ::= (ConstName) IDENT:constName;			
+
 /* ******************************************************************************************* */ 
 
 VarDecl ::= (VarDecl) VarDeclType:varDeclType VarDeclarations;
@@ -127,7 +133,7 @@ VarDeclarations ::= (MultipleVarDeclaration) VarDeclaration VarDeclarations
 
 FinalVarDeclaration ::= (VarDeclFinalElem) IDENT:identName SEMICOLON
 					|
-					(VarDeclArrayFinal) IDENT LBRACKET RBRACKET SEMICOLON
+					(VarDeclArrayFinal) IDENT:arrayName LBRACKET RBRACKET SEMICOLON
 					|
 					(VarDeclErrorSemi) error SEMICOLON:l
 					{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: " + lleft, null); :}
@@ -136,7 +142,7 @@ FinalVarDeclaration ::= (VarDeclFinalElem) IDENT:identName SEMICOLON
 
 VarDeclaration ::= (VarDeclNextElem) IDENT:identName COMMA
 				| 
-				(VarDeclNextArray) IDENT LBRACKET RBRACKET COMMA
+				(VarDeclNextArray) IDENT:arrayName LBRACKET RBRACKET COMMA
 				|
 				(VarDeclErrorComma) error COMMA:l 
 				{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka , na liniji: " + lleft, null); :}
