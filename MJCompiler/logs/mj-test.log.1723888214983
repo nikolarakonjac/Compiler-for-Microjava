@@ -1,0 +1,51 @@
+INFO  11:46:24,123 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  11:46:24,184 - #2 program
+INFO  11:46:24,184 - #43 test301
+INFO  11:46:24,184 - #43 komentar
+INFO  11:46:24,186 - #43 int
+INFO  11:46:24,186 - #7 ,
+INFO  11:46:24,187 - #8 [
+ERROR 11:46:24,187 - 
+Sintaksna greska na liniji 5
+INFO  11:46:24,187 - #9 ]
+INFO  11:46:24,187 - #7 ,
+INFO  11:46:24,187 - #8 [
+INFO  11:46:24,187 - #9 ]
+INFO  11:46:24,188 - #6 ;
+INFO  11:46:24,188 - #43 char
+INFO  11:46:24,188 - #8 [
+INFO  11:46:24,188 - #9 ]
+INFO  11:46:24,188 - #6 ;
+INFO  11:46:24,188 - #43 bool
+INFO  11:46:24,188 - #8 [
+INFO  11:46:24,188 - #9 ]
+INFO  11:46:24,188 - #6 ;
+INFO  11:46:24,188 - #3 {
+INFO  11:46:24,188 - #4 }
+ERROR 11:46:24,189 - oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: 5
+INFO  11:46:24,197 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         komentar
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclErrorSemi(
+        ) [VarDeclErrorSemi]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  11:46:24,197 - ===================================
+ERROR 11:46:24,200 - nije pronadjen tipkomentaru tabeli simbola
+INFO  11:46:24,200 - ===================================
+ERROR 11:46:24,200 - Parsiranje NIJE uspesno zavrseno!

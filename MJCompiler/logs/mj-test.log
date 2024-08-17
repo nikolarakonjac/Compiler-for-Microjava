@@ -1,30 +1,36 @@
-INFO  21:16:42,740 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
-INFO  21:16:42,818 - #2 program
-INFO  21:16:42,818 - #43 test301
-INFO  21:16:42,818 - #43 int
-INFO  21:16:42,820 - #43 x
-INFO  21:16:42,821 - #7 ,
-INFO  21:16:42,821 - #43 y
-INFO  21:16:42,821 - #8 [
-INFO  21:16:42,821 - #9 ]
-INFO  21:16:42,822 - #7 ,
-INFO  21:16:42,822 - #43 z
-INFO  21:16:42,822 - #8 [
-INFO  21:16:42,822 - #9 ]
-INFO  21:16:42,822 - #6 ;
-INFO  21:16:42,822 - #43 char
-INFO  21:16:42,823 - #43 t
-INFO  21:16:42,823 - #8 [
-INFO  21:16:42,824 - #9 ]
-INFO  21:16:42,824 - #6 ;
-INFO  21:16:42,824 - #43 bool
-INFO  21:16:42,824 - #43 i
-INFO  21:16:42,824 - #8 [
-INFO  21:16:42,824 - #9 ]
-INFO  21:16:42,824 - #6 ;
-INFO  21:16:42,824 - #3 {
-INFO  21:16:42,824 - #4 }
-INFO  21:16:42,832 - Program(
+INFO  14:02:54,026 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:02:54,160 - #2 program
+INFO  14:02:54,161 - #43 test301
+INFO  14:02:54,161 - #43 int
+INFO  14:02:54,165 - #43 x
+INFO  14:02:54,167 - #7 ,
+INFO  14:02:54,167 - #43 y
+INFO  14:02:54,168 - #6 ;
+INFO  14:02:54,168 - #43 bool
+INFO  14:02:54,170 - #43 z
+INFO  14:02:54,170 - #6 ;
+INFO  14:02:54,170 - #43 char
+INFO  14:02:54,170 - #43 c
+INFO  14:02:54,170 - #6 ;
+INFO  14:02:54,170 - #3 {
+INFO  14:02:54,170 - #43 bool
+INFO  14:02:54,172 - #43 main
+INFO  14:02:54,172 - #29 (
+INFO  14:02:54,172 - #24 )
+INFO  14:02:54,173 - #43 char
+INFO  14:02:54,175 - #43 c
+INFO  14:02:54,182 - #6 ;
+INFO  14:02:54,182 - #3 {
+INFO  14:02:54,182 - #43 c
+INFO  14:02:54,183 - #10 =
+INFO  14:02:54,183 - #41 a
+INFO  14:02:54,185 - #6 ;
+INFO  14:02:54,185 - #22 return
+INFO  14:02:54,186 - #42 false
+INFO  14:02:54,186 - #6 ;
+INFO  14:02:54,186 - #4 }
+INFO  14:02:54,186 - #4 }
+INFO  14:02:54,197 - Program(
   ProgramName(
    test301
   ) [ProgramName]
@@ -43,53 +49,107 @@ INFO  21:16:42,832 - Program(
             VarDeclNextElem(
              x
             ) [VarDeclNextElem]
-            MultipleVarDeclaration(
-              VarDeclNextArray(
+            SingleVarDeclaration(
+              VarDeclFinalElem(
                y
-              ) [VarDeclNextArray]
-              SingleVarDeclaration(
-                VarDeclArrayFinal(
-                 z
-                ) [VarDeclArrayFinal]
-              ) [SingleVarDeclaration]
-            ) [MultipleVarDeclaration]
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
           ) [MultipleVarDeclaration]
         ) [VarDecl]
       ) [DeclarationListVar]
       VarDecl(
         VarDeclType(
           TypeName(
-           char
+           bool
           ) [TypeName]
         ) [VarDeclType]
         SingleVarDeclaration(
-          VarDeclArrayFinal(
-           t
-          ) [VarDeclArrayFinal]
+          VarDeclFinalElem(
+           z
+          ) [VarDeclFinalElem]
         ) [SingleVarDeclaration]
       ) [VarDecl]
     ) [DeclarationListVar]
     VarDecl(
       VarDeclType(
         TypeName(
-         bool
+         char
         ) [TypeName]
       ) [VarDeclType]
       SingleVarDeclaration(
-        VarDeclArrayFinal(
-         i
-        ) [VarDeclArrayFinal]
+        VarDeclFinalElem(
+         c
+        ) [VarDeclFinalElem]
       ) [SingleVarDeclaration]
     ) [VarDecl]
   ) [DeclarationListVar]
-  NoMethodDeclarationList(
-  ) [NoMethodDeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeNoVoid(
+        TypeName(
+         bool
+        ) [TypeName]
+       main
+      ) [MethodReturnTypeNoVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorIdent(
+               c
+              ) [DesignatorIdent]
+              Assignop(
+              ) [Assignop]
+              ExprTerm(
+                TermFactor(
+                  FactorChar(
+                   a
+                  ) [FactorChar]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignatorStatement]
+        ) [StatementListExist]
+        StatementReturnWithExpr(
+          ExprTerm(
+            TermFactor(
+              FactorBool(
+               false
+              ) [FactorBool]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementReturnWithExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
 ) [Program]
-INFO  21:16:42,832 - ===================================
-INFO  21:16:42,835 - Promenljiva x deklarisana  na liniji 4
-INFO  21:16:42,835 - Promenljiva y deklarisana  na liniji 4
-INFO  21:16:42,835 - Promenljiva z deklarisana  na liniji 4
-INFO  21:16:42,835 - Promenljiva t deklarisana  na liniji 5
-INFO  21:16:42,835 - Promenljiva i deklarisana  na liniji 6
-INFO  21:16:42,835 - ===================================
-ERROR 21:16:42,836 - Parsiranje NIJE uspesno zavrseno!
+INFO  14:02:54,198 - ===================================
+INFO  14:02:54,203 - Promenljiva x deklarisana  na liniji 4
+INFO  14:02:54,203 - Promenljiva y deklarisana  na liniji 4
+INFO  14:02:54,203 - Promenljiva z deklarisana  na liniji 5
+INFO  14:02:54,203 - Promenljiva c deklarisana  na liniji 6
+INFO  14:02:54,204 - Promenljiva c deklarisana  na liniji 9
+INFO  14:02:54,204 - ===================================
+INFO  14:02:54,204 - Parsiranje uspesno zavrseno!

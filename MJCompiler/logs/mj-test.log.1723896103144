@@ -1,0 +1,144 @@
+INFO  14:01:36,520 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:01:36,606 - #2 program
+INFO  14:01:36,606 - #43 test301
+INFO  14:01:36,606 - #43 int
+INFO  14:01:36,608 - #43 x
+INFO  14:01:36,609 - #7 ,
+INFO  14:01:36,610 - #43 y
+INFO  14:01:36,610 - #6 ;
+INFO  14:01:36,610 - #43 bool
+INFO  14:01:36,611 - #43 z
+INFO  14:01:36,612 - #6 ;
+INFO  14:01:36,612 - #43 char
+INFO  14:01:36,612 - #43 c
+INFO  14:01:36,612 - #6 ;
+INFO  14:01:36,612 - #3 {
+INFO  14:01:36,612 - #11 void
+INFO  14:01:36,613 - #43 main
+INFO  14:01:36,614 - #29 (
+INFO  14:01:36,614 - #24 )
+INFO  14:01:36,616 - #43 char
+INFO  14:01:36,617 - #43 c
+INFO  14:01:36,625 - #6 ;
+INFO  14:01:36,625 - #3 {
+INFO  14:01:36,625 - #43 c
+INFO  14:01:36,627 - #10 =
+INFO  14:01:36,627 - #41 a
+INFO  14:01:36,628 - #6 ;
+INFO  14:01:36,628 - #22 return
+INFO  14:01:36,629 - #6 ;
+INFO  14:01:36,629 - #4 }
+INFO  14:01:36,631 - #4 }
+INFO  14:01:36,643 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          MultipleVarDeclaration(
+            VarDeclNextElem(
+             x
+            ) [VarDeclNextElem]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               y
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           bool
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           z
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         char
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         c
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorIdent(
+               c
+              ) [DesignatorIdent]
+              Assignop(
+              ) [Assignop]
+              ExprTerm(
+                TermFactor(
+                  FactorChar(
+                   a
+                  ) [FactorChar]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignatorStatement]
+        ) [StatementListExist]
+        StatementReturn(
+        ) [StatementReturn]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  14:01:36,644 - ===================================
+INFO  14:01:36,648 - Promenljiva x deklarisana  na liniji 4
+INFO  14:01:36,648 - Promenljiva y deklarisana  na liniji 4
+INFO  14:01:36,648 - Promenljiva z deklarisana  na liniji 5
+INFO  14:01:36,648 - Promenljiva c deklarisana  na liniji 6
+INFO  14:01:36,648 - Promenljiva c deklarisana  na liniji 9
+INFO  14:01:36,649 - ===================================
+INFO  14:01:36,649 - Parsiranje uspesno zavrseno!

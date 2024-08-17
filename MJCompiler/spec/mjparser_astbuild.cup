@@ -35,18 +35,17 @@ parser code {:
 :}
 
 
+init with {:
+	errorDetected = false;
+:}
+
 scan with {:
-	errorDetected = true;
 	Symbol s = this.getScanner().next_token();
 	if (s != null && s.value != null) 
 		log.info(s.toString() + " " + s.value.toString());
 	return s;
 :}
 
-
-init with {:
-	errorDetected = false;
-:}
 
 
 
@@ -107,7 +106,7 @@ nonterminal ConstTypeAndNameDecl ConstTypeAndNameDecl;
 nonterminal ConstName ConstName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, MethodDecl, MethodReturnTypeAndName, Designator;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, DesignatorFactor, Factor, Term, Expr; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Factor, Term, Expr, DesignatorFactor; 
 
 /* can be used only for this case*/
 precedence left ELSE;
@@ -238,7 +237,7 @@ Statement ::= (StatementDesignatorStatement) DesignatorStatement:D1 {: RESULT=ne
 			|
 			(StatementReturn) RETURN SEMICOLON {: RESULT=new StatementReturn(); :}
 			|
-			(StatementReturnWithExpr) RETURN Expr:E1 SEMICOLON {: RESULT=new StatementReturnWithExpr(E1); RESULT.setLine(E1left); :}
+			(StatementReturnWithExpr) RETURN Expr:returnExpr SEMICOLON {: RESULT=new StatementReturnWithExpr(returnExpr); RESULT.setLine(returnExprleft); :}
 			|
 			(StatementRead) READ LPAREN Designator:D1 RPAREN SEMICOLON {: RESULT=new StatementRead(D1); RESULT.setLine(D1left); :}
 			|
@@ -250,7 +249,7 @@ Statement ::= (StatementDesignatorStatement) DesignatorStatement:D1 {: RESULT=ne
 			;
 
 
-DesignatorStatement ::= (DesignatorStatementAssign) Designator:D1 Assignop:A2 Expr:E3 SEMICOLON {: RESULT=new DesignatorStatementAssign(D1, A2, E3); RESULT.setLine(D1left); :}
+DesignatorStatement ::= (DesignatorStatementAssign) Designator:destination Assignop:A1 Expr:value SEMICOLON {: RESULT=new DesignatorStatementAssign(destination, A1, value); RESULT.setLine(destinationleft); :}
 					|
 					(DesignatorStatementMethod) Designator:D1 LPAREN ActParsOptional:A2 RPAREN SEMICOLON {: RESULT=new DesignatorStatementMethod(D1, A2); RESULT.setLine(D1left); :}
 					|
@@ -271,14 +270,14 @@ Designator ::= (DesignatorScopeResolution) IDENT:I1 COLON COLON IDENT:I2 {: RESU
 			(DesignatorArray) Designator:D1 LBRACKET Expr:E2 RBRACKET {: RESULT=new DesignatorArray(D1, E2); RESULT.setLine(D1left); :}
 			;
 
-Expr ::= (ExprMinusTerm) MINUS Term:T1 {: RESULT=new ExprMinusTerm(T1); RESULT.setLine(T1left); :}
+Expr ::= (ExprMinusTerm) MINUS Term:t {: RESULT=new ExprMinusTerm(t); RESULT.setLine(tleft); :}
         |
-        (ExprTerm) Term:T1 {: RESULT=new ExprTerm(T1); RESULT.setLine(T1left); :}
+        (ExprTerm) Term:t {: RESULT=new ExprTerm(t); RESULT.setLine(tleft); :}
         |
-        (ExprAdd) Expr:E1 Addop:A2 Term:T3 {: RESULT=new ExprAdd(E1, A2, T3); RESULT.setLine(E1left); :}
+        (ExprAddTerm) Expr:expr Addop:A1 Term:term {: RESULT=new ExprAddTerm(expr, A1, term); RESULT.setLine(exprleft); :}
         ;
         
-Term ::= (TermFactor) Factor:F1 {: RESULT=new TermFactor(F1); RESULT.setLine(F1left); :}
+Term ::= (TermFactor) Factor:f {: RESULT=new TermFactor(f); RESULT.setLine(fleft); :}
 		|
 		(TermMul) Term:T1 Mulop:M2 Factor:F3 {: RESULT=new TermMul(T1, M2, F3); RESULT.setLine(T1left); :}
 		;
@@ -289,14 +288,14 @@ Factor ::= (FactorNumber) NUMBER:N1 {: RESULT=new FactorNumber(N1); RESULT.setLi
 		|
 		(FactorBool) BOOL:B1 {: RESULT=new FactorBool(B1); RESULT.setLine(B1left); :}
 		|
-		(FactorDesignatorFactor) DesignatorFactor:D1 {: RESULT=new FactorDesignatorFactor(D1); RESULT.setLine(D1left); :}
+		(FactorDesignatorFactor) DesignatorFactor:designator {: RESULT=new FactorDesignatorFactor(designator); RESULT.setLine(designatorleft); :}
 		|
 		(FactorNewFactor) NewFactor:N1 {: RESULT=new FactorNewFactor(N1); RESULT.setLine(N1left); :}
 		|
 		(FactorExprFactor) ExprFactor:E1 {: RESULT=new FactorExprFactor(E1); RESULT.setLine(E1left); :}
 		;
 		
-DesignatorFactor ::= (DesignatorFactorDesignator) Designator:D1 {: RESULT=new DesignatorFactorDesignator(D1); RESULT.setLine(D1left); :}
+DesignatorFactor ::= (DesignatorFactorDesignator) Designator:d {: RESULT=new DesignatorFactorDesignator(d); RESULT.setLine(dleft); :}
 					|
 					(DesignatorFactorMethod) Designator:func LPAREN ActParsOptional:A1 RPAREN {: RESULT=new DesignatorFactorMethod(func, A1); RESULT.setLine(funcleft); :}
 					;

@@ -15,6 +15,7 @@ public class SemanticPass extends VisitorAdaptor {
 	boolean errorDetected = false;
 	String currentConstName = "";
 	boolean currentConstNameAlreadyDeclered = false;
+	boolean returnFound = false;
 	
 	Logger log = Logger.getLogger(getClass());
 	
@@ -36,6 +37,9 @@ public class SemanticPass extends VisitorAdaptor {
 		log.info(msg.toString());
 	}
 
+	public boolean passed(){
+    	return !errorDetected;
+    }
 	
 	//	------------------------------- Program ----------------------------------------------------
 	
@@ -161,8 +165,14 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(MethodDecl methDecl) {
 		// u slucaju da je fja vec deklarisana currentMethod ce ostati null pa moze da pravi problem ako se ne proveri
 		if(this.currentMethod != null) {
+			
+			if(this.returnFound == false && this.currentMethod.getType() != MyTab.noType) {
+				report_error("Funkcija " + currentMethod.getName() + " nema return naredbu", methDecl);
+			}
+			
 			MyTab.chainLocalSymbols(this.currentMethod);
 			MyTab.closeScope();
+			this.returnFound = false;
 			this.currentMethod = null;
 		}
 	}
@@ -190,16 +200,7 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 	
-	
-	public boolean passed(){
-    	return !errorDetected;
-    }
-	
-	
 	//	------------------------------- Const ----------------------------------------------------
-	
-	
-	
 	
 	public void visit(ConstTypeAndNameDecl typeAndName) {
 		
@@ -296,8 +297,87 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	
+	//	------------------------------- Term ----------------------------------------------------
+	
+	public void visit(TermFactor termFactor) {
+		// Term ::= Factor:f
+		termFactor.struct = termFactor.getFactor().struct;
+	}
+	
+	//	------------------------------- Expr ----------------------------------------------------
+	
+	public void visit(ExprTerm exprTerm) {
+		// Expr ::= Term:t
+		exprTerm.struct = exprTerm.getTerm().struct;
+	}
+	
+	public void visit(ExprAddTerm exprAddTerm) {
+		// Expr:expr Addop Term:term
+		Struct exprStruct = exprAddTerm.getExpr().struct;
+		Struct termStruct = exprAddTerm.getTerm().struct;
+		
+		if(exprStruct.equals(termStruct) && exprStruct == MyTab.intType) {
+			exprAddTerm.struct = exprStruct;
+		}
+		else {
+			report_error("Tipovi nisu kompatibilni", exprAddTerm);
+			exprAddTerm.struct = MyTab.noType;
+		}
+	}
+	
+	
+	//	------------------------------- Factor ----------------------------------------------------
+	
+	public void visit(FactorNumber numConst) {
+		// Factor ::= NUMBER
+		numConst.struct = MyTab.intType;
+	}
+	
+	public void visit(FactorChar charConst) {
+		// Factor ::= CHAR
+		charConst.struct = MyTab.charType;
+		}
+	
+	public void visit(FactorBool boolConst) {
+		// Factor ::= BOOL
+		boolConst.struct = MyTab.boolType;
+	}
+	
+	public void visit(FactorDesignatorFactor factorDesignator) {
+		// Factor ::= DesignatorFactor
+		factorDesignator.struct = factorDesignator.getDesignatorFactor().struct;
+	}
+	
+	public void visit(DesignatorFactorDesignator designator) {
+		// DesignatorFactor ::= Designator
+		designator.struct = designator.getDesignator().obj.getType();
+	}
+	
+	//	------------------------------- Return  ----------------------------------------------------
+	
+	public void visit(StatementReturnWithExpr retExpr) {
+		this.returnFound = true;
+		Struct currentMethodType = currentMethod.getType();
+		
+		if(!currentMethodType.compatibleWith(retExpr.getExpr().struct)) {
+			report_error("vrednost return naredbe fje " + this.currentMethod.getName() + " nije istog tipa kao i deklarisana povratna vrednost", retExpr);
+		}
+	}
+	
+	
+	//	------------------------------- DesignatorStatement  ----------------------------------------------------
+	
+	public void visit(DesignatorStatementAssign stm) {
+		// Designator:destination Assignop Expr:value SEMICOLON
+		if(!stm.getExpr().struct.assignableTo(stm.getDesignator().obj.getType())) {
+			report_error("Greska pri dodeli vrednosti, tipovi nisu kompatibilni",  stm);
+		}
+	}
+	
 	
 }
+
+
 
 
 

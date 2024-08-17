@@ -1,0 +1,117 @@
+INFO  13:45:47,468 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  13:45:47,564 - #2 program
+INFO  13:45:47,564 - #43 test301
+INFO  13:45:47,564 - #5 const
+INFO  13:45:47,566 - #43 int
+INFO  13:45:47,567 - #43 x
+INFO  13:45:47,567 - #10 =
+INFO  13:45:47,568 - #42 true
+INFO  13:45:47,568 - #6 ;
+INFO  13:45:47,569 - #43 int
+INFO  13:45:47,571 - #43 x
+INFO  13:45:47,572 - #7 ,
+INFO  13:45:47,572 - #43 y
+INFO  13:45:47,572 - #8 [
+INFO  13:45:47,572 - #9 ]
+INFO  13:45:47,572 - #7 ,
+INFO  13:45:47,572 - #43 z
+INFO  13:45:47,572 - #8 [
+INFO  13:45:47,572 - #9 ]
+INFO  13:45:47,572 - #6 ;
+INFO  13:45:47,572 - #43 char
+INFO  13:45:47,580 - #43 t
+INFO  13:45:47,580 - #8 [
+INFO  13:45:47,580 - #9 ]
+INFO  13:45:47,580 - #6 ;
+INFO  13:45:47,580 - #43 bool
+INFO  13:45:47,580 - #43 i
+INFO  13:45:47,581 - #8 [
+INFO  13:45:47,581 - #9 ]
+INFO  13:45:47,581 - #6 ;
+INFO  13:45:47,581 - #3 {
+INFO  13:45:47,581 - #4 }
+INFO  13:45:47,592 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        DeclarationListConst(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          ConstDecl(
+            ConstTypeAndNameDecl(
+              TypeName(
+               int
+              ) [TypeName]
+             x
+            ) [ConstTypeAndNameDecl]
+            BoolConstValue(
+             true
+            ) [BoolConstValue]
+            NoConstAssignmentList(
+            ) [NoConstAssignmentList]
+          ) [ConstDecl]
+        ) [DeclarationListConst]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          MultipleVarDeclaration(
+            VarDeclNextElem(
+             x
+            ) [VarDeclNextElem]
+            MultipleVarDeclaration(
+              VarDeclNextArray(
+               y
+              ) [VarDeclNextArray]
+              SingleVarDeclaration(
+                VarDeclArrayFinal(
+                 z
+                ) [VarDeclArrayFinal]
+              ) [SingleVarDeclaration]
+            ) [MultipleVarDeclaration]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           char
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclArrayFinal(
+           t
+          ) [VarDeclArrayFinal]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         bool
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclArrayFinal(
+         i
+        ) [VarDeclArrayFinal]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  13:45:47,593 - ===================================
+ERROR 13:45:47,596 - Vrednost ne moze da se dodeli konstanti jer nisu istog tipa na liniji 4
+INFO  13:45:47,596 - Promenljiva x deklarisana  na liniji 5
+INFO  13:45:47,596 - Promenljiva y deklarisana  na liniji 5
+INFO  13:45:47,596 - Promenljiva z deklarisana  na liniji 5
+INFO  13:45:47,597 - Promenljiva t deklarisana  na liniji 6
+INFO  13:45:47,597 - Promenljiva i deklarisana  na liniji 7
+INFO  13:45:47,597 - ===================================
+ERROR 13:45:47,597 - Parsiranje NIJE uspesno zavrseno!

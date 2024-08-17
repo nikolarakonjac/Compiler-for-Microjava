@@ -35,18 +35,17 @@ parser code {:
 :}
 
 
+init with {:
+	errorDetected = false;
+:}
+
 scan with {:
-	errorDetected = true;
 	Symbol s = this.getScanner().next_token();
 	if (s != null && s.value != null) 
 		log.info(s.toString() + " " + s.value.toString());
 	return s;
 :}
 
-
-init with {:
-	errorDetected = false;
-:}
 
 
 
@@ -81,7 +80,7 @@ nonterminal Relop, Assignop, Addop, Mulop;
 nonterminal VarDeclType, ConstTypeAndNameDecl, ConstName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, MethodDecl, MethodReturnTypeAndName, Designator;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, DesignatorFactor, Factor, Term, Expr; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Factor, Term, Expr, DesignatorFactor; 
 
 /* can be used only for this case*/
 precedence left ELSE;
@@ -212,7 +211,7 @@ Statement ::= (StatementDesignatorStatement) DesignatorStatement
 			|
 			(StatementReturn) RETURN SEMICOLON
 			|
-			(StatementReturnWithExpr) RETURN Expr SEMICOLON
+			(StatementReturnWithExpr) RETURN Expr:returnExpr SEMICOLON
 			|
 			(StatementRead) READ LPAREN Designator RPAREN SEMICOLON
 			|
@@ -224,7 +223,7 @@ Statement ::= (StatementDesignatorStatement) DesignatorStatement
 			;
 
 
-DesignatorStatement ::= (DesignatorStatementAssign) Designator Assignop Expr SEMICOLON
+DesignatorStatement ::= (DesignatorStatementAssign) Designator:destination Assignop Expr:value SEMICOLON
 					|
 					(DesignatorStatementMethod) Designator LPAREN ActParsOptional RPAREN SEMICOLON
 					|
@@ -245,14 +244,14 @@ Designator ::= (DesignatorScopeResolution) IDENT COLON COLON IDENT
 			(DesignatorArray) Designator LBRACKET Expr RBRACKET
 			;
 
-Expr ::= (ExprMinusTerm) MINUS Term
+Expr ::= (ExprMinusTerm) MINUS Term:t
         |
-        (ExprTerm) Term
+        (ExprTerm) Term:t
         |
-        (ExprAdd) Expr Addop Term
+        (ExprAddTerm) Expr:expr Addop Term:term
         ;
         
-Term ::= (TermFactor) Factor
+Term ::= (TermFactor) Factor:f
 		|
 		(TermMul) Term Mulop Factor
 		;
@@ -263,14 +262,14 @@ Factor ::= (FactorNumber) NUMBER
 		|
 		(FactorBool) BOOL
 		|
-		(FactorDesignatorFactor) DesignatorFactor
+		(FactorDesignatorFactor) DesignatorFactor:designator
 		|
 		(FactorNewFactor) NewFactor
 		|
 		(FactorExprFactor) ExprFactor
 		;
 		
-DesignatorFactor ::= (DesignatorFactorDesignator) Designator
+DesignatorFactor ::= (DesignatorFactorDesignator) Designator:d
 					|
 					(DesignatorFactorMethod) Designator:func LPAREN ActParsOptional RPAREN
 					;

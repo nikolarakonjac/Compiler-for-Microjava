@@ -1,0 +1,38 @@
+INFO  13:57:06,167 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  13:57:06,260 - #2 program
+INFO  13:57:06,260 - #43 test301
+INFO  13:57:06,260 - #43 int
+INFO  13:57:06,262 - #43 x
+INFO  13:57:06,263 - #10 =
+ERROR 13:57:06,264 - 
+Sintaksna greska na liniji 4
+INFO  13:57:06,264 - #40 1
+INFO  13:57:06,264 - #6 ;
+INFO  13:57:06,264 - #3 {
+INFO  13:57:06,265 - #4 }
+ERROR 13:57:06,266 - oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: 4
+INFO  13:57:06,277 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclErrorSemi(
+        ) [VarDeclErrorSemi]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  NoMethodDeclarationList(
+  ) [NoMethodDeclarationList]
+) [Program]
+INFO  13:57:06,284 - ===================================
+INFO  13:57:06,289 - ===================================
+ERROR 13:57:06,290 - Parsiranje NIJE uspesno zavrseno!
