@@ -16,6 +16,8 @@ public class SemanticPass extends VisitorAdaptor {
 	String currentConstName = "";
 	boolean currentConstNameAlreadyDeclered = false;
 	boolean returnFound = false;
+	boolean mainFuncExist = false;
+	boolean mainFuncHasParam = false;
 	
 	Logger log = Logger.getLogger(getClass());
 	
@@ -38,7 +40,13 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 
 	public boolean passed(){
-    	return !errorDetected;
+		if(!mainFuncExist) {
+			report_error("Greska: u programu ne postoji void main() fja ", null);
+		}
+		if(mainFuncHasParam) {
+			report_error("Greska: main fja ne sme da ima formalne parametre", null);
+		}
+    	return !errorDetected && mainFuncExist && !mainFuncHasParam;
     }
 	
 	//	------------------------------- Program ----------------------------------------------------
@@ -139,10 +147,14 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(MethodReturnTypeVoid voidFuncAndName) {
 		// VOID IDENT	
-		if(MyTab.currentScope.findSymbol(voidFuncAndName.getMethodName()) != null ) {
-			report_error("Funkcija sa nazivom "  + voidFuncAndName.getMethodName() + " vec je deklarisana", voidFuncAndName);
+		String methodName = voidFuncAndName.getMethodName();
+		if(MyTab.currentScope.findSymbol(methodName) != null ) {
+			report_error("Funkcija sa nazivom "  + methodName + " vec je deklarisana", voidFuncAndName);
 		}
 		else {
+			if(methodName.equals("main")) {
+				this.mainFuncExist = true;
+			}
 			this.currentMethod = MyTab.insert(Obj.Meth, voidFuncAndName.getMethodName(), MyTab.noType);
 			voidFuncAndName.obj = this.currentMethod;
 			MyTab.openScope();
@@ -152,8 +164,9 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(MethodReturnTypeNoVoid retTypeAndName) {
 //		Type:retType IDENT
-		if(MyTab.currentScope.findSymbol(retTypeAndName.getMethodName()) != null ) {
-			report_error("Funkcija sa nazivom "  + retTypeAndName.getMethodName() + " vec je deklarisana", retTypeAndName);
+		String methodName = retTypeAndName.getMethodName();
+		if(MyTab.currentScope.findSymbol(methodName) != null ) {
+			report_error("Funkcija sa nazivom "  + methodName + " vec je deklarisana", retTypeAndName);
 		}
 		else{
 			this.currentMethod = MyTab.insert(Obj.Meth, retTypeAndName.getMethodName(), retTypeAndName.getType().struct);
@@ -177,28 +190,6 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 	
-	
-//	------------------------------- Designator ----------------------------------------------------
-	
-	public void visit(DesignatorIdent designator) {
-		Obj obj = MyTab.find(designator.getDesignatorName());
-		if(obj == MyTab.noObj) {
-			report_error("Greska na liniji " + designator.getLine() + " ime: " + designator.getDesignatorName() + " nije deklarisano", null);
-		}
-		designator.obj = obj;
-	}
-	
-	public void visit(DesignatorFactorMethod funcCall) {
-		Obj func = funcCall.getDesignator().obj;
-		if(func.getKind() == Obj.Meth) {
-			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
-			funcCall.struct = func.getType();
-		}
-		else {
-			report_error("Greska na liniji " + funcCall.getLine()+" : ime " + func.getName() + " nije funkcija!", null);
-			funcCall.struct = Tab.noType;
-		}
-	}
 	
 	//	------------------------------- Const ----------------------------------------------------
 	
@@ -304,6 +295,15 @@ public class SemanticPass extends VisitorAdaptor {
 		termFactor.struct = termFactor.getFactor().struct;
 	}
 	
+	public void visit(TermMul termMul) {
+		// Term ::= Term Mulop Factor
+		if(termMul.getTerm().struct != MyTab.intType || termMul.getFactor().struct != MyTab.intType) {
+			report_error("Greska: vrednosti koje se mnoze moraju biti tipa int", termMul);
+			termMul.struct = MyTab.noType;
+		}
+		termMul.struct = MyTab.intType;
+	}
+	
 	//	------------------------------- Expr ----------------------------------------------------
 	
 	public void visit(ExprTerm exprTerm) {
@@ -325,6 +325,14 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 	
+	public void visit(ExprMinusTerm minusTerm) {
+		// Expr ::= MINUS Term:t
+		if(minusTerm.getTerm().struct != MyTab.intType) {
+			report_error("izraz iza - mora biti tipa int", minusTerm);
+			minusTerm.struct = MyTab.noType;
+		}
+		minusTerm.struct = MyTab.intType;
+	}
 	
 	//	------------------------------- Factor ----------------------------------------------------
 	
@@ -353,6 +361,32 @@ public class SemanticPass extends VisitorAdaptor {
 		designator.struct = designator.getDesignator().obj.getType();
 	}
 	
+	public void visit(NewFactorArray arr) {
+		// NEW Type:arrType LBRACKET Expr:arraySize RBRACKET
+		if(arr.getExpr().struct != MyTab.intType) {
+			report_error("Greska: velicina niza za alokaciju mora biti tipa int", arr);
+			arr.struct = MyTab.noType;
+		}
+		else {
+			arr.struct = new Struct(Struct.Array, arr.getType().struct);
+		}
+	}
+	
+	public void visit(FactorNewFactor newFactor) {
+		// Factor ::= NewFactor
+		newFactor.struct = newFactor.getNewFactor().struct;
+	}
+	
+	public void visit(FactorExprFactor expr) {
+		// Factor ::= ExprFactor
+		expr.struct = expr.getExprFactor().struct;
+	}
+	
+	public void visit(ExprFactor e) {
+		// LPAREN Expr:e RPAREN
+		e.struct = e.getExpr().struct;
+	}
+	
 	//	------------------------------- Return  ----------------------------------------------------
 	
 	public void visit(StatementReturnWithExpr retExpr) {
@@ -369,11 +403,70 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(DesignatorStatementAssign stm) {
 		// Designator:destination Assignop Expr:value SEMICOLON
+//		report_info("Designator " + stm.getDesignator().obj.getType().getKind(), null);
+//		report_info("Designator " + stm.getDesignator().obj.getType().getElemType().getKind(), null);
+//		
+//		report_info("Expr " + stm.getExpr().struct.getKind(), null);
+//		report_info("Expr " + stm.getExpr().struct.getElemType().getKind(), null);
+		
 		if(!stm.getExpr().struct.assignableTo(stm.getDesignator().obj.getType())) {
 			report_error("Greska pri dodeli vrednosti, tipovi nisu kompatibilni",  stm);
 		}
 	}
 	
+	
+	//	------------------------------- DesignatorStatement  ----------------------------------------------------
+	
+	public void visit(VariableFormalParam param) {
+		if(this.currentMethod.getName().equals("main")) {
+			this.mainFuncHasParam = true;
+		}
+	}
+	
+	public void visit(ArrayFormalParam arrayParam) {
+		if(this.currentMethod.getName().equals("main")) {
+			this.mainFuncHasParam = true;
+		}
+	}
+	
+//	------------------------------- Designator ----------------------------------------------------
+	
+	public void visit(DesignatorIdent designator) {
+		//  IDENT:designatorName
+		Obj obj = MyTab.find(designator.getDesignatorName());
+		if(obj == MyTab.noObj) {
+			report_error("Greska na liniji " + designator.getLine() + " ime: " + designator.getDesignatorName() + " nije deklarisano", null);
+		}
+		designator.obj = obj;
+	}
+	
+	public void visit(DesignatorArray arr) {
+		// Designator:designatorName LBRACKET Expr:expr RBRACKET
+		Struct arrType = arr.getDesignator().obj.getType();
+		
+		if(arrType.getKind() != Struct.Array) {
+			report_error("Greska: promenljiva kojoj se pristupa nije tipa niz", arr);
+		}
+		
+		Struct exprType = arr.getExpr().struct;
+		
+		if(exprType.getKind() != Struct.Int) {
+			report_error("Greska: Expr mora biti tipa int ako se pristupa nizu", arr);
+		}
+	}
+	
+	
+	public void visit(DesignatorFactorMethod funcCall) {
+		Obj func = funcCall.getDesignator().obj;
+		if(func.getKind() == Obj.Meth) {
+			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
+			funcCall.struct = func.getType();
+		}
+		else {
+			report_error("Greska na liniji " + funcCall.getLine()+" : ime " + func.getName() + " nije funkcija!", null);
+			funcCall.struct = Tab.noType;
+		}
+	}
 	
 }
 

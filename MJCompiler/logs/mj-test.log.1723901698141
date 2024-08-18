@@ -1,0 +1,154 @@
+INFO  15:34:48,354 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  15:34:48,471 - #2 program
+INFO  15:34:48,471 - #43 test301
+INFO  15:34:48,471 - #43 int
+INFO  15:34:48,474 - #43 x
+INFO  15:34:48,477 - #7 ,
+INFO  15:34:48,477 - #43 y
+INFO  15:34:48,478 - #6 ;
+INFO  15:34:48,478 - #43 bool
+INFO  15:34:48,480 - #43 z
+INFO  15:34:48,480 - #6 ;
+INFO  15:34:48,480 - #43 char
+INFO  15:34:48,481 - #43 c
+INFO  15:34:48,481 - #6 ;
+INFO  15:34:48,481 - #3 {
+INFO  15:34:48,481 - #43 int
+INFO  15:34:48,482 - #43 main
+INFO  15:34:48,483 - #29 (
+INFO  15:34:48,483 - #43 int
+INFO  15:34:48,483 - #43 a
+INFO  15:34:48,483 - #24 )
+INFO  15:34:48,490 - #43 char
+INFO  15:34:48,493 - #43 c
+INFO  15:34:48,493 - #6 ;
+INFO  15:34:48,493 - #3 {
+INFO  15:34:48,493 - #43 c
+INFO  15:34:48,495 - #10 =
+INFO  15:34:48,495 - #41 a
+INFO  15:34:48,497 - #6 ;
+INFO  15:34:48,498 - #4 }
+INFO  15:34:48,498 - #4 }
+INFO  15:34:48,511 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          MultipleVarDeclaration(
+            VarDeclNextElem(
+             x
+            ) [VarDeclNextElem]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               y
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           bool
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           z
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         char
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         c
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeNoVoid(
+        TypeName(
+         int
+        ) [TypeName]
+       main
+      ) [MethodReturnTypeNoVoid]
+      FormParsExist(
+        SingleFormalParam(
+          VariableFormalParam(
+            TypeName(
+             int
+            ) [TypeName]
+           a
+          ) [VariableFormalParam]
+        ) [SingleFormalParam]
+      ) [FormParsExist]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListDoesntExist(
+        ) [StatementListDoesntExist]
+        StatementDesignatorStatement(
+          DesignatorStatementAssign(
+            DesignatorIdent(
+             c
+            ) [DesignatorIdent]
+            Assignop(
+            ) [Assignop]
+            ExprTerm(
+              TermFactor(
+                FactorChar(
+                 a
+                ) [FactorChar]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [DesignatorStatementAssign]
+        ) [StatementDesignatorStatement]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  15:34:48,512 - ===================================
+INFO  15:34:48,516 - Promenljiva x deklarisana  na liniji 4
+INFO  15:34:48,517 - Promenljiva y deklarisana  na liniji 4
+INFO  15:34:48,517 - Promenljiva z deklarisana  na liniji 5
+INFO  15:34:48,517 - Promenljiva c deklarisana  na liniji 6
+INFO  15:34:48,517 - Promenljiva c deklarisana  na liniji 9
+ERROR 15:34:48,517 - Funkcija main nema return naredbu na liniji 9
+INFO  15:34:48,517 - ===================================
+ERROR 15:34:48,518 - Greska: u programu ne postoji void main() fja 
+ERROR 15:34:48,518 - Greska: main fja ne sme da ima formalne parametre
+ERROR 15:34:48,518 - Parsiranje NIJE uspesno zavrseno!

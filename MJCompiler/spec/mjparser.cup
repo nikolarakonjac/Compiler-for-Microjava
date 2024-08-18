@@ -70,7 +70,7 @@ terminal RANGE, NAMESPACE, CLASS;
 
 nonterminal DeclarationList, MethodDeclList, ConstDecl, VarDecl, ConstAssign, ConstAssignList;
 nonterminal VarDeclaration, VarDeclarations, VarDeclList, StatementList, FormPars, FormalParam, FormalParams;
-nonterminal Statement, DesignatorStatement, Label, NewFactor, ExprFactor;
+nonterminal Statement, DesignatorStatement, Label;
 nonterminal ActParsOptional, ActPars, StaticInitializer, CondFact, Condition, CondTerm, FinalVarDeclaration;
 nonterminal Relop, Assignop, Addop, Mulop; 
 
@@ -80,7 +80,7 @@ nonterminal Relop, Assignop, Addop, Mulop;
 nonterminal VarDeclType, ConstTypeAndNameDecl, ConstName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, MethodDecl, MethodReturnTypeAndName, Designator;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Factor, Term, Expr, DesignatorFactor; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Factor, Term, Expr, DesignatorFactor, NewFactor, ExprFactor; 
 
 /* can be used only for this case*/
 precedence left ELSE;
@@ -192,7 +192,7 @@ FormalParam ::= (VariableFormalParam) Type IDENT
 			(ArrayFormalParam) Type IDENT LBRACKET RBRACKET
 			; 			
 
-/*	****************************************		*/
+/*	*****************************************************************		*/
 				
 StatementList ::= (StatementListExist) StatementList Statement
 				|
@@ -241,7 +241,7 @@ Designator ::= (DesignatorScopeResolution) IDENT COLON COLON IDENT
 			|
 			(DesignatorDotAccess) Designator DOT IDENT
 			|
-			(DesignatorArray) Designator LBRACKET Expr RBRACKET
+			(DesignatorArray) Designator:designatorName LBRACKET Expr:expr RBRACKET
 			;
 
 Expr ::= (ExprMinusTerm) MINUS Term:t
@@ -274,12 +274,12 @@ DesignatorFactor ::= (DesignatorFactorDesignator) Designator:d
 					(DesignatorFactorMethod) Designator:func LPAREN ActParsOptional RPAREN
 					;
 					
-NewFactor ::= (NewFactorArray) NEW Type LBRACKET Expr RBRACKET
+NewFactor ::= (NewFactorArray) NEW Type:arrType LBRACKET Expr:arraySize RBRACKET
 			|
 			(NewFactorMethod) NEW Type LPAREN ActParsOptional RPAREN
 			;
 			
-ExprFactor ::= (ExprFactor) LPAREN Expr RPAREN;
+ExprFactor ::= (ExprFactor) LPAREN Expr:e RPAREN;
 
 
 ActParsOptional ::= (ActParsExist) ActPars

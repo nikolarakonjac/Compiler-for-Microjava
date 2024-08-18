@@ -1,0 +1,138 @@
+INFO  15:27:47,144 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  15:27:47,215 - #2 program
+INFO  15:27:47,215 - #43 test301
+INFO  15:27:47,215 - #43 int
+INFO  15:27:47,217 - #43 x
+INFO  15:27:47,218 - #7 ,
+INFO  15:27:47,218 - #43 y
+INFO  15:27:47,218 - #6 ;
+INFO  15:27:47,218 - #43 bool
+INFO  15:27:47,220 - #43 z
+INFO  15:27:47,220 - #6 ;
+INFO  15:27:47,220 - #43 char
+INFO  15:27:47,220 - #43 c
+INFO  15:27:47,220 - #6 ;
+INFO  15:27:47,220 - #3 {
+INFO  15:27:47,220 - #11 void
+INFO  15:27:47,222 - #43 main
+INFO  15:27:47,222 - #29 (
+INFO  15:27:47,222 - #24 )
+INFO  15:27:47,223 - #43 char
+INFO  15:27:47,224 - #43 c
+INFO  15:27:47,230 - #6 ;
+INFO  15:27:47,230 - #3 {
+INFO  15:27:47,230 - #43 c
+INFO  15:27:47,231 - #10 =
+INFO  15:27:47,231 - #41 a
+INFO  15:27:47,233 - #6 ;
+INFO  15:27:47,233 - #4 }
+INFO  15:27:47,233 - #4 }
+INFO  15:27:47,242 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          MultipleVarDeclaration(
+            VarDeclNextElem(
+             x
+            ) [VarDeclNextElem]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               y
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           bool
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           z
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         char
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         c
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListDoesntExist(
+        ) [StatementListDoesntExist]
+        StatementDesignatorStatement(
+          DesignatorStatementAssign(
+            DesignatorIdent(
+             c
+            ) [DesignatorIdent]
+            Assignop(
+            ) [Assignop]
+            ExprTerm(
+              TermFactor(
+                FactorChar(
+                 a
+                ) [FactorChar]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [DesignatorStatementAssign]
+        ) [StatementDesignatorStatement]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  15:27:47,242 - ===================================
+INFO  15:27:47,245 - Promenljiva x deklarisana  na liniji 4
+INFO  15:27:47,245 - Promenljiva y deklarisana  na liniji 4
+INFO  15:27:47,245 - Promenljiva z deklarisana  na liniji 5
+INFO  15:27:47,246 - Promenljiva c deklarisana  na liniji 6
+INFO  15:27:47,246 - Promenljiva c deklarisana  na liniji 9
+INFO  15:27:47,246 - ===================================
+INFO  15:27:47,246 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,129 @@
+INFO  16:00:27,191 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  16:00:27,285 - #2 program
+INFO  16:00:27,285 - #43 test301
+INFO  16:00:27,285 - #43 int
+INFO  16:00:27,288 - #43 x
+INFO  16:00:27,289 - #7 ,
+INFO  16:00:27,290 - #43 y
+INFO  16:00:27,290 - #6 ;
+INFO  16:00:27,290 - #43 bool
+INFO  16:00:27,292 - #43 z
+INFO  16:00:27,292 - #6 ;
+INFO  16:00:27,292 - #43 char
+INFO  16:00:27,292 - #43 c
+INFO  16:00:27,292 - #6 ;
+INFO  16:00:27,293 - #3 {
+INFO  16:00:27,293 - #11 void
+INFO  16:00:27,295 - #43 main
+INFO  16:00:27,295 - #29 (
+INFO  16:00:27,295 - #24 )
+INFO  16:00:27,296 - #43 char
+INFO  16:00:27,298 - #43 c
+INFO  16:00:27,299 - #6 ;
+INFO  16:00:27,299 - #3 {
+INFO  16:00:27,299 - #43 x
+INFO  16:00:27,302 - #8 [
+INFO  16:00:27,302 - #9 ]
+ERROR 16:00:27,302 - 
+Sintaksna greska na liniji 10
+INFO  16:00:27,303 - #6 ;
+INFO  16:00:27,303 - #4 }
+INFO  16:00:27,303 - #4 }
+ERROR 16:00:27,306 - oporavak od greske za iskaz dodele do znaka ; na liniji: 10
+INFO  16:00:27,323 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          MultipleVarDeclaration(
+            VarDeclNextElem(
+             x
+            ) [VarDeclNextElem]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               y
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           bool
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           z
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         char
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         c
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListDoesntExist(
+        ) [StatementListDoesntExist]
+        StatementDesignatorStatement(
+          DesignatorStatementErrorSemi(
+          ) [DesignatorStatementErrorSemi]
+        ) [StatementDesignatorStatement]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  16:00:27,323 - ===================================
+INFO  16:00:27,328 - Promenljiva x deklarisana  na liniji 4
+INFO  16:00:27,328 - Promenljiva y deklarisana  na liniji 4
+INFO  16:00:27,328 - Promenljiva z deklarisana  na liniji 5
+INFO  16:00:27,328 - Promenljiva c deklarisana  na liniji 6
+INFO  16:00:27,328 - Promenljiva c deklarisana  na liniji 9
+INFO  16:00:27,328 - ===================================
+ERROR 16:00:27,330 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,152 @@
+INFO  16:01:11,341 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  16:01:11,422 - #2 program
+INFO  16:01:11,423 - #43 test301
+INFO  16:01:11,423 - #43 int
+INFO  16:01:11,425 - #43 x
+INFO  16:01:11,426 - #7 ,
+INFO  16:01:11,426 - #43 y
+INFO  16:01:11,426 - #6 ;
+INFO  16:01:11,427 - #43 bool
+INFO  16:01:11,428 - #43 z
+INFO  16:01:11,428 - #6 ;
+INFO  16:01:11,429 - #43 char
+INFO  16:01:11,429 - #43 c
+INFO  16:01:11,429 - #6 ;
+INFO  16:01:11,429 - #43 int
+INFO  16:01:11,429 - #43 arr
+INFO  16:01:11,429 - #8 [
+INFO  16:01:11,429 - #40 5
+ERROR 16:01:11,429 - 
+Sintaksna greska na liniji 7
+INFO  16:01:11,429 - #9 ]
+INFO  16:01:11,430 - #6 ;
+INFO  16:01:11,430 - #3 {
+INFO  16:01:11,431 - #11 void
+INFO  16:01:11,431 - #43 main
+ERROR 16:01:11,431 - oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: 7
+INFO  16:01:11,433 - #29 (
+INFO  16:01:11,433 - #24 )
+INFO  16:01:11,434 - #43 char
+INFO  16:01:11,436 - #43 c
+INFO  16:01:11,436 - #6 ;
+INFO  16:01:11,436 - #3 {
+INFO  16:01:11,437 - #43 x
+INFO  16:01:11,438 - #8 [
+INFO  16:01:11,439 - #40 5
+INFO  16:01:11,439 - #9 ]
+INFO  16:01:11,439 - #6 ;
+ERROR 16:01:11,440 - 
+Sintaksna greska na liniji 11
+INFO  16:01:11,440 - #4 }
+INFO  16:01:11,440 - #4 }
+ERROR 16:01:11,440 - oporavak od greske za iskaz dodele do znaka ; na liniji: 11
+INFO  16:01:11,453 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        DeclarationListVar(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          VarDecl(
+            VarDeclType(
+              TypeName(
+               int
+              ) [TypeName]
+            ) [VarDeclType]
+            MultipleVarDeclaration(
+              VarDeclNextElem(
+               x
+              ) [VarDeclNextElem]
+              SingleVarDeclaration(
+                VarDeclFinalElem(
+                 y
+                ) [VarDeclFinalElem]
+              ) [SingleVarDeclaration]
+            ) [MultipleVarDeclaration]
+          ) [VarDecl]
+        ) [DeclarationListVar]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             bool
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             z
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           char
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           c
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclErrorSemi(
+        ) [VarDeclErrorSemi]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListDoesntExist(
+        ) [StatementListDoesntExist]
+        StatementDesignatorStatement(
+          DesignatorStatementErrorSemi(
+          ) [DesignatorStatementErrorSemi]
+        ) [StatementDesignatorStatement]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  16:01:11,454 - ===================================
+INFO  16:01:11,458 - Promenljiva x deklarisana  na liniji 4
+INFO  16:01:11,458 - Promenljiva y deklarisana  na liniji 4
+INFO  16:01:11,458 - Promenljiva z deklarisana  na liniji 5
+INFO  16:01:11,459 - Promenljiva c deklarisana  na liniji 6
+INFO  16:01:11,459 - Promenljiva c deklarisana  na liniji 10
+INFO  16:01:11,459 - ===================================
+ERROR 16:01:11,460 - Parsiranje NIJE uspesno zavrseno!

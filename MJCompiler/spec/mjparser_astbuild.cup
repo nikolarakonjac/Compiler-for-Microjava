@@ -84,8 +84,6 @@ nonterminal FormalParams FormalParams;
 nonterminal Statement Statement;
 nonterminal DesignatorStatement DesignatorStatement;
 nonterminal Label Label;
-nonterminal NewFactor NewFactor;
-nonterminal ExprFactor ExprFactor;
 nonterminal ActParsOptional ActParsOptional;
 nonterminal ActPars ActPars;
 nonterminal StaticInitializer StaticInitializer;
@@ -106,7 +104,7 @@ nonterminal ConstTypeAndNameDecl ConstTypeAndNameDecl;
 nonterminal ConstName ConstName;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, MethodDecl, MethodReturnTypeAndName, Designator;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Factor, Term, Expr, DesignatorFactor; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Factor, Term, Expr, DesignatorFactor, NewFactor, ExprFactor; 
 
 /* can be used only for this case*/
 precedence left ELSE;
@@ -218,7 +216,7 @@ FormalParam ::= (VariableFormalParam) Type:T1 IDENT:I2 {: RESULT=new VariableFor
 			(ArrayFormalParam) Type:T1 IDENT:I2 LBRACKET RBRACKET {: RESULT=new ArrayFormalParam(T1, I2); RESULT.setLine(T1left); :}
 			; 			
 
-/*	****************************************		*/
+/*	*****************************************************************		*/
 				
 StatementList ::= (StatementListExist) StatementList:S1 Statement:S2 {: RESULT=new StatementListExist(S1, S2); RESULT.setLine(S1left); :}
 				|
@@ -267,7 +265,7 @@ Designator ::= (DesignatorScopeResolution) IDENT:I1 COLON COLON IDENT:I2 {: RESU
 			|
 			(DesignatorDotAccess) Designator:D1 DOT IDENT:I2 {: RESULT=new DesignatorDotAccess(D1, I2); RESULT.setLine(D1left); :}
 			|
-			(DesignatorArray) Designator:D1 LBRACKET Expr:E2 RBRACKET {: RESULT=new DesignatorArray(D1, E2); RESULT.setLine(D1left); :}
+			(DesignatorArray) Designator:designatorName LBRACKET Expr:expr RBRACKET {: RESULT=new DesignatorArray(designatorName, expr); RESULT.setLine(designatorNameleft); :}
 			;
 
 Expr ::= (ExprMinusTerm) MINUS Term:t {: RESULT=new ExprMinusTerm(t); RESULT.setLine(tleft); :}
@@ -300,12 +298,12 @@ DesignatorFactor ::= (DesignatorFactorDesignator) Designator:d {: RESULT=new Des
 					(DesignatorFactorMethod) Designator:func LPAREN ActParsOptional:A1 RPAREN {: RESULT=new DesignatorFactorMethod(func, A1); RESULT.setLine(funcleft); :}
 					;
 					
-NewFactor ::= (NewFactorArray) NEW Type:T1 LBRACKET Expr:E2 RBRACKET {: RESULT=new NewFactorArray(T1, E2); RESULT.setLine(T1left); :}
+NewFactor ::= (NewFactorArray) NEW Type:arrType LBRACKET Expr:arraySize RBRACKET {: RESULT=new NewFactorArray(arrType, arraySize); RESULT.setLine(arrTypeleft); :}
 			|
 			(NewFactorMethod) NEW Type:T1 LPAREN ActParsOptional:A2 RPAREN {: RESULT=new NewFactorMethod(T1, A2); RESULT.setLine(T1left); :}
 			;
 			
-ExprFactor ::= (ExprFactor) LPAREN Expr:E1 RPAREN {: RESULT=new ExprFactor(E1); RESULT.setLine(E1left); :};
+ExprFactor ::= (ExprFactor) LPAREN Expr:e RPAREN {: RESULT=new ExprFactor(e); RESULT.setLine(eleft); :};
 
 
 ActParsOptional ::= (ActParsExist) ActPars:A1 {: RESULT=new ActParsExist(A1); RESULT.setLine(A1left); :}

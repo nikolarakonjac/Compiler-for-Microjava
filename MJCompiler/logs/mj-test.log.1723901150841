@@ -1,0 +1,142 @@
+INFO  15:25:22,927 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  15:25:23,007 - #2 program
+INFO  15:25:23,008 - #43 test301
+INFO  15:25:23,008 - #43 int
+INFO  15:25:23,010 - #43 x
+INFO  15:25:23,011 - #7 ,
+INFO  15:25:23,012 - #43 y
+INFO  15:25:23,012 - #6 ;
+INFO  15:25:23,012 - #43 bool
+INFO  15:25:23,014 - #43 z
+INFO  15:25:23,014 - #6 ;
+INFO  15:25:23,014 - #43 char
+INFO  15:25:23,014 - #43 c
+INFO  15:25:23,014 - #6 ;
+INFO  15:25:23,014 - #3 {
+INFO  15:25:23,014 - #43 int
+INFO  15:25:23,016 - #43 main
+INFO  15:25:23,016 - #29 (
+INFO  15:25:23,016 - #24 )
+INFO  15:25:23,017 - #43 char
+INFO  15:25:23,019 - #43 c
+INFO  15:25:23,020 - #6 ;
+INFO  15:25:23,020 - #3 {
+INFO  15:25:23,021 - #43 c
+INFO  15:25:23,022 - #10 =
+INFO  15:25:23,022 - #41 a
+INFO  15:25:23,023 - #6 ;
+INFO  15:25:23,024 - #4 }
+INFO  15:25:23,024 - #4 }
+INFO  15:25:23,035 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        NoDeclarationList(
+        ) [NoDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          MultipleVarDeclaration(
+            VarDeclNextElem(
+             x
+            ) [VarDeclNextElem]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               y
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           bool
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           z
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         char
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         c
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeNoVoid(
+        TypeName(
+         int
+        ) [TypeName]
+       main
+      ) [MethodReturnTypeNoVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListDoesntExist(
+        ) [StatementListDoesntExist]
+        StatementDesignatorStatement(
+          DesignatorStatementAssign(
+            DesignatorIdent(
+             c
+            ) [DesignatorIdent]
+            Assignop(
+            ) [Assignop]
+            ExprTerm(
+              TermFactor(
+                FactorChar(
+                 a
+                ) [FactorChar]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [DesignatorStatementAssign]
+        ) [StatementDesignatorStatement]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  15:25:23,035 - ===================================
+INFO  15:25:23,041 - Promenljiva x deklarisana  na liniji 4
+INFO  15:25:23,041 - Promenljiva y deklarisana  na liniji 4
+INFO  15:25:23,041 - Promenljiva z deklarisana  na liniji 5
+INFO  15:25:23,041 - Promenljiva c deklarisana  na liniji 6
+INFO  15:25:23,041 - Promenljiva c deklarisana  na liniji 9
+ERROR 15:25:23,041 - Funkcija main nema return naredbu na liniji 9
+INFO  15:25:23,041 - ===================================
+ERROR 15:25:23,042 - Parsiranje NIJE uspesno zavrseno!

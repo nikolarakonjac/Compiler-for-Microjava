@@ -1,0 +1,175 @@
+INFO  20:38:48,441 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  20:38:48,545 - #2 program
+INFO  20:38:48,545 - #43 test301
+INFO  20:38:48,545 - #43 int
+INFO  20:38:48,547 - #43 x
+INFO  20:38:48,549 - #7 ,
+INFO  20:38:48,550 - #43 y
+INFO  20:38:48,550 - #6 ;
+INFO  20:38:48,550 - #43 bool
+INFO  20:38:48,552 - #43 z
+INFO  20:38:48,552 - #6 ;
+INFO  20:38:48,552 - #43 char
+INFO  20:38:48,552 - #43 c
+INFO  20:38:48,552 - #6 ;
+INFO  20:38:48,552 - #43 int
+INFO  20:38:48,553 - #43 arr
+INFO  20:38:48,553 - #8 [
+INFO  20:38:48,553 - #9 ]
+INFO  20:38:48,553 - #6 ;
+INFO  20:38:48,553 - #3 {
+INFO  20:38:48,553 - #11 void
+INFO  20:38:48,555 - #43 main
+INFO  20:38:48,555 - #29 (
+INFO  20:38:48,556 - #24 )
+INFO  20:38:48,557 - #43 char
+INFO  20:38:48,559 - #43 c
+INFO  20:38:48,559 - #6 ;
+INFO  20:38:48,559 - #3 {
+INFO  20:38:48,560 - #43 arr
+INFO  20:38:48,561 - #10 =
+INFO  20:38:48,561 - #19 new
+INFO  20:38:48,563 - #43 int
+INFO  20:38:48,563 - #8 [
+INFO  20:38:48,563 - #42 true
+INFO  20:38:48,564 - #9 ]
+INFO  20:38:48,564 - #6 ;
+INFO  20:38:48,565 - #4 }
+INFO  20:38:48,565 - #4 }
+INFO  20:38:48,577 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        DeclarationListVar(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          VarDecl(
+            VarDeclType(
+              TypeName(
+               int
+              ) [TypeName]
+            ) [VarDeclType]
+            MultipleVarDeclaration(
+              VarDeclNextElem(
+               x
+              ) [VarDeclNextElem]
+              SingleVarDeclaration(
+                VarDeclFinalElem(
+                 y
+                ) [VarDeclFinalElem]
+              ) [SingleVarDeclaration]
+            ) [MultipleVarDeclaration]
+          ) [VarDecl]
+        ) [DeclarationListVar]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             bool
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             z
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           char
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           c
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclArrayFinal(
+         arr
+        ) [VarDeclArrayFinal]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListDoesntExist(
+        ) [StatementListDoesntExist]
+        StatementDesignatorStatement(
+          DesignatorStatementAssign(
+            DesignatorIdent(
+             arr
+            ) [DesignatorIdent]
+            Assignop(
+            ) [Assignop]
+            ExprTerm(
+              TermFactor(
+                FactorNewFactor(
+                  NewFactorArray(
+                    TypeName(
+                     int
+                    ) [TypeName]
+                    ExprTerm(
+                      TermFactor(
+                        FactorBool(
+                         true
+                        ) [FactorBool]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [NewFactorArray]
+                ) [FactorNewFactor]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [DesignatorStatementAssign]
+        ) [StatementDesignatorStatement]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  20:38:48,577 - ===================================
+INFO  20:38:48,583 - Promenljiva x deklarisana  na liniji 4
+INFO  20:38:48,583 - Promenljiva y deklarisana  na liniji 4
+INFO  20:38:48,583 - Promenljiva z deklarisana  na liniji 5
+INFO  20:38:48,583 - Promenljiva c deklarisana  na liniji 6
+INFO  20:38:48,583 - Promenljiva arr deklarisana  na liniji 7
+INFO  20:38:48,583 - Promenljiva c deklarisana  na liniji 10
+ERROR 20:38:48,584 - Greska: velicina niza za alokaciju mora biti tipa int na liniji 11
+ERROR 20:38:48,584 - Greska pri dodeli vrednosti, tipovi nisu kompatibilni na liniji 11
+INFO  20:38:48,584 - ===================================
+ERROR 20:38:48,584 - Parsiranje NIJE uspesno zavrseno!

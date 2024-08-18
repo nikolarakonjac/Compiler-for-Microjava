@@ -4,12 +4,15 @@ program test301
 	int x, y;
 	bool z;
 	char c;
+	int arr[];
 {
 	
-	bool main() char c;{
-		c = 'a';
-		return false;
+	void main() char c;{
+		x = - (7 * 6 + 5 / 2);
+		
 	}
+	
+	
 	
 	
 	
