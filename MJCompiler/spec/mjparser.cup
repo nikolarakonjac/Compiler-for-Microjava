@@ -227,9 +227,9 @@ DesignatorStatement ::= (DesignatorStatementAssign) Designator:destination Assig
 					|
 					(DesignatorStatementMethod) Designator LPAREN ActParsOptional RPAREN SEMICOLON
 					|
-					(DesignatorStatementInc) Designator INC SEMICOLON
+					(DesignatorStatementInc) Designator:designator INC SEMICOLON
 					|
-					(DesignatorStatementDec) Designator DEC SEMICOLON
+					(DesignatorStatementDec) Designator:designator DEC SEMICOLON
 					|
 					(DesignatorStatementErrorSemi) error SEMICOLON:l 
 					{: parser.report_error("oporavak od greske za iskaz dodele do znaka ; na liniji: " + lleft, null); :}

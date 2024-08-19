@@ -1,0 +1,206 @@
+INFO  14:14:52,691 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:14:52,753 - #2 program
+INFO  14:14:52,753 - #43 test301
+INFO  14:14:52,753 - #43 int
+INFO  14:14:52,755 - #43 x
+INFO  14:14:52,756 - #7 ,
+INFO  14:14:52,756 - #43 y
+INFO  14:14:52,756 - #6 ;
+INFO  14:14:52,756 - #43 bool
+INFO  14:14:52,757 - #43 z
+INFO  14:14:52,757 - #6 ;
+INFO  14:14:52,757 - #43 char
+INFO  14:14:52,757 - #43 c
+INFO  14:14:52,757 - #6 ;
+INFO  14:14:52,757 - #43 int
+INFO  14:14:52,757 - #43 arr
+INFO  14:14:52,758 - #8 [
+INFO  14:14:52,758 - #9 ]
+INFO  14:14:52,758 - #6 ;
+INFO  14:14:52,758 - #43 char
+INFO  14:14:52,758 - #43 arr2
+INFO  14:14:52,758 - #8 [
+INFO  14:14:52,758 - #9 ]
+INFO  14:14:52,758 - #6 ;
+INFO  14:14:52,758 - #3 {
+INFO  14:14:52,758 - #11 void
+INFO  14:14:52,759 - #43 main
+INFO  14:14:52,759 - #29 (
+INFO  14:14:52,759 - #24 )
+INFO  14:14:52,760 - #43 char
+INFO  14:14:52,761 - #43 c
+INFO  14:14:52,761 - #6 ;
+INFO  14:14:52,761 - #3 {
+INFO  14:14:52,761 - #37 read
+INFO  14:14:52,762 - #29 (
+INFO  14:14:52,762 - #43 arr2
+INFO  14:14:52,762 - #24 )
+INFO  14:14:52,762 - #6 ;
+INFO  14:14:52,762 - #38 print
+INFO  14:14:52,762 - #29 (
+INFO  14:14:52,762 - #40 2
+INFO  14:14:52,762 - #23 +
+INFO  14:14:52,763 - #40 3
+INFO  14:14:52,764 - #33 *
+INFO  14:14:52,764 - #40 4
+INFO  14:14:52,766 - #24 )
+INFO  14:14:52,766 - #6 ;
+INFO  14:14:52,766 - #4 }
+INFO  14:14:52,766 - #4 }
+INFO  14:14:52,773 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        DeclarationListVar(
+          DeclarationListVar(
+            NoDeclarationList(
+            ) [NoDeclarationList]
+            VarDecl(
+              VarDeclType(
+                TypeName(
+                 int
+                ) [TypeName]
+              ) [VarDeclType]
+              MultipleVarDeclaration(
+                VarDeclNextElem(
+                 x
+                ) [VarDeclNextElem]
+                SingleVarDeclaration(
+                  VarDeclFinalElem(
+                   y
+                  ) [VarDeclFinalElem]
+                ) [SingleVarDeclaration]
+              ) [MultipleVarDeclaration]
+            ) [VarDecl]
+          ) [DeclarationListVar]
+          VarDecl(
+            VarDeclType(
+              TypeName(
+               bool
+              ) [TypeName]
+            ) [VarDeclType]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               z
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [VarDecl]
+        ) [DeclarationListVar]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           int
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclArrayFinal(
+           arr
+          ) [VarDeclArrayFinal]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         char
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclArrayFinal(
+         arr2
+        ) [VarDeclArrayFinal]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementRead(
+            DesignatorIdent(
+             arr2
+            ) [DesignatorIdent]
+          ) [StatementRead]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprAddTerm(
+            ExprTerm(
+              TermFactor(
+                FactorNumber(
+                 2
+                ) [FactorNumber]
+              ) [TermFactor]
+            ) [ExprTerm]
+            PlusOperator(
+            ) [PlusOperator]
+            TermMul(
+              TermFactor(
+                FactorNumber(
+                 3
+                ) [FactorNumber]
+              ) [TermFactor]
+              MulOperator(
+              ) [MulOperator]
+              FactorNumber(
+               4
+              ) [FactorNumber]
+            ) [TermMul]
+          ) [ExprAddTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  14:14:52,774 - ===================================
+INFO  14:14:52,776 - Promenljiva x deklarisana  na liniji 4
+INFO  14:14:52,776 - Promenljiva y deklarisana  na liniji 4
+INFO  14:14:52,776 - Promenljiva z deklarisana  na liniji 5
+INFO  14:14:52,776 - Promenljiva c deklarisana  na liniji 6
+INFO  14:14:52,776 - Promenljiva arr deklarisana  na liniji 7
+INFO  14:14:52,776 - Promenljiva arr2 deklarisana  na liniji 8
+INFO  14:14:52,776 - Promenljiva c deklarisana  na liniji 11
+ERROR 14:14:52,776 - Greska: Vrednost u koju se ucitava vrednost mora biti tipa int, bool ili char na liniji 12
+ERROR 14:14:52,776 - izraz koji se ispisuje mora biti int, bool ili char na liniji 13
+INFO  14:14:52,776 - ===================================
+ERROR 14:14:52,777 - Parsiranje NIJE uspesno zavrseno!

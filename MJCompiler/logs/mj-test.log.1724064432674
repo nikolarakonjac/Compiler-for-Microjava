@@ -1,0 +1,198 @@
+INFO  21:09:42,737 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  21:09:42,825 - #2 program
+INFO  21:09:42,825 - #43 test301
+INFO  21:09:42,825 - #43 int
+INFO  21:09:42,827 - #43 x
+INFO  21:09:42,828 - #7 ,
+INFO  21:09:42,828 - #43 y
+INFO  21:09:42,828 - #6 ;
+INFO  21:09:42,828 - #43 bool
+INFO  21:09:42,830 - #43 z
+INFO  21:09:42,830 - #6 ;
+INFO  21:09:42,830 - #43 char
+INFO  21:09:42,830 - #43 c
+INFO  21:09:42,830 - #6 ;
+INFO  21:09:42,830 - #43 int
+INFO  21:09:42,830 - #43 arr
+INFO  21:09:42,830 - #8 [
+INFO  21:09:42,830 - #9 ]
+INFO  21:09:42,830 - #6 ;
+INFO  21:09:42,831 - #3 {
+INFO  21:09:42,831 - #11 void
+INFO  21:09:42,832 - #43 main
+INFO  21:09:42,832 - #29 (
+INFO  21:09:42,832 - #24 )
+INFO  21:09:42,833 - #43 char
+INFO  21:09:42,834 - #43 c
+INFO  21:09:42,834 - #6 ;
+INFO  21:09:42,834 - #3 {
+INFO  21:09:42,835 - #43 x
+INFO  21:09:42,835 - #10 =
+INFO  21:09:42,836 - #12 -
+INFO  21:09:42,837 - #29 (
+INFO  21:09:42,837 - #40 7
+INFO  21:09:42,837 - #33 *
+INFO  21:09:42,837 - #40 6
+INFO  21:09:42,839 - #23 +
+INFO  21:09:42,839 - #40 5
+INFO  21:09:42,841 - #26 /
+INFO  21:09:42,842 - #40 2
+INFO  21:09:42,843 - #24 )
+INFO  21:09:42,843 - #6 ;
+INFO  21:09:42,844 - #4 }
+INFO  21:09:42,845 - #4 }
+INFO  21:09:42,854 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        DeclarationListVar(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          VarDecl(
+            VarDeclType(
+              TypeName(
+               int
+              ) [TypeName]
+            ) [VarDeclType]
+            MultipleVarDeclaration(
+              VarDeclNextElem(
+               x
+              ) [VarDeclNextElem]
+              SingleVarDeclaration(
+                VarDeclFinalElem(
+                 y
+                ) [VarDeclFinalElem]
+              ) [SingleVarDeclaration]
+            ) [MultipleVarDeclaration]
+          ) [VarDecl]
+        ) [DeclarationListVar]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             bool
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             z
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           char
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           c
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclArrayFinal(
+         arr
+        ) [VarDeclArrayFinal]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListDoesntExist(
+        ) [StatementListDoesntExist]
+        StatementDesignatorStatement(
+          DesignatorStatementAssign(
+            DesignatorIdent(
+             x
+            ) [DesignatorIdent]
+            Assignop(
+            ) [Assignop]
+            ExprMinusTerm(
+              TermFactor(
+                FactorExprFactor(
+                  ExprFactor(
+                    ExprAddTerm(
+                      ExprTerm(
+                        TermMul(
+                          TermFactor(
+                            FactorNumber(
+                             7
+                            ) [FactorNumber]
+                          ) [TermFactor]
+                          MulOperator(
+                          ) [MulOperator]
+                          FactorNumber(
+                           6
+                          ) [FactorNumber]
+                        ) [TermMul]
+                      ) [ExprTerm]
+                      PlusOperator(
+                      ) [PlusOperator]
+                      TermMul(
+                        TermFactor(
+                          FactorNumber(
+                           5
+                          ) [FactorNumber]
+                        ) [TermFactor]
+                        DivOperator(
+                        ) [DivOperator]
+                        FactorNumber(
+                         2
+                        ) [FactorNumber]
+                      ) [TermMul]
+                    ) [ExprAddTerm]
+                  ) [ExprFactor]
+                ) [FactorExprFactor]
+              ) [TermFactor]
+            ) [ExprMinusTerm]
+          ) [DesignatorStatementAssign]
+        ) [StatementDesignatorStatement]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  21:09:42,855 - ===================================
+INFO  21:09:42,859 - Promenljiva x deklarisana  na liniji 4
+INFO  21:09:42,859 - Promenljiva y deklarisana  na liniji 4
+INFO  21:09:42,859 - Promenljiva z deklarisana  na liniji 5
+INFO  21:09:42,859 - Promenljiva c deklarisana  na liniji 6
+INFO  21:09:42,859 - Promenljiva arr deklarisana  na liniji 7
+INFO  21:09:42,860 - Promenljiva c deklarisana  na liniji 10
+INFO  21:09:42,860 - ===================================
+INFO  21:09:42,860 - Parsiranje uspesno zavrseno!

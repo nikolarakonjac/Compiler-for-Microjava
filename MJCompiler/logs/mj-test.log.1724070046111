@@ -1,0 +1,45 @@
+INFO  14:20:01,558 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:20:01,610 - #2 program
+INFO  14:20:01,610 - #43 test301
+INFO  14:20:01,610 - #43 int
+INFO  14:20:01,612 - #43 x
+INFO  14:20:01,612 - #7 ,
+INFO  14:20:01,613 - #43 y
+INFO  14:20:01,613 - #6 ;
+INFO  14:20:01,613 - #43 bool
+INFO  14:20:01,614 - #43 z
+INFO  14:20:01,614 - #6 ;
+INFO  14:20:01,614 - #43 char
+INFO  14:20:01,614 - #43 c
+INFO  14:20:01,614 - #6 ;
+INFO  14:20:01,614 - #43 int
+INFO  14:20:01,614 - #43 arr
+INFO  14:20:01,614 - #8 [
+INFO  14:20:01,614 - #9 ]
+INFO  14:20:01,614 - #6 ;
+INFO  14:20:01,614 - #43 char
+INFO  14:20:01,615 - #43 arr2
+INFO  14:20:01,615 - #8 [
+INFO  14:20:01,615 - #9 ]
+INFO  14:20:01,615 - #6 ;
+INFO  14:20:01,615 - #3 {
+INFO  14:20:01,615 - #11 void
+INFO  14:20:01,616 - #43 main
+INFO  14:20:01,617 - #29 (
+INFO  14:20:01,617 - #24 )
+INFO  14:20:01,618 - #43 char
+INFO  14:20:01,618 - #43 c
+INFO  14:20:01,619 - #6 ;
+INFO  14:20:01,619 - #3 {
+INFO  14:20:01,619 - #37 read
+INFO  14:20:01,620 - #29 (
+INFO  14:20:01,620 - #43 arr2
+INFO  14:20:01,620 - #8 [
+INFO  14:20:01,620 - #40 2
+INFO  14:20:01,620 - #9 ]
+INFO  14:20:01,620 - #24 )
+INFO  14:20:01,621 - #4 }
+ERROR 14:20:01,621 - 
+Sintaksna greska na liniji 14
+INFO  14:20:01,621 - #4 }
+ERROR 14:20:01,622 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 23

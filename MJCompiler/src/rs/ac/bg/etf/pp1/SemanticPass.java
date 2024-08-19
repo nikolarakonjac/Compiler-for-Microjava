@@ -402,18 +402,38 @@ public class SemanticPass extends VisitorAdaptor {
 	//	------------------------------- DesignatorStatement  ----------------------------------------------------
 	
 	public void visit(DesignatorStatementAssign stm) {
-		// Designator:destination Assignop Expr:value SEMICOLON
-//		report_info("Designator " + stm.getDesignator().obj.getType().getKind(), null);
-//		report_info("Designator " + stm.getDesignator().obj.getType().getElemType().getKind(), null);
-//		
-//		report_info("Expr " + stm.getExpr().struct.getKind(), null);
-//		report_info("Expr " + stm.getExpr().struct.getElemType().getKind(), null);
+		// DesignatorStatement ::= Designator:destination Assignop Expr:value 
+		
+		if(!(stm.getDesignator().obj.getKind() == Obj.Var || stm.getDesignator().obj.getKind() == Obj.Elem)) {
+			report_error("Greska: destinacija za dodelu vrednosti mora biti promenljiva ili element niza", stm);
+			return;
+		}
 		
 		if(!stm.getExpr().struct.assignableTo(stm.getDesignator().obj.getType())) {
 			report_error("Greska pri dodeli vrednosti, tipovi nisu kompatibilni",  stm);
 		}
 	}
 	
+	public void visit(DesignatorStatementInc inc) {
+		// DesignatorStatement ::= Designator:designator INC SEMICOLON
+		
+		if(!( (inc.getDesignator().obj.getKind() == Obj.Var && inc.getDesignator().obj.getType() == MyTab.intType ) || 
+				( inc.getDesignator().obj.getKind() == Obj.Elem && inc.getDesignator().obj.getType() == MyTab.intType) )){
+			report_error("Greska: vrednost koja se inkrementira mora biti promenljiva tipa int ili element niza koji je int", inc);
+			return ;
+		}
+		
+	}
+	
+	public void visit(DesignatorStatementDec dec) {
+		// DesignatorStatement ::= Designator:designator DEC SEMICOLON
+		
+		if(!( (dec.getDesignator().obj.getKind() == Obj.Var && dec.getDesignator().obj.getType() == MyTab.intType ) || 
+				( dec.getDesignator().obj.getKind() == Obj.Elem && dec.getDesignator().obj.getType() == MyTab.intType) )){
+			report_error("Greska: vrednost koja se dekrementira mora biti promenljiva tipa int ili element niza koji je int", dec);
+			return ;
+		}
+	}
 	
 	//	------------------------------- DesignatorStatement  ----------------------------------------------------
 	
@@ -429,10 +449,10 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 	
-//	------------------------------- Designator ----------------------------------------------------
+	//	------------------------------- Designator ----------------------------------------------------
 	
 	public void visit(DesignatorIdent designator) {
-		//  IDENT:designatorName
+		// IDENT:designatorName
 		Obj obj = MyTab.find(designator.getDesignatorName());
 		if(obj == MyTab.noObj) {
 			report_error("Greska na liniji " + designator.getLine() + " ime: " + designator.getDesignatorName() + " nije deklarisano", null);
@@ -453,6 +473,9 @@ public class SemanticPass extends VisitorAdaptor {
 		if(exprType.getKind() != Struct.Int) {
 			report_error("Greska: Expr mora biti tipa int ako se pristupa nizu", arr);
 		}
+		
+		// element niza, pravi se novi objekat i propagira se dalje
+		arr.obj = new Obj(Obj.Elem, arr.getDesignator().obj.getName(), arr.getDesignator().obj.getType().getElemType());
 	}
 	
 	
@@ -465,6 +488,41 @@ public class SemanticPass extends VisitorAdaptor {
 		else {
 			report_error("Greska na liniji " + funcCall.getLine()+" : ime " + func.getName() + " nije funkcija!", null);
 			funcCall.struct = Tab.noType;
+		}
+	}
+	
+	//	------------------------------- Read ----------------------------------------------------
+	
+	public void visit(StatementRead read) {
+		// Statement ::= READ LPAREN Designator RPAREN SEMICOLON
+		if(!(read.getDesignator().obj.getKind() == Obj.Var || read.getDesignator().obj.getKind() == Obj.Elem )) {
+			report_error("Greska: Vrednost u koju se ucitava vrednost mora biti promenljiva ili element niza", read);
+			return;
+		}
+		
+		if(!(read.getDesignator().obj.getType() == MyTab.intType || read.getDesignator().obj.getType() == MyTab.boolType 
+				|| read.getDesignator().obj.getType() == MyTab.charType)) {
+			report_error("Greska: Vrednost u koju se ucitava vrednost mora biti tipa int, bool ili char", read);
+			return;
+		}
+		
+	}
+	
+	//	------------------------------- Print ----------------------------------------------------
+	
+	public void visit(StatementPrintExpr printExpr) {
+		// Statement ::= PRINT LPAREN Expr RPAREN SEMICOLON
+		if(!(printExpr.getExpr().struct.getKind() == Struct.Int || printExpr.getExpr().struct.getKind() == Struct.Char
+				|| printExpr.getExpr().struct.getKind() == Struct.Bool)) {
+			report_error("Greska: izraz koji se ispisuje mora biti int, bool ili char", printExpr);
+		}
+	}
+	
+	public void visit(StatementPrintExprNumber printExprNum) {
+		// Statement ::= PRINT LPAREN Expr COMMA NUMBER RPAREN SEMICOLON
+		if(!(printExprNum.getExpr().struct.getKind() == Struct.Int || printExprNum.getExpr().struct.getKind() == Struct.Char 
+				|| printExprNum.getExpr().struct.getKind() == Struct.Bool)) {
+			report_error("Greska: izraz koji se ispisuje mora biti int, bool ili char", printExprNum);
 		}
 	}
 	

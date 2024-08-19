@@ -1,0 +1,150 @@
+INFO  12:47:12,679 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  12:47:12,782 - #2 program
+INFO  12:47:12,783 - #43 test301
+INFO  12:47:12,783 - #43 int
+INFO  12:47:12,785 - #43 x
+INFO  12:47:12,787 - #7 ,
+INFO  12:47:12,787 - #43 y
+INFO  12:47:12,787 - #6 ;
+INFO  12:47:12,788 - #43 bool
+INFO  12:47:12,789 - #43 z
+INFO  12:47:12,789 - #6 ;
+INFO  12:47:12,790 - #43 char
+INFO  12:47:12,790 - #43 c
+INFO  12:47:12,790 - #6 ;
+INFO  12:47:12,790 - #43 int
+INFO  12:47:12,790 - #43 arr
+INFO  12:47:12,790 - #8 [
+INFO  12:47:12,790 - #9 ]
+INFO  12:47:12,790 - #6 ;
+INFO  12:47:12,790 - #3 {
+INFO  12:47:12,790 - #11 void
+INFO  12:47:12,799 - #43 main
+INFO  12:47:12,799 - #29 (
+INFO  12:47:12,799 - #24 )
+INFO  12:47:12,801 - #43 char
+INFO  12:47:12,802 - #43 c
+INFO  12:47:12,802 - #6 ;
+INFO  12:47:12,803 - #3 {
+INFO  12:47:12,803 - #43 x
+INFO  12:47:12,804 - #10 =
+INFO  12:47:12,804 - #43 x
+INFO  12:47:12,806 - #13 ++
+ERROR 12:47:12,806 - 
+Sintaksna greska na liniji 11
+INFO  12:47:12,806 - #6 ;
+INFO  12:47:12,807 - #4 }
+INFO  12:47:12,807 - #4 }
+ERROR 12:47:12,808 - oporavak od greske za iskaz dodele do znaka ; na liniji: 11
+INFO  12:47:12,820 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        DeclarationListVar(
+          NoDeclarationList(
+          ) [NoDeclarationList]
+          VarDecl(
+            VarDeclType(
+              TypeName(
+               int
+              ) [TypeName]
+            ) [VarDeclType]
+            MultipleVarDeclaration(
+              VarDeclNextElem(
+               x
+              ) [VarDeclNextElem]
+              SingleVarDeclaration(
+                VarDeclFinalElem(
+                 y
+                ) [VarDeclFinalElem]
+              ) [SingleVarDeclaration]
+            ) [MultipleVarDeclaration]
+          ) [VarDecl]
+        ) [DeclarationListVar]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             bool
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             z
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           char
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           c
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclArrayFinal(
+         arr
+        ) [VarDeclArrayFinal]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListDoesntExist(
+        ) [StatementListDoesntExist]
+        StatementDesignatorStatement(
+          DesignatorStatementErrorSemi(
+          ) [DesignatorStatementErrorSemi]
+        ) [StatementDesignatorStatement]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  12:47:12,820 - ===================================
+INFO  12:47:12,824 - Promenljiva x deklarisana  na liniji 4
+INFO  12:47:12,824 - Promenljiva y deklarisana  na liniji 4
+INFO  12:47:12,824 - Promenljiva z deklarisana  na liniji 5
+INFO  12:47:12,824 - Promenljiva c deklarisana  na liniji 6
+INFO  12:47:12,824 - Promenljiva arr deklarisana  na liniji 7
+INFO  12:47:12,824 - Promenljiva c deklarisana  na liniji 10
+INFO  12:47:12,825 - ===================================
+ERROR 12:47:12,825 - Parsiranje NIJE uspesno zavrseno!

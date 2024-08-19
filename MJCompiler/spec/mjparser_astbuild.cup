@@ -251,9 +251,9 @@ DesignatorStatement ::= (DesignatorStatementAssign) Designator:destination Assig
 					|
 					(DesignatorStatementMethod) Designator:D1 LPAREN ActParsOptional:A2 RPAREN SEMICOLON {: RESULT=new DesignatorStatementMethod(D1, A2); RESULT.setLine(D1left); :}
 					|
-					(DesignatorStatementInc) Designator:D1 INC SEMICOLON {: RESULT=new DesignatorStatementInc(D1); RESULT.setLine(D1left); :}
+					(DesignatorStatementInc) Designator:designator INC SEMICOLON {: RESULT=new DesignatorStatementInc(designator); RESULT.setLine(designatorleft); :}
 					|
-					(DesignatorStatementDec) Designator:D1 DEC SEMICOLON {: RESULT=new DesignatorStatementDec(D1); RESULT.setLine(D1left); :}
+					(DesignatorStatementDec) Designator:designator DEC SEMICOLON {: RESULT=new DesignatorStatementDec(designator); RESULT.setLine(designatorleft); :}
 					|
 					(DesignatorStatementErrorSemi) error SEMICOLON:l 
 					{: parser.report_error("oporavak od greske za iskaz dodele do znaka ; na liniji: " + lleft, null); :} {: RESULT=new DesignatorStatementErrorSemi(); :}
