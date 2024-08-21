@@ -1,0 +1,143 @@
+INFO  16:42:46,138 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  16:42:46,191 - #2 program
+INFO  16:42:46,192 - #43 MjProgram
+INFO  16:42:46,192 - #43 int
+INFO  16:42:46,193 - #43 x
+INFO  16:42:46,194 - #6 ;
+INFO  16:42:46,194 - #43 int
+INFO  16:42:46,195 - #43 y
+INFO  16:42:46,195 - #6 ;
+INFO  16:42:46,195 - #3 {
+INFO  16:42:46,195 - #11 void
+INFO  16:42:46,195 - #43 main
+INFO  16:42:46,195 - #29 (
+INFO  16:42:46,196 - #24 )
+INFO  16:42:46,196 - #43 int
+INFO  16:42:46,197 - #43 c
+INFO  16:42:46,197 - #6 ;
+INFO  16:42:46,197 - #3 {
+INFO  16:42:46,197 - #43 x
+INFO  16:42:46,198 - #10 =
+INFO  16:42:46,198 - #40 3
+INFO  16:42:46,199 - #6 ;
+INFO  16:42:46,199 - #38 print
+INFO  16:42:46,200 - #29 (
+INFO  16:42:46,200 - #40 1
+INFO  16:42:46,200 - #23 +
+INFO  16:42:46,200 - #40 5
+INFO  16:42:46,201 - #24 )
+INFO  16:42:46,202 - #6 ;
+INFO  16:42:46,202 - #4 }
+INFO  16:42:46,202 - #4 }
+INFO  16:42:46,207 - Program(
+  ProgramName(
+   MjProgram
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           int
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           x
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         y
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             c
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorIdent(
+               x
+              ) [DesignatorIdent]
+              Assignop(
+              ) [Assignop]
+              ExprTerm(
+                TermFactor(
+                  FactorNumber(
+                   3
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignatorStatement]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprAddTerm(
+            ExprTerm(
+              TermFactor(
+                FactorNumber(
+                 1
+                ) [FactorNumber]
+              ) [TermFactor]
+            ) [ExprTerm]
+            PlusOperator(
+            ) [PlusOperator]
+            TermFactor(
+              FactorNumber(
+               5
+              ) [FactorNumber]
+            ) [TermFactor]
+          ) [ExprAddTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  16:42:46,208 - ===================================
+INFO  16:42:46,211 - Promenljiva x deklarisana  na liniji 3
+INFO  16:42:46,211 - Promenljiva y deklarisana  na liniji 3
+INFO  16:42:46,211 - Promenljiva c deklarisana  na liniji 6
+INFO  16:42:46,211 - ===================================
+INFO  16:42:46,215 - usao u FactorNumber na liniji 8
+INFO  16:42:46,216 - usao u assign na liniji 8
+INFO  16:42:46,216 - usao u FactorNumber na liniji 11
+INFO  16:42:46,216 - usao u FactorNumber na liniji 11
+INFO  16:42:46,216 - Parsiranje uspesno zavrseno!

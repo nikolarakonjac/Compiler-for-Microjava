@@ -1,0 +1,139 @@
+INFO  16:47:00,250 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  16:47:00,348 - #2 program
+INFO  16:47:00,348 - #43 MjProgram
+INFO  16:47:00,348 - #43 int
+INFO  16:47:00,351 - #43 x
+INFO  16:47:00,352 - #6 ;
+INFO  16:47:00,352 - #3 {
+INFO  16:47:00,353 - #11 void
+INFO  16:47:00,354 - #43 main
+INFO  16:47:00,354 - #29 (
+INFO  16:47:00,355 - #24 )
+INFO  16:47:00,356 - #3 {
+INFO  16:47:00,357 - #43 x
+INFO  16:47:00,359 - #10 =
+INFO  16:47:00,360 - #40 3
+INFO  16:47:00,361 - #6 ;
+INFO  16:47:00,362 - #38 print
+INFO  16:47:00,362 - #29 (
+INFO  16:47:00,362 - #40 1
+INFO  16:47:00,362 - #23 +
+INFO  16:47:00,362 - #40 5
+INFO  16:47:00,365 - #24 )
+INFO  16:47:00,366 - #6 ;
+INFO  16:47:00,366 - #38 print
+INFO  16:47:00,366 - #29 (
+INFO  16:47:00,366 - #40 2
+INFO  16:47:00,366 - #24 )
+INFO  16:47:00,366 - #6 ;
+INFO  16:47:00,366 - #38 print
+INFO  16:47:00,366 - #29 (
+INFO  16:47:00,366 - #43 x
+INFO  16:47:00,366 - #24 )
+INFO  16:47:00,367 - #6 ;
+INFO  16:47:00,367 - #4 }
+INFO  16:47:00,367 - #4 }
+INFO  16:47:00,379 - Program(
+  ProgramName(
+   MjProgram
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         x
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListExist(
+            StatementListExist(
+              StatementListDoesntExist(
+              ) [StatementListDoesntExist]
+              StatementDesignatorStatement(
+                DesignatorStatementAssign(
+                  DesignatorIdent(
+                   x
+                  ) [DesignatorIdent]
+                  Assignop(
+                  ) [Assignop]
+                  ExprTerm(
+                    TermFactor(
+                      FactorNumber(
+                       3
+                      ) [FactorNumber]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [DesignatorStatementAssign]
+              ) [StatementDesignatorStatement]
+            ) [StatementListExist]
+            StatementPrintExpr(
+              ExprAddTerm(
+                ExprTerm(
+                  TermFactor(
+                    FactorNumber(
+                     1
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+                PlusOperator(
+                ) [PlusOperator]
+                TermFactor(
+                  FactorNumber(
+                   5
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprAddTerm]
+            ) [StatementPrintExpr]
+          ) [StatementListExist]
+          StatementPrintExpr(
+            ExprTerm(
+              TermFactor(
+                FactorNumber(
+                 2
+                ) [FactorNumber]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [StatementPrintExpr]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorDesignatorFactor(
+                DesignatorFactorDesignator(
+                  DesignatorIdent(
+                   x
+                  ) [DesignatorIdent]
+                ) [DesignatorFactorDesignator]
+              ) [FactorDesignatorFactor]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  16:47:00,380 - ===================================
+INFO  16:47:00,384 - Promenljiva x deklarisana  na liniji 3
+INFO  16:47:00,384 - ===================================
+INFO  16:47:00,394 - Parsiranje uspesno zavrseno!

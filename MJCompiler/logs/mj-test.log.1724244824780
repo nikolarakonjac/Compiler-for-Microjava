@@ -1,0 +1,140 @@
+INFO  14:53:32,164 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:53:32,237 - #2 program
+INFO  14:53:32,238 - #43 MjProgram
+INFO  14:53:32,238 - #43 int
+INFO  14:53:32,240 - #43 x
+INFO  14:53:32,242 - #6 ;
+INFO  14:53:32,242 - #3 {
+INFO  14:53:32,245 - #11 void
+INFO  14:53:32,247 - #43 main
+INFO  14:53:32,247 - #29 (
+INFO  14:53:32,247 - #24 )
+INFO  14:53:32,249 - #43 int
+INFO  14:53:32,250 - #43 y
+INFO  14:53:32,250 - #6 ;
+INFO  14:53:32,250 - #43 int
+INFO  14:53:32,250 - #43 z
+INFO  14:53:32,251 - #6 ;
+INFO  14:53:32,251 - #3 {
+INFO  14:53:32,251 - #43 x
+INFO  14:53:32,252 - #10 =
+INFO  14:53:32,252 - #40 3
+INFO  14:53:32,259 - #6 ;
+INFO  14:53:32,260 - #38 print
+INFO  14:53:32,260 - #29 (
+INFO  14:53:32,260 - #40 1
+INFO  14:53:32,260 - #23 +
+INFO  14:53:32,260 - #40 5
+INFO  14:53:32,263 - #24 )
+INFO  14:53:32,264 - #6 ;
+INFO  14:53:32,264 - #4 }
+INFO  14:53:32,264 - #4 }
+INFO  14:53:32,277 - Program(
+  ProgramName(
+   MjProgram
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         x
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        VarDeclarationList(
+          NoVarDeclarationList(
+          ) [NoVarDeclarationList]
+          VarDecl(
+            VarDeclType(
+              TypeName(
+               int
+              ) [TypeName]
+            ) [VarDeclType]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               y
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [VarDecl]
+        ) [VarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             z
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorIdent(
+               x
+              ) [DesignatorIdent]
+              Assignop(
+              ) [Assignop]
+              ExprTerm(
+                TermFactor(
+                  FactorNumber(
+                   3
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignatorStatement]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprAddTerm(
+            ExprTerm(
+              TermFactor(
+                FactorNumber(
+                 1
+                ) [FactorNumber]
+              ) [TermFactor]
+            ) [ExprTerm]
+            PlusOperator(
+            ) [PlusOperator]
+            TermFactor(
+              FactorNumber(
+               5
+              ) [FactorNumber]
+            ) [TermFactor]
+          ) [ExprAddTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  14:53:32,278 - ===================================
+INFO  14:53:32,281 - Promenljiva x deklarisana  na liniji 3
+INFO  14:53:32,282 - Promenljiva y deklarisana  na liniji 6
+INFO  14:53:32,282 - Promenljiva z deklarisana  na liniji 6
+INFO  14:53:32,282 - ===================================
+INFO  14:53:32,288 - usao u assign na liniji 9
+INFO  14:53:32,289 - Parsiranje uspesno zavrseno!

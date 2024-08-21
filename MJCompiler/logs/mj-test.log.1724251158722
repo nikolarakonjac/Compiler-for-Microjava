@@ -1,0 +1,128 @@
+INFO  16:37:59,569 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  16:37:59,630 - #2 program
+INFO  16:37:59,630 - #43 MjProgram
+INFO  16:37:59,630 - #3 {
+INFO  16:37:59,631 - #11 void
+INFO  16:37:59,632 - #43 main
+INFO  16:37:59,632 - #29 (
+INFO  16:37:59,632 - #24 )
+INFO  16:37:59,633 - #43 int
+INFO  16:37:59,634 - #43 x
+INFO  16:37:59,635 - #6 ;
+INFO  16:37:59,635 - #3 {
+INFO  16:37:59,636 - #43 x
+INFO  16:37:59,637 - #10 =
+INFO  16:37:59,637 - #40 3
+INFO  16:37:59,638 - #6 ;
+INFO  16:37:59,638 - #38 print
+INFO  16:37:59,638 - #29 (
+INFO  16:37:59,638 - #43 x
+INFO  16:37:59,638 - #24 )
+INFO  16:37:59,639 - #6 ;
+INFO  16:37:59,639 - #38 print
+INFO  16:37:59,639 - #29 (
+INFO  16:37:59,639 - #40 1
+INFO  16:37:59,639 - #23 +
+INFO  16:37:59,639 - #40 5
+INFO  16:37:59,640 - #24 )
+INFO  16:37:59,641 - #6 ;
+INFO  16:37:59,641 - #4 }
+INFO  16:37:59,641 - #4 }
+INFO  16:37:59,647 - Program(
+  ProgramName(
+   MjProgram
+  ) [ProgramName]
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             x
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListExist(
+            StatementListDoesntExist(
+            ) [StatementListDoesntExist]
+            StatementDesignatorStatement(
+              DesignatorStatementAssign(
+                DesignatorIdent(
+                 x
+                ) [DesignatorIdent]
+                Assignop(
+                ) [Assignop]
+                ExprTerm(
+                  TermFactor(
+                    FactorNumber(
+                     3
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [DesignatorStatementAssign]
+            ) [StatementDesignatorStatement]
+          ) [StatementListExist]
+          StatementPrintExpr(
+            ExprTerm(
+              TermFactor(
+                FactorDesignatorFactor(
+                  DesignatorFactorDesignator(
+                    DesignatorIdent(
+                     x
+                    ) [DesignatorIdent]
+                  ) [DesignatorFactorDesignator]
+                ) [FactorDesignatorFactor]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [StatementPrintExpr]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprAddTerm(
+            ExprTerm(
+              TermFactor(
+                FactorNumber(
+                 1
+                ) [FactorNumber]
+              ) [TermFactor]
+            ) [ExprTerm]
+            PlusOperator(
+            ) [PlusOperator]
+            TermFactor(
+              FactorNumber(
+               5
+              ) [FactorNumber]
+            ) [TermFactor]
+          ) [ExprAddTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  16:37:59,647 - ===================================
+INFO  16:37:59,650 - Promenljiva x deklarisana  na liniji 6
+INFO  16:37:59,650 - ===================================
+INFO  16:37:59,655 - usao u FactorNumber na liniji 8
+INFO  16:37:59,655 - usao u assign na liniji 8
+INFO  16:37:59,655 - usao u designatorIdent na liniji 9
+INFO  16:37:59,655 - usao u FactorNumber na liniji 11
+INFO  16:37:59,655 - usao u FactorNumber na liniji 11
+INFO  16:37:59,656 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,86 @@
+INFO  15:14:00,242 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  15:14:00,337 - #2 program
+INFO  15:14:00,338 - #43 MjProgram
+INFO  15:14:00,338 - #43 int
+INFO  15:14:00,340 - #43 x
+INFO  15:14:00,341 - #6 ;
+INFO  15:14:00,342 - #3 {
+INFO  15:14:00,343 - #11 void
+INFO  15:14:00,344 - #43 main
+INFO  15:14:00,344 - #29 (
+INFO  15:14:00,344 - #24 )
+INFO  15:14:00,345 - #3 {
+INFO  15:14:00,347 - #38 print
+INFO  15:14:00,348 - #29 (
+INFO  15:14:00,349 - #40 1
+INFO  15:14:00,349 - #24 )
+INFO  15:14:00,349 - #6 ;
+INFO  15:14:00,349 - #38 print
+INFO  15:14:00,349 - #29 (
+INFO  15:14:00,349 - #40 2
+INFO  15:14:00,350 - #24 )
+INFO  15:14:00,350 - #6 ;
+INFO  15:14:00,350 - #4 }
+INFO  15:14:00,350 - #4 }
+INFO  15:14:00,365 - Program(
+  ProgramName(
+   MjProgram
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         x
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementPrintExpr(
+            ExprTerm(
+              TermFactor(
+                FactorNumber(
+                 1
+                ) [FactorNumber]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [StatementPrintExpr]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorNumber(
+               2
+              ) [FactorNumber]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  15:14:00,365 - ===================================
+INFO  15:14:00,370 - Promenljiva x deklarisana  na liniji 3
+INFO  15:14:00,370 - ===================================
+INFO  15:14:00,381 - Parsiranje uspesno zavrseno!

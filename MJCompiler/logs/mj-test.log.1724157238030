@@ -1,0 +1,68 @@
+INFO  13:39:15,539 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  13:39:15,630 - #2 program
+INFO  13:39:15,630 - #43 Mj
+INFO  13:39:15,630 - #3 {
+INFO  13:39:15,632 - #11 void
+INFO  13:39:15,633 - #43 main
+INFO  13:39:15,634 - #29 (
+INFO  13:39:15,634 - #24 )
+INFO  13:39:15,636 - #3 {
+INFO  13:39:15,637 - #38 print
+INFO  13:39:15,638 - #29 (
+INFO  13:39:15,638 - #40 1
+INFO  13:39:15,639 - #24 )
+INFO  13:39:15,639 - #6 ;
+INFO  13:39:15,639 - #38 print
+INFO  13:39:15,639 - #29 (
+INFO  13:39:15,639 - #40 2
+INFO  13:39:15,639 - #24 )
+INFO  13:39:15,640 - #6 ;
+INFO  13:39:15,640 - #4 }
+INFO  13:39:15,640 - #4 }
+INFO  13:39:15,655 - Program(
+  ProgramName(
+   Mj
+  ) [ProgramName]
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementPrintExpr(
+            ExprTerm(
+              TermFactor(
+                FactorNumber(
+                 1
+                ) [FactorNumber]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [StatementPrintExpr]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorNumber(
+               2
+              ) [FactorNumber]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  13:39:15,655 - ===================================
+INFO  13:39:15,660 - ===================================
+INFO  13:39:15,667 - Parsiranje uspesno zavrseno!

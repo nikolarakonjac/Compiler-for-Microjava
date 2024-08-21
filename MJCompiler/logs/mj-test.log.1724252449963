@@ -1,0 +1,141 @@
+INFO  16:54:10,252 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  16:54:10,307 - #2 program
+INFO  16:54:10,308 - #43 MjProgram
+INFO  16:54:10,308 - #43 int
+INFO  16:54:10,309 - #43 x
+INFO  16:54:10,310 - #6 ;
+INFO  16:54:10,310 - #43 int
+INFO  16:54:10,311 - #43 y
+INFO  16:54:10,311 - #6 ;
+INFO  16:54:10,311 - #3 {
+INFO  16:54:10,311 - #11 void
+INFO  16:54:10,312 - #43 main
+INFO  16:54:10,312 - #29 (
+INFO  16:54:10,312 - #24 )
+INFO  16:54:10,313 - #3 {
+INFO  16:54:10,314 - #43 x
+INFO  16:54:10,314 - #10 =
+INFO  16:54:10,314 - #40 3
+INFO  16:54:10,315 - #6 ;
+INFO  16:54:10,315 - #38 print
+INFO  16:54:10,315 - #29 (
+INFO  16:54:10,316 - #43 x
+INFO  16:54:10,316 - #24 )
+INFO  16:54:10,316 - #6 ;
+INFO  16:54:10,316 - #38 print
+INFO  16:54:10,316 - #29 (
+INFO  16:54:10,316 - #40 1
+INFO  16:54:10,316 - #23 +
+INFO  16:54:10,316 - #40 5
+INFO  16:54:10,318 - #24 )
+INFO  16:54:10,318 - #6 ;
+INFO  16:54:10,319 - #4 }
+INFO  16:54:10,319 - #4 }
+INFO  16:54:10,325 - Program(
+  ProgramName(
+   MjProgram
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           int
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           x
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         y
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListExist(
+            StatementListDoesntExist(
+            ) [StatementListDoesntExist]
+            StatementDesignatorStatement(
+              DesignatorStatementAssign(
+                DesignatorIdent(
+                 x
+                ) [DesignatorIdent]
+                Assignop(
+                ) [Assignop]
+                ExprTerm(
+                  TermFactor(
+                    FactorNumber(
+                     3
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [DesignatorStatementAssign]
+            ) [StatementDesignatorStatement]
+          ) [StatementListExist]
+          StatementPrintExpr(
+            ExprTerm(
+              TermFactor(
+                FactorDesignatorFactor(
+                  DesignatorFactorDesignator(
+                    DesignatorIdent(
+                     x
+                    ) [DesignatorIdent]
+                  ) [DesignatorFactorDesignator]
+                ) [FactorDesignatorFactor]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [StatementPrintExpr]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprAddTerm(
+            ExprTerm(
+              TermFactor(
+                FactorNumber(
+                 1
+                ) [FactorNumber]
+              ) [TermFactor]
+            ) [ExprTerm]
+            PlusOperator(
+            ) [PlusOperator]
+            TermFactor(
+              FactorNumber(
+               5
+              ) [FactorNumber]
+            ) [TermFactor]
+          ) [ExprAddTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  16:54:10,325 - ===================================
+INFO  16:54:10,327 - Promenljiva x deklarisana  na liniji 3
+INFO  16:54:10,327 - Promenljiva y deklarisana  na liniji 3
+INFO  16:54:10,327 - ===================================
+INFO  16:54:10,332 - Parsiranje uspesno zavrseno!

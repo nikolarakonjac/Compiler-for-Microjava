@@ -18,6 +18,7 @@ public class SemanticPass extends VisitorAdaptor {
 	boolean returnFound = false;
 	boolean mainFuncExist = false;
 	boolean mainFuncHasParam = false;
+	int nVars;
 	
 	Logger log = Logger.getLogger(getClass());
 	
@@ -57,6 +58,7 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	public void visit(Program program) {
+		nVars = MyTab.currentScope.getnVars();
 		// kad se zavrsi program treba da se ulancaju svi objketi koji su bili deklarisani u objektni cvor programName.obj
 		MyTab.chainLocalSymbols(program.getProgramName().obj);
 		MyTab.closeScope();
@@ -482,8 +484,13 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(DesignatorFactorMethod funcCall) {
 		Obj func = funcCall.getDesignator().obj;
 		if(func.getKind() == Obj.Meth) {
-			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
-			funcCall.struct = func.getType();
+			if(func.getType() == MyTab.noType) {
+				report_error("Greska: void fja ne moze da se koristi u izrazima", funcCall);
+			}
+			else {
+				report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
+				funcCall.struct = func.getType();
+			}
 		}
 		else {
 			report_error("Greska na liniji " + funcCall.getLine()+" : ime " + func.getName() + " nije funkcija!", null);
@@ -512,16 +519,16 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(StatementPrintExpr printExpr) {
 		// Statement ::= PRINT LPAREN Expr RPAREN SEMICOLON
-		if(!(printExpr.getExpr().struct.getKind() == Struct.Int || printExpr.getExpr().struct.getKind() == Struct.Char
-				|| printExpr.getExpr().struct.getKind() == Struct.Bool)) {
+		if(!(printExpr.getExpr().struct == MyTab.intType || printExpr.getExpr().struct == MyTab.charType
+				|| printExpr.getExpr().struct == MyTab.boolType)) {
 			report_error("Greska: izraz koji se ispisuje mora biti int, bool ili char", printExpr);
 		}
 	}
 	
 	public void visit(StatementPrintExprNumber printExprNum) {
 		// Statement ::= PRINT LPAREN Expr COMMA NUMBER RPAREN SEMICOLON
-		if(!(printExprNum.getExpr().struct.getKind() == Struct.Int || printExprNum.getExpr().struct.getKind() == Struct.Char 
-				|| printExprNum.getExpr().struct.getKind() == Struct.Bool)) {
+		if(!(printExprNum.getExpr().struct == MyTab.intType || printExprNum.getExpr().struct == MyTab.charType 
+				|| printExprNum.getExpr().struct == MyTab.boolType)) {
 			report_error("Greska: izraz koji se ispisuje mora biti int, bool ili char", printExprNum);
 		}
 	}

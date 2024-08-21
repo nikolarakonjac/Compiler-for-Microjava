@@ -1,0 +1,114 @@
+INFO  14:33:58,045 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  14:33:58,141 - #2 program
+INFO  14:33:58,141 - #43 Mj
+INFO  14:33:58,141 - #3 {
+INFO  14:33:58,143 - #11 void
+INFO  14:33:58,144 - #43 main
+INFO  14:33:58,144 - #29 (
+INFO  14:33:58,144 - #24 )
+INFO  14:33:58,146 - #3 {
+INFO  14:33:58,148 - #38 print
+INFO  14:33:58,150 - #29 (
+INFO  14:33:58,150 - #40 1
+INFO  14:33:58,150 - #24 )
+INFO  14:33:58,151 - #6 ;
+INFO  14:33:58,151 - #38 print
+INFO  14:33:58,151 - #29 (
+INFO  14:33:58,152 - #40 2
+INFO  14:33:58,152 - #24 )
+INFO  14:33:58,152 - #6 ;
+INFO  14:33:58,152 - #43 x
+INFO  14:33:58,152 - #10 =
+INFO  14:33:58,159 - #40 3
+INFO  14:33:58,160 - #6 ;
+INFO  14:33:58,161 - #38 print
+INFO  14:33:58,161 - #29 (
+INFO  14:33:58,161 - #43 x
+INFO  14:33:58,161 - #24 )
+INFO  14:33:58,162 - #6 ;
+INFO  14:33:58,162 - #4 }
+INFO  14:33:58,162 - #4 }
+INFO  14:33:58,177 - Program(
+  ProgramName(
+   Mj
+  ) [ProgramName]
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListExist(
+            StatementListExist(
+              StatementListDoesntExist(
+              ) [StatementListDoesntExist]
+              StatementPrintExpr(
+                ExprTerm(
+                  TermFactor(
+                    FactorNumber(
+                     1
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [StatementPrintExpr]
+            ) [StatementListExist]
+            StatementPrintExpr(
+              ExprTerm(
+                TermFactor(
+                  FactorNumber(
+                   2
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [StatementPrintExpr]
+          ) [StatementListExist]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorIdent(
+               x
+              ) [DesignatorIdent]
+              Assignop(
+              ) [Assignop]
+              ExprTerm(
+                TermFactor(
+                  FactorNumber(
+                   3
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignatorStatement]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorDesignatorFactor(
+                DesignatorFactorDesignator(
+                  DesignatorIdent(
+                   x
+                  ) [DesignatorIdent]
+                ) [DesignatorFactorDesignator]
+              ) [FactorDesignatorFactor]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  14:33:58,177 - ===================================
+ERROR 14:33:58,181 - Greska na liniji 13 ime: x nije deklarisano
+ERROR 14:33:58,181 - Greska pri dodeli vrednosti, tipovi nisu kompatibilni na liniji 13
+ERROR 14:33:58,181 - Greska na liniji 15 ime: x nije deklarisano
+ERROR 14:33:58,181 - Greska: izraz koji se ispisuje mora biti int, bool ili char na liniji 15
+INFO  14:33:58,181 - ===================================
+ERROR 14:33:58,182 - Parsiranje NIJE uspesno zavrseno!

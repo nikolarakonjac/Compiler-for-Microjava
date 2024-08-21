@@ -1,0 +1,68 @@
+INFO  13:35:19,446 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  13:35:19,537 - #2 program
+INFO  13:35:19,538 - #43 test301
+INFO  13:35:19,538 - #3 {
+INFO  13:35:19,541 - #11 void
+INFO  13:35:19,542 - #43 main
+INFO  13:35:19,542 - #29 (
+INFO  13:35:19,542 - #24 )
+INFO  13:35:19,543 - #3 {
+INFO  13:35:19,544 - #38 print
+INFO  13:35:19,546 - #29 (
+INFO  13:35:19,546 - #40 1
+INFO  13:35:19,546 - #24 )
+INFO  13:35:19,547 - #6 ;
+INFO  13:35:19,547 - #38 print
+INFO  13:35:19,547 - #29 (
+INFO  13:35:19,547 - #40 2
+INFO  13:35:19,547 - #24 )
+INFO  13:35:19,547 - #6 ;
+INFO  13:35:19,547 - #4 }
+INFO  13:35:19,548 - #4 }
+INFO  13:35:19,560 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  NoDeclarationList(
+  ) [NoDeclarationList]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementPrintExpr(
+            ExprTerm(
+              TermFactor(
+                FactorNumber(
+                 1
+                ) [FactorNumber]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [StatementPrintExpr]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorNumber(
+               2
+              ) [FactorNumber]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  13:35:19,560 - ===================================
+INFO  13:35:19,565 - ===================================
+INFO  13:35:19,572 - Parsiranje uspesno zavrseno!
