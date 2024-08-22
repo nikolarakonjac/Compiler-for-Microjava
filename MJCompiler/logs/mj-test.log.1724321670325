@@ -1,0 +1,130 @@
+INFO  12:11:35,254 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  12:11:35,345 - #2 program
+INFO  12:11:35,346 - #43 MjProgram
+INFO  12:11:35,346 - #5 const
+INFO  12:11:35,348 - #43 int
+INFO  12:11:35,349 - #43 k
+INFO  12:11:35,349 - #10 =
+INFO  12:11:35,351 - #40 3
+INFO  12:11:35,352 - #6 ;
+INFO  12:11:35,353 - #43 int
+INFO  12:11:35,355 - #43 x
+INFO  12:11:35,356 - #7 ,
+INFO  12:11:35,356 - #43 y
+INFO  12:11:35,357 - #6 ;
+INFO  12:11:35,357 - #3 {
+INFO  12:11:35,359 - #11 void
+INFO  12:11:35,361 - #43 main
+INFO  12:11:35,361 - #29 (
+INFO  12:11:35,361 - #24 )
+INFO  12:11:35,362 - #3 {
+INFO  12:11:35,364 - #43 x
+INFO  12:11:35,366 - #10 =
+INFO  12:11:35,366 - #43 k
+INFO  12:11:35,368 - #6 ;
+INFO  12:11:35,368 - #38 print
+INFO  12:11:35,369 - #29 (
+INFO  12:11:35,369 - #43 x
+INFO  12:11:35,369 - #24 )
+INFO  12:11:35,369 - #6 ;
+INFO  12:11:35,369 - #4 }
+INFO  12:11:35,369 - #4 }
+INFO  12:11:35,381 - Program(
+  ProgramName(
+   MjProgram
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListConst(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      ConstDecl(
+        ConstTypeAndNameDecl(
+          TypeName(
+           int
+          ) [TypeName]
+         k
+        ) [ConstTypeAndNameDecl]
+        NumberConstValue(
+         3
+        ) [NumberConstValue]
+        NoConstAssignmentList(
+        ) [NoConstAssignmentList]
+      ) [ConstDecl]
+    ) [DeclarationListConst]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      MultipleVarDeclaration(
+        VarDeclNextElem(
+         x
+        ) [VarDeclNextElem]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           y
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorIdent(
+               x
+              ) [DesignatorIdent]
+              Assignop(
+              ) [Assignop]
+              ExprTerm(
+                TermFactor(
+                  FactorDesignatorFactor(
+                    DesignatorFactorDesignator(
+                      DesignatorIdent(
+                       k
+                      ) [DesignatorIdent]
+                    ) [DesignatorFactorDesignator]
+                  ) [FactorDesignatorFactor]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignatorStatement]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorDesignatorFactor(
+                DesignatorFactorDesignator(
+                  DesignatorIdent(
+                   x
+                  ) [DesignatorIdent]
+                ) [DesignatorFactorDesignator]
+              ) [FactorDesignatorFactor]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  12:11:35,381 - ===================================
+INFO  12:11:35,386 - Konstanta k je dodata u tabelu simbola na liniji 3
+INFO  12:11:35,386 - Promenljiva x deklarisana  na liniji 4
+INFO  12:11:35,386 - Promenljiva y deklarisana  na liniji 4
+INFO  12:11:35,386 - ===================================
+INFO  12:11:35,397 - Parsiranje uspesno zavrseno!

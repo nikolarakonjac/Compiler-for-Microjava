@@ -1,0 +1,156 @@
+INFO  12:14:30,330 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  12:14:30,479 - #2 program
+INFO  12:14:30,479 - #43 MjProgram
+INFO  12:14:30,479 - #5 const
+INFO  12:14:30,482 - #43 int
+INFO  12:14:30,482 - #43 k
+INFO  12:14:30,482 - #10 =
+INFO  12:14:30,484 - #40 3
+INFO  12:14:30,485 - #6 ;
+INFO  12:14:30,487 - #43 int
+INFO  12:14:30,488 - #43 x
+INFO  12:14:30,490 - #7 ,
+INFO  12:14:30,490 - #43 y
+INFO  12:14:30,490 - #6 ;
+INFO  12:14:30,490 - #3 {
+INFO  12:14:30,492 - #11 void
+INFO  12:14:30,494 - #43 main
+INFO  12:14:30,494 - #29 (
+INFO  12:14:30,494 - #24 )
+INFO  12:14:30,496 - #43 int
+INFO  12:14:30,497 - #43 bodovi
+INFO  12:14:30,498 - #6 ;
+INFO  12:14:30,498 - #3 {
+INFO  12:14:30,498 - #43 bodovi
+INFO  12:14:30,500 - #10 =
+INFO  12:14:30,500 - #40 0
+INFO  12:14:30,503 - #6 ;
+INFO  12:14:30,503 - #43 bodovi
+INFO  12:14:30,504 - #13 ++
+INFO  12:14:30,504 - #6 ;
+INFO  12:14:30,505 - #38 print
+INFO  12:14:30,505 - #29 (
+INFO  12:14:30,505 - #43 bodovi
+INFO  12:14:30,505 - #24 )
+INFO  12:14:30,505 - #6 ;
+INFO  12:14:30,506 - #4 }
+INFO  12:14:30,506 - #4 }
+INFO  12:14:30,521 - Program(
+  ProgramName(
+   MjProgram
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListConst(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      ConstDecl(
+        ConstTypeAndNameDecl(
+          TypeName(
+           int
+          ) [TypeName]
+         k
+        ) [ConstTypeAndNameDecl]
+        NumberConstValue(
+         3
+        ) [NumberConstValue]
+        NoConstAssignmentList(
+        ) [NoConstAssignmentList]
+      ) [ConstDecl]
+    ) [DeclarationListConst]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      MultipleVarDeclaration(
+        VarDeclNextElem(
+         x
+        ) [VarDeclNextElem]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           y
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             bodovi
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListExist(
+            StatementListDoesntExist(
+            ) [StatementListDoesntExist]
+            StatementDesignatorStatement(
+              DesignatorStatementAssign(
+                DesignatorIdent(
+                 bodovi
+                ) [DesignatorIdent]
+                Assignop(
+                ) [Assignop]
+                ExprTerm(
+                  TermFactor(
+                    FactorNumber(
+                     0
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [DesignatorStatementAssign]
+            ) [StatementDesignatorStatement]
+          ) [StatementListExist]
+          StatementDesignatorStatement(
+            DesignatorStatementInc(
+              DesignatorIdent(
+               bodovi
+              ) [DesignatorIdent]
+            ) [DesignatorStatementInc]
+          ) [StatementDesignatorStatement]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorDesignatorFactor(
+                DesignatorFactorDesignator(
+                  DesignatorIdent(
+                   bodovi
+                  ) [DesignatorIdent]
+                ) [DesignatorFactorDesignator]
+              ) [FactorDesignatorFactor]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  12:14:30,521 - ===================================
+INFO  12:14:30,527 - Konstanta k je dodata u tabelu simbola na liniji 3
+INFO  12:14:30,527 - Promenljiva x deklarisana  na liniji 4
+INFO  12:14:30,528 - Promenljiva y deklarisana  na liniji 4
+INFO  12:14:30,528 - Promenljiva bodovi deklarisana  na liniji 8
+INFO  12:14:30,528 - ===================================
+INFO  12:14:30,544 - Parsiranje uspesno zavrseno!

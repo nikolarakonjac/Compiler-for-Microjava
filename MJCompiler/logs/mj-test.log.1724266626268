@@ -1,0 +1,114 @@
+INFO  20:56:12,790 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  20:56:12,836 - #2 program
+INFO  20:56:12,836 - #43 MjProgram
+INFO  20:56:12,836 - #43 char
+INFO  20:56:12,837 - #43 x
+INFO  20:56:12,838 - #6 ;
+INFO  20:56:12,838 - #43 int
+INFO  20:56:12,839 - #43 y
+INFO  20:56:12,840 - #6 ;
+INFO  20:56:12,840 - #3 {
+INFO  20:56:12,840 - #11 void
+INFO  20:56:12,840 - #43 main
+INFO  20:56:12,841 - #29 (
+INFO  20:56:12,841 - #24 )
+INFO  20:56:12,842 - #3 {
+INFO  20:56:12,843 - #43 x
+INFO  20:56:12,843 - #10 =
+INFO  20:56:12,843 - #41 a
+INFO  20:56:12,844 - #6 ;
+INFO  20:56:12,844 - #38 print
+INFO  20:56:12,845 - #29 (
+INFO  20:56:12,852 - #43 x
+INFO  20:56:12,852 - #24 )
+INFO  20:56:12,852 - #6 ;
+INFO  20:56:12,852 - #4 }
+INFO  20:56:12,852 - #4 }
+INFO  20:56:12,860 - Program(
+  ProgramName(
+   MjProgram
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           char
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclFinalElem(
+           x
+          ) [VarDeclFinalElem]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         y
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorIdent(
+               x
+              ) [DesignatorIdent]
+              Assignop(
+              ) [Assignop]
+              ExprTerm(
+                TermFactor(
+                  FactorChar(
+                   a
+                  ) [FactorChar]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignatorStatement]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorDesignatorFactor(
+                DesignatorFactorDesignator(
+                  DesignatorIdent(
+                   x
+                  ) [DesignatorIdent]
+                ) [DesignatorFactorDesignator]
+              ) [FactorDesignatorFactor]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  20:56:12,861 - ===================================
+INFO  20:56:12,863 - Promenljiva x deklarisana  na liniji 3
+INFO  20:56:12,863 - Promenljiva y deklarisana  na liniji 3
+INFO  20:56:12,863 - ===================================
+INFO  20:56:12,869 - Parsiranje uspesno zavrseno!

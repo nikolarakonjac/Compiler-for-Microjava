@@ -1,72 +1,70 @@
-INFO  16:08:12,433 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
-INFO  16:08:12,501 - #2 program
-INFO  16:08:12,502 - #43 MjProgram
-INFO  16:08:12,502 - #5 const
-INFO  16:08:12,504 - #43 int
-INFO  16:08:12,505 - #43 nula
-INFO  16:08:12,505 - #10 =
-INFO  16:08:12,507 - #40 0
-INFO  16:08:12,507 - #6 ;
-INFO  16:08:12,508 - #5 const
-INFO  16:08:12,510 - #43 int
-INFO  16:08:12,510 - #43 jedan
-INFO  16:08:12,510 - #10 =
-INFO  16:08:12,510 - #40 1
-INFO  16:08:12,510 - #6 ;
-INFO  16:08:12,510 - #5 const
-INFO  16:08:12,510 - #43 int
-INFO  16:08:12,510 - #43 pet
-INFO  16:08:12,511 - #10 =
-INFO  16:08:12,511 - #40 5
-INFO  16:08:12,515 - #6 ;
-INFO  16:08:12,515 - #43 int
-INFO  16:08:12,516 - #43 x
-INFO  16:08:12,517 - #7 ,
-INFO  16:08:12,517 - #43 y
-INFO  16:08:12,517 - #6 ;
-INFO  16:08:12,522 - #43 int
-INFO  16:08:12,524 - #43 niz
-INFO  16:08:12,524 - #8 [
-INFO  16:08:12,524 - #9 ]
-INFO  16:08:12,524 - #6 ;
-INFO  16:08:12,525 - #43 char
-INFO  16:08:12,525 - #43 niz2
-INFO  16:08:12,525 - #8 [
-INFO  16:08:12,525 - #9 ]
-INFO  16:08:12,525 - #6 ;
-INFO  16:08:12,525 - #3 {
-INFO  16:08:12,525 - #11 void
-INFO  16:08:12,526 - #43 main
-INFO  16:08:12,526 - #29 (
-INFO  16:08:12,527 - #24 )
-INFO  16:08:12,527 - #43 int
-INFO  16:08:12,528 - #43 bodovi
-INFO  16:08:12,528 - #6 ;
-INFO  16:08:12,528 - #3 {
-INFO  16:08:12,528 - #43 bodovi
-INFO  16:08:12,528 - #10 =
-INFO  16:08:12,528 - #40 5
-INFO  16:08:12,530 - #6 ;
-INFO  16:08:12,530 - #38 print
-INFO  16:08:12,530 - #29 (
-INFO  16:08:12,530 - #43 bodovi
-INFO  16:08:12,530 - #24 )
-INFO  16:08:12,530 - #6 ;
-INFO  16:08:12,531 - #43 bodovi
-INFO  16:08:12,531 - #10 =
-INFO  16:08:12,531 - #12 -
-INFO  16:08:12,531 - #43 jedan
-INFO  16:08:12,531 - #6 ;
-INFO  16:08:12,531 - #38 print
-INFO  16:08:12,531 - #29 (
-INFO  16:08:12,531 - #43 bodovi
-INFO  16:08:12,533 - #23 +
-INFO  16:08:12,533 - #40 5
-INFO  16:08:12,534 - #24 )
-INFO  16:08:12,534 - #6 ;
-INFO  16:08:12,534 - #4 }
-INFO  16:08:12,534 - #4 }
-INFO  16:08:12,545 - Program(
+INFO  16:07:50,972 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  16:07:51,024 - #2 program
+INFO  16:07:51,024 - #43 MjProgram
+INFO  16:07:51,024 - #5 const
+INFO  16:07:51,026 - #43 int
+INFO  16:07:51,026 - #43 nula
+INFO  16:07:51,026 - #10 =
+INFO  16:07:51,027 - #40 0
+INFO  16:07:51,027 - #6 ;
+INFO  16:07:51,028 - #5 const
+INFO  16:07:51,029 - #43 int
+INFO  16:07:51,029 - #43 jedan
+INFO  16:07:51,029 - #10 =
+INFO  16:07:51,029 - #40 1
+INFO  16:07:51,029 - #6 ;
+INFO  16:07:51,029 - #5 const
+INFO  16:07:51,029 - #43 int
+INFO  16:07:51,029 - #43 pet
+INFO  16:07:51,030 - #10 =
+INFO  16:07:51,030 - #40 5
+INFO  16:07:51,036 - #6 ;
+INFO  16:07:51,036 - #43 int
+INFO  16:07:51,036 - #43 x
+INFO  16:07:51,037 - #7 ,
+INFO  16:07:51,037 - #43 y
+INFO  16:07:51,037 - #6 ;
+INFO  16:07:51,037 - #43 int
+INFO  16:07:51,039 - #43 niz
+INFO  16:07:51,039 - #8 [
+INFO  16:07:51,039 - #9 ]
+INFO  16:07:51,039 - #6 ;
+INFO  16:07:51,039 - #43 char
+INFO  16:07:51,040 - #43 niz2
+INFO  16:07:51,040 - #8 [
+INFO  16:07:51,040 - #9 ]
+INFO  16:07:51,040 - #6 ;
+INFO  16:07:51,040 - #3 {
+INFO  16:07:51,040 - #11 void
+INFO  16:07:51,041 - #43 main
+INFO  16:07:51,041 - #29 (
+INFO  16:07:51,041 - #24 )
+INFO  16:07:51,042 - #43 int
+INFO  16:07:51,043 - #43 bodovi
+INFO  16:07:51,043 - #6 ;
+INFO  16:07:51,043 - #3 {
+INFO  16:07:51,044 - #43 bodovi
+INFO  16:07:51,044 - #10 =
+INFO  16:07:51,045 - #40 5
+INFO  16:07:51,046 - #6 ;
+INFO  16:07:51,046 - #38 print
+INFO  16:07:51,046 - #29 (
+INFO  16:07:51,047 - #43 bodovi
+INFO  16:07:51,047 - #24 )
+INFO  16:07:51,047 - #6 ;
+INFO  16:07:51,047 - #43 bodovi
+INFO  16:07:51,047 - #10 =
+INFO  16:07:51,047 - #12 -
+INFO  16:07:51,047 - #43 jedan
+INFO  16:07:51,047 - #6 ;
+INFO  16:07:51,048 - #38 print
+INFO  16:07:51,048 - #29 (
+INFO  16:07:51,048 - #43 bodovi
+INFO  16:07:51,048 - #24 )
+INFO  16:07:51,048 - #6 ;
+INFO  16:07:51,048 - #4 }
+INFO  16:07:51,048 - #4 }
+INFO  16:07:51,057 - Program(
   ProgramName(
    MjProgram
   ) [ProgramName]
@@ -248,39 +246,30 @@ INFO  16:08:12,545 - Program(
           ) [StatementDesignatorStatement]
         ) [StatementListExist]
         StatementPrintExpr(
-          ExprAddTerm(
-            ExprTerm(
-              TermFactor(
-                FactorDesignatorFactor(
-                  DesignatorFactorDesignator(
-                    DesignatorIdent(
-                     bodovi
-                    ) [DesignatorIdent]
-                  ) [DesignatorFactorDesignator]
-                ) [FactorDesignatorFactor]
-              ) [TermFactor]
-            ) [ExprTerm]
-            PlusOperator(
-            ) [PlusOperator]
+          ExprTerm(
             TermFactor(
-              FactorNumber(
-               5
-              ) [FactorNumber]
+              FactorDesignatorFactor(
+                DesignatorFactorDesignator(
+                  DesignatorIdent(
+                   bodovi
+                  ) [DesignatorIdent]
+                ) [DesignatorFactorDesignator]
+              ) [FactorDesignatorFactor]
             ) [TermFactor]
-          ) [ExprAddTerm]
+          ) [ExprTerm]
         ) [StatementPrintExpr]
       ) [StatementListExist]
     ) [MethodDecl]
   ) [MethodDeclarationList]
 ) [Program]
-INFO  16:08:12,546 - ===================================
-INFO  16:08:12,553 - Konstanta nula je dodata u tabelu simbola na liniji 3
-INFO  16:08:12,553 - Konstanta jedan je dodata u tabelu simbola na liniji 4
-INFO  16:08:12,553 - Konstanta pet je dodata u tabelu simbola na liniji 5
-INFO  16:08:12,553 - Promenljiva x deklarisana  na liniji 7
-INFO  16:08:12,553 - Promenljiva y deklarisana  na liniji 7
-INFO  16:08:12,554 - Promenljiva niz deklarisana  na liniji 9
-INFO  16:08:12,554 - Promenljiva niz2 deklarisana  na liniji 10
-INFO  16:08:12,554 - Promenljiva bodovi deklarisana  na liniji 14
-INFO  16:08:12,554 - ===================================
-INFO  16:08:12,568 - Parsiranje uspesno zavrseno!
+INFO  16:07:51,057 - ===================================
+INFO  16:07:51,061 - Konstanta nula je dodata u tabelu simbola na liniji 3
+INFO  16:07:51,061 - Konstanta jedan je dodata u tabelu simbola na liniji 4
+INFO  16:07:51,061 - Konstanta pet je dodata u tabelu simbola na liniji 5
+INFO  16:07:51,061 - Promenljiva x deklarisana  na liniji 7
+INFO  16:07:51,062 - Promenljiva y deklarisana  na liniji 7
+INFO  16:07:51,062 - Promenljiva niz deklarisana  na liniji 9
+INFO  16:07:51,062 - Promenljiva niz2 deklarisana  na liniji 10
+INFO  16:07:51,062 - Promenljiva bodovi deklarisana  na liniji 14
+INFO  16:07:51,062 - ===================================
+INFO  16:07:51,069 - Parsiranje uspesno zavrseno!
