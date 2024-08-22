@@ -12,6 +12,9 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 public class CodeGenerator extends VisitorAdaptor {
 	
 	private int mainPc;
+	private boolean plusVisited = false, minusVisited = false;
+	private boolean mulVisited = false, divVisited = false, modVisited = false;
+	
 	
 	public int getMainPc() {
 		return mainPc;
@@ -143,7 +146,22 @@ public class CodeGenerator extends VisitorAdaptor {
 		// Term ::= Term Mulop Factor
 		
 		// elementi koji ucestvuju u izrazu su vec na steku
-		Code.put(Code.mul);
+		
+		if(mulVisited) {
+			Code.put(Code.mul);
+		}
+		else if(divVisited) {
+			Code.put(Code.div);
+		}
+		else if(modVisited) {
+			Code.put(Code.rem);
+		}
+		else {
+			report_info("Faza generisanje koda u klasi TermMul Mulop nije ni mul ni div ni mod", null);
+		}
+		
+		mulVisited = divVisited = modVisited = false;
+		
 	}
 
 	// ---------------------------------------------- Expr -------------------------------------------
@@ -152,8 +170,23 @@ public class CodeGenerator extends VisitorAdaptor {
 		// Expr ::= Expr:expr Addop Term:term
 		
 		// elementi koji ucestvuju u izrazu su vec na steku
-		Code.put(Code.add);
+		
+		SyntaxNode addOpParent = add.getAddop().getParent();
+		
+		if(plusVisited) {
+			Code.put(Code.add);
+		}
+		else if(minusVisited){
+			Code.put(Code.sub);
+		}
+		else {
+			report_info("Faza generisanje koda u klasi ExprAddTerm Addop nije ni plus ni minus", null);
+		}
+		
+		plusVisited = minusVisited = false;
+		
 	}
+	
 	
 	public void visit(ExprMinusTerm minus) {
 		// Expr ::= MINUS Term:t
@@ -161,6 +194,32 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.neg);
 	}
 	
+	
+	// ---------------------------------------------- Addop -------------------------------------------
+	
+	public void visit(PlusOperator plus) {
+		this.plusVisited = true;
+	}
+	
+	public void visit(MinusOperator minus) {
+		this.minusVisited = true;
+	}
+	
+	
+	
+	// ---------------------------------------------- Mulop -------------------------------------------
+	
+	public void visit(MulOperator mul) {
+		this.mulVisited = true;
+	}
+	
+	public void visit(DivOperator div) {
+		this.divVisited = true;
+	}
+
+	public void visit(ModOperator mod) {
+		this.modVisited = true;
+	}
 	
 	// ---------------------------------------------- DesignatorStatement -------------------------------------------
 	
@@ -229,7 +288,19 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 		if(parent.getClass().equals(DesignatorFactorDesignator.class)) {
 			// ovde se dolazi za slucaj print(niz[5])
-			Code.put(Code.aload);	// dohvati vrednost elementa niza i stavi na stek, spremno je za print koje ocekuje vrednost za ispis
+			
+			
+			Struct elemType = array.getDesignator().obj.getType().getElemType();
+			
+			if(elemType == MyTab.intType || elemType == MyTab.boolType) {
+				Code.put(Code.aload);	// dohvati vrednost elementa niza i stavi na stek, spremno je za print koje ocekuje vrednost za ispis
+			}
+			else if(elemType == MyTab.charType) {
+				Code.put(Code.baload);	// dohvati vrednost elementa niza i stavi na stek, spremno je za print koje ocekuje vrednost za ispis
+			}
+			else {
+				report_info("U fazi generisanja koda u klasi DesignatorArray elemType nije nijedan od standardnih tipova", null);
+			}
 		}
 		
 		

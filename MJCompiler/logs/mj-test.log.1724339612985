@@ -1,117 +1,121 @@
-INFO  17:19:59,297 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
-INFO  17:19:59,355 - #2 program
-INFO  17:19:59,355 - #43 MJProgram
-INFO  17:19:59,355 - #5 const
-INFO  17:19:59,357 - #43 int
-INFO  17:19:59,357 - #43 nula
-INFO  17:19:59,357 - #10 =
-INFO  17:19:59,358 - #40 0
-INFO  17:19:59,358 - #6 ;
-INFO  17:19:59,359 - #5 const
-INFO  17:19:59,360 - #43 int
-INFO  17:19:59,361 - #43 jedan
-INFO  17:19:59,361 - #10 =
-INFO  17:19:59,361 - #40 1
-INFO  17:19:59,361 - #6 ;
-INFO  17:19:59,361 - #5 const
-INFO  17:19:59,361 - #43 int
-INFO  17:19:59,361 - #43 pet
-INFO  17:19:59,361 - #10 =
-INFO  17:19:59,361 - #40 5
-INFO  17:19:59,367 - #6 ;
-INFO  17:19:59,368 - #43 int
-INFO  17:19:59,368 - #43 niz
-INFO  17:19:59,369 - #8 [
-INFO  17:19:59,369 - #9 ]
-INFO  17:19:59,369 - #6 ;
-INFO  17:19:59,369 - #43 char
-INFO  17:19:59,370 - #43 nizch
-INFO  17:19:59,370 - #8 [
-INFO  17:19:59,371 - #9 ]
-INFO  17:19:59,371 - #6 ;
-INFO  17:19:59,371 - #43 int
-INFO  17:19:59,371 - #43 a
-INFO  17:19:59,371 - #6 ;
-INFO  17:19:59,371 - #43 char
-INFO  17:19:59,371 - #43 c
-INFO  17:19:59,371 - #6 ;
-INFO  17:19:59,371 - #3 {
-INFO  17:19:59,371 - #11 void
-INFO  17:19:59,372 - #43 main
-INFO  17:19:59,372 - #29 (
-INFO  17:19:59,373 - #24 )
-INFO  17:19:59,373 - #43 int
-INFO  17:19:59,375 - #43 bodovi
-INFO  17:19:59,375 - #6 ;
-INFO  17:19:59,375 - #43 bool
-INFO  17:19:59,375 - #43 bt
-INFO  17:19:59,375 - #6 ;
-INFO  17:19:59,375 - #3 {
-INFO  17:19:59,375 - #43 c
-INFO  17:19:59,376 - #10 =
-INFO  17:19:59,376 - #41 a
-INFO  17:19:59,377 - #6 ;
-INFO  17:19:59,378 - #38 print
-INFO  17:19:59,378 - #29 (
-INFO  17:19:59,378 - #43 c
-INFO  17:19:59,378 - #24 )
-INFO  17:19:59,378 - #6 ;
-INFO  17:19:59,378 - #43 nizch
-INFO  17:19:59,378 - #10 =
-INFO  17:19:59,378 - #19 new
-INFO  17:19:59,378 - #43 char
-INFO  17:19:59,378 - #8 [
-INFO  17:19:59,379 - #40 3
-INFO  17:19:59,379 - #9 ]
-INFO  17:19:59,379 - #6 ;
-INFO  17:19:59,379 - #43 nizch
-INFO  17:19:59,379 - #8 [
-INFO  17:19:59,379 - #40 0
-INFO  17:19:59,379 - #9 ]
-INFO  17:19:59,380 - #10 =
-INFO  17:19:59,380 - #41 a
-INFO  17:19:59,380 - #6 ;
-INFO  17:19:59,380 - #43 nizch
-INFO  17:19:59,380 - #8 [
-INFO  17:19:59,380 - #40 1
-INFO  17:19:59,380 - #9 ]
-INFO  17:19:59,380 - #10 =
-INFO  17:19:59,380 - #41 b
-INFO  17:19:59,380 - #6 ;
-INFO  17:19:59,380 - #43 nizch
-INFO  17:19:59,380 - #8 [
-INFO  17:19:59,381 - #40 2
-INFO  17:19:59,381 - #9 ]
-INFO  17:19:59,381 - #10 =
-INFO  17:19:59,381 - #41 c
-INFO  17:19:59,381 - #6 ;
-INFO  17:19:59,381 - #38 print
-INFO  17:19:59,382 - #29 (
-INFO  17:19:59,382 - #43 nizch
-INFO  17:19:59,382 - #8 [
-INFO  17:19:59,382 - #40 0
-INFO  17:19:59,382 - #9 ]
-INFO  17:19:59,382 - #24 )
-INFO  17:19:59,382 - #6 ;
-INFO  17:19:59,382 - #38 print
-INFO  17:19:59,382 - #29 (
-INFO  17:19:59,382 - #43 nizch
-INFO  17:19:59,382 - #8 [
-INFO  17:19:59,382 - #40 1
-INFO  17:19:59,383 - #9 ]
-INFO  17:19:59,383 - #24 )
-INFO  17:19:59,383 - #6 ;
-INFO  17:19:59,383 - #38 print
-INFO  17:19:59,383 - #29 (
-INFO  17:19:59,383 - #43 nizch
-INFO  17:19:59,383 - #8 [
-INFO  17:19:59,383 - #40 2
-INFO  17:19:59,383 - #9 ]
-INFO  17:19:59,383 - #24 )
-INFO  17:19:59,383 - #6 ;
-INFO  17:19:59,383 - #4 }
-INFO  17:19:59,383 - #4 }
-INFO  17:19:59,392 - Program(
+INFO  17:13:20,992 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  17:13:21,043 - #2 program
+INFO  17:13:21,044 - #43 MJProgram
+INFO  17:13:21,044 - #5 const
+INFO  17:13:21,045 - #43 int
+INFO  17:13:21,045 - #43 nula
+INFO  17:13:21,045 - #10 =
+INFO  17:13:21,046 - #40 0
+INFO  17:13:21,046 - #6 ;
+INFO  17:13:21,047 - #5 const
+INFO  17:13:21,048 - #43 int
+INFO  17:13:21,048 - #43 jedan
+INFO  17:13:21,049 - #10 =
+INFO  17:13:21,049 - #40 1
+INFO  17:13:21,049 - #6 ;
+INFO  17:13:21,049 - #5 const
+INFO  17:13:21,049 - #43 int
+INFO  17:13:21,049 - #43 pet
+INFO  17:13:21,049 - #10 =
+INFO  17:13:21,049 - #40 5
+INFO  17:13:21,056 - #6 ;
+INFO  17:13:21,056 - #43 int
+INFO  17:13:21,056 - #43 niz
+INFO  17:13:21,057 - #8 [
+INFO  17:13:21,057 - #9 ]
+INFO  17:13:21,058 - #6 ;
+INFO  17:13:21,058 - #43 char
+INFO  17:13:21,059 - #43 nizch
+INFO  17:13:21,059 - #8 [
+INFO  17:13:21,059 - #9 ]
+INFO  17:13:21,059 - #6 ;
+INFO  17:13:21,059 - #43 int
+INFO  17:13:21,059 - #43 a
+INFO  17:13:21,059 - #6 ;
+INFO  17:13:21,060 - #43 char
+INFO  17:13:21,060 - #43 c
+INFO  17:13:21,060 - #6 ;
+INFO  17:13:21,060 - #3 {
+INFO  17:13:21,060 - #11 void
+INFO  17:13:21,061 - #43 main
+INFO  17:13:21,061 - #29 (
+INFO  17:13:21,061 - #24 )
+INFO  17:13:21,062 - #43 int
+INFO  17:13:21,062 - #43 bodovi
+INFO  17:13:21,062 - #6 ;
+INFO  17:13:21,062 - #43 bool
+INFO  17:13:21,062 - #43 bt
+INFO  17:13:21,062 - #6 ;
+INFO  17:13:21,063 - #3 {
+INFO  17:13:21,063 - #43 char
+INFO  17:13:21,063 - #43 c
+ERROR 17:13:21,063 - 
+Sintaksna greska na liniji 20
+INFO  17:13:21,063 - #10 =
+INFO  17:13:21,064 - #41 a
+INFO  17:13:21,064 - #6 ;
+INFO  17:13:21,064 - #38 print
+INFO  17:13:21,064 - #29 (
+INFO  17:13:21,064 - #43 c
+ERROR 17:13:21,065 - oporavak od greske za iskaz dodele do znaka ; na liniji: 20
+INFO  17:13:21,068 - #24 )
+INFO  17:13:21,070 - #6 ;
+INFO  17:13:21,070 - #43 nizch
+INFO  17:13:21,070 - #10 =
+INFO  17:13:21,070 - #19 new
+INFO  17:13:21,071 - #43 char
+INFO  17:13:21,071 - #8 [
+INFO  17:13:21,071 - #40 3
+INFO  17:13:21,071 - #9 ]
+INFO  17:13:21,071 - #6 ;
+INFO  17:13:21,071 - #43 nizch
+INFO  17:13:21,072 - #8 [
+INFO  17:13:21,072 - #40 0
+INFO  17:13:21,072 - #9 ]
+INFO  17:13:21,072 - #10 =
+INFO  17:13:21,072 - #41 a
+INFO  17:13:21,072 - #6 ;
+INFO  17:13:21,072 - #43 nizch
+INFO  17:13:21,072 - #8 [
+INFO  17:13:21,072 - #40 1
+INFO  17:13:21,072 - #9 ]
+INFO  17:13:21,073 - #10 =
+INFO  17:13:21,073 - #41 b
+INFO  17:13:21,073 - #6 ;
+INFO  17:13:21,073 - #43 nizch
+INFO  17:13:21,073 - #8 [
+INFO  17:13:21,073 - #40 2
+INFO  17:13:21,073 - #9 ]
+INFO  17:13:21,073 - #10 =
+INFO  17:13:21,073 - #41 c
+INFO  17:13:21,073 - #6 ;
+INFO  17:13:21,073 - #38 print
+INFO  17:13:21,073 - #29 (
+INFO  17:13:21,073 - #43 nizch
+INFO  17:13:21,073 - #8 [
+INFO  17:13:21,074 - #40 0
+INFO  17:13:21,074 - #9 ]
+INFO  17:13:21,074 - #24 )
+INFO  17:13:21,074 - #6 ;
+INFO  17:13:21,074 - #38 print
+INFO  17:13:21,074 - #29 (
+INFO  17:13:21,074 - #43 nizch
+INFO  17:13:21,074 - #8 [
+INFO  17:13:21,074 - #40 1
+INFO  17:13:21,074 - #9 ]
+INFO  17:13:21,074 - #24 )
+INFO  17:13:21,074 - #6 ;
+INFO  17:13:21,074 - #38 print
+INFO  17:13:21,074 - #29 (
+INFO  17:13:21,074 - #43 nizch
+INFO  17:13:21,074 - #8 [
+INFO  17:13:21,075 - #40 2
+INFO  17:13:21,075 - #9 ]
+INFO  17:13:21,075 - #24 )
+INFO  17:13:21,075 - #6 ;
+INFO  17:13:21,075 - #4 }
+INFO  17:13:21,075 - #4 }
+INFO  17:13:21,087 - Program(
   ProgramName(
    MJProgram
   ) [ProgramName]
@@ -269,20 +273,8 @@ INFO  17:19:59,392 - Program(
                         StatementListDoesntExist(
                         ) [StatementListDoesntExist]
                         StatementDesignatorStatement(
-                          DesignatorStatementAssign(
-                            DesignatorIdent(
-                             c
-                            ) [DesignatorIdent]
-                            Assignop(
-                            ) [Assignop]
-                            ExprTerm(
-                              TermFactor(
-                                FactorChar(
-                                 a
-                                ) [FactorChar]
-                              ) [TermFactor]
-                            ) [ExprTerm]
-                          ) [DesignatorStatementAssign]
+                          DesignatorStatementErrorSemi(
+                          ) [DesignatorStatementErrorSemi]
                         ) [StatementDesignatorStatement]
                       ) [StatementListExist]
                       StatementPrintExpr(
@@ -477,15 +469,15 @@ INFO  17:19:59,392 - Program(
     ) [MethodDecl]
   ) [MethodDeclarationList]
 ) [Program]
-INFO  17:19:59,393 - ===================================
-INFO  17:19:59,397 - Konstanta nula je dodata u tabelu simbola na liniji 3
-INFO  17:19:59,397 - Konstanta jedan je dodata u tabelu simbola na liniji 4
-INFO  17:19:59,397 - Konstanta pet je dodata u tabelu simbola na liniji 5
-INFO  17:19:59,397 - Promenljiva niz deklarisana  na liniji 7
-INFO  17:19:59,397 - Promenljiva nizch deklarisana  na liniji 8
-INFO  17:19:59,398 - Promenljiva a deklarisana  na liniji 11
-INFO  17:19:59,398 - Promenljiva c deklarisana  na liniji 13
-INFO  17:19:59,398 - Promenljiva bodovi deklarisana  na liniji 16
-INFO  17:19:59,398 - Promenljiva bt deklarisana  na liniji 17
-INFO  17:19:59,398 - ===================================
-INFO  17:19:59,407 - Parsiranje uspesno zavrseno!
+INFO  17:13:21,088 - ===================================
+INFO  17:13:21,092 - Konstanta nula je dodata u tabelu simbola na liniji 3
+INFO  17:13:21,092 - Konstanta jedan je dodata u tabelu simbola na liniji 4
+INFO  17:13:21,092 - Konstanta pet je dodata u tabelu simbola na liniji 5
+INFO  17:13:21,092 - Promenljiva niz deklarisana  na liniji 7
+INFO  17:13:21,092 - Promenljiva nizch deklarisana  na liniji 8
+INFO  17:13:21,092 - Promenljiva a deklarisana  na liniji 11
+INFO  17:13:21,092 - Promenljiva c deklarisana  na liniji 13
+INFO  17:13:21,093 - Promenljiva bodovi deklarisana  na liniji 16
+INFO  17:13:21,093 - Promenljiva bt deklarisana  na liniji 17
+INFO  17:13:21,094 - ===================================
+ERROR 17:13:21,094 - Parsiranje NIJE uspesno zavrseno!

@@ -1,23 +1,26 @@
-program MjProgram
+program MJProgram
 
 	const int nula = 0;
 	const int jedan = 1;
 	const int pet = 5;
-	
-	int x, y;
-	
+
 	int niz[];
-	char niz2[];
-{
+	char nizch[];
 	
-	void main()  
+
+	int a;
+	
+	char c;
+{
+	void main()	
 		int bodovi;
+		bool bt;
 	{
-		bodovi = 5;
-		print(bodovi);
+	
 		
-		bodovi = -jedan;
-		print(bodovi + 5);
+		read(bodovi);
+		print(bodovi);
+			
 		
 	}
 }

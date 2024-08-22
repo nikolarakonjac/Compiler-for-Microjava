@@ -1,0 +1,294 @@
+INFO  16:36:57,867 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  16:36:57,917 - #2 program
+INFO  16:36:57,917 - #43 MjProgram
+INFO  16:36:57,917 - #5 const
+INFO  16:36:57,919 - #43 int
+INFO  16:36:57,919 - #43 nula
+INFO  16:36:57,919 - #10 =
+INFO  16:36:57,920 - #40 0
+INFO  16:36:57,920 - #6 ;
+INFO  16:36:57,921 - #5 const
+INFO  16:36:57,922 - #43 int
+INFO  16:36:57,922 - #43 jedan
+INFO  16:36:57,922 - #10 =
+INFO  16:36:57,922 - #40 1
+INFO  16:36:57,922 - #6 ;
+INFO  16:36:57,923 - #5 const
+INFO  16:36:57,923 - #43 int
+INFO  16:36:57,923 - #43 pet
+INFO  16:36:57,923 - #10 =
+INFO  16:36:57,923 - #40 5
+INFO  16:36:57,929 - #6 ;
+INFO  16:36:57,929 - #43 int
+INFO  16:36:57,929 - #43 x
+INFO  16:36:57,930 - #7 ,
+INFO  16:36:57,930 - #43 y
+INFO  16:36:57,930 - #6 ;
+INFO  16:36:57,931 - #43 int
+INFO  16:36:57,932 - #43 niz
+INFO  16:36:57,932 - #8 [
+INFO  16:36:57,932 - #9 ]
+INFO  16:36:57,932 - #6 ;
+INFO  16:36:57,932 - #43 char
+INFO  16:36:57,932 - #43 niz2
+INFO  16:36:57,933 - #8 [
+INFO  16:36:57,933 - #9 ]
+INFO  16:36:57,933 - #6 ;
+INFO  16:36:57,933 - #3 {
+INFO  16:36:57,933 - #11 void
+INFO  16:36:57,934 - #43 main
+INFO  16:36:57,934 - #29 (
+INFO  16:36:57,934 - #24 )
+INFO  16:36:57,935 - #43 int
+INFO  16:36:57,936 - #43 bodovi
+INFO  16:36:57,936 - #6 ;
+INFO  16:36:57,936 - #3 {
+INFO  16:36:57,936 - #43 bodovi
+INFO  16:36:57,937 - #10 =
+INFO  16:36:57,937 - #40 5
+INFO  16:36:57,938 - #23 +
+INFO  16:36:57,938 - #40 3
+INFO  16:36:57,939 - #12 -
+INFO  16:36:57,940 - #40 2
+INFO  16:36:57,940 - #23 +
+INFO  16:36:57,940 - #40 1
+INFO  16:36:57,940 - #12 -
+INFO  16:36:57,940 - #40 1
+INFO  16:36:57,940 - #12 -
+INFO  16:36:57,940 - #40 1
+INFO  16:36:57,941 - #23 +
+INFO  16:36:57,941 - #40 6
+INFO  16:36:57,941 - #6 ;
+INFO  16:36:57,941 - #38 print
+INFO  16:36:57,941 - #29 (
+INFO  16:36:57,941 - #43 bodovi
+INFO  16:36:57,941 - #24 )
+INFO  16:36:57,941 - #6 ;
+INFO  16:36:57,941 - #4 }
+INFO  16:36:57,942 - #4 }
+INFO  16:36:57,949 - Program(
+  ProgramName(
+   MjProgram
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        DeclarationListConst(
+          DeclarationListConst(
+            DeclarationListConst(
+              NoDeclarationList(
+              ) [NoDeclarationList]
+              ConstDecl(
+                ConstTypeAndNameDecl(
+                  TypeName(
+                   int
+                  ) [TypeName]
+                 nula
+                ) [ConstTypeAndNameDecl]
+                NumberConstValue(
+                 0
+                ) [NumberConstValue]
+                NoConstAssignmentList(
+                ) [NoConstAssignmentList]
+              ) [ConstDecl]
+            ) [DeclarationListConst]
+            ConstDecl(
+              ConstTypeAndNameDecl(
+                TypeName(
+                 int
+                ) [TypeName]
+               jedan
+              ) [ConstTypeAndNameDecl]
+              NumberConstValue(
+               1
+              ) [NumberConstValue]
+              NoConstAssignmentList(
+              ) [NoConstAssignmentList]
+            ) [ConstDecl]
+          ) [DeclarationListConst]
+          ConstDecl(
+            ConstTypeAndNameDecl(
+              TypeName(
+               int
+              ) [TypeName]
+             pet
+            ) [ConstTypeAndNameDecl]
+            NumberConstValue(
+             5
+            ) [NumberConstValue]
+            NoConstAssignmentList(
+            ) [NoConstAssignmentList]
+          ) [ConstDecl]
+        ) [DeclarationListConst]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          MultipleVarDeclaration(
+            VarDeclNextElem(
+             x
+            ) [VarDeclNextElem]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               y
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           int
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclArrayFinal(
+           niz
+          ) [VarDeclArrayFinal]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         char
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclArrayFinal(
+         niz2
+        ) [VarDeclArrayFinal]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             bodovi
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorIdent(
+               bodovi
+              ) [DesignatorIdent]
+              Assignop(
+              ) [Assignop]
+              ExprAddTerm(
+                ExprAddTerm(
+                  ExprAddTerm(
+                    ExprAddTerm(
+                      ExprAddTerm(
+                        ExprAddTerm(
+                          ExprTerm(
+                            TermFactor(
+                              FactorNumber(
+                               5
+                              ) [FactorNumber]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                          PlusOperator(
+                          ) [PlusOperator]
+                          TermFactor(
+                            FactorNumber(
+                             3
+                            ) [FactorNumber]
+                          ) [TermFactor]
+                        ) [ExprAddTerm]
+                        MinusOperator(
+                        ) [MinusOperator]
+                        TermFactor(
+                          FactorNumber(
+                           2
+                          ) [FactorNumber]
+                        ) [TermFactor]
+                      ) [ExprAddTerm]
+                      PlusOperator(
+                      ) [PlusOperator]
+                      TermFactor(
+                        FactorNumber(
+                         1
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprAddTerm]
+                    MinusOperator(
+                    ) [MinusOperator]
+                    TermFactor(
+                      FactorNumber(
+                       1
+                      ) [FactorNumber]
+                    ) [TermFactor]
+                  ) [ExprAddTerm]
+                  MinusOperator(
+                  ) [MinusOperator]
+                  TermFactor(
+                    FactorNumber(
+                     1
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprAddTerm]
+                PlusOperator(
+                ) [PlusOperator]
+                TermFactor(
+                  FactorNumber(
+                   6
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprAddTerm]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignatorStatement]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorDesignatorFactor(
+                DesignatorFactorDesignator(
+                  DesignatorIdent(
+                   bodovi
+                  ) [DesignatorIdent]
+                ) [DesignatorFactorDesignator]
+              ) [FactorDesignatorFactor]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  16:36:57,949 - ===================================
+INFO  16:36:57,952 - Konstanta nula je dodata u tabelu simbola na liniji 3
+INFO  16:36:57,953 - Konstanta jedan je dodata u tabelu simbola na liniji 4
+INFO  16:36:57,953 - Konstanta pet je dodata u tabelu simbola na liniji 5
+INFO  16:36:57,953 - Promenljiva x deklarisana  na liniji 7
+INFO  16:36:57,953 - Promenljiva y deklarisana  na liniji 7
+INFO  16:36:57,953 - Promenljiva niz deklarisana  na liniji 9
+INFO  16:36:57,953 - Promenljiva niz2 deklarisana  na liniji 10
+INFO  16:36:57,953 - Promenljiva bodovi deklarisana  na liniji 14
+INFO  16:36:57,953 - ===================================
+INFO  16:36:57,958 - Parsiranje uspesno zavrseno!

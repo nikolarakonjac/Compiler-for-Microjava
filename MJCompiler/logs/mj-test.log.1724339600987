@@ -1,152 +1,125 @@
-INFO  17:19:59,297 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
-INFO  17:19:59,355 - #2 program
-INFO  17:19:59,355 - #43 MJProgram
-INFO  17:19:59,355 - #5 const
-INFO  17:19:59,357 - #43 int
-INFO  17:19:59,357 - #43 nula
-INFO  17:19:59,357 - #10 =
-INFO  17:19:59,358 - #40 0
-INFO  17:19:59,358 - #6 ;
-INFO  17:19:59,359 - #5 const
-INFO  17:19:59,360 - #43 int
-INFO  17:19:59,361 - #43 jedan
-INFO  17:19:59,361 - #10 =
-INFO  17:19:59,361 - #40 1
-INFO  17:19:59,361 - #6 ;
-INFO  17:19:59,361 - #5 const
-INFO  17:19:59,361 - #43 int
-INFO  17:19:59,361 - #43 pet
-INFO  17:19:59,361 - #10 =
-INFO  17:19:59,361 - #40 5
-INFO  17:19:59,367 - #6 ;
-INFO  17:19:59,368 - #43 int
-INFO  17:19:59,368 - #43 niz
-INFO  17:19:59,369 - #8 [
-INFO  17:19:59,369 - #9 ]
-INFO  17:19:59,369 - #6 ;
-INFO  17:19:59,369 - #43 char
-INFO  17:19:59,370 - #43 nizch
-INFO  17:19:59,370 - #8 [
-INFO  17:19:59,371 - #9 ]
-INFO  17:19:59,371 - #6 ;
-INFO  17:19:59,371 - #43 int
-INFO  17:19:59,371 - #43 a
-INFO  17:19:59,371 - #6 ;
-INFO  17:19:59,371 - #43 char
-INFO  17:19:59,371 - #43 c
-INFO  17:19:59,371 - #6 ;
-INFO  17:19:59,371 - #3 {
-INFO  17:19:59,371 - #11 void
-INFO  17:19:59,372 - #43 main
-INFO  17:19:59,372 - #29 (
-INFO  17:19:59,373 - #24 )
-INFO  17:19:59,373 - #43 int
-INFO  17:19:59,375 - #43 bodovi
-INFO  17:19:59,375 - #6 ;
-INFO  17:19:59,375 - #43 bool
-INFO  17:19:59,375 - #43 bt
-INFO  17:19:59,375 - #6 ;
-INFO  17:19:59,375 - #3 {
-INFO  17:19:59,375 - #43 c
-INFO  17:19:59,376 - #10 =
-INFO  17:19:59,376 - #41 a
-INFO  17:19:59,377 - #6 ;
-INFO  17:19:59,378 - #38 print
-INFO  17:19:59,378 - #29 (
-INFO  17:19:59,378 - #43 c
-INFO  17:19:59,378 - #24 )
-INFO  17:19:59,378 - #6 ;
-INFO  17:19:59,378 - #43 nizch
-INFO  17:19:59,378 - #10 =
-INFO  17:19:59,378 - #19 new
-INFO  17:19:59,378 - #43 char
-INFO  17:19:59,378 - #8 [
-INFO  17:19:59,379 - #40 3
-INFO  17:19:59,379 - #9 ]
-INFO  17:19:59,379 - #6 ;
-INFO  17:19:59,379 - #43 nizch
-INFO  17:19:59,379 - #8 [
-INFO  17:19:59,379 - #40 0
-INFO  17:19:59,379 - #9 ]
-INFO  17:19:59,380 - #10 =
-INFO  17:19:59,380 - #41 a
-INFO  17:19:59,380 - #6 ;
-INFO  17:19:59,380 - #43 nizch
-INFO  17:19:59,380 - #8 [
-INFO  17:19:59,380 - #40 1
-INFO  17:19:59,380 - #9 ]
-INFO  17:19:59,380 - #10 =
-INFO  17:19:59,380 - #41 b
-INFO  17:19:59,380 - #6 ;
-INFO  17:19:59,380 - #43 nizch
-INFO  17:19:59,380 - #8 [
-INFO  17:19:59,381 - #40 2
-INFO  17:19:59,381 - #9 ]
-INFO  17:19:59,381 - #10 =
-INFO  17:19:59,381 - #41 c
-INFO  17:19:59,381 - #6 ;
-INFO  17:19:59,381 - #38 print
-INFO  17:19:59,382 - #29 (
-INFO  17:19:59,382 - #43 nizch
-INFO  17:19:59,382 - #8 [
-INFO  17:19:59,382 - #40 0
-INFO  17:19:59,382 - #9 ]
-INFO  17:19:59,382 - #24 )
-INFO  17:19:59,382 - #6 ;
-INFO  17:19:59,382 - #38 print
-INFO  17:19:59,382 - #29 (
-INFO  17:19:59,382 - #43 nizch
-INFO  17:19:59,382 - #8 [
-INFO  17:19:59,382 - #40 1
-INFO  17:19:59,383 - #9 ]
-INFO  17:19:59,383 - #24 )
-INFO  17:19:59,383 - #6 ;
-INFO  17:19:59,383 - #38 print
-INFO  17:19:59,383 - #29 (
-INFO  17:19:59,383 - #43 nizch
-INFO  17:19:59,383 - #8 [
-INFO  17:19:59,383 - #40 2
-INFO  17:19:59,383 - #9 ]
-INFO  17:19:59,383 - #24 )
-INFO  17:19:59,383 - #6 ;
-INFO  17:19:59,383 - #4 }
-INFO  17:19:59,383 - #4 }
-INFO  17:19:59,392 - Program(
+INFO  17:12:37,557 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  17:12:37,604 - #2 program
+INFO  17:12:37,605 - #43 MJProgram
+INFO  17:12:37,605 - #5 const
+INFO  17:12:37,606 - #43 int
+INFO  17:12:37,606 - #43 nula
+INFO  17:12:37,607 - #10 =
+INFO  17:12:37,607 - #40 0
+INFO  17:12:37,607 - #6 ;
+INFO  17:12:37,608 - #5 const
+INFO  17:12:37,609 - #43 int
+INFO  17:12:37,609 - #43 jedan
+INFO  17:12:37,610 - #10 =
+INFO  17:12:37,610 - #40 1
+INFO  17:12:37,610 - #6 ;
+INFO  17:12:37,610 - #5 const
+INFO  17:12:37,610 - #43 int
+INFO  17:12:37,610 - #43 pet
+INFO  17:12:37,610 - #10 =
+INFO  17:12:37,610 - #40 5
+INFO  17:12:37,617 - #6 ;
+INFO  17:12:37,617 - #43 int
+INFO  17:12:37,617 - #43 niz
+INFO  17:12:37,618 - #8 [
+INFO  17:12:37,618 - #9 ]
+INFO  17:12:37,618 - #6 ;
+INFO  17:12:37,618 - #43 char
+INFO  17:12:37,620 - #43 nizch
+INFO  17:12:37,620 - #8 [
+INFO  17:12:37,620 - #9 ]
+INFO  17:12:37,620 - #6 ;
+INFO  17:12:37,620 - #43 int
+INFO  17:12:37,620 - #43 a
+INFO  17:12:37,620 - #6 ;
+INFO  17:12:37,620 - #3 {
+INFO  17:12:37,620 - #11 void
+INFO  17:12:37,621 - #43 main
+INFO  17:12:37,621 - #29 (
+INFO  17:12:37,621 - #24 )
+INFO  17:12:37,622 - #43 int
+INFO  17:12:37,623 - #43 bodovi
+INFO  17:12:37,623 - #6 ;
+INFO  17:12:37,623 - #43 bool
+INFO  17:12:37,624 - #43 bt
+INFO  17:12:37,624 - #6 ;
+INFO  17:12:37,624 - #3 {
+INFO  17:12:37,624 - #43 nizch
+INFO  17:12:37,625 - #10 =
+INFO  17:12:37,625 - #19 new
+INFO  17:12:37,626 - #43 char
+INFO  17:12:37,626 - #8 [
+INFO  17:12:37,626 - #40 3
+INFO  17:12:37,626 - #9 ]
+INFO  17:12:37,626 - #6 ;
+INFO  17:12:37,627 - #43 nizch
+INFO  17:12:37,627 - #8 [
+INFO  17:12:37,627 - #40 0
+INFO  17:12:37,627 - #9 ]
+INFO  17:12:37,627 - #10 =
+INFO  17:12:37,627 - #41 a
+INFO  17:12:37,627 - #6 ;
+INFO  17:12:37,627 - #43 nizch
+INFO  17:12:37,628 - #8 [
+INFO  17:12:37,628 - #40 1
+INFO  17:12:37,628 - #9 ]
+INFO  17:12:37,628 - #10 =
+INFO  17:12:37,628 - #41 b
+INFO  17:12:37,628 - #6 ;
+INFO  17:12:37,628 - #43 nizch
+INFO  17:12:37,628 - #8 [
+INFO  17:12:37,628 - #40 2
+INFO  17:12:37,628 - #9 ]
+INFO  17:12:37,628 - #10 =
+INFO  17:12:37,628 - #41 c
+INFO  17:12:37,628 - #6 ;
+INFO  17:12:37,628 - #38 print
+INFO  17:12:37,628 - #29 (
+INFO  17:12:37,629 - #43 nizch
+INFO  17:12:37,629 - #8 [
+INFO  17:12:37,629 - #40 0
+INFO  17:12:37,629 - #9 ]
+INFO  17:12:37,629 - #24 )
+INFO  17:12:37,629 - #6 ;
+INFO  17:12:37,629 - #38 print
+INFO  17:12:37,629 - #29 (
+INFO  17:12:37,629 - #43 nizch
+INFO  17:12:37,629 - #8 [
+INFO  17:12:37,629 - #40 1
+INFO  17:12:37,629 - #9 ]
+INFO  17:12:37,630 - #24 )
+INFO  17:12:37,630 - #6 ;
+INFO  17:12:37,630 - #38 print
+INFO  17:12:37,630 - #29 (
+INFO  17:12:37,630 - #43 nizch
+INFO  17:12:37,630 - #8 [
+INFO  17:12:37,630 - #40 2
+INFO  17:12:37,630 - #9 ]
+INFO  17:12:37,630 - #24 )
+INFO  17:12:37,630 - #6 ;
+INFO  17:12:37,630 - #4 }
+INFO  17:12:37,631 - #4 }
+INFO  17:12:37,640 - Program(
   ProgramName(
    MJProgram
   ) [ProgramName]
   DeclarationListVar(
     DeclarationListVar(
       DeclarationListVar(
-        DeclarationListVar(
+        DeclarationListConst(
           DeclarationListConst(
             DeclarationListConst(
-              DeclarationListConst(
-                NoDeclarationList(
-                ) [NoDeclarationList]
-                ConstDecl(
-                  ConstTypeAndNameDecl(
-                    TypeName(
-                     int
-                    ) [TypeName]
-                   nula
-                  ) [ConstTypeAndNameDecl]
-                  NumberConstValue(
-                   0
-                  ) [NumberConstValue]
-                  NoConstAssignmentList(
-                  ) [NoConstAssignmentList]
-                ) [ConstDecl]
-              ) [DeclarationListConst]
+              NoDeclarationList(
+              ) [NoDeclarationList]
               ConstDecl(
                 ConstTypeAndNameDecl(
                   TypeName(
                    int
                   ) [TypeName]
-                 jedan
+                 nula
                 ) [ConstTypeAndNameDecl]
                 NumberConstValue(
-                 1
+                 0
                 ) [NumberConstValue]
                 NoConstAssignmentList(
                 ) [NoConstAssignmentList]
@@ -157,37 +130,38 @@ INFO  17:19:59,392 - Program(
                 TypeName(
                  int
                 ) [TypeName]
-               pet
+               jedan
               ) [ConstTypeAndNameDecl]
               NumberConstValue(
-               5
+               1
               ) [NumberConstValue]
               NoConstAssignmentList(
               ) [NoConstAssignmentList]
             ) [ConstDecl]
           ) [DeclarationListConst]
-          VarDecl(
-            VarDeclType(
+          ConstDecl(
+            ConstTypeAndNameDecl(
               TypeName(
                int
               ) [TypeName]
-            ) [VarDeclType]
-            SingleVarDeclaration(
-              VarDeclArrayFinal(
-               niz
-              ) [VarDeclArrayFinal]
-            ) [SingleVarDeclaration]
-          ) [VarDecl]
-        ) [DeclarationListVar]
+             pet
+            ) [ConstTypeAndNameDecl]
+            NumberConstValue(
+             5
+            ) [NumberConstValue]
+            NoConstAssignmentList(
+            ) [NoConstAssignmentList]
+          ) [ConstDecl]
+        ) [DeclarationListConst]
         VarDecl(
           VarDeclType(
             TypeName(
-             char
+             int
             ) [TypeName]
           ) [VarDeclType]
           SingleVarDeclaration(
             VarDeclArrayFinal(
-             nizch
+             niz
             ) [VarDeclArrayFinal]
           ) [SingleVarDeclaration]
         ) [VarDecl]
@@ -195,25 +169,25 @@ INFO  17:19:59,392 - Program(
       VarDecl(
         VarDeclType(
           TypeName(
-           int
+           char
           ) [TypeName]
         ) [VarDeclType]
         SingleVarDeclaration(
-          VarDeclFinalElem(
-           a
-          ) [VarDeclFinalElem]
+          VarDeclArrayFinal(
+           nizch
+          ) [VarDeclArrayFinal]
         ) [SingleVarDeclaration]
       ) [VarDecl]
     ) [DeclarationListVar]
     VarDecl(
       VarDeclType(
         TypeName(
-         char
+         int
         ) [TypeName]
       ) [VarDeclType]
       SingleVarDeclaration(
         VarDeclFinalElem(
-         c
+         a
         ) [VarDeclFinalElem]
       ) [SingleVarDeclaration]
     ) [VarDecl]
@@ -264,41 +238,8 @@ INFO  17:19:59,392 - Program(
               StatementListExist(
                 StatementListExist(
                   StatementListExist(
-                    StatementListExist(
-                      StatementListExist(
-                        StatementListDoesntExist(
-                        ) [StatementListDoesntExist]
-                        StatementDesignatorStatement(
-                          DesignatorStatementAssign(
-                            DesignatorIdent(
-                             c
-                            ) [DesignatorIdent]
-                            Assignop(
-                            ) [Assignop]
-                            ExprTerm(
-                              TermFactor(
-                                FactorChar(
-                                 a
-                                ) [FactorChar]
-                              ) [TermFactor]
-                            ) [ExprTerm]
-                          ) [DesignatorStatementAssign]
-                        ) [StatementDesignatorStatement]
-                      ) [StatementListExist]
-                      StatementPrintExpr(
-                        ExprTerm(
-                          TermFactor(
-                            FactorDesignatorFactor(
-                              DesignatorFactorDesignator(
-                                DesignatorIdent(
-                                 c
-                                ) [DesignatorIdent]
-                              ) [DesignatorFactorDesignator]
-                            ) [FactorDesignatorFactor]
-                          ) [TermFactor]
-                        ) [ExprTerm]
-                      ) [StatementPrintExpr]
-                    ) [StatementListExist]
+                    StatementListDoesntExist(
+                    ) [StatementListDoesntExist]
                     StatementDesignatorStatement(
                       DesignatorStatementAssign(
                         DesignatorIdent(
@@ -477,15 +418,14 @@ INFO  17:19:59,392 - Program(
     ) [MethodDecl]
   ) [MethodDeclarationList]
 ) [Program]
-INFO  17:19:59,393 - ===================================
-INFO  17:19:59,397 - Konstanta nula je dodata u tabelu simbola na liniji 3
-INFO  17:19:59,397 - Konstanta jedan je dodata u tabelu simbola na liniji 4
-INFO  17:19:59,397 - Konstanta pet je dodata u tabelu simbola na liniji 5
-INFO  17:19:59,397 - Promenljiva niz deklarisana  na liniji 7
-INFO  17:19:59,397 - Promenljiva nizch deklarisana  na liniji 8
-INFO  17:19:59,398 - Promenljiva a deklarisana  na liniji 11
-INFO  17:19:59,398 - Promenljiva c deklarisana  na liniji 13
-INFO  17:19:59,398 - Promenljiva bodovi deklarisana  na liniji 16
-INFO  17:19:59,398 - Promenljiva bt deklarisana  na liniji 17
-INFO  17:19:59,398 - ===================================
-INFO  17:19:59,407 - Parsiranje uspesno zavrseno!
+INFO  17:12:37,640 - ===================================
+INFO  17:12:37,643 - Konstanta nula je dodata u tabelu simbola na liniji 3
+INFO  17:12:37,643 - Konstanta jedan je dodata u tabelu simbola na liniji 4
+INFO  17:12:37,643 - Konstanta pet je dodata u tabelu simbola na liniji 5
+INFO  17:12:37,643 - Promenljiva niz deklarisana  na liniji 7
+INFO  17:12:37,643 - Promenljiva nizch deklarisana  na liniji 8
+INFO  17:12:37,644 - Promenljiva a deklarisana  na liniji 11
+INFO  17:12:37,644 - Promenljiva bodovi deklarisana  na liniji 15
+INFO  17:12:37,644 - Promenljiva bt deklarisana  na liniji 16
+INFO  17:12:37,644 - ===================================
+INFO  17:12:37,659 - Parsiranje uspesno zavrseno!
