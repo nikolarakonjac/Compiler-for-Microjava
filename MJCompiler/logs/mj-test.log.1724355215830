@@ -1,47 +1,47 @@
-INFO  21:34:48,412 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
-INFO  21:34:48,442 - #2 program
-INFO  21:34:48,442 - #43 test301
-INFO  21:34:48,442 - #43 char
-INFO  21:34:48,443 - #43 x
-INFO  21:34:48,443 - #8 [
-INFO  21:34:48,444 - #9 ]
-INFO  21:34:48,444 - #6 ;
-INFO  21:34:48,444 - #43 char
-INFO  21:34:48,445 - #43 c
-INFO  21:34:48,445 - #6 ;
-INFO  21:34:48,445 - #3 {
-INFO  21:34:48,445 - #11 void
-INFO  21:34:48,445 - #43 main
-INFO  21:34:48,445 - #29 (
-INFO  21:34:48,445 - #24 )
-INFO  21:34:48,446 - #3 {
-INFO  21:34:48,446 - #43 x
-INFO  21:34:48,447 - #10 =
-INFO  21:34:48,447 - #19 new
-INFO  21:34:48,447 - #43 char
-INFO  21:34:48,453 - #8 [
-INFO  21:34:48,453 - #40 3
-INFO  21:34:48,454 - #9 ]
-INFO  21:34:48,454 - #6 ;
-INFO  21:34:48,454 - #37 read
-INFO  21:34:48,454 - #29 (
-INFO  21:34:48,454 - #43 x
-INFO  21:34:48,455 - #8 [
-INFO  21:34:48,455 - #40 0
-INFO  21:34:48,455 - #9 ]
-INFO  21:34:48,455 - #24 )
-INFO  21:34:48,455 - #6 ;
-INFO  21:34:48,455 - #38 print
-INFO  21:34:48,455 - #29 (
-INFO  21:34:48,455 - #43 x
-INFO  21:34:48,455 - #8 [
-INFO  21:34:48,455 - #40 0
-INFO  21:34:48,455 - #9 ]
-INFO  21:34:48,455 - #24 )
-INFO  21:34:48,455 - #6 ;
-INFO  21:34:48,455 - #4 }
-INFO  21:34:48,455 - #4 }
-INFO  21:34:48,460 - Program(
+INFO  21:32:32,961 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  21:32:32,989 - #2 program
+INFO  21:32:32,989 - #43 test301
+INFO  21:32:32,989 - #43 int
+INFO  21:32:32,990 - #43 x
+INFO  21:32:32,990 - #8 [
+INFO  21:32:32,990 - #9 ]
+INFO  21:32:32,990 - #6 ;
+INFO  21:32:32,990 - #43 char
+INFO  21:32:32,991 - #43 c
+INFO  21:32:32,991 - #6 ;
+INFO  21:32:32,991 - #3 {
+INFO  21:32:32,991 - #11 void
+INFO  21:32:32,991 - #43 main
+INFO  21:32:32,991 - #29 (
+INFO  21:32:32,992 - #24 )
+INFO  21:32:32,992 - #3 {
+INFO  21:32:32,992 - #43 x
+INFO  21:32:32,993 - #10 =
+INFO  21:32:32,993 - #19 new
+INFO  21:32:32,993 - #43 int
+INFO  21:32:33,001 - #8 [
+INFO  21:32:33,001 - #40 3
+INFO  21:32:33,001 - #9 ]
+INFO  21:32:33,001 - #6 ;
+INFO  21:32:33,001 - #37 read
+INFO  21:32:33,001 - #29 (
+INFO  21:32:33,002 - #43 x
+INFO  21:32:33,002 - #8 [
+INFO  21:32:33,002 - #40 0
+INFO  21:32:33,002 - #9 ]
+INFO  21:32:33,002 - #24 )
+INFO  21:32:33,002 - #6 ;
+INFO  21:32:33,002 - #38 print
+INFO  21:32:33,002 - #29 (
+INFO  21:32:33,003 - #43 x
+INFO  21:32:33,003 - #8 [
+INFO  21:32:33,003 - #40 0
+INFO  21:32:33,003 - #9 ]
+INFO  21:32:33,003 - #24 )
+INFO  21:32:33,003 - #6 ;
+INFO  21:32:33,003 - #4 }
+INFO  21:32:33,003 - #4 }
+INFO  21:32:33,009 - Program(
   ProgramName(
    test301
   ) [ProgramName]
@@ -52,7 +52,7 @@ INFO  21:34:48,460 - Program(
       VarDecl(
         VarDeclType(
           TypeName(
-           char
+           int
           ) [TypeName]
         ) [VarDeclType]
         SingleVarDeclaration(
@@ -103,7 +103,7 @@ INFO  21:34:48,460 - Program(
                     FactorNewFactor(
                       NewFactorArray(
                         TypeName(
-                         char
+                         int
                         ) [TypeName]
                         ExprTerm(
                           TermFactor(
@@ -160,7 +160,7 @@ INFO  21:34:48,460 - Program(
     ) [MethodDecl]
   ) [MethodDeclarationList]
 ) [Program]
-INFO  21:34:48,461 - ===================================
-INFO  21:34:48,463 - ===================================
-INFO  21:34:48,466 - 2
-INFO  21:34:48,466 - Parsiranje uspesno zavrseno!
+INFO  21:32:33,009 - ===================================
+INFO  21:32:33,012 - ===================================
+INFO  21:32:33,015 - 2
+INFO  21:32:33,016 - Parsiranje uspesno zavrseno!

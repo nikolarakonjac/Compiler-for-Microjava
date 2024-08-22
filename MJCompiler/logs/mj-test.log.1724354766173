@@ -1,0 +1,143 @@
+INFO  21:25:49,364 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  21:25:49,418 - #2 program
+INFO  21:25:49,418 - #43 test301
+INFO  21:25:49,418 - #43 int
+INFO  21:25:49,420 - #43 x
+INFO  21:25:49,420 - #8 [
+INFO  21:25:49,421 - #9 ]
+INFO  21:25:49,421 - #6 ;
+INFO  21:25:49,421 - #43 char
+INFO  21:25:49,422 - #43 c
+INFO  21:25:49,422 - #6 ;
+INFO  21:25:49,422 - #3 {
+INFO  21:25:49,422 - #11 void
+INFO  21:25:49,423 - #43 main
+INFO  21:25:49,423 - #29 (
+INFO  21:25:49,423 - #24 )
+INFO  21:25:49,424 - #3 {
+INFO  21:25:49,424 - #37 read
+INFO  21:25:49,425 - #29 (
+INFO  21:25:49,425 - #43 x
+INFO  21:25:49,425 - #8 [
+INFO  21:25:49,425 - #40 0
+INFO  21:25:49,426 - #9 ]
+INFO  21:25:49,426 - #24 )
+INFO  21:25:49,426 - #6 ;
+INFO  21:25:49,426 - #38 print
+INFO  21:25:49,426 - #29 (
+INFO  21:25:49,427 - #43 x
+INFO  21:25:49,427 - #8 [
+INFO  21:25:49,427 - #40 0
+INFO  21:25:49,427 - #9 ]
+INFO  21:25:49,427 - #24 )
+INFO  21:25:49,427 - #6 ;
+INFO  21:25:49,427 - #4 }
+INFO  21:25:49,427 - #4 }
+INFO  21:25:49,436 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           int
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclArrayFinal(
+           x
+          ) [VarDeclArrayFinal]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         char
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         c
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementRead(
+            DesignatorArray(
+              DesignatorIdent(
+               x
+              ) [DesignatorIdent]
+              ExprTerm(
+                TermFactor(
+                  FactorNumber(
+                   0
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [DesignatorArray]
+          ) [StatementRead]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorDesignatorFactor(
+                DesignatorFactorDesignator(
+                  DesignatorArray(
+                    DesignatorIdent(
+                     x
+                    ) [DesignatorIdent]
+                    ExprTerm(
+                      TermFactor(
+                        FactorNumber(
+                         0
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [DesignatorArray]
+                ) [DesignatorFactorDesignator]
+              ) [FactorDesignatorFactor]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  21:25:49,436 - ===================================
+INFO  21:25:49,440 - ===================================
+INFO  21:25:49,448 - StatementRead(
+  DesignatorArray(
+    DesignatorIdent(
+     x
+    ) [DesignatorIdent]
+    ExprTerm(
+      TermFactor(
+        FactorNumber(
+         0
+        ) [FactorNumber]
+      ) [TermFactor]
+    ) [ExprTerm]
+  ) [DesignatorArray]
+) [StatementRead]
+INFO  21:25:49,448 - 3
+INFO  21:25:49,449 - Parsiranje uspesno zavrseno!

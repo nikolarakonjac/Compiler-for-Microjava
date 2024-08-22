@@ -1,0 +1,130 @@
+INFO  21:29:42,560 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  21:29:42,643 - #2 program
+INFO  21:29:42,644 - #43 test301
+INFO  21:29:42,644 - #43 int
+INFO  21:29:42,646 - #43 x
+INFO  21:29:42,648 - #8 [
+INFO  21:29:42,648 - #9 ]
+INFO  21:29:42,648 - #6 ;
+INFO  21:29:42,648 - #43 char
+INFO  21:29:42,650 - #43 c
+INFO  21:29:42,650 - #6 ;
+INFO  21:29:42,650 - #3 {
+INFO  21:29:42,651 - #11 void
+INFO  21:29:42,652 - #43 main
+INFO  21:29:42,652 - #29 (
+INFO  21:29:42,652 - #24 )
+INFO  21:29:42,653 - #3 {
+INFO  21:29:42,655 - #37 read
+INFO  21:29:42,656 - #29 (
+INFO  21:29:42,656 - #43 x
+INFO  21:29:42,656 - #8 [
+INFO  21:29:42,657 - #40 0
+INFO  21:29:42,657 - #9 ]
+INFO  21:29:42,658 - #24 )
+INFO  21:29:42,658 - #6 ;
+INFO  21:29:42,658 - #38 print
+INFO  21:29:42,658 - #29 (
+INFO  21:29:42,659 - #43 x
+INFO  21:29:42,659 - #8 [
+INFO  21:29:42,659 - #40 0
+INFO  21:29:42,659 - #9 ]
+INFO  21:29:42,659 - #24 )
+INFO  21:29:42,660 - #6 ;
+INFO  21:29:42,660 - #4 }
+INFO  21:29:42,660 - #4 }
+INFO  21:29:42,674 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      NoDeclarationList(
+      ) [NoDeclarationList]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           int
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclArrayFinal(
+           x
+          ) [VarDeclArrayFinal]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         char
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         c
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementRead(
+            DesignatorArray(
+              DesignatorIdent(
+               x
+              ) [DesignatorIdent]
+              ExprTerm(
+                TermFactor(
+                  FactorNumber(
+                   0
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [DesignatorArray]
+          ) [StatementRead]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorDesignatorFactor(
+                DesignatorFactorDesignator(
+                  DesignatorArray(
+                    DesignatorIdent(
+                     x
+                    ) [DesignatorIdent]
+                    ExprTerm(
+                      TermFactor(
+                        FactorNumber(
+                         0
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [DesignatorArray]
+                ) [DesignatorFactorDesignator]
+              ) [FactorDesignatorFactor]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  21:29:42,674 - ===================================
+INFO  21:29:42,679 - ===================================
+INFO  21:29:42,687 - 2
+INFO  21:29:42,687 - Faza generisanja koda klasa StatementRead  array slucaj
+INFO  21:29:42,689 - Parsiranje uspesno zavrseno!

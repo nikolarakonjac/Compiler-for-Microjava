@@ -87,6 +87,56 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 	
+	
+	// ---------------------------------------------- READ -------------------------------------------
+	
+	public void visit(StatementRead read) {
+		// Statement ::= READ LPAREN Designator RPAREN SEMICOLON
+		
+		//Designator  je npr x[0] i on nece biti struct.arr nego struct.int zato sto je element niza tako sam namestio u semantickoj analizi
+		
+		SyntaxNode designatorParent = read.getDesignator().getParent();
+		Struct designatorStruct = read.getDesignator().obj.getType();
+		
+		
+		
+		if(read.getDesignator() instanceof DesignatorIdent) {
+			report_info("1", null);
+			if(designatorStruct == MyTab.intType || designatorStruct == MyTab.boolType) {
+				Code.put(Code.pop);	//radi se pop je kad se ode u designatorIdent loaduje se vrednost jer je potrebna za read kad je designator niz
+				Code.put(Code.read); // procita int i pusuje ga na stek
+				Code.store(read.getDesignator().obj);
+			}
+			else if(designatorStruct == MyTab.charType){
+				Code.put(Code.pop);
+				Code.put(Code.bread);
+				Code.store(read.getDesignator().obj);
+			}
+			else {
+				report_info("Faza generisanja koda klasa StatementRead  designatorStruct" ,null);
+			}
+		}
+		else if(read.getDesignator() instanceof DesignatorArray){
+			report_info("2", null);
+			// ucitavanje u element niza  -> aload se korist na steku treba da bude [adr, index, val] pa tek onda aload ili baload
+			if(designatorStruct == MyTab.intType || designatorStruct == MyTab.boolType) {
+				// adr i index su vec na steku
+				Code.put(Code.read);	//val
+				Code.put(Code.astore);
+			}
+			else if(designatorStruct == MyTab.charType){
+				Code.put(Code.bread);
+				Code.put(Code.bastore);
+			}
+			else {
+				report_info("Faza generisanja koda klasa StatementRead  array slucaj" ,null);
+			}
+		}
+		else {
+			report_info("3", null);
+		}
+	}
+	
 	// ---------------------------------------------- Factor -------------------------------------------
 	
 	public void visit(FactorNumber num) {
@@ -269,7 +319,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		if(!(
 				parent.getClass().equals(DesignatorStatementAssign.class) ||
 				parent.getClass().equals(DesignatorStatementInc.class) ||
-				parent.getClass().equals(DesignatorStatementDec.class)
+				parent.getClass().equals(DesignatorStatementDec.class) 
 				)) {
 			Code.load(des.obj);	
 		}

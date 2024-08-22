@@ -1,28 +1,16 @@
-program MJProgram
+program test301
 
-	const int nula = 0;
-	const int jedan = 1;
-	const int pet = 5;
-
-	int niz[];
-	char nizch[];
 	
-
-	int a;
-	
+	char x[];
 	char c;
 {
 	void main()	
-		int bodovi;
-		bool bt;
-	{
-	
 		
-		read(bodovi);
-		print(bodovi);
+	{
+		x = new char[3];
+		read(x[0]);
+		print(x[0]);
 			
 		
 	}
 }
-
-

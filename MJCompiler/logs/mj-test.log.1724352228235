@@ -1,0 +1,85 @@
+INFO  20:41:49,816 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  20:41:49,882 - #2 program
+INFO  20:41:49,882 - #43 test301
+INFO  20:41:49,882 - #43 char
+INFO  20:41:49,884 - #43 c
+INFO  20:41:49,885 - #6 ;
+INFO  20:41:49,886 - #3 {
+INFO  20:41:49,887 - #11 void
+INFO  20:41:49,888 - #43 main
+INFO  20:41:49,888 - #29 (
+INFO  20:41:49,888 - #24 )
+INFO  20:41:49,889 - #3 {
+INFO  20:41:49,890 - #37 read
+INFO  20:41:49,891 - #29 (
+INFO  20:41:49,891 - #43 c
+INFO  20:41:49,891 - #24 )
+INFO  20:41:49,891 - #6 ;
+INFO  20:41:49,891 - #38 print
+INFO  20:41:49,891 - #29 (
+INFO  20:41:49,891 - #43 c
+INFO  20:41:49,892 - #24 )
+INFO  20:41:49,898 - #6 ;
+INFO  20:41:49,898 - #4 }
+INFO  20:41:49,898 - #4 }
+INFO  20:41:49,909 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         char
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         c
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      NoVarDeclarationList(
+      ) [NoVarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListDoesntExist(
+          ) [StatementListDoesntExist]
+          StatementRead(
+            DesignatorIdent(
+             c
+            ) [DesignatorIdent]
+          ) [StatementRead]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorDesignatorFactor(
+                DesignatorFactorDesignator(
+                  DesignatorIdent(
+                   c
+                  ) [DesignatorIdent]
+                ) [DesignatorFactorDesignator]
+              ) [FactorDesignatorFactor]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  20:41:49,909 - ===================================
+INFO  20:41:49,912 - ===================================
+INFO  20:41:49,919 - Parsiranje uspesno zavrseno!

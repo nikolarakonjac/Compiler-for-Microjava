@@ -1,77 +1,60 @@
-INFO  21:34:48,412 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
-INFO  21:34:48,442 - #2 program
-INFO  21:34:48,442 - #43 test301
-INFO  21:34:48,442 - #43 char
-INFO  21:34:48,443 - #43 x
-INFO  21:34:48,443 - #8 [
-INFO  21:34:48,444 - #9 ]
-INFO  21:34:48,444 - #6 ;
-INFO  21:34:48,444 - #43 char
-INFO  21:34:48,445 - #43 c
-INFO  21:34:48,445 - #6 ;
-INFO  21:34:48,445 - #3 {
-INFO  21:34:48,445 - #11 void
-INFO  21:34:48,445 - #43 main
-INFO  21:34:48,445 - #29 (
-INFO  21:34:48,445 - #24 )
-INFO  21:34:48,446 - #3 {
-INFO  21:34:48,446 - #43 x
-INFO  21:34:48,447 - #10 =
-INFO  21:34:48,447 - #19 new
-INFO  21:34:48,447 - #43 char
-INFO  21:34:48,453 - #8 [
-INFO  21:34:48,453 - #40 3
-INFO  21:34:48,454 - #9 ]
-INFO  21:34:48,454 - #6 ;
-INFO  21:34:48,454 - #37 read
-INFO  21:34:48,454 - #29 (
-INFO  21:34:48,454 - #43 x
-INFO  21:34:48,455 - #8 [
-INFO  21:34:48,455 - #40 0
-INFO  21:34:48,455 - #9 ]
-INFO  21:34:48,455 - #24 )
-INFO  21:34:48,455 - #6 ;
-INFO  21:34:48,455 - #38 print
-INFO  21:34:48,455 - #29 (
-INFO  21:34:48,455 - #43 x
-INFO  21:34:48,455 - #8 [
-INFO  21:34:48,455 - #40 0
-INFO  21:34:48,455 - #9 ]
-INFO  21:34:48,455 - #24 )
-INFO  21:34:48,455 - #6 ;
-INFO  21:34:48,455 - #4 }
-INFO  21:34:48,455 - #4 }
-INFO  21:34:48,460 - Program(
+INFO  21:09:54,329 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  21:09:54,387 - #2 program
+INFO  21:09:54,387 - #43 test301
+INFO  21:09:54,388 - #43 int
+INFO  21:09:54,389 - #43 x
+INFO  21:09:54,391 - #8 [
+INFO  21:09:54,391 - #9 ]
+INFO  21:09:54,391 - #6 ;
+INFO  21:09:54,391 - #3 {
+INFO  21:09:54,392 - #11 void
+INFO  21:09:54,393 - #43 main
+INFO  21:09:54,393 - #29 (
+INFO  21:09:54,393 - #24 )
+INFO  21:09:54,394 - #3 {
+INFO  21:09:54,395 - #43 x
+INFO  21:09:54,396 - #10 =
+INFO  21:09:54,397 - #19 new
+INFO  21:09:54,398 - #43 int
+INFO  21:09:54,398 - #8 [
+INFO  21:09:54,398 - #40 3
+INFO  21:09:54,398 - #9 ]
+INFO  21:09:54,405 - #6 ;
+INFO  21:09:54,405 - #37 read
+INFO  21:09:54,406 - #29 (
+INFO  21:09:54,406 - #43 x
+INFO  21:09:54,406 - #8 [
+INFO  21:09:54,406 - #40 0
+INFO  21:09:54,406 - #9 ]
+INFO  21:09:54,407 - #24 )
+INFO  21:09:54,407 - #6 ;
+INFO  21:09:54,407 - #38 print
+INFO  21:09:54,407 - #29 (
+INFO  21:09:54,407 - #43 x
+INFO  21:09:54,407 - #8 [
+INFO  21:09:54,407 - #40 0
+INFO  21:09:54,407 - #9 ]
+INFO  21:09:54,407 - #24 )
+INFO  21:09:54,408 - #6 ;
+INFO  21:09:54,408 - #4 }
+INFO  21:09:54,408 - #4 }
+INFO  21:09:54,419 - Program(
   ProgramName(
    test301
   ) [ProgramName]
   DeclarationListVar(
-    DeclarationListVar(
-      NoDeclarationList(
-      ) [NoDeclarationList]
-      VarDecl(
-        VarDeclType(
-          TypeName(
-           char
-          ) [TypeName]
-        ) [VarDeclType]
-        SingleVarDeclaration(
-          VarDeclArrayFinal(
-           x
-          ) [VarDeclArrayFinal]
-        ) [SingleVarDeclaration]
-      ) [VarDecl]
-    ) [DeclarationListVar]
+    NoDeclarationList(
+    ) [NoDeclarationList]
     VarDecl(
       VarDeclType(
         TypeName(
-         char
+         int
         ) [TypeName]
       ) [VarDeclType]
       SingleVarDeclaration(
-        VarDeclFinalElem(
-         c
-        ) [VarDeclFinalElem]
+        VarDeclArrayFinal(
+         x
+        ) [VarDeclArrayFinal]
       ) [SingleVarDeclaration]
     ) [VarDecl]
   ) [DeclarationListVar]
@@ -103,7 +86,7 @@ INFO  21:34:48,460 - Program(
                     FactorNewFactor(
                       NewFactorArray(
                         TypeName(
-                         char
+                         int
                         ) [TypeName]
                         ExprTerm(
                           TermFactor(
@@ -160,7 +143,7 @@ INFO  21:34:48,460 - Program(
     ) [MethodDecl]
   ) [MethodDeclarationList]
 ) [Program]
-INFO  21:34:48,461 - ===================================
-INFO  21:34:48,463 - ===================================
-INFO  21:34:48,466 - 2
-INFO  21:34:48,466 - Parsiranje uspesno zavrseno!
+INFO  21:09:54,419 - ===================================
+INFO  21:09:54,423 - ===================================
+INFO  21:09:54,428 - 1
+INFO  21:09:54,430 - Parsiranje uspesno zavrseno!

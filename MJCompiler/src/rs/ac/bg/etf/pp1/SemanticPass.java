@@ -101,7 +101,7 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		else {
 			MyTab.insert(Obj.Var, ident.getIdentName(), this.currentDeclType);
-			report_info("Promenljiva " + ident.getIdentName() + " deklarisana ", ident);
+			//report_info("Promenljiva " + ident.getIdentName() + " deklarisana ", ident);
 		}
 	}
 	
@@ -113,7 +113,7 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		else {
 			MyTab.insert(Obj.Var, ident.getIdentName(), this.currentDeclType);
-			report_info("Promenljiva " + ident.getIdentName() + " deklarisana ", ident);
+			//report_info("Promenljiva " + ident.getIdentName() + " deklarisana ", ident);
 		}
 	}
 	
@@ -129,7 +129,7 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		else {
 			MyTab.insert(Obj.Var, arrayName, new Struct(Struct.Array, this.currentDeclType));
-			report_info("Promenljiva " + arrayName + " deklarisana ", arr);
+			//report_info("Promenljiva " + arrayName + " deklarisana ", arr);
 		}
 	}
 	
@@ -141,7 +141,7 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		else {
 			MyTab.insert(Obj.Var, arrayName, new Struct(Struct.Array, this.currentDeclType));
-			report_info("Promenljiva " + arrayName + " deklarisana ", arr);
+			//report_info("Promenljiva " + arrayName + " deklarisana ", arr);
 		}
 	}
 	
@@ -243,7 +243,7 @@ public class SemanticPass extends VisitorAdaptor {
 		newConst.setAdr(numConst.getNumConst());
 		
 		
-		report_info("Konstanta " + this.currentConstName + " je dodata u tabelu simbola", numConst);
+		//report_info("Konstanta " + this.currentConstName + " je dodata u tabelu simbola", numConst);
 	}
 	
 	public void visit(CharConstValue charConst) {
@@ -259,7 +259,7 @@ public class SemanticPass extends VisitorAdaptor {
 		
 		Obj newConst = MyTab.insert(Obj.Con, this.currentConstName, this.currentDeclType);
 		newConst.setAdr(charConst.getCharConst());
-		report_info("Konstanta " + this.currentConstName + " je dodata u tabelu simbola", charConst);
+		//report_info("Konstanta " + this.currentConstName + " je dodata u tabelu simbola", charConst);
 	}
 	
 	public void visit(BoolConstValue boolConst) {
