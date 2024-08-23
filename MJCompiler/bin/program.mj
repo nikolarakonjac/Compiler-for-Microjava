@@ -1,16 +1,31 @@
+
+
 program test301
 
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+
+	int niz[];
+	char nizch[];
 	
-	char x[];
-	char c;
+
+	int a;
+	
 {
 	void main()	
-		
+		int bodovi;
+		bool bt;
 	{
-		x = new char[3];
-		read(x[0]);
-		print(x[0]);
+		
+		
+		a=1;
+		read(bodovi);
+		bodovi = -bodovi + (pet * a / 2 - jedan) * bodovi - (3 % 2 + 3 * 2 - 3); 
+		print(bodovi);
 			
 		
 	}
 }
+
+

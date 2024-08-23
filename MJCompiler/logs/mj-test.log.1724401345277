@@ -1,95 +1,95 @@
-INFO  10:35:59,312 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
-INFO  10:35:59,356 - #2 program
-INFO  10:35:59,356 - #43 test301
-INFO  10:35:59,356 - #5 const
-INFO  10:35:59,357 - #43 int
-INFO  10:35:59,358 - #43 nula
-INFO  10:35:59,358 - #10 =
-INFO  10:35:59,359 - #40 0
-INFO  10:35:59,359 - #6 ;
-INFO  10:35:59,359 - #5 const
-INFO  10:35:59,360 - #43 int
-INFO  10:35:59,360 - #43 jedan
-INFO  10:35:59,360 - #10 =
-INFO  10:35:59,361 - #40 1
-INFO  10:35:59,361 - #6 ;
-INFO  10:35:59,361 - #5 const
-INFO  10:35:59,361 - #43 int
-INFO  10:35:59,361 - #43 pet
-INFO  10:35:59,361 - #10 =
-INFO  10:35:59,361 - #40 5
-INFO  10:35:59,370 - #6 ;
-INFO  10:35:59,370 - #43 int
-INFO  10:35:59,370 - #43 niz
-INFO  10:35:59,371 - #8 [
-INFO  10:35:59,371 - #9 ]
-INFO  10:35:59,371 - #6 ;
-INFO  10:35:59,371 - #43 char
-INFO  10:35:59,373 - #43 nizch
-INFO  10:35:59,373 - #8 [
-INFO  10:35:59,373 - #9 ]
-INFO  10:35:59,373 - #6 ;
-INFO  10:35:59,373 - #43 int
-INFO  10:35:59,373 - #43 a
-INFO  10:35:59,374 - #6 ;
-INFO  10:35:59,374 - #3 {
-INFO  10:35:59,374 - #11 void
-INFO  10:35:59,375 - #43 main
-INFO  10:35:59,375 - #29 (
-INFO  10:35:59,375 - #24 )
-INFO  10:35:59,376 - #43 int
-INFO  10:35:59,377 - #43 bodovi
-INFO  10:35:59,377 - #6 ;
-INFO  10:35:59,377 - #43 bool
-INFO  10:35:59,377 - #43 bt
-INFO  10:35:59,377 - #6 ;
-INFO  10:35:59,378 - #3 {
-INFO  10:35:59,378 - #43 a
-INFO  10:35:59,378 - #10 =
-INFO  10:35:59,379 - #40 1
-INFO  10:35:59,379 - #6 ;
-INFO  10:35:59,380 - #37 read
-INFO  10:35:59,380 - #29 (
-INFO  10:35:59,380 - #43 bodovi
-INFO  10:35:59,380 - #24 )
-INFO  10:35:59,380 - #6 ;
-INFO  10:35:59,380 - #43 bodovi
-INFO  10:35:59,381 - #10 =
-INFO  10:35:59,381 - #12 -
-INFO  10:35:59,381 - #43 bodovi
-INFO  10:35:59,381 - #23 +
-INFO  10:35:59,381 - #29 (
-INFO  10:35:59,382 - #43 pet
-INFO  10:35:59,382 - #33 *
-INFO  10:35:59,382 - #43 a
-INFO  10:35:59,384 - #26 /
-INFO  10:35:59,384 - #40 2
-INFO  10:35:59,385 - #12 -
-INFO  10:35:59,385 - #43 jedan
-INFO  10:35:59,385 - #24 )
-INFO  10:35:59,386 - #33 *
-INFO  10:35:59,387 - #43 bodovi
-INFO  10:35:59,387 - #12 -
-INFO  10:35:59,387 - #29 (
-INFO  10:35:59,387 - #40 3
-INFO  10:35:59,387 - #32 %
-INFO  10:35:59,387 - #40 2
-INFO  10:35:59,388 - #23 +
-INFO  10:35:59,388 - #40 3
-INFO  10:35:59,388 - #33 *
-INFO  10:35:59,388 - #40 2
-INFO  10:35:59,388 - #12 -
-INFO  10:35:59,388 - #40 3
-INFO  10:35:59,388 - #24 )
-INFO  10:35:59,388 - #6 ;
-INFO  10:35:59,389 - #38 print
-INFO  10:35:59,389 - #29 (
-INFO  10:35:59,389 - #43 bodovi
-INFO  10:35:59,389 - #24 )
-INFO  10:35:59,389 - #6 ;
-INFO  10:35:59,389 - #4 }
-INFO  10:35:59,389 - #4 }
-INFO  10:35:59,399 - Program(
+INFO  21:43:41,251 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  21:43:41,293 - #2 program
+INFO  21:43:41,293 - #43 test301
+INFO  21:43:41,293 - #5 const
+INFO  21:43:41,295 - #43 int
+INFO  21:43:41,295 - #43 nula
+INFO  21:43:41,295 - #10 =
+INFO  21:43:41,296 - #40 0
+INFO  21:43:41,296 - #6 ;
+INFO  21:43:41,297 - #5 const
+INFO  21:43:41,298 - #43 int
+INFO  21:43:41,298 - #43 jedan
+INFO  21:43:41,298 - #10 =
+INFO  21:43:41,298 - #40 1
+INFO  21:43:41,298 - #6 ;
+INFO  21:43:41,298 - #5 const
+INFO  21:43:41,298 - #43 int
+INFO  21:43:41,298 - #43 pet
+INFO  21:43:41,299 - #10 =
+INFO  21:43:41,299 - #40 5
+INFO  21:43:41,299 - #6 ;
+INFO  21:43:41,299 - #43 int
+INFO  21:43:41,299 - #43 niz
+INFO  21:43:41,300 - #8 [
+INFO  21:43:41,300 - #9 ]
+INFO  21:43:41,300 - #6 ;
+INFO  21:43:41,300 - #43 char
+INFO  21:43:41,301 - #43 nizch
+INFO  21:43:41,301 - #8 [
+INFO  21:43:41,301 - #9 ]
+INFO  21:43:41,301 - #6 ;
+INFO  21:43:41,301 - #43 int
+INFO  21:43:41,301 - #43 a
+INFO  21:43:41,301 - #6 ;
+INFO  21:43:41,301 - #3 {
+INFO  21:43:41,301 - #11 void
+INFO  21:43:41,302 - #43 main
+INFO  21:43:41,302 - #29 (
+INFO  21:43:41,302 - #24 )
+INFO  21:43:41,303 - #43 int
+INFO  21:43:41,303 - #43 bodovi
+INFO  21:43:41,303 - #6 ;
+INFO  21:43:41,303 - #43 bool
+INFO  21:43:41,303 - #43 bt
+INFO  21:43:41,303 - #6 ;
+INFO  21:43:41,303 - #3 {
+INFO  21:43:41,304 - #43 a
+INFO  21:43:41,304 - #10 =
+INFO  21:43:41,304 - #40 1
+INFO  21:43:41,305 - #6 ;
+INFO  21:43:41,305 - #37 read
+INFO  21:43:41,306 - #29 (
+INFO  21:43:41,306 - #43 bodovi
+INFO  21:43:41,306 - #24 )
+INFO  21:43:41,306 - #6 ;
+INFO  21:43:41,306 - #43 bodovi
+INFO  21:43:41,306 - #10 =
+INFO  21:43:41,306 - #12 -
+INFO  21:43:41,306 - #43 bodovi
+INFO  21:43:41,306 - #23 +
+INFO  21:43:41,306 - #29 (
+INFO  21:43:41,308 - #43 pet
+INFO  21:43:41,308 - #33 *
+INFO  21:43:41,308 - #43 a
+INFO  21:43:41,309 - #26 /
+INFO  21:43:41,310 - #40 2
+INFO  21:43:41,310 - #12 -
+INFO  21:43:41,310 - #43 jedan
+INFO  21:43:41,311 - #24 )
+INFO  21:43:41,311 - #33 *
+INFO  21:43:41,312 - #43 bodovi
+INFO  21:43:41,312 - #12 -
+INFO  21:43:41,312 - #29 (
+INFO  21:43:41,312 - #40 3
+INFO  21:43:41,312 - #32 %
+INFO  21:43:41,312 - #40 2
+INFO  21:43:41,313 - #23 +
+INFO  21:43:41,313 - #40 3
+INFO  21:43:41,313 - #33 *
+INFO  21:43:41,313 - #40 2
+INFO  21:43:41,313 - #12 -
+INFO  21:43:41,313 - #40 3
+INFO  21:43:41,313 - #24 )
+INFO  21:43:41,314 - #6 ;
+INFO  21:43:41,314 - #38 print
+INFO  21:43:41,314 - #29 (
+INFO  21:43:41,314 - #43 bodovi
+INFO  21:43:41,314 - #24 )
+INFO  21:43:41,314 - #6 ;
+INFO  21:43:41,314 - #4 }
+INFO  21:43:41,314 - #4 }
+INFO  21:43:41,320 - Program(
   ProgramName(
    test301
   ) [ProgramName]
@@ -400,7 +400,9 @@ INFO  10:35:59,399 - Program(
     ) [MethodDecl]
   ) [MethodDeclarationList]
 ) [Program]
-INFO  10:35:59,399 - ===================================
-INFO  10:35:59,402 - ===================================
-INFO  10:35:59,408 - 1
-INFO  10:35:59,409 - Parsiranje uspesno zavrseno!
+INFO  21:43:41,320 - ===================================
+INFO  21:43:41,323 - ===================================
+INFO  21:43:41,327 - 1
+INFO  21:43:41,327 - Faza generisanje koda u klasi ExprAddTerm Addop nije ni plus ni minus
+INFO  21:43:41,327 - Faza generisanje koda u klasi ExprAddTerm Addop nije ni plus ni minus
+INFO  21:43:41,327 - Parsiranje uspesno zavrseno!

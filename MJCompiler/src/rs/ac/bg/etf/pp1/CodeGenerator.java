@@ -197,20 +197,34 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 		// elementi koji ucestvuju u izrazu su vec na steku
 		
-		if(mulVisited) {
+//		if(mulVisited) {
+//			Code.put(Code.mul);
+//		}
+//		else if(divVisited) {
+//			Code.put(Code.div);
+//		}
+//		else if(modVisited) {
+//			Code.put(Code.rem);
+//		}
+//		else {
+//			report_info("Faza generisanje koda u klasi TermMul Mulop nije ni mul ni div ni mod", null);
+//		}
+//		
+//		mulVisited = divVisited = modVisited = false;
+		
+		
+		if(mul.getMulop() instanceof MulOperator) {
 			Code.put(Code.mul);
 		}
-		else if(divVisited) {
+		else if(mul.getMulop() instanceof DivOperator) {
 			Code.put(Code.div);
 		}
-		else if(modVisited) {
+		else if(mul.getMulop() instanceof ModOperator) {
 			Code.put(Code.rem);
 		}
 		else {
-			report_info("Faza generisanje koda u klasi TermMul Mulop nije ni mul ni div ni mod", null);
+			report_info("Faza generisanje koda u klasi TermMul Mulop nije ni mul ni div ni mod", mul);
 		}
-		
-		mulVisited = divVisited = modVisited = false;
 		
 	}
 
@@ -223,17 +237,28 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 		SyntaxNode addOpParent = add.getAddop().getParent();
 		
-		if(plusVisited) {
+//		if(plusVisited) {
+//			Code.put(Code.add);
+//		}
+//		else if(minusVisited){
+//			Code.put(Code.sub);
+//		}
+//		else {
+//			report_info("Faza generisanje koda u klasi ExprAddTerm Addop nije ni plus ni minus", null);
+//		}
+//		
+//		plusVisited = minusVisited = false;
+		
+		if(add.getAddop() instanceof PlusOperator) {
 			Code.put(Code.add);
 		}
-		else if(minusVisited){
+		else if(add.getAddop() instanceof MinusOperator) {
 			Code.put(Code.sub);
 		}
 		else {
-			report_info("Faza generisanje koda u klasi ExprAddTerm Addop nije ni plus ni minus", null);
+			report_info("Faza generisanje koda u klasi ExprAddTerm Addop nije ni plus ni minus", add);
 		}
 		
-		plusVisited = minusVisited = false;
 		
 	}
 	
