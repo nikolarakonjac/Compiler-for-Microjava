@@ -351,11 +351,11 @@ public class CodeGenerator extends VisitorAdaptor {
 			}
 			else {
 				// matrica
-				// stek -> col, row (col je na vrhu)
+				// stek -> row, col (col je na vrhu)
 					
-				Code.put(Code.dup2);	// col, row, col, row
-				Code.put(Code.pop);		// row, col, row
-				Code.put(Code.newarray);//newarray, row, col, row
+				Code.put(Code.dup2);		//row, col, row, col
+				Code.put(Code.pop);			// row, col, row
+				Code.put(Code.newarray);	//row, col, row, newarray 
 				
 				if(assignment.getDesignator().obj.getType().getElemType().getElemType() == MyTab.intType) {
 					Code.put(1);
@@ -364,31 +364,41 @@ public class CodeGenerator extends VisitorAdaptor {
 					Code.put(0);
 				}
 				
-				//1 newarray row, col, row
+				//row, col, row, newarray, 1
 				
-				Code.store(assignment.getDesignator().obj);	// col, row   -> smestio je u designator adresu novog niza
+				Code.store(assignment.getDesignator().obj);	// row, col -> smestio je u designator adresu novog niza
 				
 				// m[0] = new int[col]; m[1] = new int[col]; ...
-
-				Code.load(assignment.getDesignator().obj);	
 				
-				Code.put(Code.dup_x2);
-				Code.put(Code.pop);		//col, row, m
+				// OSNOVNI NIZ JE ALOCIRAN, SADA TREBA ZA SVAKU ULAZ TOG OSNOVNOG NIZA DA SE ALOCIRA NOVI NIZ DUZINE COL
 				
-				Code.put(Code.dup_x1);
-				Code.put(Code.pop);		//row, col, m
+				// stek -> row, col
 				
-				Code.put(Code.const_1);
-				Code.put(Code.sub);	// index, col, m
+				// OVDE TREBA DA SE SKOCI
+				int mestoPovratka = Code.pc;
+				Code.put(Code.dup2);	//OVDE DUPLIRAMO STANJE NA STEKU DA BI NAKON JEDNE ITERACIJE OSTALE NA STEKU ROW I COL
 				
-				Code.put(Code.dup_x1);
-				Code.put(Code.pop);		//col, index, m
+				report_info("iteracija", null);
 				
-				Code.put(Code.newarray);
+				Code.load(assignment.getDesignator().obj);		// row, col, m
+				
+				Code.put(Code.dup_x2);	// m, row, col, m
+				Code.put(Code.pop);		// m, row, col
+				
+				Code.put(Code.dup_x1);	// m, col, row, col
+				Code.put(Code.pop);		// m, col, row
+				
+				Code.put(Code.const_1);	// m, col, row, 1
+				Code.put(Code.sub);		// m, col, row-1
+				
+				Code.put(Code.dup_x1);	// m, row-1, col, row-1
+				Code.put(Code.pop);		// m, row-1, col
+				
+				Code.put(Code.newarray);	//m, row-1, col, newarray
 				
 				if(assignment.getDesignator().obj.getType().getElemType().getElemType() == MyTab.intType) {
-					Code.put(1);
-					Code.put(Code.astore);
+					Code.put(1);	// m, row-1, col, newarray, 1
+					Code.put(Code.astore);	// m, row-1, newArrayAddress, astore   => m[row-1] = newArrayAddress
 				}
 				else {
 					Code.put(0);
@@ -397,6 +407,27 @@ public class CodeGenerator extends VisitorAdaptor {
 				
 				// m[index] = adr ; index = row - 1
 				
+				// stek -> row, col  -> 2, 3
+				
+				// OBRADA POSLE JEDNE ZAVRSENE ITERACIJE
+				
+				Code.put(Code.dup_x1);
+				Code.put(Code.pop);
+				
+				Code.put(Code.const_1);
+				Code.put(Code.sub);
+				
+				Code.put(Code.dup_x1);
+				
+				Code.loadConst(0);
+				
+				// provera uslova da li treba da se vrati nazad
+				
+				Code.putFalseJump(Code.le, mestoPovratka);	//le ide jer se radi inverz od tog niza ???? pogledati metodu u klasi Code
+				
+				// za slucaj da ne treba da se skace nazad, treba isparzaniti sa steka vrednosti row i col
+				Code.put(Code.pop);
+				Code.put(Code.pop);
 				
 				report_info("usao u else if za matrix", null);	
 			

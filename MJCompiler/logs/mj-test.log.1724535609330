@@ -1,0 +1,212 @@
+INFO  23:39:42,263 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  23:39:42,315 - #2 program
+INFO  23:39:42,315 - #43 test301
+INFO  23:39:42,315 - #43 int
+INFO  23:39:42,316 - #43 m
+INFO  23:39:42,317 - #8 [
+INFO  23:39:42,317 - #9 ]
+INFO  23:39:42,317 - #8 [
+INFO  23:39:42,317 - #9 ]
+INFO  23:39:42,317 - #6 ;
+INFO  23:39:42,317 - #3 {
+INFO  23:39:42,318 - #11 void
+INFO  23:39:42,319 - #43 main
+INFO  23:39:42,319 - #29 (
+INFO  23:39:42,319 - #24 )
+INFO  23:39:42,320 - #43 int
+INFO  23:39:42,320 - #43 x
+INFO  23:39:42,321 - #6 ;
+INFO  23:39:42,321 - #3 {
+INFO  23:39:42,321 - #43 m
+INFO  23:39:42,321 - #10 =
+INFO  23:39:42,328 - #19 new
+INFO  23:39:42,328 - #43 int
+INFO  23:39:42,329 - #8 [
+INFO  23:39:42,329 - #40 2
+INFO  23:39:42,329 - #9 ]
+INFO  23:39:42,329 - #8 [
+INFO  23:39:42,329 - #40 3
+INFO  23:39:42,329 - #9 ]
+INFO  23:39:42,329 - #6 ;
+INFO  23:39:42,329 - #43 m
+INFO  23:39:42,330 - #8 [
+INFO  23:39:42,330 - #40 1
+INFO  23:39:42,330 - #9 ]
+INFO  23:39:42,330 - #8 [
+INFO  23:39:42,330 - #40 0
+INFO  23:39:42,330 - #9 ]
+INFO  23:39:42,330 - #10 =
+INFO  23:39:42,331 - #40 1
+INFO  23:39:42,331 - #6 ;
+INFO  23:39:42,331 - #38 print
+INFO  23:39:42,331 - #29 (
+INFO  23:39:42,331 - #43 m
+INFO  23:39:42,331 - #8 [
+INFO  23:39:42,331 - #40 1
+INFO  23:39:42,331 - #9 ]
+INFO  23:39:42,331 - #8 [
+INFO  23:39:42,331 - #40 0
+INFO  23:39:42,331 - #9 ]
+INFO  23:39:42,332 - #24 )
+INFO  23:39:42,332 - #6 ;
+INFO  23:39:42,332 - #4 }
+INFO  23:39:42,332 - #4 }
+INFO  23:39:42,340 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclMatrixFinal(
+         m
+        ) [VarDeclMatrixFinal]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             x
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListExist(
+            StatementListDoesntExist(
+            ) [StatementListDoesntExist]
+            StatementDesignatorStatement(
+              DesignatorStatementAssign(
+                DesignatorIdent(
+                 m
+                ) [DesignatorIdent]
+                Assignop(
+                ) [Assignop]
+                ExprTerm(
+                  TermFactor(
+                    FactorNewFactor(
+                      NewFactorMatrix(
+                        TypeName(
+                         int
+                        ) [TypeName]
+                        ExprTerm(
+                          TermFactor(
+                            FactorNumber(
+                             2
+                            ) [FactorNumber]
+                          ) [TermFactor]
+                        ) [ExprTerm]
+                        ExprTerm(
+                          TermFactor(
+                            FactorNumber(
+                             3
+                            ) [FactorNumber]
+                          ) [TermFactor]
+                        ) [ExprTerm]
+                      ) [NewFactorMatrix]
+                    ) [FactorNewFactor]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [DesignatorStatementAssign]
+            ) [StatementDesignatorStatement]
+          ) [StatementListExist]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorMatrix(
+                DesignatorIdent(
+                 m
+                ) [DesignatorIdent]
+                ExprTerm(
+                  TermFactor(
+                    FactorNumber(
+                     1
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+                ExprTerm(
+                  TermFactor(
+                    FactorNumber(
+                     0
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [DesignatorMatrix]
+              Assignop(
+              ) [Assignop]
+              ExprTerm(
+                TermFactor(
+                  FactorNumber(
+                   1
+                  ) [FactorNumber]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignatorStatement]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorDesignatorFactor(
+                DesignatorFactorDesignator(
+                  DesignatorMatrix(
+                    DesignatorIdent(
+                     m
+                    ) [DesignatorIdent]
+                    ExprTerm(
+                      TermFactor(
+                        FactorNumber(
+                         1
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                    ExprTerm(
+                      TermFactor(
+                        FactorNumber(
+                         0
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [DesignatorMatrix]
+                ) [DesignatorFactorDesignator]
+              ) [FactorDesignatorFactor]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  23:39:42,340 - ===================================
+INFO  23:39:42,344 - ===================================
+INFO  23:39:42,349 - iteracija
+INFO  23:39:42,349 - usao u else if za matrix
+INFO  23:39:42,349 - usao u DesignatorMatrix
+INFO  23:39:42,349 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
+INFO  23:39:42,349 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
+INFO  23:39:42,350 - Parsiranje uspesno zavrseno!
