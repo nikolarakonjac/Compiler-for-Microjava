@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/7/2024 17:8:28
+// 23/7/2024 14:4:5
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -62,6 +62,7 @@ public interface Visitor {
     public void visit(NoActPars NoActPars);
     public void visit(ActParsExist ActParsExist);
     public void visit(ExprFactor ExprFactor);
+    public void visit(NewFactorMatrix NewFactorMatrix);
     public void visit(NewFactorMethod NewFactorMethod);
     public void visit(NewFactorArray NewFactorArray);
     public void visit(DesignatorFactorMethod DesignatorFactorMethod);
@@ -77,6 +78,7 @@ public interface Visitor {
     public void visit(ExprAddTerm ExprAddTerm);
     public void visit(ExprTerm ExprTerm);
     public void visit(ExprMinusTerm ExprMinusTerm);
+    public void visit(DesignatorMatrix DesignatorMatrix);
     public void visit(DesignatorArray DesignatorArray);
     public void visit(DesignatorDotAccess DesignatorDotAccess);
     public void visit(DesignatorIdent DesignatorIdent);
@@ -115,9 +117,11 @@ public interface Visitor {
     public void visit(NoVarDeclarationList NoVarDeclarationList);
     public void visit(VarDeclarationList VarDeclarationList);
     public void visit(VarDeclErrorComma VarDeclErrorComma);
+    public void visit(VarDeclNextMatrix VarDeclNextMatrix);
     public void visit(VarDeclNextArray VarDeclNextArray);
     public void visit(VarDeclNextElem VarDeclNextElem);
     public void visit(VarDeclErrorSemi VarDeclErrorSemi);
+    public void visit(VarDeclMatrixFinal VarDeclMatrixFinal);
     public void visit(VarDeclArrayFinal VarDeclArrayFinal);
     public void visit(VarDeclFinalElem VarDeclFinalElem);
     public void visit(SingleVarDeclaration SingleVarDeclaration);

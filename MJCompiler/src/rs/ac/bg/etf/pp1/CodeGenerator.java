@@ -190,6 +190,13 @@ public class CodeGenerator extends VisitorAdaptor {
 		   
 	}
 	
+	public void visit(NewFactorMatrix m) {
+		// NewFactor ::= NEW Type LBRACKET Expr:rows RBRACKET LBRACKET Expr:columns RBRACKET
+		
+		// na steku je -> rows, columns 
+		
+	}
+	
 	// ---------------------------------------------- Term -------------------------------------------
 	
 	public void visit(TermMul mul) {
@@ -300,14 +307,10 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(DesignatorStatementAssign assignment) {
 		// DesignatorStatement ::=  Designator:destination Assignop Expr:value SEMICOLON
-		
-		SyntaxNode designatorParent = assignment.getParent();
-		SyntaxNode exprParent = assignment.getExpr().getParent();
-		
-		
-		
-		if(designatorParent.getClass().equals(DesignatorArray.class)){
-			// dodela vrednosti elementu niza
+			
+						
+		if( assignment.getDesignator() instanceof DesignatorArray){
+			// dodela vrednosti elementu niza -> na steku su: niz, index, val 
 			
 			Struct arrayType = assignment.getDesignator().obj.getType().getElemType();
 			
@@ -321,13 +324,84 @@ public class CodeGenerator extends VisitorAdaptor {
 				report_info("pri dodeli vrednosti designator je bio matrica", assignment);
 			}
 			
+			report_info("DesignatorStatementAssign za niz", null);
+		}
+		else if(assignment.getDesignator() instanceof DesignatorMatrix) {
+			// za slucaj m[1][2] = 5
+			
+			// m[row], col, val su vec na steku
+			
+			if(assignment.getDesignator().obj.getType().getElemType().getElemType() == MyTab.intType) {
+				Code.put(Code.astore);
+			}
+			else {
+				Code.put(Code.bastore);
+			}
+			
+			report_info("usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix", null);
+			
 		}
 		else {
-			// dohvatamo vrednost exprStacka(jer smatramo da je expr vec postavio na stek vrednost) i sacuvamo je u destination
-			Code.store(assignment.getDesignator().obj);	//odgovaraju instrukcija ce se generisati na osnovu prirode cvora
+			// DesignatorIdent -> ident nije niz ili je matrica ili obicna promenljiva
+			if(assignment.getDesignator().obj.getType().getKind() != Struct.Array) {
+				// obicna promenljiva
+				Code.store(assignment.getDesignator().obj);	
+				
+				report_info("DesignatorStatementAssign za obicnu promenljivu", null);	
+			}
+			else {
+				// matrica
+				// stek -> col, row (col je na vrhu)
+					
+				Code.put(Code.dup2);	// col, row, col, row
+				Code.put(Code.pop);		// row, col, row
+				Code.put(Code.newarray);//newarray, row, col, row
+				
+				if(assignment.getDesignator().obj.getType().getElemType().getElemType() == MyTab.intType) {
+					Code.put(1);
+				}
+				else {
+					Code.put(0);
+				}
+				
+				//1 newarray row, col, row
+				
+				Code.store(assignment.getDesignator().obj);	// col, row   -> smestio je u designator adresu novog niza
+				
+				// m[0] = new int[col]; m[1] = new int[col]; ...
+
+				Code.load(assignment.getDesignator().obj);	
+				
+				Code.put(Code.dup_x2);
+				Code.put(Code.pop);		//col, row, m
+				
+				Code.put(Code.dup_x1);
+				Code.put(Code.pop);		//row, col, m
+				
+				Code.put(Code.const_1);
+				Code.put(Code.sub);	// index, col, m
+				
+				Code.put(Code.dup_x1);
+				Code.put(Code.pop);		//col, index, m
+				
+				Code.put(Code.newarray);
+				
+				if(assignment.getDesignator().obj.getType().getElemType().getElemType() == MyTab.intType) {
+					Code.put(1);
+					Code.put(Code.astore);
+				}
+				else {
+					Code.put(0);
+					Code.put(Code.bastore);
+				}
+				
+				// m[index] = adr ; index = row - 1
+				
+				
+				report_info("usao u else if za matrix", null);	
+			
+			}
 		}
-		
-		
 		
 	}
 	
@@ -362,7 +436,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 		
 		if(parent.getClass().equals(DesignatorFactorDesignator.class)) {
-			// ovde se dolazi za slucaj print(niz[5])
+			// ovde se dolazi za slucaj print(niz[5]) 
 			
 			
 			Struct elemType = array.getDesignator().obj.getType().getElemType();
@@ -378,9 +452,76 @@ public class CodeGenerator extends VisitorAdaptor {
 			}
 		}
 		
-		
 	}
 	
+	public void visit(DesignatorMatrix m) {
+		// Designator ::= Designator:designatorName LBRACKET Expr:rows RBRACKET LBRACKET Expr:columns RBRACKET
+		
+		// m[1][2]
+		
+		// stek -> m, row, col (col je na vrhu)
+		
+		SyntaxNode parent = m.getParent();
+		
+		if(parent.getClass().equals(DesignatorStatementAssign.class)) {
+			// m[1][2] = 5;
+			
+			Code.put(Code.dup_x2);
+			Code.put(Code.pop);
+			
+			if(m.getDesignator().obj.getType().getElemType().getElemType().getKind() == Struct.Int) {
+				Code.put(Code.aload);
+			}
+			else {
+				Code.put(Code.baload);
+			}
+			
+			// col, m[row]
+			
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);
+			
+			// m[r], col  na steku;   jos u DesignatorStatementAssign treba da se doda value i da se uradi astore ili bastore
+			
+			
+			m.obj = m.getDesignator().obj;	//NOVODODATA LINIJA RESILA JE PROBLEM KOD DesignatorStatementAssign ZA PROVERU TIPA PODATAKA DESIGNATORA
+			
+			report_info("usao u DesignatorMatrix", null);
+		}
+		else if(parent.getClass().equals(DesignatorFactorDesignator.class)) {
+			// ovde se dolazi za slucaj print(m[1][2])
+			
+			// na steku je m, row, col 
+			
+			Code.put(Code.dup_x2);
+			Code.put(Code.pop);	//col, m, row
+			
+			if(m.getDesignator().obj.getType().getElemType().getElemType().getKind() == Struct.Int) {
+				Code.put(Code.aload);
+			}
+			else {
+				Code.put(Code.baload);
+			}
+			
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);	// m[row], col
+			
+			if(m.getDesignator().obj.getType().getElemType().getElemType().getKind() == Struct.Int) {
+				Code.put(Code.aload);
+			}
+			else {
+				Code.put(Code.baload);
+			}
+			
+			// m[row][col]
+			
+			report_info("u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator", null);
+		}
+		else {
+			report_info("u klasi DesignatorMatrix parent nije ni DesignatorStatementAssign ni DesignatorFactorDesignator", null);
+		}
+		
+	}
 	
 	// ---------------------------------------------- Designator INC  -------------------------------------------
 	

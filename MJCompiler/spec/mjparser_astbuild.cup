@@ -97,6 +97,7 @@ nonterminal Addop Addop;
 nonterminal Mulop Mulop; 
 
 
+
 /* nonterminals added in semantic analysis phase */
 
 nonterminal VarDeclType VarDeclType;
@@ -107,7 +108,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, MethodDecl
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Factor, Term, Expr, DesignatorFactor, NewFactor, ExprFactor; 
 
 /* can be used only for this case*/
-precedence left ELSE;
+precedence left ELSE, LBRACKET;
 
 /* ------------------------ GRAMMAR ----------------------------- */
 
@@ -158,6 +159,8 @@ FinalVarDeclaration ::= (VarDeclFinalElem) IDENT:identName SEMICOLON {: RESULT=n
 					|
 					(VarDeclArrayFinal) IDENT:arrayName LBRACKET RBRACKET SEMICOLON {: RESULT=new VarDeclArrayFinal(arrayName); RESULT.setLine(arrayNameleft); :}
 					|
+					(VarDeclMatrixFinal) IDENT:matrixName LBRACKET RBRACKET LBRACKET RBRACKET SEMICOLON {: RESULT=new VarDeclMatrixFinal(matrixName); RESULT.setLine(matrixNameleft); :}
+					|
 					(VarDeclErrorSemi) error SEMICOLON:l
 					{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: " + lleft, null); :} {: RESULT=new VarDeclErrorSemi(); :}
 					;
@@ -166,6 +169,8 @@ FinalVarDeclaration ::= (VarDeclFinalElem) IDENT:identName SEMICOLON {: RESULT=n
 VarDeclaration ::= (VarDeclNextElem) IDENT:identName COMMA {: RESULT=new VarDeclNextElem(identName); RESULT.setLine(identNameleft); :}
 				| 
 				(VarDeclNextArray) IDENT:arrayName LBRACKET RBRACKET COMMA {: RESULT=new VarDeclNextArray(arrayName); RESULT.setLine(arrayNameleft); :}
+				|
+				(VarDeclNextMatrix) IDENT:matrixName LBRACKET RBRACKET LBRACKET RBRACKET COMMA {: RESULT=new VarDeclNextMatrix(matrixName); RESULT.setLine(matrixNameleft); :}
 				|
 				(VarDeclErrorComma) error COMMA:l 
 				{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka , na liniji: " + lleft, null); :} {: RESULT=new VarDeclErrorComma(); :}
@@ -265,8 +270,12 @@ Designator ::= (DesignatorScopeResolution) IDENT:I1 COLON COLON IDENT:I2 {: RESU
 			|
 			(DesignatorDotAccess) Designator:D1 DOT IDENT:I2 {: RESULT=new DesignatorDotAccess(D1, I2); RESULT.setLine(D1left); :}
 			|
-			(DesignatorArray) Designator:designatorName LBRACKET Expr:expr RBRACKET {: RESULT=new DesignatorArray(designatorName, expr); RESULT.setLine(designatorNameleft); :}
+			(DesignatorArray) Designator:designatorName LBRACKET Expr:expr RBRACKET {: RESULT=new DesignatorArray(designatorName, expr); RESULT.setLine(designatorNameleft); :} 
+			|
+			(DesignatorMatrix) Designator:designatorName LBRACKET Expr:rows RBRACKET LBRACKET Expr:columns RBRACKET {: RESULT=new DesignatorMatrix(designatorName, rows, columns); RESULT.setLine(designatorNameleft); :}
 			;
+
+
 
 Expr ::= (ExprMinusTerm) MINUS Term:t {: RESULT=new ExprMinusTerm(t); RESULT.setLine(tleft); :}
         |
@@ -301,6 +310,8 @@ DesignatorFactor ::= (DesignatorFactorDesignator) Designator:d {: RESULT=new Des
 NewFactor ::= (NewFactorArray) NEW Type:arrType LBRACKET Expr:arraySize RBRACKET {: RESULT=new NewFactorArray(arrType, arraySize); RESULT.setLine(arrTypeleft); :}
 			|
 			(NewFactorMethod) NEW Type:T1 LPAREN ActParsOptional:A2 RPAREN {: RESULT=new NewFactorMethod(T1, A2); RESULT.setLine(T1left); :}
+			|
+			(NewFactorMatrix) NEW Type:T1 LBRACKET Expr:rows RBRACKET LBRACKET Expr:columns RBRACKET {: RESULT=new NewFactorMatrix(T1, rows, columns); RESULT.setLine(T1left); :}
 			;
 			
 ExprFactor ::= (ExprFactor) LPAREN Expr:e RPAREN {: RESULT=new ExprFactor(e); RESULT.setLine(eleft); :};

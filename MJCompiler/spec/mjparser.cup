@@ -75,6 +75,7 @@ nonterminal ActParsOptional, ActPars, StaticInitializer, CondFact, Condition, Co
 nonterminal Relop, Assignop, Addop, Mulop; 
 
 
+
 /* nonterminals added in semantic analysis phase */
 
 nonterminal VarDeclType, ConstTypeAndNameDecl, ConstName;
@@ -83,7 +84,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgramName, Program, MethodDecl
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Factor, Term, Expr, DesignatorFactor, NewFactor, ExprFactor; 
 
 /* can be used only for this case*/
-precedence left ELSE;
+precedence left ELSE, LBRACKET;
 
 /* ------------------------ GRAMMAR ----------------------------- */
 
@@ -134,6 +135,8 @@ FinalVarDeclaration ::= (VarDeclFinalElem) IDENT:identName SEMICOLON
 					|
 					(VarDeclArrayFinal) IDENT:arrayName LBRACKET RBRACKET SEMICOLON
 					|
+					(VarDeclMatrixFinal) IDENT:matrixName LBRACKET RBRACKET LBRACKET RBRACKET SEMICOLON
+					|
 					(VarDeclErrorSemi) error SEMICOLON:l
 					{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka ; na liniji: " + lleft, null); :}
 					;
@@ -142,6 +145,8 @@ FinalVarDeclaration ::= (VarDeclFinalElem) IDENT:identName SEMICOLON
 VarDeclaration ::= (VarDeclNextElem) IDENT:identName COMMA
 				| 
 				(VarDeclNextArray) IDENT:arrayName LBRACKET RBRACKET COMMA
+				|
+				(VarDeclNextMatrix) IDENT:matrixName LBRACKET RBRACKET LBRACKET RBRACKET COMMA
 				|
 				(VarDeclErrorComma) error COMMA:l 
 				{: parser.report_error("oporavak od greske za definiciju globalne promenljive do znaka , na liniji: " + lleft, null); :}
@@ -241,8 +246,12 @@ Designator ::= (DesignatorScopeResolution) IDENT COLON COLON IDENT
 			|
 			(DesignatorDotAccess) Designator DOT IDENT
 			|
-			(DesignatorArray) Designator:designatorName LBRACKET Expr:expr RBRACKET
+			(DesignatorArray) Designator:designatorName LBRACKET Expr:expr RBRACKET 
+			|
+			(DesignatorMatrix) Designator:designatorName LBRACKET Expr:rows RBRACKET LBRACKET Expr:columns RBRACKET
 			;
+
+
 
 Expr ::= (ExprMinusTerm) MINUS Term:t
         |
@@ -277,6 +286,8 @@ DesignatorFactor ::= (DesignatorFactorDesignator) Designator:d
 NewFactor ::= (NewFactorArray) NEW Type:arrType LBRACKET Expr:arraySize RBRACKET
 			|
 			(NewFactorMethod) NEW Type LPAREN ActParsOptional RPAREN
+			|
+			(NewFactorMatrix) NEW Type LBRACKET Expr:rows RBRACKET LBRACKET Expr:columns RBRACKET
 			;
 			
 ExprFactor ::= (ExprFactor) LPAREN Expr:e RPAREN;

@@ -1,0 +1,209 @@
+INFO  11:54:48,165 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  11:54:48,196 - #2 program
+INFO  11:54:48,196 - #43 test301
+INFO  11:54:48,196 - #5 const
+INFO  11:54:48,197 - #43 int
+INFO  11:54:48,197 - #43 nula
+INFO  11:54:48,197 - #10 =
+INFO  11:54:48,198 - #40 0
+INFO  11:54:48,198 - #6 ;
+INFO  11:54:48,198 - #5 const
+INFO  11:54:48,199 - #43 int
+INFO  11:54:48,199 - #43 jedan
+INFO  11:54:48,199 - #10 =
+INFO  11:54:48,199 - #40 1
+INFO  11:54:48,199 - #6 ;
+INFO  11:54:48,199 - #5 const
+INFO  11:54:48,199 - #43 int
+INFO  11:54:48,200 - #43 pet
+INFO  11:54:48,200 - #10 =
+INFO  11:54:48,200 - #40 5
+INFO  11:54:48,207 - #6 ;
+INFO  11:54:48,207 - #43 int
+INFO  11:54:48,207 - #43 niz
+INFO  11:54:48,207 - #8 [
+INFO  11:54:48,207 - #9 ]
+INFO  11:54:48,207 - #6 ;
+INFO  11:54:48,207 - #43 char
+INFO  11:54:48,208 - #43 nizch
+INFO  11:54:48,208 - #8 [
+INFO  11:54:48,208 - #9 ]
+INFO  11:54:48,209 - #6 ;
+INFO  11:54:48,209 - #43 int
+INFO  11:54:48,209 - #43 mat
+INFO  11:54:48,209 - #8 [
+INFO  11:54:48,209 - #9 ]
+INFO  11:54:48,209 - #8 [
+INFO  11:54:48,209 - #9 ]
+INFO  11:54:48,209 - #6 ;
+INFO  11:54:48,209 - #43 int
+INFO  11:54:48,209 - #43 a
+INFO  11:54:48,209 - #6 ;
+INFO  11:54:48,209 - #3 {
+INFO  11:54:48,209 - #11 void
+INFO  11:54:48,210 - #43 main
+INFO  11:54:48,210 - #29 (
+INFO  11:54:48,210 - #24 )
+INFO  11:54:48,211 - #43 int
+INFO  11:54:48,211 - #43 bodovi
+INFO  11:54:48,211 - #6 ;
+INFO  11:54:48,211 - #43 bool
+INFO  11:54:48,211 - #43 bt
+INFO  11:54:48,211 - #6 ;
+INFO  11:54:48,211 - #3 {
+INFO  11:54:48,211 - #4 }
+INFO  11:54:48,212 - #4 }
+INFO  11:54:48,217 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        DeclarationListVar(
+          DeclarationListConst(
+            DeclarationListConst(
+              DeclarationListConst(
+                NoDeclarationList(
+                ) [NoDeclarationList]
+                ConstDecl(
+                  ConstTypeAndNameDecl(
+                    TypeName(
+                     int
+                    ) [TypeName]
+                   nula
+                  ) [ConstTypeAndNameDecl]
+                  NumberConstValue(
+                   0
+                  ) [NumberConstValue]
+                  NoConstAssignmentList(
+                  ) [NoConstAssignmentList]
+                ) [ConstDecl]
+              ) [DeclarationListConst]
+              ConstDecl(
+                ConstTypeAndNameDecl(
+                  TypeName(
+                   int
+                  ) [TypeName]
+                 jedan
+                ) [ConstTypeAndNameDecl]
+                NumberConstValue(
+                 1
+                ) [NumberConstValue]
+                NoConstAssignmentList(
+                ) [NoConstAssignmentList]
+              ) [ConstDecl]
+            ) [DeclarationListConst]
+            ConstDecl(
+              ConstTypeAndNameDecl(
+                TypeName(
+                 int
+                ) [TypeName]
+               pet
+              ) [ConstTypeAndNameDecl]
+              NumberConstValue(
+               5
+              ) [NumberConstValue]
+              NoConstAssignmentList(
+              ) [NoConstAssignmentList]
+            ) [ConstDecl]
+          ) [DeclarationListConst]
+          VarDecl(
+            VarDeclType(
+              TypeName(
+               int
+              ) [TypeName]
+            ) [VarDeclType]
+            SingleVarDeclaration(
+              VarDeclArrayFinal(
+               niz
+              ) [VarDeclArrayFinal]
+            ) [SingleVarDeclaration]
+          ) [VarDecl]
+        ) [DeclarationListVar]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclArrayFinal(
+             nizch
+            ) [VarDeclArrayFinal]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           int
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          FinalVarDeclarationDerived1(
+           mat
+          ) [FinalVarDeclarationDerived1]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         a
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        VarDeclarationList(
+          NoVarDeclarationList(
+          ) [NoVarDeclarationList]
+          VarDecl(
+            VarDeclType(
+              TypeName(
+               int
+              ) [TypeName]
+            ) [VarDeclType]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               bodovi
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [VarDecl]
+        ) [VarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             bool
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             bt
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListDoesntExist(
+      ) [StatementListDoesntExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  11:54:48,217 - ===================================
+INFO  11:54:48,219 - ===================================
+INFO  11:54:48,223 - Parsiranje uspesno zavrseno!

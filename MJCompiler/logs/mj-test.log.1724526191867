@@ -1,0 +1,122 @@
+INFO  20:47:36,899 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  20:47:36,955 - #2 program
+INFO  20:47:36,955 - #43 test301
+INFO  20:47:36,955 - #43 int
+INFO  20:47:36,957 - #43 m
+INFO  20:47:36,958 - #8 [
+INFO  20:47:36,958 - #9 ]
+INFO  20:47:36,958 - #8 [
+INFO  20:47:36,958 - #9 ]
+INFO  20:47:36,958 - #6 ;
+INFO  20:47:36,958 - #3 {
+INFO  20:47:36,960 - #11 void
+INFO  20:47:36,960 - #43 main
+INFO  20:47:36,961 - #29 (
+INFO  20:47:36,961 - #24 )
+INFO  20:47:36,961 - #43 int
+INFO  20:47:36,962 - #43 x
+INFO  20:47:36,962 - #6 ;
+INFO  20:47:36,962 - #3 {
+INFO  20:47:36,963 - #43 m
+INFO  20:47:36,963 - #10 =
+INFO  20:47:36,964 - #19 new
+INFO  20:47:36,965 - #43 int
+INFO  20:47:36,965 - #8 [
+INFO  20:47:36,965 - #40 2
+INFO  20:47:36,965 - #9 ]
+INFO  20:47:36,965 - #8 [
+INFO  20:47:36,965 - #40 3
+INFO  20:47:36,965 - #9 ]
+INFO  20:47:36,965 - #6 ;
+INFO  20:47:36,966 - #4 }
+INFO  20:47:36,966 - #4 }
+INFO  20:47:36,974 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    NoDeclarationList(
+    ) [NoDeclarationList]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclMatrixFinal(
+         m
+        ) [VarDeclMatrixFinal]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             int
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             x
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListDoesntExist(
+        ) [StatementListDoesntExist]
+        StatementDesignatorStatement(
+          DesignatorStatementAssign(
+            DesignatorIdent(
+             m
+            ) [DesignatorIdent]
+            Assignop(
+            ) [Assignop]
+            ExprTerm(
+              TermFactor(
+                FactorNewFactor(
+                  NewFactorMatrix(
+                    TypeName(
+                     int
+                    ) [TypeName]
+                    ExprTerm(
+                      TermFactor(
+                        FactorNumber(
+                         2
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                    ExprTerm(
+                      TermFactor(
+                        FactorNumber(
+                         3
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [NewFactorMatrix]
+                ) [FactorNewFactor]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [DesignatorStatementAssign]
+        ) [StatementDesignatorStatement]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  20:47:36,974 - ===================================
+INFO  20:47:36,977 - ===================================
+INFO  20:47:36,982 - usao u else if za matrix
+INFO  20:47:36,982 - Parsiranje uspesno zavrseno!

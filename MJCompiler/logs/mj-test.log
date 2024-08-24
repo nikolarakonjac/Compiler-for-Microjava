@@ -1,174 +1,63 @@
-INFO  10:35:59,312 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
-INFO  10:35:59,356 - #2 program
-INFO  10:35:59,356 - #43 test301
-INFO  10:35:59,356 - #5 const
-INFO  10:35:59,357 - #43 int
-INFO  10:35:59,358 - #43 nula
-INFO  10:35:59,358 - #10 =
-INFO  10:35:59,359 - #40 0
-INFO  10:35:59,359 - #6 ;
-INFO  10:35:59,359 - #5 const
-INFO  10:35:59,360 - #43 int
-INFO  10:35:59,360 - #43 jedan
-INFO  10:35:59,360 - #10 =
-INFO  10:35:59,361 - #40 1
-INFO  10:35:59,361 - #6 ;
-INFO  10:35:59,361 - #5 const
-INFO  10:35:59,361 - #43 int
-INFO  10:35:59,361 - #43 pet
-INFO  10:35:59,361 - #10 =
-INFO  10:35:59,361 - #40 5
-INFO  10:35:59,370 - #6 ;
-INFO  10:35:59,370 - #43 int
-INFO  10:35:59,370 - #43 niz
-INFO  10:35:59,371 - #8 [
-INFO  10:35:59,371 - #9 ]
-INFO  10:35:59,371 - #6 ;
-INFO  10:35:59,371 - #43 char
-INFO  10:35:59,373 - #43 nizch
-INFO  10:35:59,373 - #8 [
-INFO  10:35:59,373 - #9 ]
-INFO  10:35:59,373 - #6 ;
-INFO  10:35:59,373 - #43 int
-INFO  10:35:59,373 - #43 a
-INFO  10:35:59,374 - #6 ;
-INFO  10:35:59,374 - #3 {
-INFO  10:35:59,374 - #11 void
-INFO  10:35:59,375 - #43 main
-INFO  10:35:59,375 - #29 (
-INFO  10:35:59,375 - #24 )
-INFO  10:35:59,376 - #43 int
-INFO  10:35:59,377 - #43 bodovi
-INFO  10:35:59,377 - #6 ;
-INFO  10:35:59,377 - #43 bool
-INFO  10:35:59,377 - #43 bt
-INFO  10:35:59,377 - #6 ;
-INFO  10:35:59,378 - #3 {
-INFO  10:35:59,378 - #43 a
-INFO  10:35:59,378 - #10 =
-INFO  10:35:59,379 - #40 1
-INFO  10:35:59,379 - #6 ;
-INFO  10:35:59,380 - #37 read
-INFO  10:35:59,380 - #29 (
-INFO  10:35:59,380 - #43 bodovi
-INFO  10:35:59,380 - #24 )
-INFO  10:35:59,380 - #6 ;
-INFO  10:35:59,380 - #43 bodovi
-INFO  10:35:59,381 - #10 =
-INFO  10:35:59,381 - #12 -
-INFO  10:35:59,381 - #43 bodovi
-INFO  10:35:59,381 - #23 +
-INFO  10:35:59,381 - #29 (
-INFO  10:35:59,382 - #43 pet
-INFO  10:35:59,382 - #33 *
-INFO  10:35:59,382 - #43 a
-INFO  10:35:59,384 - #26 /
-INFO  10:35:59,384 - #40 2
-INFO  10:35:59,385 - #12 -
-INFO  10:35:59,385 - #43 jedan
-INFO  10:35:59,385 - #24 )
-INFO  10:35:59,386 - #33 *
-INFO  10:35:59,387 - #43 bodovi
-INFO  10:35:59,387 - #12 -
-INFO  10:35:59,387 - #29 (
-INFO  10:35:59,387 - #40 3
-INFO  10:35:59,387 - #32 %
-INFO  10:35:59,387 - #40 2
-INFO  10:35:59,388 - #23 +
-INFO  10:35:59,388 - #40 3
-INFO  10:35:59,388 - #33 *
-INFO  10:35:59,388 - #40 2
-INFO  10:35:59,388 - #12 -
-INFO  10:35:59,388 - #40 3
-INFO  10:35:59,388 - #24 )
-INFO  10:35:59,388 - #6 ;
-INFO  10:35:59,389 - #38 print
-INFO  10:35:59,389 - #29 (
-INFO  10:35:59,389 - #43 bodovi
-INFO  10:35:59,389 - #24 )
-INFO  10:35:59,389 - #6 ;
-INFO  10:35:59,389 - #4 }
-INFO  10:35:59,389 - #4 }
-INFO  10:35:59,399 - Program(
+INFO  21:15:35,467 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  21:15:35,515 - #2 program
+INFO  21:15:35,516 - #43 test301
+INFO  21:15:35,516 - #43 int
+INFO  21:15:35,517 - #43 m
+INFO  21:15:35,518 - #8 [
+INFO  21:15:35,518 - #9 ]
+INFO  21:15:35,518 - #8 [
+INFO  21:15:35,518 - #9 ]
+INFO  21:15:35,519 - #6 ;
+INFO  21:15:35,519 - #3 {
+INFO  21:15:35,520 - #11 void
+INFO  21:15:35,520 - #43 main
+INFO  21:15:35,520 - #29 (
+INFO  21:15:35,521 - #24 )
+INFO  21:15:35,521 - #43 int
+INFO  21:15:35,522 - #43 x
+INFO  21:15:35,522 - #6 ;
+INFO  21:15:35,522 - #3 {
+INFO  21:15:35,522 - #43 m
+INFO  21:15:35,523 - #10 =
+INFO  21:15:35,531 - #19 new
+INFO  21:15:35,531 - #43 int
+INFO  21:15:35,532 - #8 [
+INFO  21:15:35,532 - #40 2
+INFO  21:15:35,532 - #9 ]
+INFO  21:15:35,532 - #8 [
+INFO  21:15:35,532 - #40 3
+INFO  21:15:35,533 - #9 ]
+INFO  21:15:35,533 - #6 ;
+INFO  21:15:35,533 - #43 m
+INFO  21:15:35,533 - #8 [
+INFO  21:15:35,533 - #40 1
+INFO  21:15:35,533 - #9 ]
+INFO  21:15:35,534 - #8 [
+INFO  21:15:35,534 - #40 0
+INFO  21:15:35,534 - #9 ]
+INFO  21:15:35,534 - #10 =
+INFO  21:15:35,534 - #40 7
+INFO  21:15:35,534 - #6 ;
+INFO  21:15:35,534 - #38 print
+INFO  21:15:35,534 - #29 (
+INFO  21:15:35,534 - #43 m
+INFO  21:15:35,534 - #8 [
+INFO  21:15:35,534 - #40 1
+INFO  21:15:35,534 - #9 ]
+INFO  21:15:35,535 - #8 [
+INFO  21:15:35,535 - #40 1
+INFO  21:15:35,535 - #9 ]
+INFO  21:15:35,535 - #24 )
+INFO  21:15:35,535 - #6 ;
+INFO  21:15:35,535 - #4 }
+INFO  21:15:35,535 - #4 }
+INFO  21:15:35,543 - Program(
   ProgramName(
    test301
   ) [ProgramName]
   DeclarationListVar(
-    DeclarationListVar(
-      DeclarationListVar(
-        DeclarationListConst(
-          DeclarationListConst(
-            DeclarationListConst(
-              NoDeclarationList(
-              ) [NoDeclarationList]
-              ConstDecl(
-                ConstTypeAndNameDecl(
-                  TypeName(
-                   int
-                  ) [TypeName]
-                 nula
-                ) [ConstTypeAndNameDecl]
-                NumberConstValue(
-                 0
-                ) [NumberConstValue]
-                NoConstAssignmentList(
-                ) [NoConstAssignmentList]
-              ) [ConstDecl]
-            ) [DeclarationListConst]
-            ConstDecl(
-              ConstTypeAndNameDecl(
-                TypeName(
-                 int
-                ) [TypeName]
-               jedan
-              ) [ConstTypeAndNameDecl]
-              NumberConstValue(
-               1
-              ) [NumberConstValue]
-              NoConstAssignmentList(
-              ) [NoConstAssignmentList]
-            ) [ConstDecl]
-          ) [DeclarationListConst]
-          ConstDecl(
-            ConstTypeAndNameDecl(
-              TypeName(
-               int
-              ) [TypeName]
-             pet
-            ) [ConstTypeAndNameDecl]
-            NumberConstValue(
-             5
-            ) [NumberConstValue]
-            NoConstAssignmentList(
-            ) [NoConstAssignmentList]
-          ) [ConstDecl]
-        ) [DeclarationListConst]
-        VarDecl(
-          VarDeclType(
-            TypeName(
-             int
-            ) [TypeName]
-          ) [VarDeclType]
-          SingleVarDeclaration(
-            VarDeclArrayFinal(
-             niz
-            ) [VarDeclArrayFinal]
-          ) [SingleVarDeclaration]
-        ) [VarDecl]
-      ) [DeclarationListVar]
-      VarDecl(
-        VarDeclType(
-          TypeName(
-           char
-          ) [TypeName]
-        ) [VarDeclType]
-        SingleVarDeclaration(
-          VarDeclArrayFinal(
-           nizch
-          ) [VarDeclArrayFinal]
-        ) [SingleVarDeclaration]
-      ) [VarDecl]
-    ) [DeclarationListVar]
+    NoDeclarationList(
+    ) [NoDeclarationList]
     VarDecl(
       VarDeclType(
         TypeName(
@@ -176,9 +65,9 @@ INFO  10:35:59,399 - Program(
         ) [TypeName]
       ) [VarDeclType]
       SingleVarDeclaration(
-        VarDeclFinalElem(
-         a
-        ) [VarDeclFinalElem]
+        VarDeclMatrixFinal(
+         m
+        ) [VarDeclMatrixFinal]
       ) [SingleVarDeclaration]
     ) [VarDecl]
   ) [DeclarationListVar]
@@ -192,31 +81,17 @@ INFO  10:35:59,399 - Program(
       NoFormalParams(
       ) [NoFormalParams]
       VarDeclarationList(
-        VarDeclarationList(
-          NoVarDeclarationList(
-          ) [NoVarDeclarationList]
-          VarDecl(
-            VarDeclType(
-              TypeName(
-               int
-              ) [TypeName]
-            ) [VarDeclType]
-            SingleVarDeclaration(
-              VarDeclFinalElem(
-               bodovi
-              ) [VarDeclFinalElem]
-            ) [SingleVarDeclaration]
-          ) [VarDecl]
-        ) [VarDeclarationList]
+        NoVarDeclarationList(
+        ) [NoVarDeclarationList]
         VarDecl(
           VarDeclType(
             TypeName(
-             bool
+             int
             ) [TypeName]
           ) [VarDeclType]
           SingleVarDeclaration(
             VarDeclFinalElem(
-             bt
+             x
             ) [VarDeclFinalElem]
           ) [SingleVarDeclaration]
         ) [VarDecl]
@@ -224,162 +99,73 @@ INFO  10:35:59,399 - Program(
       StatementListExist(
         StatementListExist(
           StatementListExist(
-            StatementListExist(
-              StatementListDoesntExist(
-              ) [StatementListDoesntExist]
-              StatementDesignatorStatement(
-                DesignatorStatementAssign(
-                  DesignatorIdent(
-                   a
-                  ) [DesignatorIdent]
-                  Assignop(
-                  ) [Assignop]
-                  ExprTerm(
-                    TermFactor(
-                      FactorNumber(
-                       1
-                      ) [FactorNumber]
-                    ) [TermFactor]
-                  ) [ExprTerm]
-                ) [DesignatorStatementAssign]
-              ) [StatementDesignatorStatement]
-            ) [StatementListExist]
-            StatementRead(
-              DesignatorIdent(
-               bodovi
-              ) [DesignatorIdent]
-            ) [StatementRead]
-          ) [StatementListExist]
-          StatementDesignatorStatement(
-            DesignatorStatementAssign(
-              DesignatorIdent(
-               bodovi
-              ) [DesignatorIdent]
-              Assignop(
-              ) [Assignop]
-              ExprAddTerm(
-                ExprAddTerm(
-                  ExprMinusTerm(
-                    TermFactor(
-                      FactorDesignatorFactor(
-                        DesignatorFactorDesignator(
-                          DesignatorIdent(
-                           bodovi
-                          ) [DesignatorIdent]
-                        ) [DesignatorFactorDesignator]
-                      ) [FactorDesignatorFactor]
-                    ) [TermFactor]
-                  ) [ExprMinusTerm]
-                  PlusOperator(
-                  ) [PlusOperator]
-                  TermMul(
-                    TermFactor(
-                      FactorExprFactor(
-                        ExprFactor(
-                          ExprAddTerm(
-                            ExprTerm(
-                              TermMul(
-                                TermMul(
-                                  TermFactor(
-                                    FactorDesignatorFactor(
-                                      DesignatorFactorDesignator(
-                                        DesignatorIdent(
-                                         pet
-                                        ) [DesignatorIdent]
-                                      ) [DesignatorFactorDesignator]
-                                    ) [FactorDesignatorFactor]
-                                  ) [TermFactor]
-                                  MulOperator(
-                                  ) [MulOperator]
-                                  FactorDesignatorFactor(
-                                    DesignatorFactorDesignator(
-                                      DesignatorIdent(
-                                       a
-                                      ) [DesignatorIdent]
-                                    ) [DesignatorFactorDesignator]
-                                  ) [FactorDesignatorFactor]
-                                ) [TermMul]
-                                DivOperator(
-                                ) [DivOperator]
-                                FactorNumber(
-                                 2
-                                ) [FactorNumber]
-                              ) [TermMul]
-                            ) [ExprTerm]
-                            MinusOperator(
-                            ) [MinusOperator]
-                            TermFactor(
-                              FactorDesignatorFactor(
-                                DesignatorFactorDesignator(
-                                  DesignatorIdent(
-                                   jedan
-                                  ) [DesignatorIdent]
-                                ) [DesignatorFactorDesignator]
-                              ) [FactorDesignatorFactor]
-                            ) [TermFactor]
-                          ) [ExprAddTerm]
-                        ) [ExprFactor]
-                      ) [FactorExprFactor]
-                    ) [TermFactor]
-                    MulOperator(
-                    ) [MulOperator]
-                    FactorDesignatorFactor(
-                      DesignatorFactorDesignator(
-                        DesignatorIdent(
-                         bodovi
-                        ) [DesignatorIdent]
-                      ) [DesignatorFactorDesignator]
-                    ) [FactorDesignatorFactor]
-                  ) [TermMul]
-                ) [ExprAddTerm]
-                MinusOperator(
-                ) [MinusOperator]
-                TermFactor(
-                  FactorExprFactor(
-                    ExprFactor(
-                      ExprAddTerm(
-                        ExprAddTerm(
-                          ExprTerm(
-                            TermMul(
-                              TermFactor(
-                                FactorNumber(
-                                 3
-                                ) [FactorNumber]
-                              ) [TermFactor]
-                              ModOperator(
-                              ) [ModOperator]
-                              FactorNumber(
-                               2
-                              ) [FactorNumber]
-                            ) [TermMul]
-                          ) [ExprTerm]
-                          PlusOperator(
-                          ) [PlusOperator]
-                          TermMul(
-                            TermFactor(
-                              FactorNumber(
-                               3
-                              ) [FactorNumber]
-                            ) [TermFactor]
-                            MulOperator(
-                            ) [MulOperator]
+            StatementListDoesntExist(
+            ) [StatementListDoesntExist]
+            StatementDesignatorStatement(
+              DesignatorStatementAssign(
+                DesignatorIdent(
+                 m
+                ) [DesignatorIdent]
+                Assignop(
+                ) [Assignop]
+                ExprTerm(
+                  TermFactor(
+                    FactorNewFactor(
+                      NewFactorMatrix(
+                        TypeName(
+                         int
+                        ) [TypeName]
+                        ExprTerm(
+                          TermFactor(
                             FactorNumber(
                              2
                             ) [FactorNumber]
-                          ) [TermMul]
-                        ) [ExprAddTerm]
-                        MinusOperator(
-                        ) [MinusOperator]
-                        TermFactor(
-                          FactorNumber(
-                           3
-                          ) [FactorNumber]
-                        ) [TermFactor]
-                      ) [ExprAddTerm]
-                    ) [ExprFactor]
-                  ) [FactorExprFactor]
+                          ) [TermFactor]
+                        ) [ExprTerm]
+                        ExprTerm(
+                          TermFactor(
+                            FactorNumber(
+                             3
+                            ) [FactorNumber]
+                          ) [TermFactor]
+                        ) [ExprTerm]
+                      ) [NewFactorMatrix]
+                    ) [FactorNewFactor]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [DesignatorStatementAssign]
+            ) [StatementDesignatorStatement]
+          ) [StatementListExist]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorMatrix(
+                DesignatorIdent(
+                 m
+                ) [DesignatorIdent]
+                ExprTerm(
+                  TermFactor(
+                    FactorNumber(
+                     1
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+                ExprTerm(
+                  TermFactor(
+                    FactorNumber(
+                     0
+                    ) [FactorNumber]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [DesignatorMatrix]
+              Assignop(
+              ) [Assignop]
+              ExprTerm(
+                TermFactor(
+                  FactorNumber(
+                   7
+                  ) [FactorNumber]
                 ) [TermFactor]
-              ) [ExprAddTerm]
+              ) [ExprTerm]
             ) [DesignatorStatementAssign]
           ) [StatementDesignatorStatement]
         ) [StatementListExist]
@@ -388,9 +174,25 @@ INFO  10:35:59,399 - Program(
             TermFactor(
               FactorDesignatorFactor(
                 DesignatorFactorDesignator(
-                  DesignatorIdent(
-                   bodovi
-                  ) [DesignatorIdent]
+                  DesignatorMatrix(
+                    DesignatorIdent(
+                     m
+                    ) [DesignatorIdent]
+                    ExprTerm(
+                      TermFactor(
+                        FactorNumber(
+                         1
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                    ExprTerm(
+                      TermFactor(
+                        FactorNumber(
+                         1
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [DesignatorMatrix]
                 ) [DesignatorFactorDesignator]
               ) [FactorDesignatorFactor]
             ) [TermFactor]
@@ -400,7 +202,10 @@ INFO  10:35:59,399 - Program(
     ) [MethodDecl]
   ) [MethodDeclarationList]
 ) [Program]
-INFO  10:35:59,399 - ===================================
-INFO  10:35:59,402 - ===================================
-INFO  10:35:59,408 - 1
-INFO  10:35:59,409 - Parsiranje uspesno zavrseno!
+INFO  21:15:35,543 - ===================================
+INFO  21:15:35,548 - ===================================
+INFO  21:15:35,553 - usao u else if za matrix
+INFO  21:15:35,554 - usao u DesignatorMatrix
+INFO  21:15:35,554 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
+INFO  21:15:35,554 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
+INFO  21:15:35,554 - Parsiranje uspesno zavrseno!

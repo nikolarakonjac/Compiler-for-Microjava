@@ -145,6 +145,36 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 	
+	//	------------------------------- Matrix Declaration ----------------------------------------------------
+	
+	public void visit(VarDeclMatrixFinal m) {
+		// FinalVarDeclaration ::= IDENT:matrixName LBRACKET RBRACKET LBRACKET RBRACKET SEMICOLON
+		
+		String matrixName = m.getMatrixName();
+		
+		if(MyTab.find(matrixName) != MyTab.noObj) {
+			report_error("Promeljiva " + matrixName + " je vec deklarisana u ovom scope-u, ponovna deklaracija ", m);
+		}
+		else {
+			MyTab.insert(Obj.Var, matrixName, new Struct(Struct.Array, new Struct(Struct.Array, this.currentDeclType)));
+		}
+		
+	}
+	
+	public void visit(VarDeclNextMatrix m) {
+		// VarDeclaration ::= IDENT:matrixName LBRACKET RBRACKET LBRACKET RBRACKET COMMA
+		
+		String matrixName = m.getMatrixName();
+		
+		if(MyTab.find(matrixName) != MyTab.noObj) {
+			report_error("Promeljiva " + matrixName + " je vec deklarisana u ovom scope-u, ponovna deklaracija ", m);
+		}
+		else {
+			MyTab.insert(Obj.Var, matrixName, new Struct(Struct.Array, new Struct(Struct.Array, this.currentDeclType)));
+		}
+		
+	}
+	
 	//	------------------------------- Method Declaration ---------------------------------------------------
 	
 	public void visit(MethodReturnTypeVoid voidFuncAndName) {
@@ -340,37 +370,54 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(FactorNumber numConst) {
 		// Factor ::= NUMBER
+		
 		numConst.struct = MyTab.intType;
 	}
 	
 	public void visit(FactorChar charConst) {
 		// Factor ::= CHAR
+		
 		charConst.struct = MyTab.charType;
-		}
+	}
 	
 	public void visit(FactorBool boolConst) {
 		// Factor ::= BOOL
+		
 		boolConst.struct = MyTab.boolType;
 	}
 	
 	public void visit(FactorDesignatorFactor factorDesignator) {
 		// Factor ::= DesignatorFactor
+		
 		factorDesignator.struct = factorDesignator.getDesignatorFactor().struct;
 	}
 	
 	public void visit(DesignatorFactorDesignator designator) {
 		// DesignatorFactor ::= Designator
+		
 		designator.struct = designator.getDesignator().obj.getType();
 	}
 	
 	public void visit(NewFactorArray arr) {
 		// NEW Type:arrType LBRACKET Expr:arraySize RBRACKET
+		
 		if(arr.getExpr().struct != MyTab.intType) {
 			report_error("Greska: velicina niza za alokaciju mora biti tipa int", arr);
 			arr.struct = MyTab.noType;
 		}
 		else {
 			arr.struct = new Struct(Struct.Array, arr.getType().struct);
+		}
+	}
+	
+	public void visit(NewFactorMatrix m) {
+		// NewFactor ::= NEW Type LBRACKET Expr:rows RBRACKET LBRACKET Expr:columns RBRACKET
+		
+		if(m.getExpr().struct != MyTab.intType && m.getExpr1().struct != MyTab.intType) {
+			report_error("Greska: broj redova i broj kolona za alokaciju matrice mora biti tipa int", m);
+		}
+		else {
+			m.struct = new Struct(Struct.Array, new Struct(Struct.Array, m.getType().struct));
 		}
 	}
 	
@@ -411,9 +458,31 @@ public class SemanticPass extends VisitorAdaptor {
 			return;
 		}
 		
-		if(!stm.getExpr().struct.assignableTo(stm.getDesignator().obj.getType())) {
-			report_error("Greska pri dodeli vrednosti, tipovi nisu kompatibilni",  stm);
+		
+		if(stm.getExpr().struct == MyTab.intType || stm.getExpr().struct == MyTab.charType || stm.getExpr().struct == MyTab.boolType) {
+			if(!stm.getExpr().struct.assignableTo(stm.getDesignator().obj.getType())) {
+				report_error("Greska pri dodeli vrednosti, tipovi nisu kompatibilni",  stm);
+			}
 		}
+		else {
+			if(stm.getDesignator().obj.getType().getElemType().getKind() == Struct.Array) {
+				// designator je matrica
+				
+				if(stm.getExpr().struct.getElemType().getKind() == Struct.Array && 
+						stm.getExpr().struct.getElemType().getElemType() == stm.getDesignator().obj.getType().getElemType().getElemType()
+						) {
+					// m = new int[2][3];
+					//report_info("tipovi se poklapaju za matricu", stm);
+				}
+				else {
+					report_error("Greska pri alokaciji matrice, tipovi se ne poklapaju", stm);
+				}
+				
+			}
+		}
+		
+		
+		
 	}
 	
 	public void visit(DesignatorStatementInc inc) {
@@ -480,6 +549,27 @@ public class SemanticPass extends VisitorAdaptor {
 		arr.obj = new Obj(Obj.Elem, arr.getDesignator().obj.getName(), arr.getDesignator().obj.getType().getElemType());
 	}
 	
+	public void visit(DesignatorMatrix m) {
+		// Designator ::= Designator:designatorName LBRACKET Expr:rows RBRACKET LBRACKET Expr:columns RBRACKET
+		
+		Struct matrix = m.getDesignator().obj.getType();
+		
+		if(matrix.getElemType().getKind() != Struct.Array) {
+			report_error("Greska: promenljiva kojoj se pristupa nije tipa matrice", m);
+			return;
+		}
+		
+		Struct rows = m.getExpr().struct;
+		Struct columns = m.getExpr1().struct;
+		
+		if(rows != MyTab.intType || columns != MyTab.intType) {
+			report_error("Greska: za pristup elementu matrice moraju se koristiti int tipovi", m);
+			return;
+		}
+		
+		m.obj = new Obj(Obj.Elem, m.getDesignator().obj.getName(), matrix.getElemType().getElemType());
+		
+	}
 	
 	public void visit(DesignatorFactorMethod funcCall) {
 		Obj func = funcCall.getDesignator().obj;

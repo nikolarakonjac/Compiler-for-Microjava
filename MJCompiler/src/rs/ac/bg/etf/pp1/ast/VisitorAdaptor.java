@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/7/2024 17:8:28
+// 23/7/2024 14:4:5
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -62,6 +62,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoActPars NoActPars) { visit(); }
     public void visit(ActParsExist ActParsExist) { visit(); }
     public void visit(ExprFactor ExprFactor) { visit(); }
+    public void visit(NewFactorMatrix NewFactorMatrix) { visit(); }
     public void visit(NewFactorMethod NewFactorMethod) { visit(); }
     public void visit(NewFactorArray NewFactorArray) { visit(); }
     public void visit(DesignatorFactorMethod DesignatorFactorMethod) { visit(); }
@@ -77,6 +78,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ExprAddTerm ExprAddTerm) { visit(); }
     public void visit(ExprTerm ExprTerm) { visit(); }
     public void visit(ExprMinusTerm ExprMinusTerm) { visit(); }
+    public void visit(DesignatorMatrix DesignatorMatrix) { visit(); }
     public void visit(DesignatorArray DesignatorArray) { visit(); }
     public void visit(DesignatorDotAccess DesignatorDotAccess) { visit(); }
     public void visit(DesignatorIdent DesignatorIdent) { visit(); }
@@ -115,9 +117,11 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoVarDeclarationList NoVarDeclarationList) { visit(); }
     public void visit(VarDeclarationList VarDeclarationList) { visit(); }
     public void visit(VarDeclErrorComma VarDeclErrorComma) { visit(); }
+    public void visit(VarDeclNextMatrix VarDeclNextMatrix) { visit(); }
     public void visit(VarDeclNextArray VarDeclNextArray) { visit(); }
     public void visit(VarDeclNextElem VarDeclNextElem) { visit(); }
     public void visit(VarDeclErrorSemi VarDeclErrorSemi) { visit(); }
+    public void visit(VarDeclMatrixFinal VarDeclMatrixFinal) { visit(); }
     public void visit(VarDeclArrayFinal VarDeclArrayFinal) { visit(); }
     public void visit(VarDeclFinalElem VarDeclFinalElem) { visit(); }
     public void visit(SingleVarDeclaration SingleVarDeclaration) { visit(); }
