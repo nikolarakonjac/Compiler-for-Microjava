@@ -1,0 +1,324 @@
+INFO  12:15:50,893 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  12:15:50,951 - #2 program
+INFO  12:15:50,951 - #43 test301
+INFO  12:15:50,951 - #5 const
+INFO  12:15:50,952 - #43 int
+INFO  12:15:50,952 - #43 nula
+INFO  12:15:50,953 - #10 =
+INFO  12:15:50,954 - #40 0
+INFO  12:15:50,954 - #6 ;
+INFO  12:15:50,955 - #5 const
+INFO  12:15:50,955 - #43 int
+INFO  12:15:50,956 - #43 jedan
+INFO  12:15:50,956 - #10 =
+INFO  12:15:50,956 - #40 1
+INFO  12:15:50,956 - #6 ;
+INFO  12:15:50,956 - #5 const
+INFO  12:15:50,956 - #43 int
+INFO  12:15:50,956 - #43 pet
+INFO  12:15:50,956 - #10 =
+INFO  12:15:50,956 - #40 5
+INFO  12:15:50,965 - #6 ;
+INFO  12:15:50,965 - #43 int
+INFO  12:15:50,965 - #43 niz
+INFO  12:15:50,966 - #8 [
+INFO  12:15:50,966 - #9 ]
+INFO  12:15:50,966 - #6 ;
+INFO  12:15:50,966 - #43 char
+INFO  12:15:50,967 - #43 nizch
+INFO  12:15:50,967 - #8 [
+INFO  12:15:50,968 - #9 ]
+INFO  12:15:50,968 - #6 ;
+INFO  12:15:50,968 - #43 int
+INFO  12:15:50,968 - #43 mat
+INFO  12:15:50,968 - #8 [
+INFO  12:15:50,968 - #9 ]
+INFO  12:15:50,968 - #8 [
+INFO  12:15:50,968 - #9 ]
+INFO  12:15:50,968 - #6 ;
+INFO  12:15:50,968 - #43 int
+INFO  12:15:50,968 - #43 a
+INFO  12:15:50,968 - #6 ;
+INFO  12:15:50,969 - #3 {
+INFO  12:15:50,969 - #11 void
+INFO  12:15:50,970 - #43 main
+INFO  12:15:50,970 - #29 (
+INFO  12:15:50,970 - #24 )
+INFO  12:15:50,971 - #43 int
+INFO  12:15:50,972 - #43 bodovi
+INFO  12:15:50,972 - #6 ;
+INFO  12:15:50,972 - #43 bool
+INFO  12:15:50,972 - #43 bt
+INFO  12:15:50,972 - #6 ;
+INFO  12:15:50,972 - #3 {
+INFO  12:15:50,973 - #43 niz
+INFO  12:15:50,973 - #10 =
+INFO  12:15:50,974 - #19 new
+INFO  12:15:50,974 - #43 int
+INFO  12:15:50,974 - #8 [
+INFO  12:15:50,974 - #40 3
+INFO  12:15:50,974 - #9 ]
+INFO  12:15:50,975 - #6 ;
+INFO  12:15:50,975 - #43 niz
+INFO  12:15:50,975 - #8 [
+INFO  12:15:50,975 - #43 nula
+INFO  12:15:50,975 - #9 ]
+INFO  12:15:50,976 - #10 =
+INFO  12:15:50,976 - #43 jedan
+INFO  12:15:50,976 - #6 ;
+INFO  12:15:50,976 - #38 print
+INFO  12:15:50,976 - #29 (
+INFO  12:15:50,976 - #43 niz
+INFO  12:15:50,976 - #8 [
+INFO  12:15:50,976 - #40 0
+INFO  12:15:50,976 - #9 ]
+INFO  12:15:50,976 - #24 )
+INFO  12:15:50,976 - #6 ;
+INFO  12:15:50,976 - #4 }
+INFO  12:15:50,977 - #4 }
+INFO  12:15:50,985 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  DeclarationListVar(
+    DeclarationListVar(
+      DeclarationListVar(
+        DeclarationListVar(
+          DeclarationListConst(
+            DeclarationListConst(
+              DeclarationListConst(
+                NoDeclarationList(
+                ) [NoDeclarationList]
+                ConstDecl(
+                  ConstTypeAndNameDecl(
+                    TypeName(
+                     int
+                    ) [TypeName]
+                   nula
+                  ) [ConstTypeAndNameDecl]
+                  NumberConstValue(
+                   0
+                  ) [NumberConstValue]
+                  NoConstAssignmentList(
+                  ) [NoConstAssignmentList]
+                ) [ConstDecl]
+              ) [DeclarationListConst]
+              ConstDecl(
+                ConstTypeAndNameDecl(
+                  TypeName(
+                   int
+                  ) [TypeName]
+                 jedan
+                ) [ConstTypeAndNameDecl]
+                NumberConstValue(
+                 1
+                ) [NumberConstValue]
+                NoConstAssignmentList(
+                ) [NoConstAssignmentList]
+              ) [ConstDecl]
+            ) [DeclarationListConst]
+            ConstDecl(
+              ConstTypeAndNameDecl(
+                TypeName(
+                 int
+                ) [TypeName]
+               pet
+              ) [ConstTypeAndNameDecl]
+              NumberConstValue(
+               5
+              ) [NumberConstValue]
+              NoConstAssignmentList(
+              ) [NoConstAssignmentList]
+            ) [ConstDecl]
+          ) [DeclarationListConst]
+          VarDecl(
+            VarDeclType(
+              TypeName(
+               int
+              ) [TypeName]
+            ) [VarDeclType]
+            SingleVarDeclaration(
+              VarDeclArrayFinal(
+               niz
+              ) [VarDeclArrayFinal]
+            ) [SingleVarDeclaration]
+          ) [VarDecl]
+        ) [DeclarationListVar]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             char
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclArrayFinal(
+             nizch
+            ) [VarDeclArrayFinal]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [DeclarationListVar]
+      VarDecl(
+        VarDeclType(
+          TypeName(
+           int
+          ) [TypeName]
+        ) [VarDeclType]
+        SingleVarDeclaration(
+          VarDeclMatrixFinal(
+           mat
+          ) [VarDeclMatrixFinal]
+        ) [SingleVarDeclaration]
+      ) [VarDecl]
+    ) [DeclarationListVar]
+    VarDecl(
+      VarDeclType(
+        TypeName(
+         int
+        ) [TypeName]
+      ) [VarDeclType]
+      SingleVarDeclaration(
+        VarDeclFinalElem(
+         a
+        ) [VarDeclFinalElem]
+      ) [SingleVarDeclaration]
+    ) [VarDecl]
+  ) [DeclarationListVar]
+  MethodDeclarationList(
+    NoMethodDeclarationList(
+    ) [NoMethodDeclarationList]
+    MethodDecl(
+      MethodReturnTypeVoid(
+       main
+      ) [MethodReturnTypeVoid]
+      NoFormalParams(
+      ) [NoFormalParams]
+      VarDeclarationList(
+        VarDeclarationList(
+          NoVarDeclarationList(
+          ) [NoVarDeclarationList]
+          VarDecl(
+            VarDeclType(
+              TypeName(
+               int
+              ) [TypeName]
+            ) [VarDeclType]
+            SingleVarDeclaration(
+              VarDeclFinalElem(
+               bodovi
+              ) [VarDeclFinalElem]
+            ) [SingleVarDeclaration]
+          ) [VarDecl]
+        ) [VarDeclarationList]
+        VarDecl(
+          VarDeclType(
+            TypeName(
+             bool
+            ) [TypeName]
+          ) [VarDeclType]
+          SingleVarDeclaration(
+            VarDeclFinalElem(
+             bt
+            ) [VarDeclFinalElem]
+          ) [SingleVarDeclaration]
+        ) [VarDecl]
+      ) [VarDeclarationList]
+      StatementListExist(
+        StatementListExist(
+          StatementListExist(
+            StatementListDoesntExist(
+            ) [StatementListDoesntExist]
+            StatementDesignatorStatement(
+              DesignatorStatementAssign(
+                DesignatorIdent(
+                 niz
+                ) [DesignatorIdent]
+                Assignop(
+                ) [Assignop]
+                ExprTerm(
+                  TermFactor(
+                    FactorNewFactor(
+                      NewFactorArray(
+                        TypeName(
+                         int
+                        ) [TypeName]
+                        ExprTerm(
+                          TermFactor(
+                            FactorNumber(
+                             3
+                            ) [FactorNumber]
+                          ) [TermFactor]
+                        ) [ExprTerm]
+                      ) [NewFactorArray]
+                    ) [FactorNewFactor]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [DesignatorStatementAssign]
+            ) [StatementDesignatorStatement]
+          ) [StatementListExist]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorArray(
+                DesignatorIdent(
+                 niz
+                ) [DesignatorIdent]
+                ExprTerm(
+                  TermFactor(
+                    FactorDesignatorFactor(
+                      DesignatorFactorDesignator(
+                        DesignatorIdent(
+                         nula
+                        ) [DesignatorIdent]
+                      ) [DesignatorFactorDesignator]
+                    ) [FactorDesignatorFactor]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [DesignatorArray]
+              Assignop(
+              ) [Assignop]
+              ExprTerm(
+                TermFactor(
+                  FactorDesignatorFactor(
+                    DesignatorFactorDesignator(
+                      DesignatorIdent(
+                       jedan
+                      ) [DesignatorIdent]
+                    ) [DesignatorFactorDesignator]
+                  ) [FactorDesignatorFactor]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignatorStatement]
+        ) [StatementListExist]
+        StatementPrintExpr(
+          ExprTerm(
+            TermFactor(
+              FactorDesignatorFactor(
+                DesignatorFactorDesignator(
+                  DesignatorArray(
+                    DesignatorIdent(
+                     niz
+                    ) [DesignatorIdent]
+                    ExprTerm(
+                      TermFactor(
+                        FactorNumber(
+                         0
+                        ) [FactorNumber]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [DesignatorArray]
+                ) [DesignatorFactorDesignator]
+              ) [FactorDesignatorFactor]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [StatementPrintExpr]
+      ) [StatementListExist]
+    ) [MethodDecl]
+  ) [MethodDeclarationList]
+) [Program]
+INFO  12:15:50,985 - ===================================
+INFO  12:15:50,989 - ===================================
+INFO  12:15:50,994 - usao u NewFactorArray
+INFO  12:15:50,994 - klasa DesignatorStatementAssign -> kreiranje niza
+INFO  12:15:50,994 - pri dodeli vrednosti designator je bio matrica na liniji 21
+INFO  12:15:50,994 - DesignatorStatementAssign za niz
+INFO  12:15:50,995 - Parsiranje uspesno zavrseno!

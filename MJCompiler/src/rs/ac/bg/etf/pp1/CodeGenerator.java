@@ -178,6 +178,8 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 		//expr:arraySize ce vec biti na steku
 		
+		report_info("usao u NewFactorArray", null);
+		
 		Code.put(Code.newarray);
 		if(arrayAlocation.getType().struct == MyTab.intType || arrayAlocation.getType().struct == MyTab.boolType) {
 			// newarray 1 -> niz reci
@@ -310,6 +312,7 @@ public class CodeGenerator extends VisitorAdaptor {
 			
 						
 		if( assignment.getDesignator() instanceof DesignatorArray){
+			// niz[0] = 5
 			// dodela vrednosti elementu niza -> na steku su: niz, index, val 
 			
 			Struct arrayType = assignment.getDesignator().obj.getType().getElemType();
@@ -342,12 +345,20 @@ public class CodeGenerator extends VisitorAdaptor {
 			
 		}
 		else {
-			// DesignatorIdent -> ident nije niz ili je matrica ili obicna promenljiva
+			
 			if(assignment.getDesignator().obj.getType().getKind() != Struct.Array) {
 				// obicna promenljiva
 				Code.store(assignment.getDesignator().obj);	
 				
 				report_info("DesignatorStatementAssign za obicnu promenljivu", null);	
+			}
+			else if(assignment.getDesignator().obj.getType().getElemType() == MyTab.intType ||
+					assignment.getDesignator().obj.getType().getElemType() == MyTab.charType) {
+				// ovo je za nizove -> npr n = new int[3];
+				
+				Code.store(assignment.getDesignator().obj);	
+				
+				report_info("klasa DesignatorStatementAssign -> kreiranje niza", null);	
 			}
 			else {
 				// matrica
@@ -482,6 +493,8 @@ public class CodeGenerator extends VisitorAdaptor {
 				report_info("U fazi generisanja koda u klasi DesignatorArray elemType nije nijedan od standardnih tipova", null);
 			}
 		}
+		
+		array.obj = array.getDesignator().obj;
 		
 	}
 	

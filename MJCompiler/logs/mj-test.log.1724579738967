@@ -1,364 +1,364 @@
-INFO  12:33:36,192 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
-INFO  12:33:36,256 - #2 program
-INFO  12:33:36,256 - #43 test301
-INFO  12:33:36,256 - #5 const
-INFO  12:33:36,257 - #43 int
-INFO  12:33:36,257 - #43 nula
-INFO  12:33:36,257 - #10 =
-INFO  12:33:36,258 - #40 0
-INFO  12:33:36,258 - #6 ;
-INFO  12:33:36,259 - #5 const
-INFO  12:33:36,260 - #43 int
-INFO  12:33:36,260 - #43 jedan
-INFO  12:33:36,260 - #10 =
-INFO  12:33:36,260 - #40 1
-INFO  12:33:36,260 - #6 ;
-INFO  12:33:36,260 - #5 const
-INFO  12:33:36,260 - #43 int
-INFO  12:33:36,261 - #43 pet
-INFO  12:33:36,261 - #10 =
-INFO  12:33:36,261 - #40 5
-INFO  12:33:36,261 - #6 ;
-INFO  12:33:36,261 - #43 int
-INFO  12:33:36,261 - #43 niz
-INFO  12:33:36,262 - #8 [
-INFO  12:33:36,262 - #9 ]
-INFO  12:33:36,262 - #6 ;
-INFO  12:33:36,262 - #43 char
-INFO  12:33:36,263 - #43 nizch
-INFO  12:33:36,264 - #8 [
-INFO  12:33:36,264 - #9 ]
-INFO  12:33:36,264 - #6 ;
-INFO  12:33:36,264 - #43 int
-INFO  12:33:36,264 - #43 mat
-INFO  12:33:36,264 - #8 [
-INFO  12:33:36,264 - #9 ]
-INFO  12:33:36,264 - #8 [
-INFO  12:33:36,264 - #9 ]
-INFO  12:33:36,264 - #6 ;
-INFO  12:33:36,264 - #43 int
-INFO  12:33:36,264 - #43 a
-INFO  12:33:36,264 - #6 ;
-INFO  12:33:36,264 - #3 {
-INFO  12:33:36,265 - #11 void
-INFO  12:33:36,265 - #43 main
-INFO  12:33:36,266 - #29 (
-INFO  12:33:36,266 - #24 )
-INFO  12:33:36,267 - #43 int
-INFO  12:33:36,267 - #43 bodovi
-INFO  12:33:36,268 - #6 ;
-INFO  12:33:36,268 - #43 bool
-INFO  12:33:36,268 - #43 bt
-INFO  12:33:36,268 - #6 ;
-INFO  12:33:36,268 - #3 {
-INFO  12:33:36,268 - #43 bodovi
-INFO  12:33:36,269 - #10 =
-INFO  12:33:36,269 - #40 0
-INFO  12:33:36,270 - #6 ;
-INFO  12:33:36,270 - #43 bodovi
-INFO  12:33:36,270 - #13 ++
-INFO  12:33:36,270 - #6 ;
-INFO  12:33:36,270 - #43 bodovi
-INFO  12:33:36,270 - #10 =
-INFO  12:33:36,270 - #43 bodovi
-INFO  12:33:36,271 - #23 +
-INFO  12:33:36,271 - #43 jedan
-INFO  12:33:36,272 - #6 ;
-INFO  12:33:36,272 - #43 bodovi
-INFO  12:33:36,272 - #10 =
-INFO  12:33:36,272 - #43 bodovi
-INFO  12:33:36,272 - #33 *
-INFO  12:33:36,272 - #43 pet
-INFO  12:33:36,274 - #6 ;
-INFO  12:33:36,274 - #43 bodovi
-INFO  12:33:36,274 - #14 --
-INFO  12:33:36,274 - #6 ;
-INFO  12:33:36,274 - #38 print
-INFO  12:33:36,274 - #29 (
-INFO  12:33:36,274 - #43 bodovi
-INFO  12:33:36,274 - #24 )
-INFO  12:33:36,274 - #6 ;
-INFO  12:33:36,274 - #43 niz
-INFO  12:33:36,274 - #10 =
-INFO  12:33:36,274 - #19 new
-INFO  12:33:36,274 - #43 int
-INFO  12:33:36,275 - #8 [
-INFO  12:33:36,275 - #40 3
-INFO  12:33:36,275 - #9 ]
-INFO  12:33:36,275 - #6 ;
-INFO  12:33:36,275 - #43 niz
-INFO  12:33:36,275 - #8 [
-INFO  12:33:36,275 - #43 nula
-INFO  12:33:36,275 - #9 ]
-INFO  12:33:36,275 - #10 =
-INFO  12:33:36,275 - #43 jedan
-INFO  12:33:36,275 - #6 ;
-INFO  12:33:36,275 - #43 niz
-INFO  12:33:36,276 - #8 [
-INFO  12:33:36,276 - #40 1
-INFO  12:33:36,276 - #9 ]
-INFO  12:33:36,276 - #10 =
-INFO  12:33:36,276 - #40 2
-INFO  12:33:36,276 - #6 ;
-INFO  12:33:36,276 - #43 niz
-INFO  12:33:36,276 - #8 [
-INFO  12:33:36,276 - #43 niz
-INFO  12:33:36,276 - #8 [
-INFO  12:33:36,276 - #43 jedan
-INFO  12:33:36,276 - #9 ]
-INFO  12:33:36,276 - #9 ]
-INFO  12:33:36,276 - #10 =
-INFO  12:33:36,276 - #43 niz
-INFO  12:33:36,276 - #8 [
-INFO  12:33:36,276 - #43 niz
-INFO  12:33:36,276 - #8 [
-INFO  12:33:36,277 - #40 0
-INFO  12:33:36,277 - #9 ]
-INFO  12:33:36,277 - #9 ]
-INFO  12:33:36,277 - #33 *
-INFO  12:33:36,277 - #40 3
-INFO  12:33:36,277 - #6 ;
-INFO  12:33:36,277 - #43 bodovi
-INFO  12:33:36,277 - #10 =
-INFO  12:33:36,277 - #43 niz
-INFO  12:33:36,277 - #8 [
-INFO  12:33:36,277 - #40 2
-INFO  12:33:36,277 - #9 ]
-INFO  12:33:36,277 - #26 /
-INFO  12:33:36,277 - #43 niz
-INFO  12:33:36,278 - #8 [
-INFO  12:33:36,278 - #40 0
-INFO  12:33:36,278 - #9 ]
-INFO  12:33:36,278 - #6 ;
-INFO  12:33:36,278 - #38 print
-INFO  12:33:36,279 - #29 (
-INFO  12:33:36,279 - #43 bodovi
-INFO  12:33:36,279 - #24 )
-INFO  12:33:36,279 - #6 ;
-INFO  12:33:36,279 - #38 print
-INFO  12:33:36,279 - #29 (
-INFO  12:33:36,279 - #43 niz
-INFO  12:33:36,279 - #8 [
-INFO  12:33:36,279 - #40 2
-INFO  12:33:36,279 - #9 ]
-INFO  12:33:36,279 - #24 )
-INFO  12:33:36,279 - #6 ;
-INFO  12:33:36,279 - #43 nizch
-INFO  12:33:36,279 - #10 =
-INFO  12:33:36,279 - #19 new
-INFO  12:33:36,280 - #43 char
-INFO  12:33:36,280 - #8 [
-INFO  12:33:36,280 - #40 3
-INFO  12:33:36,280 - #9 ]
-INFO  12:33:36,280 - #6 ;
-INFO  12:33:36,280 - #43 nizch
-INFO  12:33:36,280 - #8 [
-INFO  12:33:36,280 - #40 0
-INFO  12:33:36,280 - #9 ]
-INFO  12:33:36,280 - #10 =
-INFO  12:33:36,280 - #41 a
-INFO  12:33:36,280 - #6 ;
-INFO  12:33:36,280 - #43 nizch
-INFO  12:33:36,281 - #8 [
-INFO  12:33:36,281 - #43 jedan
-INFO  12:33:36,281 - #9 ]
-INFO  12:33:36,281 - #10 =
-INFO  12:33:36,281 - #41 b
-INFO  12:33:36,281 - #6 ;
-INFO  12:33:36,281 - #43 nizch
-INFO  12:33:36,281 - #8 [
-INFO  12:33:36,281 - #43 pet
-INFO  12:33:36,281 - #12 -
-INFO  12:33:36,281 - #40 3
-INFO  12:33:36,282 - #9 ]
-INFO  12:33:36,282 - #10 =
-INFO  12:33:36,282 - #41 c
-INFO  12:33:36,282 - #6 ;
-INFO  12:33:36,282 - #38 print
-INFO  12:33:36,282 - #29 (
-INFO  12:33:36,282 - #43 nizch
-INFO  12:33:36,282 - #8 [
-INFO  12:33:36,282 - #40 1
-INFO  12:33:36,282 - #9 ]
-INFO  12:33:36,282 - #24 )
-INFO  12:33:36,282 - #6 ;
-INFO  12:33:36,283 - #38 print
-INFO  12:33:36,283 - #29 (
-INFO  12:33:36,283 - #43 nizch
-INFO  12:33:36,283 - #8 [
-INFO  12:33:36,283 - #43 jedan
-INFO  12:33:36,283 - #33 *
-INFO  12:33:36,283 - #40 2
-INFO  12:33:36,283 - #9 ]
-INFO  12:33:36,283 - #24 )
-INFO  12:33:36,283 - #6 ;
-INFO  12:33:36,283 - #43 a
-INFO  12:33:36,283 - #10 =
-INFO  12:33:36,283 - #40 1
-INFO  12:33:36,283 - #6 ;
-INFO  12:33:36,283 - #37 read
-INFO  12:33:36,283 - #29 (
-INFO  12:33:36,283 - #43 bodovi
-INFO  12:33:36,283 - #24 )
-INFO  12:33:36,283 - #6 ;
-INFO  12:33:36,283 - #43 bodovi
-INFO  12:33:36,284 - #10 =
-INFO  12:33:36,284 - #12 -
-INFO  12:33:36,284 - #43 bodovi
-INFO  12:33:36,284 - #23 +
-INFO  12:33:36,284 - #29 (
-INFO  12:33:36,284 - #43 pet
-INFO  12:33:36,284 - #33 *
-INFO  12:33:36,284 - #43 a
-INFO  12:33:36,284 - #26 /
-INFO  12:33:36,284 - #40 2
-INFO  12:33:36,284 - #12 -
-INFO  12:33:36,284 - #43 jedan
-INFO  12:33:36,284 - #24 )
-INFO  12:33:36,284 - #33 *
-INFO  12:33:36,285 - #43 bodovi
-INFO  12:33:36,285 - #12 -
-INFO  12:33:36,285 - #29 (
-INFO  12:33:36,286 - #40 3
-INFO  12:33:36,286 - #32 %
-INFO  12:33:36,286 - #40 2
-INFO  12:33:36,286 - #23 +
-INFO  12:33:36,287 - #40 3
-INFO  12:33:36,287 - #33 *
-INFO  12:33:36,287 - #40 2
-INFO  12:33:36,287 - #12 -
-INFO  12:33:36,287 - #40 3
-INFO  12:33:36,287 - #24 )
-INFO  12:33:36,287 - #6 ;
-INFO  12:33:36,287 - #38 print
-INFO  12:33:36,287 - #29 (
-INFO  12:33:36,287 - #43 bodovi
-INFO  12:33:36,287 - #24 )
-INFO  12:33:36,287 - #6 ;
-INFO  12:33:36,287 - #43 mat
-INFO  12:33:36,287 - #10 =
-INFO  12:33:36,287 - #19 new
-INFO  12:33:36,287 - #43 int
-INFO  12:33:36,287 - #8 [
-INFO  12:33:36,287 - #40 2
-INFO  12:33:36,287 - #9 ]
-INFO  12:33:36,287 - #8 [
-INFO  12:33:36,287 - #40 3
-INFO  12:33:36,287 - #9 ]
-INFO  12:33:36,288 - #6 ;
-INFO  12:33:36,288 - #43 mat
-INFO  12:33:36,288 - #8 [
-INFO  12:33:36,288 - #43 nula
-INFO  12:33:36,288 - #9 ]
-INFO  12:33:36,288 - #8 [
-INFO  12:33:36,288 - #43 jedan
-INFO  12:33:36,288 - #12 -
-INFO  12:33:36,288 - #40 1
-INFO  12:33:36,288 - #9 ]
-INFO  12:33:36,288 - #10 =
-INFO  12:33:36,288 - #43 jedan
-INFO  12:33:36,288 - #6 ;
-INFO  12:33:36,288 - #43 mat
-INFO  12:33:36,289 - #8 [
-INFO  12:33:36,289 - #40 0
-INFO  12:33:36,289 - #9 ]
-INFO  12:33:36,289 - #8 [
-INFO  12:33:36,289 - #43 mat
-INFO  12:33:36,289 - #8 [
-INFO  12:33:36,289 - #40 0
-INFO  12:33:36,289 - #9 ]
-INFO  12:33:36,289 - #8 [
-INFO  12:33:36,289 - #40 0
-INFO  12:33:36,289 - #9 ]
-INFO  12:33:36,289 - #9 ]
-INFO  12:33:36,289 - #10 =
-INFO  12:33:36,289 - #40 2
-INFO  12:33:36,289 - #6 ;
-INFO  12:33:36,289 - #43 mat
-INFO  12:33:36,289 - #8 [
-INFO  12:33:36,289 - #40 0
-INFO  12:33:36,289 - #9 ]
-INFO  12:33:36,289 - #8 [
-INFO  12:33:36,289 - #43 mat
-INFO  12:33:36,289 - #8 [
-INFO  12:33:36,289 - #40 0
-INFO  12:33:36,289 - #9 ]
-INFO  12:33:36,290 - #8 [
-INFO  12:33:36,290 - #40 1
-INFO  12:33:36,290 - #9 ]
-INFO  12:33:36,290 - #9 ]
-INFO  12:33:36,290 - #10 =
-INFO  12:33:36,290 - #40 5
-INFO  12:33:36,290 - #6 ;
-INFO  12:33:36,290 - #43 mat
-INFO  12:33:36,290 - #8 [
-INFO  12:33:36,290 - #40 1
-INFO  12:33:36,290 - #9 ]
-INFO  12:33:36,290 - #8 [
-INFO  12:33:36,290 - #43 mat
-INFO  12:33:36,290 - #8 [
-INFO  12:33:36,290 - #40 0
-INFO  12:33:36,290 - #9 ]
-INFO  12:33:36,290 - #8 [
-INFO  12:33:36,290 - #40 0
-INFO  12:33:36,290 - #9 ]
-INFO  12:33:36,290 - #33 *
-INFO  12:33:36,290 - #40 2
-INFO  12:33:36,290 - #9 ]
-INFO  12:33:36,291 - #10 =
-INFO  12:33:36,291 - #40 4
-INFO  12:33:36,291 - #6 ;
-INFO  12:33:36,291 - #43 mat
-INFO  12:33:36,291 - #8 [
-INFO  12:33:36,291 - #43 mat
-INFO  12:33:36,291 - #8 [
-INFO  12:33:36,291 - #40 0
-INFO  12:33:36,291 - #9 ]
-INFO  12:33:36,291 - #8 [
-INFO  12:33:36,291 - #40 0
-INFO  12:33:36,291 - #9 ]
-INFO  12:33:36,291 - #9 ]
-INFO  12:33:36,291 - #8 [
-INFO  12:33:36,291 - #40 1
-INFO  12:33:36,291 - #9 ]
-INFO  12:33:36,292 - #10 =
-INFO  12:33:36,292 - #40 3
-INFO  12:33:36,292 - #6 ;
-INFO  12:33:36,292 - #43 mat
-INFO  12:33:36,292 - #8 [
-INFO  12:33:36,292 - #40 1
-INFO  12:33:36,292 - #9 ]
-INFO  12:33:36,292 - #8 [
-INFO  12:33:36,292 - #40 0
-INFO  12:33:36,292 - #9 ]
-INFO  12:33:36,292 - #10 =
-INFO  12:33:36,292 - #40 2
-INFO  12:33:36,292 - #6 ;
-INFO  12:33:36,292 - #38 print
-INFO  12:33:36,292 - #29 (
-INFO  12:33:36,292 - #43 mat
-INFO  12:33:36,292 - #8 [
-INFO  12:33:36,292 - #40 1
-INFO  12:33:36,292 - #9 ]
-INFO  12:33:36,292 - #8 [
-INFO  12:33:36,292 - #40 2
-INFO  12:33:36,292 - #9 ]
-INFO  12:33:36,292 - #24 )
-INFO  12:33:36,292 - #6 ;
-INFO  12:33:36,292 - #38 print
-INFO  12:33:36,292 - #29 (
-INFO  12:33:36,292 - #43 mat
-INFO  12:33:36,292 - #8 [
-INFO  12:33:36,293 - #40 0
-INFO  12:33:36,293 - #9 ]
-INFO  12:33:36,293 - #8 [
-INFO  12:33:36,293 - #40 2
-INFO  12:33:36,293 - #9 ]
-INFO  12:33:36,293 - #24 )
-INFO  12:33:36,293 - #6 ;
-INFO  12:33:36,293 - #4 }
-INFO  12:33:36,293 - #4 }
-INFO  12:33:36,305 - Program(
+INFO  11:55:03,389 - Compiling source file: C:\Users\Nikola\Documents\ETF_NIKOLA\IV\sedmi semestar\prevodioci\domaci leksicka analiza\workspace\MJCompiler\test\program.mj
+INFO  11:55:03,484 - #2 program
+INFO  11:55:03,484 - #43 test301
+INFO  11:55:03,485 - #5 const
+INFO  11:55:03,487 - #43 int
+INFO  11:55:03,487 - #43 nula
+INFO  11:55:03,487 - #10 =
+INFO  11:55:03,489 - #40 0
+INFO  11:55:03,489 - #6 ;
+INFO  11:55:03,491 - #5 const
+INFO  11:55:03,493 - #43 int
+INFO  11:55:03,493 - #43 jedan
+INFO  11:55:03,493 - #10 =
+INFO  11:55:03,493 - #40 1
+INFO  11:55:03,493 - #6 ;
+INFO  11:55:03,493 - #5 const
+INFO  11:55:03,493 - #43 int
+INFO  11:55:03,494 - #43 pet
+INFO  11:55:03,494 - #10 =
+INFO  11:55:03,494 - #40 5
+INFO  11:55:03,500 - #6 ;
+INFO  11:55:03,500 - #43 int
+INFO  11:55:03,500 - #43 niz
+INFO  11:55:03,502 - #8 [
+INFO  11:55:03,502 - #9 ]
+INFO  11:55:03,502 - #6 ;
+INFO  11:55:03,502 - #43 char
+INFO  11:55:03,504 - #43 nizch
+INFO  11:55:03,504 - #8 [
+INFO  11:55:03,504 - #9 ]
+INFO  11:55:03,504 - #6 ;
+INFO  11:55:03,505 - #43 int
+INFO  11:55:03,505 - #43 mat
+INFO  11:55:03,505 - #8 [
+INFO  11:55:03,505 - #9 ]
+INFO  11:55:03,505 - #8 [
+INFO  11:55:03,505 - #9 ]
+INFO  11:55:03,505 - #6 ;
+INFO  11:55:03,506 - #43 int
+INFO  11:55:03,506 - #43 a
+INFO  11:55:03,506 - #6 ;
+INFO  11:55:03,507 - #3 {
+INFO  11:55:03,507 - #11 void
+INFO  11:55:03,509 - #43 main
+INFO  11:55:03,509 - #29 (
+INFO  11:55:03,509 - #24 )
+INFO  11:55:03,511 - #43 int
+INFO  11:55:03,512 - #43 bodovi
+INFO  11:55:03,512 - #6 ;
+INFO  11:55:03,512 - #43 bool
+INFO  11:55:03,512 - #43 bt
+INFO  11:55:03,512 - #6 ;
+INFO  11:55:03,513 - #3 {
+INFO  11:55:03,513 - #43 bodovi
+INFO  11:55:03,514 - #10 =
+INFO  11:55:03,514 - #40 0
+INFO  11:55:03,515 - #6 ;
+INFO  11:55:03,516 - #43 bodovi
+INFO  11:55:03,516 - #13 ++
+INFO  11:55:03,516 - #6 ;
+INFO  11:55:03,516 - #43 bodovi
+INFO  11:55:03,516 - #10 =
+INFO  11:55:03,516 - #43 bodovi
+INFO  11:55:03,516 - #23 +
+INFO  11:55:03,517 - #43 jedan
+INFO  11:55:03,519 - #6 ;
+INFO  11:55:03,519 - #43 bodovi
+INFO  11:55:03,519 - #10 =
+INFO  11:55:03,519 - #43 bodovi
+INFO  11:55:03,519 - #33 *
+INFO  11:55:03,519 - #43 pet
+INFO  11:55:03,522 - #6 ;
+INFO  11:55:03,522 - #43 bodovi
+INFO  11:55:03,523 - #14 --
+INFO  11:55:03,523 - #6 ;
+INFO  11:55:03,523 - #38 print
+INFO  11:55:03,523 - #29 (
+INFO  11:55:03,523 - #43 bodovi
+INFO  11:55:03,523 - #24 )
+INFO  11:55:03,523 - #6 ;
+INFO  11:55:03,524 - #43 niz
+INFO  11:55:03,524 - #10 =
+INFO  11:55:03,524 - #19 new
+INFO  11:55:03,524 - #43 int
+INFO  11:55:03,524 - #8 [
+INFO  11:55:03,525 - #40 3
+INFO  11:55:03,525 - #9 ]
+INFO  11:55:03,525 - #6 ;
+INFO  11:55:03,525 - #43 niz
+INFO  11:55:03,526 - #8 [
+INFO  11:55:03,526 - #43 nula
+INFO  11:55:03,526 - #9 ]
+INFO  11:55:03,526 - #10 =
+INFO  11:55:03,526 - #43 jedan
+INFO  11:55:03,526 - #6 ;
+INFO  11:55:03,526 - #43 niz
+INFO  11:55:03,526 - #8 [
+INFO  11:55:03,526 - #40 1
+INFO  11:55:03,526 - #9 ]
+INFO  11:55:03,526 - #10 =
+INFO  11:55:03,527 - #40 2
+INFO  11:55:03,527 - #6 ;
+INFO  11:55:03,527 - #43 niz
+INFO  11:55:03,527 - #8 [
+INFO  11:55:03,527 - #43 niz
+INFO  11:55:03,527 - #8 [
+INFO  11:55:03,527 - #43 jedan
+INFO  11:55:03,527 - #9 ]
+INFO  11:55:03,527 - #9 ]
+INFO  11:55:03,527 - #10 =
+INFO  11:55:03,528 - #43 niz
+INFO  11:55:03,528 - #8 [
+INFO  11:55:03,528 - #43 niz
+INFO  11:55:03,528 - #8 [
+INFO  11:55:03,528 - #40 0
+INFO  11:55:03,528 - #9 ]
+INFO  11:55:03,528 - #9 ]
+INFO  11:55:03,528 - #33 *
+INFO  11:55:03,528 - #40 3
+INFO  11:55:03,528 - #6 ;
+INFO  11:55:03,529 - #43 bodovi
+INFO  11:55:03,529 - #10 =
+INFO  11:55:03,529 - #43 niz
+INFO  11:55:03,529 - #8 [
+INFO  11:55:03,529 - #40 2
+INFO  11:55:03,529 - #9 ]
+INFO  11:55:03,529 - #26 /
+INFO  11:55:03,529 - #43 niz
+INFO  11:55:03,531 - #8 [
+INFO  11:55:03,531 - #40 0
+INFO  11:55:03,532 - #9 ]
+INFO  11:55:03,532 - #6 ;
+INFO  11:55:03,532 - #38 print
+INFO  11:55:03,532 - #29 (
+INFO  11:55:03,532 - #43 bodovi
+INFO  11:55:03,532 - #24 )
+INFO  11:55:03,532 - #6 ;
+INFO  11:55:03,532 - #38 print
+INFO  11:55:03,532 - #29 (
+INFO  11:55:03,532 - #43 niz
+INFO  11:55:03,532 - #8 [
+INFO  11:55:03,532 - #40 2
+INFO  11:55:03,533 - #9 ]
+INFO  11:55:03,533 - #24 )
+INFO  11:55:03,533 - #6 ;
+INFO  11:55:03,533 - #43 nizch
+INFO  11:55:03,533 - #10 =
+INFO  11:55:03,533 - #19 new
+INFO  11:55:03,533 - #43 char
+INFO  11:55:03,533 - #8 [
+INFO  11:55:03,533 - #40 3
+INFO  11:55:03,533 - #9 ]
+INFO  11:55:03,534 - #6 ;
+INFO  11:55:03,534 - #43 nizch
+INFO  11:55:03,534 - #8 [
+INFO  11:55:03,534 - #40 0
+INFO  11:55:03,534 - #9 ]
+INFO  11:55:03,534 - #10 =
+INFO  11:55:03,534 - #41 a
+INFO  11:55:03,534 - #6 ;
+INFO  11:55:03,534 - #43 nizch
+INFO  11:55:03,534 - #8 [
+INFO  11:55:03,534 - #43 jedan
+INFO  11:55:03,534 - #9 ]
+INFO  11:55:03,535 - #10 =
+INFO  11:55:03,535 - #41 b
+INFO  11:55:03,535 - #6 ;
+INFO  11:55:03,535 - #43 nizch
+INFO  11:55:03,535 - #8 [
+INFO  11:55:03,535 - #43 pet
+INFO  11:55:03,535 - #12 -
+INFO  11:55:03,535 - #40 3
+INFO  11:55:03,537 - #9 ]
+INFO  11:55:03,537 - #10 =
+INFO  11:55:03,537 - #41 c
+INFO  11:55:03,537 - #6 ;
+INFO  11:55:03,538 - #38 print
+INFO  11:55:03,538 - #29 (
+INFO  11:55:03,538 - #43 nizch
+INFO  11:55:03,538 - #8 [
+INFO  11:55:03,538 - #40 1
+INFO  11:55:03,539 - #9 ]
+INFO  11:55:03,539 - #24 )
+INFO  11:55:03,539 - #6 ;
+INFO  11:55:03,539 - #38 print
+INFO  11:55:03,539 - #29 (
+INFO  11:55:03,539 - #43 nizch
+INFO  11:55:03,539 - #8 [
+INFO  11:55:03,539 - #43 jedan
+INFO  11:55:03,539 - #33 *
+INFO  11:55:03,539 - #40 2
+INFO  11:55:03,539 - #9 ]
+INFO  11:55:03,540 - #24 )
+INFO  11:55:03,540 - #6 ;
+INFO  11:55:03,540 - #43 a
+INFO  11:55:03,540 - #10 =
+INFO  11:55:03,540 - #40 1
+INFO  11:55:03,540 - #6 ;
+INFO  11:55:03,540 - #37 read
+INFO  11:55:03,540 - #29 (
+INFO  11:55:03,540 - #43 bodovi
+INFO  11:55:03,541 - #24 )
+INFO  11:55:03,541 - #6 ;
+INFO  11:55:03,541 - #43 bodovi
+INFO  11:55:03,541 - #10 =
+INFO  11:55:03,541 - #12 -
+INFO  11:55:03,541 - #43 bodovi
+INFO  11:55:03,541 - #23 +
+INFO  11:55:03,541 - #29 (
+INFO  11:55:03,541 - #43 pet
+INFO  11:55:03,541 - #33 *
+INFO  11:55:03,541 - #43 a
+INFO  11:55:03,541 - #26 /
+INFO  11:55:03,541 - #40 2
+INFO  11:55:03,542 - #12 -
+INFO  11:55:03,542 - #43 jedan
+INFO  11:55:03,542 - #24 )
+INFO  11:55:03,542 - #33 *
+INFO  11:55:03,544 - #43 bodovi
+INFO  11:55:03,545 - #12 -
+INFO  11:55:03,545 - #29 (
+INFO  11:55:03,545 - #40 3
+INFO  11:55:03,545 - #32 %
+INFO  11:55:03,545 - #40 2
+INFO  11:55:03,547 - #23 +
+INFO  11:55:03,547 - #40 3
+INFO  11:55:03,547 - #33 *
+INFO  11:55:03,547 - #40 2
+INFO  11:55:03,547 - #12 -
+INFO  11:55:03,547 - #40 3
+INFO  11:55:03,547 - #24 )
+INFO  11:55:03,547 - #6 ;
+INFO  11:55:03,547 - #38 print
+INFO  11:55:03,547 - #29 (
+INFO  11:55:03,547 - #43 bodovi
+INFO  11:55:03,547 - #24 )
+INFO  11:55:03,547 - #6 ;
+INFO  11:55:03,547 - #43 mat
+INFO  11:55:03,547 - #10 =
+INFO  11:55:03,547 - #19 new
+INFO  11:55:03,547 - #43 int
+INFO  11:55:03,548 - #8 [
+INFO  11:55:03,548 - #40 2
+INFO  11:55:03,548 - #9 ]
+INFO  11:55:03,548 - #8 [
+INFO  11:55:03,548 - #40 3
+INFO  11:55:03,548 - #9 ]
+INFO  11:55:03,548 - #6 ;
+INFO  11:55:03,548 - #43 mat
+INFO  11:55:03,548 - #8 [
+INFO  11:55:03,548 - #43 nula
+INFO  11:55:03,548 - #9 ]
+INFO  11:55:03,548 - #8 [
+INFO  11:55:03,548 - #43 jedan
+INFO  11:55:03,549 - #12 -
+INFO  11:55:03,549 - #40 1
+INFO  11:55:03,549 - #9 ]
+INFO  11:55:03,549 - #10 =
+INFO  11:55:03,549 - #43 jedan
+INFO  11:55:03,549 - #6 ;
+INFO  11:55:03,550 - #43 mat
+INFO  11:55:03,550 - #8 [
+INFO  11:55:03,550 - #40 0
+INFO  11:55:03,550 - #9 ]
+INFO  11:55:03,550 - #8 [
+INFO  11:55:03,550 - #43 mat
+INFO  11:55:03,551 - #8 [
+INFO  11:55:03,551 - #40 0
+INFO  11:55:03,551 - #9 ]
+INFO  11:55:03,551 - #8 [
+INFO  11:55:03,551 - #40 0
+INFO  11:55:03,551 - #9 ]
+INFO  11:55:03,551 - #9 ]
+INFO  11:55:03,551 - #10 =
+INFO  11:55:03,551 - #40 2
+INFO  11:55:03,551 - #6 ;
+INFO  11:55:03,551 - #43 mat
+INFO  11:55:03,551 - #8 [
+INFO  11:55:03,551 - #40 0
+INFO  11:55:03,551 - #9 ]
+INFO  11:55:03,551 - #8 [
+INFO  11:55:03,552 - #43 mat
+INFO  11:55:03,552 - #8 [
+INFO  11:55:03,552 - #40 0
+INFO  11:55:03,553 - #9 ]
+INFO  11:55:03,553 - #8 [
+INFO  11:55:03,553 - #40 1
+INFO  11:55:03,553 - #9 ]
+INFO  11:55:03,553 - #9 ]
+INFO  11:55:03,553 - #10 =
+INFO  11:55:03,553 - #40 5
+INFO  11:55:03,553 - #6 ;
+INFO  11:55:03,553 - #43 mat
+INFO  11:55:03,554 - #8 [
+INFO  11:55:03,554 - #40 1
+INFO  11:55:03,554 - #9 ]
+INFO  11:55:03,554 - #8 [
+INFO  11:55:03,554 - #43 mat
+INFO  11:55:03,554 - #8 [
+INFO  11:55:03,554 - #40 0
+INFO  11:55:03,554 - #9 ]
+INFO  11:55:03,554 - #8 [
+INFO  11:55:03,554 - #40 0
+INFO  11:55:03,554 - #9 ]
+INFO  11:55:03,554 - #33 *
+INFO  11:55:03,554 - #40 2
+INFO  11:55:03,554 - #9 ]
+INFO  11:55:03,554 - #10 =
+INFO  11:55:03,554 - #40 4
+INFO  11:55:03,555 - #6 ;
+INFO  11:55:03,555 - #43 mat
+INFO  11:55:03,555 - #8 [
+INFO  11:55:03,555 - #43 mat
+INFO  11:55:03,555 - #8 [
+INFO  11:55:03,555 - #40 0
+INFO  11:55:03,555 - #9 ]
+INFO  11:55:03,555 - #8 [
+INFO  11:55:03,555 - #40 0
+INFO  11:55:03,555 - #9 ]
+INFO  11:55:03,555 - #9 ]
+INFO  11:55:03,555 - #8 [
+INFO  11:55:03,555 - #40 1
+INFO  11:55:03,555 - #9 ]
+INFO  11:55:03,555 - #10 =
+INFO  11:55:03,556 - #40 3
+INFO  11:55:03,556 - #6 ;
+INFO  11:55:03,556 - #43 mat
+INFO  11:55:03,556 - #8 [
+INFO  11:55:03,556 - #40 1
+INFO  11:55:03,556 - #9 ]
+INFO  11:55:03,556 - #8 [
+INFO  11:55:03,556 - #40 0
+INFO  11:55:03,557 - #9 ]
+INFO  11:55:03,557 - #10 =
+INFO  11:55:03,557 - #40 2
+INFO  11:55:03,557 - #6 ;
+INFO  11:55:03,557 - #38 print
+INFO  11:55:03,557 - #29 (
+INFO  11:55:03,557 - #43 mat
+INFO  11:55:03,557 - #8 [
+INFO  11:55:03,557 - #40 1
+INFO  11:55:03,557 - #9 ]
+INFO  11:55:03,557 - #8 [
+INFO  11:55:03,557 - #40 2
+INFO  11:55:03,557 - #9 ]
+INFO  11:55:03,557 - #24 )
+INFO  11:55:03,558 - #6 ;
+INFO  11:55:03,558 - #38 print
+INFO  11:55:03,558 - #29 (
+INFO  11:55:03,558 - #43 mat
+INFO  11:55:03,558 - #8 [
+INFO  11:55:03,558 - #40 0
+INFO  11:55:03,558 - #9 ]
+INFO  11:55:03,558 - #8 [
+INFO  11:55:03,558 - #40 2
+INFO  11:55:03,558 - #9 ]
+INFO  11:55:03,559 - #24 )
+INFO  11:55:03,559 - #6 ;
+INFO  11:55:03,559 - #4 }
+INFO  11:55:03,559 - #4 }
+INFO  11:55:03,577 - Program(
   ProgramName(
    test301
   ) [ProgramName]
@@ -1656,43 +1656,49 @@ INFO  12:33:36,305 - Program(
     ) [MethodDecl]
   ) [MethodDeclarationList]
 ) [Program]
-INFO  12:33:36,307 - ===================================
-INFO  12:33:36,312 - ===================================
-INFO  12:33:36,318 - DesignatorStatementAssign za obicnu promenljivu
-INFO  12:33:36,318 - DesignatorStatementAssign za obicnu promenljivu
-INFO  12:33:36,318 - DesignatorStatementAssign za obicnu promenljivu
-INFO  12:33:36,318 - usao u NewFactorArray
-INFO  12:33:36,318 - klasa DesignatorStatementAssign -> kreiranje niza
-INFO  12:33:36,318 - DesignatorStatementAssign za niz
-INFO  12:33:36,318 - DesignatorStatementAssign za niz
-INFO  12:33:36,318 - DesignatorStatementAssign za niz
-INFO  12:33:36,318 - DesignatorStatementAssign za obicnu promenljivu
-INFO  12:33:36,318 - usao u NewFactorArray
-INFO  12:33:36,318 - klasa DesignatorStatementAssign -> kreiranje niza
-INFO  12:33:36,318 - DesignatorStatementAssign za niz
-INFO  12:33:36,318 - DesignatorStatementAssign za niz
-INFO  12:33:36,318 - DesignatorStatementAssign za niz
-INFO  12:33:36,319 - DesignatorStatementAssign za obicnu promenljivu
-INFO  12:33:36,319 - 1
-INFO  12:33:36,319 - DesignatorStatementAssign za obicnu promenljivu
-INFO  12:33:36,319 - iteracija
-INFO  12:33:36,319 - usao u else if za matrix
-INFO  12:33:36,319 - usao u DesignatorMatrix
-INFO  12:33:36,319 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
-INFO  12:33:36,319 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
-INFO  12:33:36,319 - usao u DesignatorMatrix
-INFO  12:33:36,319 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
-INFO  12:33:36,319 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
-INFO  12:33:36,319 - usao u DesignatorMatrix
-INFO  12:33:36,319 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
-INFO  12:33:36,319 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
-INFO  12:33:36,319 - usao u DesignatorMatrix
-INFO  12:33:36,319 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
-INFO  12:33:36,319 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
-INFO  12:33:36,319 - usao u DesignatorMatrix
-INFO  12:33:36,319 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
-INFO  12:33:36,319 - usao u DesignatorMatrix
-INFO  12:33:36,319 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
-INFO  12:33:36,319 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
-INFO  12:33:36,319 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
-INFO  12:33:36,320 - Parsiranje uspesno zavrseno!
+INFO  11:55:03,580 - ===================================
+INFO  11:55:03,585 - ===================================
+INFO  11:55:03,594 - DesignatorStatementAssign za obicnu promenljivu
+INFO  11:55:03,594 - DesignatorStatementAssign za obicnu promenljivu
+INFO  11:55:03,594 - DesignatorStatementAssign za obicnu promenljivu
+INFO  11:55:03,594 - iteracija
+INFO  11:55:03,594 - usao u else if za matrix
+INFO  11:55:03,594 - pri dodeli vrednosti designator je bio matrica na liniji 26
+INFO  11:55:03,594 - DesignatorStatementAssign za niz
+INFO  11:55:03,594 - pri dodeli vrednosti designator je bio matrica na liniji 27
+INFO  11:55:03,594 - DesignatorStatementAssign za niz
+INFO  11:55:03,594 - pri dodeli vrednosti designator je bio matrica na liniji 28
+INFO  11:55:03,594 - DesignatorStatementAssign za niz
+INFO  11:55:03,595 - DesignatorStatementAssign za obicnu promenljivu
+INFO  11:55:03,595 - iteracija
+INFO  11:55:03,595 - usao u else if za matrix
+INFO  11:55:03,595 - pri dodeli vrednosti designator je bio matrica na liniji 35
+INFO  11:55:03,595 - DesignatorStatementAssign za niz
+INFO  11:55:03,595 - pri dodeli vrednosti designator je bio matrica na liniji 36
+INFO  11:55:03,595 - DesignatorStatementAssign za niz
+INFO  11:55:03,595 - pri dodeli vrednosti designator je bio matrica na liniji 37
+INFO  11:55:03,595 - DesignatorStatementAssign za niz
+INFO  11:55:03,595 - DesignatorStatementAssign za obicnu promenljivu
+INFO  11:55:03,595 - 1
+INFO  11:55:03,595 - DesignatorStatementAssign za obicnu promenljivu
+INFO  11:55:03,595 - iteracija
+INFO  11:55:03,595 - usao u else if za matrix
+INFO  11:55:03,595 - usao u DesignatorMatrix
+INFO  11:55:03,595 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
+INFO  11:55:03,595 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
+INFO  11:55:03,595 - usao u DesignatorMatrix
+INFO  11:55:03,595 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
+INFO  11:55:03,595 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
+INFO  11:55:03,595 - usao u DesignatorMatrix
+INFO  11:55:03,595 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
+INFO  11:55:03,595 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
+INFO  11:55:03,595 - usao u DesignatorMatrix
+INFO  11:55:03,596 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
+INFO  11:55:03,596 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
+INFO  11:55:03,596 - usao u DesignatorMatrix
+INFO  11:55:03,596 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
+INFO  11:55:03,596 - usao u DesignatorMatrix
+INFO  11:55:03,596 - usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix
+INFO  11:55:03,596 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
+INFO  11:55:03,596 - u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator
+INFO  11:55:03,597 - Parsiranje uspesno zavrseno!
