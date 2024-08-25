@@ -132,8 +132,36 @@ public class CodeGenerator extends VisitorAdaptor {
 				report_info("Faza generisanja koda klasa StatementRead  array slucaj" ,null);
 			}
 		}
-		else {
+		else if(read.getDesignator() instanceof DesignatorMatrix) {
+			//stek -> m, row, col
+			Code.put(Code.dup_x2);
+			Code.put(Code.pop);		//col, m, row
+			
+			if(read.getDesignator().obj.getType().getElemType().getElemType() == MyTab.intType) {
+				Code.put(Code.aload);	// col, m[row]
+				
+				Code.put(Code.dup_x1);	// m[row], col, m[row]
+				Code.put(Code.pop);		// m[row], col
+				
+				
+				Code.put(Code.read);	//procita vrednost i stavi je na stek -> m[row], col, val
+				
+				Code.put(Code.astore);	//m[row][col] = val
+			}
+			else {
+				Code.put(Code.baload);
+				Code.put(Code.dup_x1);
+				Code.put(Code.pop);	
+				
+				Code.put(Code.bread);	//procita vrednost i stavi je na stek
+				
+				Code.put(Code.bastore);
+			}
+			
 			report_info("3", null);
+		}
+		else {
+			report_info("4", null);
 		}
 	}
 	
@@ -464,7 +492,7 @@ public class CodeGenerator extends VisitorAdaptor {
 				)) {
 			Code.load(des.obj);	
 		}
-
+		
 	}
 	
 	public void visit(DesignatorArray array) {
@@ -562,6 +590,7 @@ public class CodeGenerator extends VisitorAdaptor {
 			report_info("u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator", null);
 		}
 		else {
+			m.obj = m.getDesignator().obj;
 			report_info("u klasi DesignatorMatrix parent nije ni DesignatorStatementAssign ni DesignatorFactorDesignator", null);
 		}
 		
