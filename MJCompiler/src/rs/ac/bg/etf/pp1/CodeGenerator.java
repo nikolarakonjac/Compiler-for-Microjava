@@ -101,7 +101,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 		
 		if(read.getDesignator() instanceof DesignatorIdent) {
-			report_info("1", null);
+			//report_info("1", null);
 			if(designatorStruct == MyTab.intType || designatorStruct == MyTab.boolType) {
 				Code.put(Code.pop);	//radi se pop je kad se ode u designatorIdent loaduje se vrednost jer je potrebna za read kad je designator niz
 				Code.put(Code.read); // procita int i pusuje ga na stek
@@ -113,11 +113,11 @@ public class CodeGenerator extends VisitorAdaptor {
 				Code.store(read.getDesignator().obj);
 			}
 			else {
-				report_info("Faza generisanja koda klasa StatementRead  designatorStruct" ,null);
+				//report_info("Faza generisanja koda klasa StatementRead  designatorStruct" ,null);
 			}
 		}
 		else if(read.getDesignator() instanceof DesignatorArray){
-			report_info("2", null);
+			//report_info("2", null);
 			// ucitavanje u element niza  -> aload se korist na steku treba da bude [adr, index, val] pa tek onda aload ili baload
 			if(designatorStruct == MyTab.intType || designatorStruct == MyTab.boolType) {
 				// adr i index su vec na steku
@@ -129,7 +129,7 @@ public class CodeGenerator extends VisitorAdaptor {
 				Code.put(Code.bastore);
 			}
 			else {
-				report_info("Faza generisanja koda klasa StatementRead  array slucaj" ,null);
+				//report_info("Faza generisanja koda klasa StatementRead  array slucaj" ,null);
 			}
 		}
 		else if(read.getDesignator() instanceof DesignatorMatrix) {
@@ -158,10 +158,10 @@ public class CodeGenerator extends VisitorAdaptor {
 				Code.put(Code.bastore);
 			}
 			
-			report_info("3", null);
+			//report_info("3", null);
 		}
 		else {
-			report_info("4", null);
+			//report_info("4", null);
 		}
 	}
 	
@@ -206,7 +206,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 		//expr:arraySize ce vec biti na steku
 		
-		report_info("usao u NewFactorArray", null);
+		//report_info("usao u NewFactorArray", null);
 		
 		Code.put(Code.newarray);
 		if(arrayAlocation.getType().struct == MyTab.intType || arrayAlocation.getType().struct == MyTab.boolType) {
@@ -260,7 +260,7 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.rem);
 		}
 		else {
-			report_info("Faza generisanje koda u klasi TermMul Mulop nije ni mul ni div ni mod", mul);
+			//report_info("Faza generisanje koda u klasi TermMul Mulop nije ni mul ni div ni mod", mul);
 		}
 		
 	}
@@ -293,7 +293,7 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.sub);
 		}
 		else {
-			report_info("Faza generisanje koda u klasi ExprAddTerm Addop nije ni plus ni minus", add);
+			//report_info("Faza generisanje koda u klasi ExprAddTerm Addop nije ni plus ni minus", add);
 		}
 		
 		
@@ -352,10 +352,10 @@ public class CodeGenerator extends VisitorAdaptor {
 				Code.put(Code.bastore);
 			}
 			else {
-				report_info("pri dodeli vrednosti designator je bio matrica", assignment);
+				//report_info("pri dodeli vrednosti designator je bio matrica", assignment);
 			}
 			
-			report_info("DesignatorStatementAssign za niz", null);
+			//report_info("DesignatorStatementAssign za niz", null);
 		}
 		else if(assignment.getDesignator() instanceof DesignatorMatrix) {
 			// za slucaj m[1][2] = 5
@@ -369,7 +369,7 @@ public class CodeGenerator extends VisitorAdaptor {
 				Code.put(Code.bastore);
 			}
 			
-			report_info("usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix", null);
+			//report_info("usao u DesignatorStatementAssign i dosao je iz DesignatorMatrix", null);
 			
 		}
 		else {
@@ -378,7 +378,7 @@ public class CodeGenerator extends VisitorAdaptor {
 				// obicna promenljiva
 				Code.store(assignment.getDesignator().obj);	
 				
-				report_info("DesignatorStatementAssign za obicnu promenljivu", null);	
+				//report_info("DesignatorStatementAssign za obicnu promenljivu", null);	
 			}
 			else if(assignment.getDesignator().obj.getType().getElemType() == MyTab.intType ||
 					assignment.getDesignator().obj.getType().getElemType() == MyTab.charType) {
@@ -386,7 +386,7 @@ public class CodeGenerator extends VisitorAdaptor {
 				
 				Code.store(assignment.getDesignator().obj);	
 				
-				report_info("klasa DesignatorStatementAssign -> kreiranje niza", null);	
+				//report_info("klasa DesignatorStatementAssign -> kreiranje niza", null);	
 			}
 			else {
 				// matrica
@@ -417,7 +417,7 @@ public class CodeGenerator extends VisitorAdaptor {
 				int mestoPovratka = Code.pc;
 				Code.put(Code.dup2);	//OVDE DUPLIRAMO STANJE NA STEKU DA BI NAKON JEDNE ITERACIJE OSTALE NA STEKU ROW I COL
 				
-				report_info("iteracija", null);
+				//report_info("iteracija", null);
 				
 				Code.load(assignment.getDesignator().obj);		// row, col, m
 				
@@ -468,7 +468,7 @@ public class CodeGenerator extends VisitorAdaptor {
 				Code.put(Code.pop);
 				Code.put(Code.pop);
 				
-				report_info("usao u else if za matrix", null);	
+				//report_info("usao u else if za matrix", null);	
 			
 			}
 		}
@@ -518,7 +518,7 @@ public class CodeGenerator extends VisitorAdaptor {
 				Code.put(Code.baload);	// dohvati vrednost elementa niza i stavi na stek, spremno je za print koje ocekuje vrednost za ispis
 			}
 			else {
-				report_info("U fazi generisanja koda u klasi DesignatorArray elemType nije nijedan od standardnih tipova", null);
+				//report_info("U fazi generisanja koda u klasi DesignatorArray elemType nije nijedan od standardnih tipova", null);
 			}
 		}
 		
@@ -558,7 +558,7 @@ public class CodeGenerator extends VisitorAdaptor {
 			
 			m.obj = m.getDesignator().obj;	//NOVODODATA LINIJA RESILA JE PROBLEM KOD DesignatorStatementAssign ZA PROVERU TIPA PODATAKA DESIGNATORA
 			
-			report_info("usao u DesignatorMatrix", null);
+			//report_info("usao u DesignatorMatrix", null);
 		}
 		else if(parent.getClass().equals(DesignatorFactorDesignator.class)) {
 			// ovde se dolazi za slucaj print(m[1][2])
@@ -587,11 +587,11 @@ public class CodeGenerator extends VisitorAdaptor {
 			
 			// m[row][col]
 			
-			report_info("u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator", null);
+			//report_info("u DesignatorMatrix klasi je u if-u za DesignatorFactorDesignator", null);
 		}
 		else {
 			m.obj = m.getDesignator().obj;
-			report_info("u klasi DesignatorMatrix parent nije ni DesignatorStatementAssign ni DesignatorFactorDesignator", null);
+			//report_info("u klasi DesignatorMatrix parent nije ni DesignatorStatementAssign ni DesignatorFactorDesignator", null);
 		}
 		
 	}

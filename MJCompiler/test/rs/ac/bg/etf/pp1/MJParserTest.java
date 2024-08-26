@@ -24,6 +24,16 @@ public class MJParserTest {
 	static {
 		DOMConfigurator.configure(Log4JUtils.instance().findLoggerConfigFile());
 		Log4JUtils.instance().prepareLogFile(Logger.getRootLogger());
+		
+		
+		//DOMConfigurator.configure("config/log4j.xml");
+		
+		// ako bude greska "java.net.URL.toString()" because "this.val$url"  zameniti 
+		// "DOMConfigurator.configure(Log4JUtils.instance().findLoggerConfigFile());" sa DOMConfigurator.configure("config/log4j.xml");
+		
+		// treba oznaciti da je src i test da budu source fajlovi project -> properties -> java build path -> sources tab -> add folder
+		
+		
 	}
 	
 	public static void main(String[] args) throws Exception {
